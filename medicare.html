@@ -10,118 +10,55 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --brand:   #0EA5E9;   /* VNHL sky blue */
-    --brand-d: #0284C7;   /* darker for hover */
-    --brand-l: #E0F2FE;   /* light tint for backgrounds */
-    --dark:    #0F172A;   /* near-black text */
-    --mid:     #475569;   /* secondary text */
+    --brand:   #1e3a8a;   /* Primary blue matching index */
+    --brand-d: #172554;   /* darker for hover */
+    --brand-l: #f8fafc;   /* light tint for backgrounds */
+    --dark:    #334155;   /* text color */
+    --mid:     #475569;   
     --muted:   #94A3B8;
-    --border:  #E2E8F0;
+    --border:  #e2e8f0;
     --white:   #FFFFFF;
     --gold:    #D97706;
+    --accent:  #0d9488;
   }
 
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     font-size: 15px;
     line-height: 1.6;
     color: var(--dark);
-    background: var(--white);
+    background: var(--brand-l);
   }
 
   a { color: inherit; text-decoration: none; }
 
-  /* ── HEADER ── */
+  /* ── HEADER (Unified with Index) ── */
   .site-header {
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .header-top {
+    background: var(--brand);
+    color: white;
+    padding: 1.25rem 2rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 14px 24px 10px;
-    gap: 12px;
-  }
-
-  .logo-block {
-    display: flex;
     align-items: center;
-    gap: 12px;
+    flex-wrap: wrap;
   }
 
-  .logo-icon {
-    width: 44px;
-    height: 44px;
-    background: var(--brand);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    flex-shrink: 0;
-  }
-
-  .logo-text-main {
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--dark);
-    letter-spacing: -0.01em;
-    line-height: 1.2;
-  }
-
-  .logo-text-sub {
-    font-size: 11px;
-    color: var(--brand);
-    font-weight: 500;
-    margin-top: 1px;
-  }
-
-  .logo-tagline {
-    font-size: 10px;
-    color: var(--muted);
-    font-style: italic;
-    margin-top: 1px;
-  }
-
-  .header-cta {
-    background: var(--brand);
-    color: var(--white);
-    padding: 9px 18px;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 600;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-
-  .header-nav {
-    background: #F8FAFC;
-    border-top: 1px solid var(--border);
-    padding: 0 24px;
-    display: flex;
-    gap: 0;
-    overflow-x: auto;
+  .logo-block h1 {
+    margin: 0;
+    font-size: 1.25rem;
   }
 
   .header-nav a {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--mid);
-    padding: 9px 14px;
-    white-space: nowrap;
-    border-bottom: 2px solid transparent;
-    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.95rem;
   }
 
-  .header-nav a:hover { color: var(--brand); }
-  .header-nav a.active {
-    color: var(--brand);
-    border-bottom-color: var(--brand);
-    font-weight: 600;
+  .header-nav a:hover, .header-nav a.active {
+    text-decoration: underline;
   }
 
   /* ── HERO ── */
@@ -156,7 +93,7 @@
     margin: 0 auto 14px;
   }
 
-  .hero h1 .accent { color: var(--brand); }
+  .hero h1 .accent { color: var(--accent); }
 
   .hero-sub {
     font-size: 15px;
@@ -181,22 +118,23 @@
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
   }
 
-  .btn-blue { background: var(--brand); color: var(--white); }
-  .btn-blue:hover { background: var(--brand-d); }
+  .btn-blue { background: var(--accent); color: var(--white); }
+  .btn-blue:hover { opacity: 0.9; }
 
   .btn-outline {
     background: transparent;
     color: var(--white);
     border: 1.5px solid rgba(255,255,255,0.25);
   }
-  .btn-outline:hover { border-color: var(--brand); color: #7DD3FC; }
+  .btn-outline:hover { border-color: var(--accent); color: #7DD3FC; }
 
   /* ── AWARDS STRIP ── */
   .awards {
-    background: var(--brand-l);
-    border-bottom: 2px solid var(--brand);
+    background: #e0f2fe;
+    border-bottom: 2px solid var(--accent);
     padding: 18px 24px;
   }
 
@@ -237,7 +175,7 @@
   }
 
   /* ── SECTION ── */
-  section { padding: 48px 24px; }
+  section { padding: 48px 24px; background: var(--white); }
 
   .container { max-width: 700px; margin: 0 auto; }
 
@@ -246,7 +184,7 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--brand);
+    color: var(--accent);
     margin-bottom: 8px;
   }
 
@@ -260,8 +198,6 @@
   }
 
   /* ── WHY DR K ── */
-  .why { background: var(--white); }
-
   .why-lead {
     font-size: 15px;
     color: var(--mid);
@@ -289,7 +225,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--brand);
+    background: var(--accent);
     flex-shrink: 0;
     margin-top: 6px;
   }
@@ -331,11 +267,11 @@
     padding: 14px 16px;
     background: rgba(255,255,255,0.05);
     border-radius: 7px;
-    border-left: 3px solid var(--brand);
+    border-left: 3px solid var(--accent);
   }
 
   .cov-check {
-    color: var(--brand);
+    color: var(--accent);
     font-size: 14px;
     flex-shrink: 0;
     margin-top: 1px;
@@ -354,7 +290,7 @@
   }
 
   /* ── REVIEWS ── */
-  .reviews { background: var(--brand-l); }
+  .reviews { background: #f8fafc; }
 
   .reviews-grid {
     display: grid;
@@ -387,58 +323,13 @@
   .review-meta {
     font-size: 12px;
     font-weight: 600;
-    color: var(--brand-d);
+    color: var(--brand);
   }
 
   .review-source {
     font-size: 11px;
     color: var(--muted);
     margin-top: 1px;
-  }
-
-  /* ── BRING ── */
-  .bring { background: var(--white); }
-
-  .bring-grid {
-    display: grid;
-    gap: 10px;
-    margin-top: 24px;
-  }
-
-  .bring-item {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    padding: 14px 16px;
-    background: #F8FAFC;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-  }
-
-  .bring-icon { font-size: 18px; flex-shrink: 0; }
-
-  .bring-title {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--dark);
-  }
-
-  .bring-desc {
-    font-size: 12px;
-    color: var(--mid);
-    margin-top: 2px;
-    line-height: 1.5;
-  }
-
-  .bring-tip {
-    margin-top: 18px;
-    background: var(--brand-l);
-    border-left: 3px solid var(--brand);
-    padding: 12px 16px;
-    border-radius: 0 6px 6px 0;
-    font-size: 13px;
-    color: var(--brand-d);
-    line-height: 1.55;
   }
 
   /* ── LOCATION ── */
@@ -461,7 +352,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--brand);
+    color: var(--accent);
     margin-bottom: 8px;
   }
 
@@ -475,7 +366,7 @@
   .phone-link {
     font-size: 20px;
     font-weight: 700;
-    color: var(--brand);
+    color: var(--accent);
     display: block;
     margin-bottom: 4px;
   }
@@ -507,21 +398,21 @@
     font-size: 15px;
     font-weight: 700;
     display: inline-block;
+    text-decoration: none;
   }
 
   /* ── FOOTER ── */
   footer {
     background: #0F172A;
-    color: #475569;
+    color: #94a3b8;
     text-align: center;
     padding: 20px 24px;
     font-size: 12px;
     line-height: 1.8;
   }
 
-  footer a { color: var(--brand); }
+  footer a { color: var(--accent); }
 
-  /* ── RATING BADGE ── */
   .rating-row {
     display: flex;
     align-items: center;
@@ -544,23 +435,15 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <div class="header-top">
-    <div class="logo-block">
-      <div class="logo-icon">⚕️</div>
-      <div>
-        <div class="logo-text-main">Dr. Vijay Kuppurajan, MD</div>
-        <div class="logo-text-sub">Internal Medicine · VN Healthy Living Medical Group</div>
-        <div class="logo-tagline">Your Health Is In the Palm of Your Hands</div>
-      </div>
-    </div>
-    <a href="tel:+16194297700" class="header-cta">📞 619-429-7700</a>
+  <div class="logo-block">
+    <h1>VN Healthy Living Medical Group</h1>
   </div>
   <nav class="header-nav">
-    <a href="https://vnhealthyliving.com">Home</a>
-    <a href="https://vnhealthyliving.com/services">Services</a>
-    <a href="https://vnhealthyliving.com/about">About Dr. K</a>
-    <a href="#medicare" class="active">Medicare</a>
-    <a href="https://vnhealthyliving.com/contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Dr. K</a>
+    <a href="medicare.html" class="active">Medicare</a>
+    <a href="weight-loss.html">GLP-1 Weight Loss</a>
+    <a href="appointment.html">Request Appt</a>
   </nav>
 </header>
 
@@ -568,7 +451,7 @@
 <section class="hero">
   <div class="hero-badge">✅ Medicare Accepted · Imperial Beach, CA</div>
   <h1>A PCP who puts <span class="accent">you</span> first — every visit</h1>
-  <p class="hero-sub">Dr. Vijay Kuppurajan, MD — Sharp's Top PCP, award-winning internist, now accepting new Medicare patients.</p>
+  <p class="hero-sub">Dr. Vijay Kuppurajan, MD — Sharp's Top PCP, award-winning internist, now accepting new Medicare patients[cite: 1].</p>
   <div class="hero-cta">
     <a href="tel:+16194297700" class="btn btn-blue">📞 Call to Book: 619-429-7700</a>
     <a href="#medicare" class="btn btn-outline">What Medicare covers ↓</a>
@@ -710,7 +593,7 @@
 
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p class="review-text">"He took his time with me and listened to each question and concern I have regarding my health. He thoroughly reviewed my medical record, discussed each medication I'm prescribed and upgraded my medication accordingly to my required needs. I'm very happy and so pleased with Dr. K."</p>
+        <p class="review-text">"He took his time with me and listened to each question and concern I have regarding my health. He thoroughly reviewed my medical record, discussed each medication I's prescribed and upgraded my medication accordingly to my required needs. I'm very happy and so pleased with Dr. K."</p>
         <div class="review-meta">Verified Patient — Google Review</div>
         <div class="review-source">VN Healthy Living · First Visit</div>
       </div>
@@ -723,52 +606,6 @@
       </div>
 
     </div>
-  </div>
-</section>
-
-<!-- WHAT TO BRING -->
-<section class="bring">
-  <div class="container">
-    <p class="eyebrow">Your first visit</p>
-    <h2>What to bring</h2>
-    <div class="bring-grid">
-      <div class="bring-item">
-        <div class="bring-icon">🪪</div>
-        <div>
-          <div class="bring-title">Medicare Card</div>
-          <div class="bring-desc">Red, white & blue Original Medicare card. Bring your Supplement or Advantage card too if you have one.</div>
-        </div>
-      </div>
-      <div class="bring-item">
-        <div class="bring-icon">💊</div>
-        <div>
-          <div class="bring-title">Medication List or Bottles</div>
-          <div class="bring-desc">All prescriptions, vitamins, supplements — with dosage and frequency.</div>
-        </div>
-      </div>
-      <div class="bring-item">
-        <div class="bring-icon">🪪</div>
-        <div>
-          <div class="bring-title">Photo ID</div>
-          <div class="bring-desc">Driver's license or government-issued ID.</div>
-        </div>
-      </div>
-      <div class="bring-item">
-        <div class="bring-icon">📄</div>
-        <div>
-          <div class="bring-title">Recent Medical Records</div>
-          <div class="bring-desc">Lab results, specialist notes, or imaging — especially if transferring care.</div>
-        </div>
-      </div>
-      <div class="bring-item">
-        <div class="bring-icon">📞</div>
-        <div>
-          <div class="bring-title">Emergency Contact</div>
-          <div class="bring-desc">Name and phone number of a trusted family member or friend.</div>
-        </div>
-      </div>
-    </div>
-    <div class="bring-tip">💡 Arrive 10–15 minutes early to complete new patient paperwork. Questions? Call us — we'll walk you through it.</div>
   </div>
 </section>
 

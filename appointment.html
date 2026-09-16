@@ -6,29 +6,42 @@
     <title>Request an Appointment | VN Healthy Living Medical Group</title>
     <style>
         :root {
-            --primary-color: #0056b3;
-            --accent-color: #28a745;
-            --dark-text: #333333;
-            --light-bg: #f8f9fa;
+            --primary: #1e3a8a;
+            --accent: #0d9488;
+            --dark-text: #334155;
+            --light-bg: #f8fafc;
+            --border: #e2e8f0;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: system-ui, -apple-system, sans-serif;
             line-height: 1.6;
             color: var(--dark-text);
             background-color: var(--light-bg);
             margin: 0;
             padding: 0;
         }
+        /* Unified Header */
         header {
-            background: #ffffff;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid #dee2e6;
+            background: var(--primary);
+            color: white;
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
         }
         header h1 {
             margin: 0;
-            font-size: 1.5rem;
-            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+        }
+        nav a:hover, nav a.active {
+            text-decoration: underline;
         }
         .container {
             max-width: 600px;
@@ -37,10 +50,11 @@
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
         }
         h2 {
             margin-top: 0;
-            color: var(--dark-text);
+            color: var(--primary);
             font-size: 1.75rem;
         }
         p.subtitle {
@@ -72,7 +86,7 @@
             height: 100px;
         }
         button.submit-btn {
-            background-color: var(--accent-color);
+            background-color: var(--accent);
             color: white;
             padding: 14px 20px;
             border: none;
@@ -83,33 +97,28 @@
             font-weight: bold;
         }
         button.submit-btn:hover {
-            background-color: #218838;
+            opacity: 0.9;
         }
         .phone-callout {
             margin-top: 25px;
             padding: 15px;
-            background-color: #e9ecef;
+            background-color: #f1f5f9;
             border-radius: 4px;
             text-align: center;
             font-size: 0.95rem;
         }
         .phone-callout a {
-            color: var(--primary-color);
+            color: var(--primary);
             font-weight: bold;
             text-decoration: none;
         }
-        nav {
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
             text-align: center;
-            margin-bottom: 20px;
-        }
-        nav a {
-            color: var(--primary-color);
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 0.9rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.875rem;
         }
     </style>
 </head>
@@ -117,17 +126,18 @@
 
     <header>
         <h1>VN Healthy Living Medical Group</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Dr. K</a>
+            <a href="medicare.html">Medicare</a>
+            <a href="weight-loss.html">GLP-1 Weight Loss</a>
+            <a href="appointment.html" class="active">Request Appt</a>
+        </nav>
     </header>
 
     <div class="container">
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About</a> | 
-            <a href="weight-loss.html">Weight Loss</a>
-        </nav>
-
         <h2>Request an Appointment</h2>
-        <p class="subtitle">Please fill out the details below during the Medicare AEP enrollment window, and our team will contact you to confirm your schedule.</p>
+        <p class="subtitle">Please fill out the details below, and our team will contact you to confirm your schedule.</p>
 
         <!-- Netlify handles form submissions automatically via netlify attribute -->
         <form name="appointment-request" method="POST" netlify>
@@ -167,9 +177,13 @@
 
         <div class="phone-callout">
             Prefer to speak with someone right away? <br>
-            Call us directly at <a href="tel:5550000000">(555) 000-0000</a>
+            Call us directly at <a href="tel:6194297700">(619) 429-7700</a>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2026 VN Healthy Living Medical Group – Dr. Vijay Kuppurajan. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
