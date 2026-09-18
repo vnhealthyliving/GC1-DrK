@@ -3,23 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Medicare Primary Care – Dr. Vijay Kuppurajan | Imperial Beach, CA</title>
+<title>Medicare · VN Healthy Living Medical Group · Dr. Vijay Kuppurajan | Imperial Beach, CA</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --brand:   #1e3a8a;   /* Primary blue matching index */
-    --brand-d: #172554;   /* darker for hover */
-    --brand-l: #f8fafc;   /* light tint for backgrounds */
-    --dark:    #334155;   /* text color */
+    --brand:   #1e3a8a;   
+    --brand-d: #172554;   
+    --brand-l: #f8fafc;   
+    --dark:    #334155;   
     --mid:     #475569;   
     --muted:   #94A3B8;
-    --border:  #e2e8f0;
+    --border:  #334155;
     --white:   #FFFFFF;
     --gold:    #D97706;
     --accent:  #0d9488;
+    --red:     #dc2626;
+    --card-bg: #0F172A;
   }
 
   html { scroll-behavior: smooth; }
@@ -34,39 +36,146 @@
 
   a { color: inherit; text-decoration: none; }
 
-  /* ── HEADER (Unified with Index) ── */
+  /* ── HEADER ── */
   .site-header {
     background: var(--brand);
     color: white;
-    padding: 1.25rem 2rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .header-container {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 12px;
   }
 
-  .logo-block h1 {
+  .header-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-logo {
+    height: 38px;
+    width: auto;
+    display: block;
+  }
+
+  .header-title-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-block h1, .header-title-group h1 {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  .header-tagline { 
+    margin: 0; 
+    font-size: 0.88rem; 
+    font-weight: 600; 
+    letter-spacing: 0.015em; 
+    color: #5eead4; 
+    white-space: nowrap;
+    line-height: 1.3;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
   }
 
   .header-nav a {
     color: white;
     text-decoration: none;
-    margin-left: 1.5rem;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .header-nav a:hover, .header-nav a.active {
     text-decoration: underline;
   }
 
-  /* ── HERO ── */
+  /* ── HERO WITH AWARDS ── */
   .hero {
     background: linear-gradient(135deg, #0F172A 0%, #0C2340 100%);
     color: var(--white);
-    padding: 52px 24px 48px;
+    padding: 48px 16px;
+  }
+
+  .hero-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 210px 1fr 210px;
+    gap: 20px;
+    align-items: center;
     text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      max-width: 500px;
+    }
+  }
+
+  .hero-award-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-award-img {
+    height: 220px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 4px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+
+  .hero-award-card h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 2px;
+  }
+
+  .hero-award-card p {
+    font-size: 10px;
+    color: #94A3B8;
+  }
+
+  .hero-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-badges-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 14px;
   }
 
   .hero-badge {
@@ -76,49 +185,78 @@
     background: rgba(14,165,233,0.15);
     border: 1px solid rgba(14,165,233,0.3);
     color: #7DD3FC;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
-    padding: 5px 12px;
+    padding: 4px 10px;
     border-radius: 20px;
-    margin-bottom: 20px;
     letter-spacing: 0.04em;
   }
 
   .hero h1 {
-    font-size: clamp(24px, 4.5vw, 40px);
+    font-size: clamp(22px, 3.2vw, 32px);
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: -0.02em;
-    max-width: 620px;
+    max-width: 640px;
     margin: 0 auto 14px;
   }
 
-  .hero h1 .accent { color: var(--accent); }
+  .hero h1 .accent-block { display: block; margin-top: 4px; color: var(--accent); }
 
   .hero-sub {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     color: #94A3B8;
-    max-width: 460px;
-    margin: 0 auto 32px;
-    line-height: 1.65;
+    max-width: 540px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+  }
+
+  .hero-sub span { display: block; }
+
+  .hero-sub .sub-name {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+
+  .hero-sub .sub-title {
+    color: #cbd5e1;
+    margin-bottom: 6px;
+  }
+
+  .hero-sub .sub-mission {
+    color: #cbd5e1;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .highlight-compassion {
+    color: #38bdf8;
+    font-weight: 700;
   }
 
   .hero-cta {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .btn {
     display: inline-block;
-    padding: 13px 28px;
+    padding: 10px 20px;
     border-radius: 7px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
   }
 
   .btn-blue { background: var(--accent); color: var(--white); }
@@ -131,53 +269,11 @@
   }
   .btn-outline:hover { border-color: var(--accent); color: #7DD3FC; }
 
-  /* ── AWARDS STRIP ── */
-  .awards {
-    background: #e0f2fe;
-    border-bottom: 2px solid var(--accent);
-    padding: 18px 24px;
-  }
+  /* ── SECTION BASE ── */
+  section { padding: 48px 24px; }
 
-  .awards-inner {
-    max-width: 700px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px 36px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .award {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .award-icon { font-size: 22px; }
-
-  .award-text strong {
-    display: block;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--dark);
-  }
-
-  .award-text span {
-    font-size: 11px;
-    color: var(--mid);
-  }
-
-  .award-divider {
-    width: 1px;
-    height: 32px;
-    background: var(--border);
-  }
-
-  /* ── SECTION ── */
-  section { padding: 48px 24px; background: var(--white); }
-
-  .container { max-width: 700px; margin: 0 auto; }
+  .container { max-width: 650px; margin: 0 auto; }
+  .container-wide { max-width: 1000px; margin: 0 auto; }
 
   .eyebrow {
     font-size: 11px;
@@ -193,158 +289,189 @@
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--dark);
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     line-height: 1.25;
   }
 
-  /* ── WHY DR K ── */
-  .why-lead {
-    font-size: 15px;
-    color: var(--mid);
-    margin-bottom: 28px;
-    line-height: 1.7;
-    max-width: 580px;
+  /* ── DUAL IMAGE FRAME SECTION (Light Background) ── */
+  .banner-section {
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
   }
 
-  .reasons {
-    display: grid;
-    gap: 12px;
-  }
-
-  .reason {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    padding: 16px 18px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: #F8FAFC;
-  }
-
-  .reason-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--accent);
-    flex-shrink: 0;
-    margin-top: 6px;
-  }
-
-  .reason strong {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--dark);
-    display: block;
-    margin-bottom: 2px;
-  }
-
-  .reason p {
-    font-size: 13px;
-    color: var(--mid);
-    line-height: 1.55;
-  }
-
-  /* ── MEDICARE ── */
-  .medicare { background: #0F172A; color: var(--white); }
-  .medicare h2 { color: var(--white); }
-
-  .medicare-lead {
-    font-size: 14px;
-    color: #94A3B8;
-    margin-bottom: 24px;
-    line-height: 1.7;
-  }
-
-  .coverage {
-    display: grid;
-    gap: 10px;
-  }
-
-  .cov-item {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    padding: 14px 16px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 7px;
-    border-left: 3px solid var(--accent);
-  }
-
-  .cov-check {
-    color: var(--accent);
-    font-size: 14px;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
-
-  .cov-title {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--white);
-  }
-
-  .cov-sub {
-    font-size: 12px;
-    color: #64748B;
-    margin-top: 1px;
-  }
-
-  /* ── REVIEWS ── */
-  .reviews { background: #f8fafc; }
-
-  .reviews-grid {
-    display: grid;
-    gap: 14px;
-    margin-top: 24px;
-  }
-
-  .review-card {
+  .dual-image-frame {
     background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    text-align: center;
   }
 
-  .stars {
+  .dual-images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    max-width: 520px;
+    margin: 0 auto 16px auto;
+  }
+
+  @media (max-width: 768px) {
+    .dual-images-grid { grid-template-columns: 1fr; max-width: 280px; }
+  }
+
+  .dual-image-item {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dual-image-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .banner-description {
+    font-size: 14px;
+    color: var(--dark);
+    max-width: 780px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  /* ── UNPACKED CARDS LAYOUT ── */
+  .unpacked-container {
+    max-width: 650px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .content-card {
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+  }
+
+  .card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-body-text {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.65;
+    font-weight: 400;
+  }
+
+  .card-subtext {
+    font-size: 12px;
+    color: #7DD3FC;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+
+  /* Review Cards */
+  .review-stars {
     color: var(--gold);
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 1px;
     margin-bottom: 10px;
   }
 
   .review-text {
-    font-size: 14px;
-    color: var(--dark);
+    font-size: 15px;
+    color: var(--white);
     line-height: 1.65;
-    margin-bottom: 12px;
     font-style: italic;
+    margin-bottom: 14px;
+  }
+
+  .review-footer-info {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
   }
 
   .review-meta {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
-    color: var(--brand);
+    color: #7DD3FC;
   }
 
   .review-source {
     font-size: 11px;
     color: var(--muted);
-    margin-top: 1px;
   }
 
-  /* ── LOCATION ── */
+  /* ── ALTERNATING SECTION BACKGROUNDS ── */
+  .section-program { background: #0b1120; }
+  .section-program h2 { color: var(--white); }
+
+  .section-benefits { background: #ffffff; }
+
+  .section-reviews { background: #0b1120; }
+  .section-reviews h2 { color: var(--white); }
+
+  .cta-image-section {
+    background: #0F172A;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .cta-image-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-display-img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 2px solid rgba(255,255,255,0.1);
+    display: block;
+    margin: 0 auto 16px auto;
+  }
+
   .location { background: #F8FAFC; }
 
   .loc-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
-    margin-top: 24px;
+    margin-top: 20px;
   }
 
-  @media (max-width: 520px) {
+  @media (max-width: 700px) {
     .loc-grid { grid-template-columns: 1fr; }
-    .award-divider { display: none; }
   }
 
   .loc-block h3 {
@@ -363,42 +490,48 @@
     list-style: none;
   }
 
-  .phone-link {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--accent);
-    display: block;
+  .contact-row-consistent {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--dark);
     margin-bottom: 4px;
+    white-space: nowrap;
   }
 
-  /* ── BOTTOM CTA ── */
-  .bottom-cta {
-    background: var(--brand);
+  .icon-red {
+    color: var(--red);
+    font-size: 1.1rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .map-container {
+    margin-top: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    background: #ffffff;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 280px;
+    border: 0;
+    display: block;
+  }
+
+  .map-caption {
+    padding: 10px 14px;
+    font-size: 12px;
+    color: var(--mid);
+    background: #ffffff;
+    border-top: 1px solid #e2e8f0;
     text-align: center;
-    padding: 48px 24px;
-    color: var(--white);
-  }
-
-  .bottom-cta h2 { color: var(--white); margin-bottom: 10px; }
-
-  .bottom-cta p {
-    font-size: 14px;
-    color: rgba(255,255,255,0.8);
-    margin-bottom: 28px;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .btn-white {
-    background: var(--white);
-    color: var(--brand);
-    padding: 14px 32px;
-    border-radius: 7px;
-    font-size: 15px;
-    font-weight: 700;
-    display: inline-block;
-    text-decoration: none;
+    font-weight: 500;
   }
 
   /* ── FOOTER ── */
@@ -417,13 +550,13 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 13px;
     color: var(--mid);
   }
 
   .rating-num {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--dark);
   }
@@ -435,226 +568,317 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <div class="logo-block">
-    <h1>VN Healthy Living Medical Group</h1>
+  <div class="header-container">
+    <div class="header-brand">
+      <img src="00_VN_Healthy_Living_Logo_3D.png" alt="VN Healthy Living Logo" class="header-logo">
+      <div class="header-title-group">
+        <h1>VN Healthy Living Medical Group</h1>
+        <span class="header-tagline">Your Health is in the Palm of Your Hands</span>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Dr. K</a>
+      <a href="medicare.html" class="active">Medicare</a>
+      <a href="weight-loss.html">GLP-1 Weight Loss</a>
+      <a href="appointment.html">Request Appt</a>
+    </nav>
   </div>
-  <nav class="header-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Dr. K</a>
-    <a href="medicare.html" class="active">Medicare</a>
-    <a href="weight-loss.html">GLP-1 Weight Loss</a>
-    <a href="appointment.html">Request Appt</a>
-  </nav>
 </header>
 
-<!-- HERO -->
+<!-- HERO WITH AWARDS -->
 <section class="hero">
-  <div class="hero-badge">✅ Medicare Accepted · Imperial Beach, CA</div>
-  <h1>A PCP who puts <span class="accent">you</span> first — every visit</h1>
-  <p class="hero-sub">Dr. Vijay Kuppurajan, MD — Sharp's Top PCP, award-winning internist, now accepting new Medicare patients[cite: 1].</p>
-  <div class="hero-cta">
-    <a href="tel:+16194297700" class="btn btn-blue">📞 Call to Book: 619-429-7700</a>
-    <a href="#medicare" class="btn btn-outline">What Medicare covers ↓</a>
+  <div class="hero-container">
+    
+    <div class="hero-award-card">
+      <img src="Dr-Vijay-Kuppurajan-Sharp-SCMG-2026-Award-of-Excellence-Plaque.png" alt="Sharp Top PCP Award" class="hero-award-img">
+      <h4>Sharp Top PCP Award</h4>
+      <p>Sharp Community Medical Group</p>
+    </div>
+
+    <div class="hero-center">
+      <div class="hero-badges-row">
+        <div class="hero-badge">✅ Primary Care &amp; Preventive Medicine · Imperial Beach, CA</div>
+        <div class="hero-badge">★ 4.9 out of 5.0 Rating</div>
+      </div>
+      
+      <h1>Your Trusted Medical Home <span class="accent-block">for Comprehensive Wellness</span></h1>
+      
+      <p class="hero-sub">
+        <span class="sub-name">Dr. Vijay Kuppurajan, MD</span>
+        <span class="sub-title">Sharp's Top PCP · Board-Certified Internist</span>
+        <span class="sub-mission">Where <span class="highlight-compassion">Compassion</span> Encapsulates<br>Comprehensiveness, Competence, and Collaboration</span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="tel:+16194297700" class="btn btn-blue">📞 Call: 619-429-7700</a>
+        <a href="appointment.html" class="btn btn-blue">📅 Request Appointment</a>
+        <a href="#why-choose-dr-k" class="btn btn-outline">Why Choose Dr. K?</a>
+        <a href="#services" class="btn btn-outline">Explore Care</a>
+      </div>
+    </div>
+
+    <div class="hero-award-card">
+      <img src="Dr-Vijay-Kuppurajan-Compassionate-Care-Award-Imperial-Beach.png" alt="Compassionate Care Award" class="hero-award-img">
+      <h4>Compassionate Care Award</h4>
+      <p>Voted by peers &amp; patients</p>
+    </div>
+
   </div>
 </section>
 
-<!-- AWARDS -->
-<div class="awards">
-  <div class="awards-inner">
-    <div class="award">
-      <div class="award-icon">🏆</div>
-      <div class="award-text">
-        <strong>Sharp Top PCP Award</strong>
-        <span>Sharp Community Medical Group</span>
+<!-- DUAL IMAGE FRAME SECTION -->
+<section class="banner-section">
+  <div class="container-wide">
+    <div class="dual-image-frame">
+      <p class="eyebrow">Patient-Centered Medical Home</p>
+      <h2 style="font-size: clamp(22px, 2.5vw, 28px); font-weight: 700; color: var(--dark); margin-bottom: 16px;">Build a healthy living plan together</h2>
+      
+      <div class="dual-images-grid">
+        <div class="dual-image-item">
+          <img src="VNHL-DrK-Medicare-PCP.png" alt="Dr. Vijay Kuppurajan Medicare PCP Overview">
+        </div>
+        <div class="dual-image-item">
+          <img src="Medicare_AWV.png" alt="Medicare Annual Wellness Visit">
+        </div>
       </div>
-    </div>
-    <div class="award-divider"></div>
-    <div class="award">
-      <div class="award-icon">❤️</div>
-      <div class="award-text">
-        <strong>Compassionate Care Award</strong>
-        <div style="font-size:11px; color:#0369A1; margin-top:2px;">Christus Health · Voted by peers &amp; patients</div>
-      </div>
-    </div>
-    <div class="award-divider"></div>
-    <div class="award">
-      <div class="award-icon">⭐</div>
-      <div class="award-text">
-        <strong>4.9 / 52 Ratings</strong>
-        <span>Sharp HealthCare · Verified Patients</span>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- WHY DR K -->
-<section class="why">
-  <div class="container">
-    <p class="eyebrow">Why patients choose Dr. K</p>
-    <h2>Internal medicine the way it should be</h2>
-    <p class="why-lead">Dr. K is a board-certified internist who listens, explains, and follows through. As a solo practitioner affiliated with Sharp, every visit is with him — not a rotating resident.</p>
-    <div class="reasons">
-      <div class="reason">
-        <div class="reason-dot"></div>
-        <div>
-          <strong>Unhurried, personal appointments</strong>
-          <p>Your time with Dr. K is your time. No rushing, no hand-offs.</p>
-        </div>
-      </div>
-      <div class="reason">
-        <div class="reason-dot"></div>
-        <div>
-          <strong>Continuity across years, not episodes</strong>
-          <p>He tracks your history and builds a real relationship over time.</p>
-        </div>
-      </div>
-      <div class="reason">
-        <div class="reason-dot"></div>
-        <div>
-          <strong>Sharp-affiliated — connected when you need it</strong>
-          <p>Referrals, labs, and hospital coordination within the Sharp network.</p>
-        </div>
-      </div>
-      <div class="reason">
-        <div class="reason-dot"></div>
-        <div>
-          <strong>Right here in Imperial Beach</strong>
-          <p>707 Palm Ave. Easy parking. A doctor who knows this community.</p>
-        </div>
-      </div>
+      <p class="banner-description">
+        As your dedicated medical home in Imperial Beach, VN Healthy Living pairs trusted, compassionate care with expert clinical leadership. Together, we build a customized healthy living plan centered around proactive preventive activities like Annual Wellness Visits, chronic disease management, and long-term vitality.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- MEDICARE -->
-<section class="medicare" id="medicare">
+<!-- SERVICES SECTION -->
+<section class="section-program" id="services">
   <div class="container">
-    <p class="eyebrow" style="color:#7DD3FC;">Medicare patients welcome</p>
-    <h2>What Medicare covers at VNHL</h2>
-    <p class="medicare-lead">Dr. K accepts Original Medicare (Parts A & B). Most preventive and chronic care visits cost you little or nothing.</p>
-    <div class="coverage">
-      <div class="cov-item">
-        <div class="cov-check">✓</div>
+    <p class="eyebrow" style="color:#7DD3FC;">Core clinical offerings</p>
+    <h2>Transforming health through clinical expertise</h2>
+    
+    <div class="unpacked-container">
+      
+      <div class="content-card">
         <div>
-          <div class="cov-title">Annual Wellness Visit</div>
-          <div class="cov-sub">Covered 100% — no copay required</div>
+          <div class="card-title">🛡️ Annual Wellness Visit</div>
+          <div class="card-body-text">Comprehensive yearly evaluation covered 100% with $0 copay across all Original Medicare and Medicare Advantage plans.</div>
         </div>
+        <div class="card-subtext">Core Service · Proactive Health</div>
       </div>
-      <div class="cov-item">
-        <div class="cov-check">✓</div>
+
+      <div class="content-card">
         <div>
-          <div class="cov-title">Chronic Disease Management</div>
-          <div class="cov-sub">Diabetes, hypertension, heart disease, cholesterol, and more</div>
+          <div class="card-title">🩺 Chronic Disease Management</div>
+          <div class="card-body-text">Expert ongoing care and personal monitoring for diabetes, hypertension, heart disease, cholesterol, and related conditions.</div>
         </div>
+        <div class="card-subtext">Core Service · Coordinated Care</div>
       </div>
-      <div class="cov-item">
-        <div class="cov-check">✓</div>
+
+      <div class="content-card">
         <div>
-          <div class="cov-title">Preventive Screenings & Immunizations</div>
-          <div class="cov-sub">Labs, cancer screenings, flu & pneumonia vaccines</div>
+          <div class="card-title">💉 Preventive Screenings &amp; Vaccines</div>
+          <div class="card-body-text">Essential medical lab tests, vital cancer screenings, plus timely flu and pneumonia immunizations.</div>
         </div>
+        <div class="card-subtext">Core Service · Preventive Health</div>
       </div>
-      <div class="cov-item">
-        <div class="cov-check">✓</div>
+
+      <div class="content-card">
         <div>
-          <div class="cov-title">Medication Management</div>
-          <div class="cov-sub">Review, coordination, and refills across all your prescriptions</div>
+          <div class="card-title">💊 Medication Management</div>
+          <div class="card-body-text">Detailed reviews, clinical coordination, and safe prescription refills across all your active medications.</div>
         </div>
+        <div class="card-subtext">Core Service · Patient Safety</div>
       </div>
-      <div class="cov-item">
-        <div class="cov-check">✓</div>
+
+      <div class="content-card">
         <div>
-          <div class="cov-title">Care Coordination</div>
-          <div class="cov-sub">Referrals to Sharp specialists, labs, and imaging</div>
+          <div class="card-title">🤝 Network Care Coordination</div>
+          <div class="card-body-text">Streamlined medical referrals to premier Sharp specialists, diagnostic imaging centers, and advanced testing facilities.</div>
         </div>
+        <div class="card-subtext">Core Service · Sharp Affiliated</div>
       </div>
+
+      <div class="content-card">
+        <div>
+          <div class="card-title">⚖️ Advanced Medical Weight Loss</div>
+          <div class="card-body-text">Physician-supervised programs incorporating modern GLP-1 therapies, nutritional guidance, and body composition monitoring.</div>
+        </div>
+        <div class="card-subtext">Core Service · Patient Support</div>
+      </div>
+
     </div>
+
   </div>
 </section>
 
-<!-- REVIEWS -->
-<section class="reviews">
+<!-- BENEFITS SECTION (Why Choose Dr. K?) -->
+<section class="section-benefits" id="why-choose-dr-k">
   <div class="container">
-    <p class="eyebrow">Verified patient reviews</p>
-    <h2>What patients say about Dr. K</h2>
-    <div class="rating-row">
-      <span class="rating-num">4.9</span>
+    <p class="eyebrow">Why choose Dr. Kuppurajan</p>
+    <h2>Why Choose Dr. K?</h2>
+    
+    <div class="unpacked-container" style="background: transparent; border: none; padding: 0;">
+      
+      <div class="content-card" style="background: var(--brand); border-color: rgba(255,255,255,0.15);">
+        <div>
+          <div class="card-title">🤝 Genuine Doctor-Patient Partnership</div>
+          <div class="card-body-text">Your time with Dr. K is completely your time. No rushing, no hand-offs, and dedicated attention given to every health concern you bring up.</div>
+        </div>
+        <div class="card-subtext">Internal medicine the way it should be · Unhurried, Personal Appointments</div>
+      </div>
+
+      <div class="content-card" style="background: var(--brand); border-color: rgba(255,255,255,0.15);">
+        <div>
+          <div class="card-title">📈 Continuity Across Years</div>
+          <div class="card-body-text">He tracks your complete medical history and builds a genuine, long-term relationship centered around your preventative health goals.</div>
+        </div>
+        <div class="card-subtext">Long-Term Relationship · Preventative Focus</div>
+      </div>
+
+      <div class="content-card" style="background: var(--brand); border-color: rgba(255,255,255,0.15);">
+        <div>
+          <div class="card-title">🏆 Sharp Community Recognition &amp; Affiliation</div>
+          <div class="card-body-text">Recognized for clinical excellence by Sharp Community Medical Group, ensuring seamless specialist referrals, coordinated network care, and trusted medical resources directly within the system.</div>
+        </div>
+        <div class="card-subtext">Sharp Affiliated &amp; Recognized · Clinical Excellence</div>
+      </div>
+
+      <div class="content-card" style="background: var(--brand); border-color: rgba(255,255,255,0.15);">
+        <div>
+          <div class="card-title">📍 Convenient Imperial Beach Location</div>
+          <div class="card-body-text">Conveniently located at 707 Palm Ave with free parking and direct MTS bus access (Rte 933/934). A local physician who deeply understands and serves our community.</div>
+        </div>
+        <div class="card-subtext">Right Here in Imperial Beach · Accessibility</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEWS SECTION -->
+<section class="section-reviews">
+  <div class="container">
+    <p class="eyebrow" style="color:#7DD3FC;">Patient success stories</p>
+    <h2>What patients &amp; peers say</h2>
+    <div class="rating-row" style="color:#94a3b8;">
+      <span class="rating-num" style="color:#ffffff;">4.9 out of 5.0</span>
       <span class="rating-stars">★★★★★</span>
-      <span>52 verified ratings · Sharp HealthCare</span>
+      <span>Verified Patient &amp; Colleague Reviews</span>
     </div>
-    <div class="reviews-grid">
 
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p class="review-text">"From the moment you walk in you feel welcome. The front desk staff are friendly, efficient and wait time is minimal. Dr. Kuppurajan was very patient and took the time to listen to my concerns. Highly recommend this office for anyone looking for medical care."</p>
-        <div class="review-meta">Cici — Google Review</div>
-        <div class="review-source">VN Healthy Living · Verified Patient</div>
+    <div class="unpacked-container">
+      
+      <!-- Review 1: Dr. Nick -->
+      <div class="content-card">
+        <div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Very effective, knowledgeable, and caring doctor. He takes the time to listen, explains things clearly, and genuinely cares about his patients’ well-being. I fully trust him with the health and welfare of myself and my family."</p>
+        </div>
+        <div class="review-footer-info">
+          <div class="review-meta">Dr. Nick, MD · Peer Physician Review</div>
+          <div class="review-source">VN Healthy Living · Medical Colleague · Verified Patient</div>
+        </div>
       </div>
 
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p class="review-text">"He took his time with me and listened to each question and concern I have regarding my health. He thoroughly reviewed my medical record, discussed each medication I's prescribed and upgraded my medication accordingly to my required needs. I'm very happy and so pleased with Dr. K."</p>
-        <div class="review-meta">Verified Patient — Google Review</div>
-        <div class="review-source">VN Healthy Living · First Visit</div>
+      <!-- Review 2 -->
+      <div class="content-card">
+        <div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"From the moment you walk in you feel welcome. The front desk staff are friendly, efficient and wait time is minimal. Dr. Kuppurajan was very patient and took the time to listen to my concerns. Highly recommend this office for anyone looking for medical care."</p>
+        </div>
+        <div class="review-footer-info">
+          <div class="review-meta">Cici · Google Review</div>
+          <div class="review-source">VN Healthy Living · Verified Patient</div>
+        </div>
       </div>
 
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p class="review-text">"I was made to feel very much informed and contributing to my own healthcare. Dr. K listened, was attentive and addressed my concerns. Dr. Vijay is always on top of my care and listens to my concerns."</p>
-        <div class="review-meta">Verified Patient — Sharp HealthCare</div>
-        <div class="review-source">Sharp Community Medical Group · Verified Rating</div>
+      <!-- Review 3 -->
+      <div class="content-card">
+        <div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"La atencion que recibi de parte de todo el personal desde la recepcion, enfermera, y doctor fue atento y amable. Es un lugar muy acogedor, donde se puede sentir que se preocupan por tu bienestar."</p>
+          <p class="review-text">"The attention I received from all the staff—from the reception, nurse, and doctor—was attentive and kind. It is a very welcoming place, where you can feel that they care about your well-being.</p>
+        </div>
+        <div class="review-footer-info">
+          <div class="review-meta">Marina · Google Review</div>
+          <div class="review-source">VN Healthy Living · First Visit</div>
+        </div>
       </div>
 
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA IMAGE SECTION -->
+<section class="cta-image-section">
+  <div class="cta-image-container">
+    <p class="eyebrow" style="color:#38bdf8; margin-bottom: 6px;">Take the next step</p>
+    <h2 style="color:var(--white); margin-bottom: 20px;">Connect with Dr. K</h2>
+    
+    <img src="Dr-Vijay-Kuppurajan-Sharp-SCMG-2026-Award-of-Excellence-Plaque.png" alt="Dr. Vijay Kuppurajan Award of Excellence" class="cta-display-img">
+    
+    <p style="font-size: 14px; color: #94A3B8; margin-bottom: 24px;">
+      Recognized as Sharp's Top PCP, Dr. Kuppurajan is ready to welcome you into our medical home and establish your personalized wellness plan.
+    </p>
+    
+    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+      <a href="appointment.html" class="btn btn-blue" style="font-size: 15px; padding: 12px 24px;">📅 Request Appt</a>
+      <a href="tel:+16194297700" class="btn btn-blue" style="font-size: 15px; padding: 12px 24px;">📞 Call (619) 429-7700 Today</a>
     </div>
   </div>
 </section>
 
-<!-- LOCATION -->
+<!-- LOCATION & MAP -->
 <section class="location">
   <div class="container">
     <p class="eyebrow">Find us</p>
     <h2>Located in Imperial Beach</h2>
+    
     <div class="loc-grid">
       <div class="loc-block">
-        <h3>Address</h3>
-        <p>VN Healthy Living Medical Group<br>707 Palm Ave<br>Imperial Beach, CA 91932<br><span style="font-size:12px; color:#64748B;">Next to Hampton Inn &amp; Suites</span></p>
+        <h3>Address &amp; Parking</h3>
+        <div class="contact-row-consistent">
+          <span class="icon-red">📍</span>
+          <span>707 Palm Ave, Imperial Beach, CA 91932</span>
+        </div>
+        <p style="font-size:12px; color:#64748B; margin-left: 24px;">Next to Hampton Inn &amp; Suites · <strong>Free On-Site Parking</strong></p>
       </div>
+      
       <div class="loc-block">
-        <h3>Phone</h3>
-        <a href="tel:+16194297700" class="phone-link">619-429-7700</a>
-        <p style="font-size:12px; color:#64748B;">Speak directly with our team</p>
-      </div>
-      <div class="loc-block">
-        <h3>Hours</h3>
-        <ul>
-          <li>Tue – Fri &nbsp; 8:00 AM – 5:00 PM</li>
-          <li>Sat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:00 AM – 12:00 PM</li>
-        </ul>
-      </div>
-      <div class="loc-block">
-        <h3>Insurance</h3>
-        <ul>
-          <li>Original Medicare (A & B)</li>
-          <li>Medicare Advantage plans</li>
-          <li>Aetna · Blue Shield · United</li>
-          <li>Tricare · Sharp Health Plan</li>
-        </ul>
+        <h3>Phone, Hours &amp; Transit</h3>
+        <div class="contact-row-consistent">
+          <span class="icon-red">📞</span>
+          <a href="tel:+16194297700" style="color:var(--accent);">619-429-7700</a>
+        </div>
+        <p style="font-size:12px; color:#64748B; margin-left: 24px;">Tue–Fri: 8am–5pm | Sat: 8am–12pm<br>🚌 <strong>MTS Bus Routes 933 / 934</strong></p>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- BOTTOM CTA -->
-<section class="bottom-cta">
-  <h2>Ready to meet Dr. K?</h2>
-  <p>New Medicare patients welcome. Call today — our team picks up.</p>
-  <a href="tel:+16194297700" class="btn-white">📞 Call 619-429-7700</a>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1679.1268420658!2d-117.1241!3d32.5841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d93574c8b6a3b7%3A0x6b6c4e07a3f4e1f0!2s707%20Palm%20Ave%2C%20Imperial%20Beach%2C%20CA%2091932!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus&q=707+Palm+Ave+Imperial+Beach+CA+(VN+Healthy+Living)+|+Hampton+Inn+Imperial+Beach" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="map-caption">📍 VN Healthy Living Medical Group · 707 Palm Ave (Right next to Hampton Inn &amp; Suites | Free Parking)</div>
+    </div>
+
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>VN Healthy Living Medical Group &nbsp;·&nbsp; 707 Palm Ave, Imperial Beach, CA 91932</p>
-  <p>Dr. Vijay Kuppurajan, MD &nbsp;·&nbsp; Board-Certified Internal Medicine &nbsp;·&nbsp; <a href="https://vnhealthyliving.com">vnhealthyliving.com</a></p>
+  <div style="margin-bottom: 6px;">
+    <span class="icon-red" style="display:inline-block; vertical-align:middle; margin-right:4px;">📍</span>
+    <span style="color:#cbd5e1;">(Right next to Hampton Inn &amp; Suites) | Free On-Site Parking | Bus Routes 933/934</span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <span class="icon-red" style="display:inline-block; vertical-align:middle; margin-right:4px;">📞</span>
+    <span style="color:#cbd5e1;">619-429-7700</span>
+  </div>
+  <p>VN Healthy Living Medical Group · Dr. Vijay Kuppurajan, MD · Board-Certified Internal Medicine · <a href="https://vnhealthyliving.com">vnhealthyliving.com</a></p>
 </footer>
 
 </body>

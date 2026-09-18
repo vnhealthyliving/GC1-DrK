@@ -20,28 +20,63 @@
             margin: 0;
             padding: 0;
         }
-        /* Unified Header */
-        header {
-            background: var(--primary);
-            color: white;
-            padding: 1.25rem 2rem;
+        /* Compact & Centered Header Container */
+        header { 
+            background: var(--primary); 
+            color: white; 
+            padding: 1rem 1.5rem; 
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            gap: 12px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 1.25rem;
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-size: 0.95rem;
+        .header-logo {
+            height: 38px;
+            width: auto;
+            display: block;
         }
-        nav a:hover, nav a.active {
-            text-decoration: underline;
+        .header-title-group {
+            display: flex;
+            flex-direction: column;
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 1.15rem; 
+            font-weight: 600; 
+            letter-spacing: -0.01em; 
+            line-height: 1.2; 
+        }
+        .header-tagline { 
+            margin: 0; 
+            font-size: 0.88rem; 
+            font-weight: 600; 
+            letter-spacing: 0.015em; 
+            color: #5eead4; 
+            white-space: nowrap;
+            line-height: 1.3;
+        }
+        nav { 
+            display: flex; 
+            gap: 1.25rem; 
+            flex-wrap: wrap; 
+        }
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            font-size: 0.9rem; 
+        }
+        nav a:hover, nav a.active { 
+            text-decoration: underline; 
         }
         .container {
             max-width: 600px;
@@ -125,14 +160,22 @@
 <body>
 
     <header>
-        <h1>VN Healthy Living Medical Group</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Dr. K</a>
-            <a href="medicare.html">Medicare</a>
-            <a href="weight-loss.html">GLP-1 Weight Loss</a>
-            <a href="appointment.html" class="active">Request Appt</a>
-        </nav>
+        <div class="header-container">
+            <div class="header-brand">
+                <img src="00_VN_Healthy_Living_Logo_3D.png" alt="VN Healthy Living Logo" class="header-logo">
+                <div class="header-title-group">
+                    <h1>VN Healthy Living Medical Group</h1>
+                    <span class="header-tagline">Your Health is in the Palm of Your Hands</span>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Dr. K</a>
+                <a href="medicare.html">Medicare</a>
+                <a href="weight-loss.html">GLP-1 Weight Loss</a>
+                <a href="appointment.html" class="active">Request Appt</a>
+            </nav>
+        </div>
     </header>
 
     <div class="container">

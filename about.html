@@ -5,39 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Dr. Vijay Kuppurajan | DrK.Care</title>
     <style>
-        :root { --primary: #1e3a8a; --accent: #0d9488; --bg: #f8fafc; --text: #334155; }
+        :root { --primary: #1e3a8a; --accent: #0d9488; --bg: #f8fafc; --text: #334155; --red: #dc2626; }
         body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
-        header { background: var(--primary); color: white; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        header h1 { margin: 0; font-size: 1.25rem; }
-        nav a { color: white; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; }
-        .container { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; background: white; padding: 2.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        h2 { color: var(--primary); }
-        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 2rem; margin-top: 4rem; font-size: 0.875rem; }
+        
+        /* Compact & Centered Header Container */
+        header { 
+            background: var(--primary); 
+            color: white; 
+            padding: 1rem 1.5rem; 
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-logo {
+            height: 38px;
+            width: auto;
+            display: block;
+        }
+        .header-title-group {
+            display: flex;
+            flex-direction: column;
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 1.15rem; 
+            font-weight: 600; 
+            letter-spacing: -0.01em; 
+            line-height: 1.2; 
+        }
+        .header-tagline { 
+            margin: 0; 
+            font-size: 0.88rem; 
+            font-weight: 600; 
+            letter-spacing: 0.015em; 
+            color: #5eead4; /* Contrasting, matching light teal */
+            white-space: nowrap;
+            line-height: 1.3;
+        }
+        nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { text-decoration: underline; }
+
+        /* Crisp Hero Section */
+        .hero { background: white; padding: 2rem 1.5rem 1.5rem 1.5rem; text-align: center; border-bottom: 1px solid #e2e8f0; }
+        .hero h2 { 
+            color: var(--primary); 
+            font-size: 1.85rem; 
+            font-weight: 800; 
+            letter-spacing: -0.03em; 
+            margin: 0 auto 0.5rem auto; 
+            line-height: 1.2; 
+        }
+        .hero p { 
+            margin: 0 auto; 
+            font-size: 1rem; 
+            font-weight: 600; 
+            max-width: 750px; 
+            color: var(--accent); 
+            letter-spacing: -0.01em;
+            line-height: 1.5;
+        }
+
+        .container { max-width: 900px; margin: 1.5rem auto; padding: 0 1.5rem; background: white; padding: 2.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .container h3 { margin-top: 0; margin-bottom: 0.5rem; color: #0f172a; }
+        .container p { margin: 0 0 1rem 0; }
+        
+        ul { margin: 0 0 1.5rem 1.25rem; color: var(--text); }
+        li { margin-bottom: 0.5rem; }
+
+        /* Award Showcase Styles */
+        .award-section { margin-bottom: 2rem; text-align: center; background: #fffbeb; padding: 1.5rem; border-radius: 0.5rem; border: 1px solid #fde68a; }
+        .award-image-container { width: 100%; max-width: 750px; margin: 0 auto; overflow: hidden; border-radius: 0.375rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .award-image-container img { width: 100%; height: auto; display: block; }
+
+        /* Contact & Community Row */
+        .contact-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.25rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .icon-red {
+            color: var(--red);
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 1.5rem; margin-top: 3rem; font-size: 0.85rem; }
+
+        /* Mobile responsiveness adjustments */
+        @media (max-width: 768px) {
+            .container { padding: 1.25rem; }
+            .hero h2 { font-size: 1.5rem; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>VN Healthy Living Medical Group</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Dr. K</a>
-            <a href="medicare.html">Medicare</a>
-            <a href="weight-loss.html">GLP-1 Weight Loss</a>
-            <a href="appointment.html">Request Appt</a>
-       </nav>
+        <div class="header-container">
+            <div class="header-brand">
+                <img src="00_VN_Healthy_Living_Logo_3D.png" alt="VN Healthy Living Logo" class="header-logo">
+                <div class="header-title-group">
+                    <h1>VN Healthy Living Medical Group</h1>
+                    <span class="header-tagline">Your Health is in the Palm of Your Hands</span>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Dr. K</a>
+                <a href="medicare.html">Medicare</a>
+                <a href="weight-loss.html">GLP-1 Weight Loss</a>
+                <a href="appointment.html">Request Appt</a>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <h2>About Dr. Vijay Kuppurajan, MD</h2>
-        <p>Dr. Vijay Kuppurajan is a board-certified internal medicine physician dedicated to providing patient-centered, evidence-based care. Practicing in Imperial Beach, Dr. K focuses on unhurried, thorough consultations that emphasize long-term wellness rather than corporate 10-minute rushed appointments.</p>
-        <p><strong>Credentials & Background:</strong></p>
-        <ul>
-            <li>Residency & Internship: Texas A&M University</li>
-            <li>Board-Certified Internal Medicine Specialist</li>
-            <li>Serving Imperial Beach, Coronado, and South San Diego</li>
-        </ul>
+
+    <div class="hero">
+        <h2>Meet Dr. K, Who Puts <span style="color: #047857;">YOU FIRST</span> in Imperial Beach</h2>
+        <p>Board-certified Internal Medicine Specialist dedicated to patient-centered, evidence-based care.</p>
     </div>
-    <footer>
-        <p>&copy; 2026 VN Healthy Living Medical Group – Dr. Vijay Kuppurajan.</p>
-    </footer>
+
+    <div class="container">
+        <!-- Featured Award / Composite Image -->
+        <div class="award-section">
+            <div class="award-image-container">
+                <img src="VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Composite.png" alt="Dr. K SCMG Award of Excellence Composite">
+            </div>
+        </div>
+
+        <h3>Background</h3>
+        <p>Dr. Vijay Kuppurajan has a uniquely diverse global background. He trained under Dr. Mohan at the Madras Diabetes Research Foundation in India, studied abroad in Australia, completed medical school in Antigua and Miami, and finished his residency at Texas A&M, where he received the Dr. Sam Hooper Compassionate Care Award voted on by peers and patients. He was also recently honored with the Top PCP Award by Sharp-SCMG. Dr. K specializes in Preventive Care, Annual Wellness Visits, Chronic Disease Management, Senior Services, and Medical Weight Management.</p>
+        <p>During residency, Dr. K volunteered as a Big Brother for CASA (Court Appointed Special Advocacy) to support the best interests of vulnerable children in foster care. He also volunteered for the Sankara Eye Foundation, helping provide free eye care to the rural poor. Currently, he visits National City Skilled Nursing Home facilities weekly to support local seniors.</p>
+    
+        <h3>Care Philosophy</h3>
+        <p>At VN Healthy Living, Dr. K believes every patient deserves unhurried, concierge-level care. He takes time to listen, explain options clearly, and make decisions with you rather than for you. Whether managing a chronic condition or focusing on prevention, your voice guides your care. Compassion is the language we all share.</p>
+        <p>"My goal is to ensure every patient feels heard and empowered," says Dr. K. By partnering with Sharp, we offer the network resources of a major medical system paired with the personal warmth of a dedicated community clinic.</p>
+      
+        <h3>Credentials</h3>
+        <ul>
+            <li>Residency and Internship: Texas A&M University</li>
+            <li>Board-Certified Internal Medicine Specialist</li>
+            <li>Dr. Sam Hooper Compassionate Care Award, Texas A&M University, TX, 2023</li>
+            <li>Top Coronado PCP Award, Sharp-SCMG, CA, 2026</li>
+        </ul>
+
+        <div style="margin-top: 2rem;">
+            <h3>Serving Our Local Community</h3>
+            <p>Serving Imperial Beach, Coronado, and South San Diego communities. We proudly accept Original Medicare, most major PPOs, and Sharp-affiliated Medicare Advantage plans.</p>
+            
+            <div class="contact-row">
+                <div class="contact-item">
+                    <span class="icon-red">📍</span>
+                    <span>707 Palm Ave, Imperial Beach, CA 91932 (Next to Hampton Inn & Suites) & MTS Bus Routes 933 / 934</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon-red">📞</span>
+                    <span>(619) 429-7700</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- FOOTER -->
+<footer>
+  <div style="margin-bottom: 6px;">
+    <span class="icon-red" style="display:inline-block; vertical-align:middle; margin-right:4px;">📍</span>
+    <span style="color:#cbd5e1;">(Right next to Hampton Inn &amp; Suites) | Free On-Site Parking | Bus Routes 933/934</span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <span class="icon-red" style="display:inline-block; vertical-align:middle; margin-right:4px;">📞</span>
+    <span style="color:#cbd5e1;">619-429-7700</span>
+  </div>
+  <p>VN Healthy Living Medical Group &nbsp;·&nbsp; Dr. Vijay Kuppurajan, MD &nbsp;·&nbsp; Board-Certified Internal Medicine &nbsp;·&nbsp; <a href="https://vnhealthyliving.com">vnhealthyliving.com</a></p>
+</footer>
+
 </body>
 </html>
