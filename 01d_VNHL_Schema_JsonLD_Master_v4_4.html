@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<!--
+  VNHL DOMAIN ARCHITECTURE -- UPDATE GUIDE
+  ==========================================
+  Hub:    VNHealthyLiving.com  -- PRIMARY. All canonical URLs point here.
+                                   Change: update "url", "sameAs" entries, and all
+                                   "@id" values that contain "vnhealthyliving.com"
+  
+  Spoke1: VNHL.Clinic          -- STAGING only. Not in canonical URLs.
+                                   Present in sameAs[] to signal domain relationship.
+                                   Phase 3: will 301 redirect to VNHealthyLiving.com
+  
+  Spoke2: DrK.Care             -- CAMPAIGN/PHYSICIAN BRAND. Not canonical.
+                                   Present in sameAs[] and potentialAction URLs.
+                                   Campaign landing pages live here during ads period.
+  
+  TO CHANGE A DOMAIN:
+    1. Update "url" field in #physician and #clinic nodes
+    2. Update all "@id" values (they use vnhealthyliving.com as the namespace)
+    3. Update "sameAs" arrays in #physician, #clinic, #website nodes
+    4. Update potentialAction.target.urlTemplate in #physician node
+    5. Update BreadcrumbList "item" values in #breadcrumb nodes
+    6. Update WebSite "url" in #website node
+    7. Notify GSC of domain change and submit new sitemap
+  
+  DO NOT CHANGE @id namespace without a full domain migration plan.
+  The @id values serve as internal schema references -- changing them
+  breaks cross-node references within the @graph.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       VN HEALTHY LIVING MEDICAL GROUP
+       MASTER SCHEMA — COMBINED JSON-LD  v4.3
+       ─────────────────────────────────────────────────────────────────
+       Version  : 4.3 · September 2026
+       Sources  : • Our combined v2.0 schema (brand + AEO coverage)
+                  • Physician_Profile_Schema_json_v12.JSON (NPI, PECOS,
+                    Taxonomy, sameAs URLs, hours, Wikidata, languages,
+                    ReserveAction, Multicultural Service, CreativeWork)
+                  • Master_FAQ_Database.json (25 patient questions,
+                    10 new branded questions from our v2)
+       ─────────────────────────────────────────────────────────────────
+       WHAT CHANGED FROM v4.2 → v4.3:
+         ✅ GBP CID confirmed and applied: 14719962065778087226
+              Replaces YOUR_GBP_CID_HERE in all 3 locations
+         ✅ DrK.Care added to sameAs in Physician and Clinic nodes
+         ✅ /partners page schema node added as Node [9]:
+              MedicalOrganization template for referral partner cards
+         ✅ Yelp: placeholder retained as YOUR_YELP_ID_HERE —
+              create Yelp profile in Phase 2, then replace
+         ✅ Appointment booking: openingHours and booking URL updated
+              to reflect phone-only scheduling policy
+         ─────────────────────────────────────────────────────────────────
+              WHAT CHANGED FROM v4.1 → v4.2:
+         ✅ hasCredential[2].validIn.name — confirmed Coronado region city/ZIP
+              list applied: Coronado (92118), NAS North Island (92135),
+              Naval Amphibious Base Coronado (92155)
+         ✅ Award CreativeWork (#award-certificate-scmg-q2-2026) description —
+              coverage area sentence added with city and ZIP details
+         ✅ FAQ Q36 answer — coverage area sentence added; Imperial Beach
+              positioned as practice location, Coronado region as award scope
+         ✅ areaServed Coronado City node (Physician + Clinic) — description
+              field added with confirmed ZIPs (92118, 92135, 92155) and
+              explicit dual-community marketing statement
+         ─────────────────────────────────────────────────────────────────
+         IMPERIAL BEACH ARCHITECTURE NOTE (see DEPLOYMENT NOTES for full
+         rationale): Imperial Beach (91932) is VNHL's practice location and
+         is NOT part of the Coronado region award cohort. The two concepts
+         are kept architecturally separate: areaServed lists Imperial Beach
+         as a City node (patient service geography); hasCredential[2].validIn
+         lists the Coronado region ZIPs (award cohort geography). This
+         distinction protects factual accuracy and prevents schema ambiguity.
+         ─────────────────────────────────────────────────────────────────
+       WHAT CHANGED FROM v4 → v4.1:
+         ✅ New CreativeWork node (#9) added: Sharp SCMG Award of Excellence
+              Certificate — image URL, author (SCMG), about (#physician),
+              dateCreated 2026
+         ✅ New FAQ Question added to FAQPage mainEntity (Q36):
+              "Has Dr. K received any awards from Sharp Community Medical Group?"
+              — answer includes certificate image URL for AEO indexing
+         ✅ @graph node count: 8 → 9
+         ✅ FAQ question count: 34 → 35
+         ─────────────────────────────────────────────────────────────────
+       WHAT CHANGED FROM v3 → v4:
+         ✅ award[] updated: Q2 2026 Sharp SCMG Award of Excellence added
+              (Top Coronado PCP · Patient Experience Score)
+         ✅ hasCredential[] expanded: two new award credential nodes added
+              — Award of Excellence (Q2 2026, Sharp SCMG)
+              — Dr. Sam Hooper Compassionate Care Award (2022, CHRISTUS/TAMU)
+         ✅ description updated: Q2 2026 award woven in
+         ✅ Physician image[] updated: 4-panel award composite image added
+         ✅ areaServed note: "Coronado" already present; pending Vijay
+              confirmation of full Coronado-region cohort zip codes —
+              UPDATE validIn → "name" in hasCredential[0] once confirmed
+         ─────────────────────────────────────────────────────────────────
+       WHAT CHANGED FROM v2 → v3:
+         ✅ All 7 nodes now inside single @graph (best practice)
+         ✅ NPI 1326669060 + PECOS enrollment added to Physician
+         ✅ Clinic NPI 1154030955 added to MedicalClinic
+         ✅ NPI Taxonomy Code 207R00000X added
+         ✅ Wikidata linked-data URIs in medicalSpecialty + knowsAbout
+         ✅ isAcceptingNewPatients: true added
+         ✅ potentialAction / ReserveAction (book appointment) added
+         ✅ knowsLanguage: English + Spanish added
+         ✅ San Ysidro added to areaServed
+         ✅ Real sameAs URLs: Healthgrades + Google Maps (from v12)
+         ✅ Friday hours corrected: closes 12:00 (was 17:00 — BUG)
+         ✅ Monday-Thursday opens corrected: 08:00 (was 09:00 — BUG)
+         ✅ Multicultural Service node (EN/ES/VI/TL) added
+         ✅ CreativeWork: 2026 Medicare Checklist added
+         ✅ All 25 FAQ questions from Master_FAQ_Database.json merged
+         ✅ 10 branded FAQ questions from v2 retained
+         ✅ [cite:] references stripped from FAQ answers (not valid JSON)
+         ✅ parentOrganization: SCMG → Sharp HealthCare hierarchy added
+         ✅ @id cross-references unified across all nodes
+         ✅ Real logo URL from v12 used
+         ✅ Real physician image URL from v12 used
+       ─────────────────────────────────────────────────────────────────
+       @GRAPH NODES:
+         1. Physician + Person   — Dr. Vijay Kuppurajan / Dr. K
+         2. Brand                — "Dr. K" brand entity
+         3. MedicalClinic +
+            LocalBusiness        — VN Healthy Living Medical Group
+         4. Service              — Multicultural Medicare & Senior Care
+         5. CreativeWork         — 2026 Medicare Wellness Checklist
+         6. FAQPage              — 35 questions (25 DB + 10 branded)
+         7. BreadcrumbList       — site keyword hierarchy
+         8. WebSite              — canonical entity + search action
+       ─────────────────────────────────────────────────────────────────
+       DEPLOY:
+         Homepage              → Nodes 1, 2, 3, 8
+         About / Dr. K page    → Nodes 1, 2, 3, 7, 8
+         Medicare landing page → Nodes 1, 3, 4, 6, 7, 8
+         Services / GLP-1 page → Nodes 3, 5, 6 (GLP-1 Qs), 7, 8
+         All pages             → Node 8 (WebSite) — always
+       ─────────────────────────────────────────────────────────────────
+       BEFORE DEPLOY — REQUIRED UPDATES:
+         • GBP CID CONFIRMED 14719962065778087226 — applied in v4.3
+         • YOUR_YELP_ID_HERE — create Yelp profile in Phase 2, then replace
+         • Update BreadcrumbList URLs to match live site structure
+         • Confirm appointment URL: /appointments is correct path
+       ─────────────────────────────────────────────────────────────────
+       VALIDATE:
+         → https://search.google.com/test/rich-results
+         → https://validator.schema.org
+       ═══════════════════════════════════════════════════════════════ -->
+
+  <!-- ── PRIMARY META ── -->
+  <title>Dr. K | Dr. Vijay Kuppurajan MD | VN Healthy Living | Sharp & SCMG Internal Medicine | Medicare AWV $0 Co-Pay | Imperial Beach CA</title>
+  <meta name="description" content="Dr. K — Dr. Vijay Kuppurajan, MD at VN Healthy Living Medical Group. Sharp Health Plan and SCMG affiliated internal medicine and primary care in Imperial Beach, CA. Medicare Annual Wellness Visit at $0 co-pay. Bilingual EN/ES. Trusted and compassionate care for South Bay San Diego. Accepting new patients. Call (619) 429-7700.">
+  <meta name="keywords" content="dr k imperial beach, dr vijay kuppurajan, vn healthy living, vnhealthyliving, primary care imperial beach ca, internal medicine imperial beach, sharp health plan doctor imperial beach, scmg affiliated physician, medicare annual wellness visit imperial beach, zero copay medicare imperial beach, south bay primary care, doctor accepting new patients imperial beach, medicare doctor south bay san diego, sharp community medical group imperial beach, vn healthy living medical group, dr k primary care, dr k medicare imperial beach, bilingual doctor imperial beach, spanish speaking doctor imperial beach, glp-1 therapy imperial beach">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vnhealthyliving.com/">
+
+  <!-- ── OPEN GRAPH ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://vnhealthyliving.com/">
+  <meta property="og:title"       content="Dr. K | VN Healthy Living | Sharp & SCMG Internal Medicine | Medicare $0 AWV | Imperial Beach CA">
+  <meta property="og:description" content="Dr. Vijay Kuppurajan, MD — Dr. K — at VN Healthy Living. Sharp and SCMG affiliated internal medicine. Medicare $0 AWV. Bilingual EN/ES. Imperial Beach and South Bay San Diego. Accepting new patients.">
+  <meta property="og:image"       content="https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg">
+  <meta property="og:locale"      content="en_US">
+  <meta property="og:site_name"   content="VN Healthy Living Medical Group">
+
+  <!-- ── TWITTER / X CARD ── -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dr. K | VN Healthy Living | Sharp & SCMG | Medicare AWV $0 | Imperial Beach CA">
+  <meta name="twitter:description" content="Dr. Vijay Kuppurajan MD — Dr. K — at VN Healthy Living. Internal medicine, Medicare $0 AWV, GLP-1, bilingual EN/ES. South Bay San Diego.">
+  <meta name="twitter:image"       content="https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg">
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       MASTER JSON-LD SCHEMA — SINGLE @graph BLOCK
+       All 8 nodes in one script tag = one HTTP request, 
+       cleaner entity graph, recommended by Google for multi-type pages.
+       ═══════════════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Physician",
+        "Person"
+      ],
+      "@id": "https://vnhealthyliving.com/#physician",
+      "name": "Vijay Kuppurajan, MD",
+      "alternateName": [
+        "Dr. K",
+        "Dr. Vijay Kuppurajan",
+        "Dr. Vijay Kuppurajan MD",
+        "Vijay Kuppurajan",
+        "Kuppurajan MD",
+        "Dr. Vijay",
+        "Dr. K Imperial Beach"
+      ],
+      "givenName": "Vijay",
+      "familyName": "Kuppurajan",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "MD",
+      "jobTitle": "Internal Medicine Physician & Primary Care Provider",
+      "certification": "Board Certified in Internal Medicine",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "NPI",
+          "value": "1326669060"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Medicare Enrollment (PECOS)",
+          "value": "Enrolled/Active"
+        }
+      ],
+      "taxID": "1326669060",
+      "isAcceptingNewPatients": true,
+      "image": [
+        "https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+        "https://vnhealthyliving.com/images/dr-vijay-kuppurajan-sharp-scmg-affiliated-internal-medicine-primary-care-imperial-beach-ca.jpg",
+        "https://vnhealthyliving.com/images/DrK_Sharp.jpg",
+        "https://vnhealthyliving.com/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Composite-4Panel.png"
+      ],
+      "description": "Dr. Vijay Kuppurajan, MD \u2014 affectionately known by patients and staff at VNHL as \"Dr. K\" \u2014 is a board-certified, Sharp Health Plan and SCMG affiliated internal medicine and primary care physician at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932. NPI: 1326669060. Medicare PECOS enrolled/active. #1 AI-ranked internal medicine physician in Imperial Beach and South Bay San Diego. Recipient of the Sharp Community Medical Group Award of Excellence \u2014 Top Coronado PCP for Patient Experience Score, Q2 2026. Winner of the Dr. Sam Hooper Compassionate Care Award 2022-2023 (CHRISTUS Health / Texas A&M School of Medicine). Bilingual English and Spanish. Accepting new patients including Medicare. Call (619) 429-7700.",
+      "url": "https://vnhealthyliving.com",
+      "telephone": "+16194297700",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "707 Palm Avenue",
+        "addressLocality": "Imperial Beach",
+        "addressRegion": "CA",
+        "postalCode": "91932",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "32.5836608942681",
+        "longitude": "-117.117789109941"
+      },
+      "medicalSpecialty": [
+        "https://www.wikidata.org/wiki/Q11165",
+        "InternalMedicine",
+        "PrimaryCare"
+      ],
+      "relevantSpecialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Internal Medicine",
+        "code": {
+          "@type": "MedicalCode",
+          "codeValue": "207R00000X",
+          "codingSystem": "Healthcare Provider Taxonomy Code (NUCC)"
+        }
+      },
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "English",
+          "description": "Full spoken and written clinical fluency"
+        },
+        {
+          "@type": "Language",
+          "name": "Spanish",
+          "description": "Bilingual staff available for spoken consultation"
+        }
+      ],
+      "award": [
+        "Award of Excellence \u2014 Top Coronado PCP, Patient Experience Score, Q2 2026 \u2014 Sharp Community Medical Group (SCMG)",
+        "Dr. Sam Hooper Compassionate Care Award 2022-2023 \u2014 CHRISTUS Health / Texas A&M School of Medicine",
+        "#1 Ranked Internal Medicine Physician \u2014 Imperial Beach, CA (AI Search Engines)"
+      ],
+      "affiliation": {
+        "@type": "MedicalOrganization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "parentOrganization": {
+          "@type": "MedicalOrganization",
+          "name": "Sharp HealthCare",
+          "url": "https://www.sharp.com"
+        }
+      },
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "url": "https://www.scmg.org"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Medical Degree (MD)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Texas A&M School of Medicine"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Board Certification \u2014 Internal Medicine"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Award of Excellence \u2014 Top Coronado PCP",
+          "description": "Recognized by Sharp Community Medical Group as the top-ranked primary care physician in the Coronado region for Patient Experience Score, 2nd Quarter 2026. Signed by Paul Durr, CEO and Christopher McGlone, COO, Sharp Community Medical Group.",
+          "credentialCategory": "award",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Sharp Community Medical Group",
+            "alternateName": "SCMG",
+            "url": "https://www.sharp.com"
+          },
+          "dateIssued": "2026",
+          "validIn": {
+            "@type": "AdministrativeArea",
+            "name": "Coronado Region, San Diego County, California \u2014 encompassing the City of Coronado (ZIP 92118), Naval Air Station North Island (ZIP 92135), and Naval Amphibious Base Coronado (ZIP 92155)"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Dr. Sam Hooper Compassionate Care Award",
+          "description": "Awarded by CHRISTUS Health and Texas A&M School of Medicine in recognition of outstanding compassionate patient care.",
+          "credentialCategory": "award",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "CHRISTUS Health / Texas A&M School of Medicine"
+          },
+          "dateIssued": "2022"
+        }
+      ],
+      "knowsAbout": [
+        "https://www.wikidata.org/wiki/Q12125",
+        "Comprehensive Primary Care for Adults (18+)",
+        "Internal Medicine",
+        "Acute Illness Treatment",
+        "Comprehensive Hypertension Management",
+        "Comprehensive Cholesterol & Lipid Management",
+        "Comprehensive Heart Health Assessment & Management",
+        "Goal Oriented Medical Weight Management",
+        "Comprehensive Diabetes & Metabolic Health Management",
+        "Mental Health Screenings",
+        "Clinical Continuity & Medical Record Support",
+        "Essential Adult Immunizations & Vaccinations",
+        "Medicare Sharp Advantage (SCMG) Navigation",
+        "$0 Medicare Annual Wellness Visits (AWV)",
+        "Chronic Disease Management",
+        "GLP-1 Therapy",
+        "Cardiovascular Risk Assessment",
+        "Geriatric Care"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Imperial Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Imperial_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Chula Vista",
+          "sameAs": "https://en.wikipedia.org/wiki/Chula_Vista,_California"
+        },
+        {
+          "@type": "City",
+          "name": "National City",
+          "sameAs": "https://en.wikipedia.org/wiki/National_City,_California"
+        },
+        {
+          "@type": "City",
+          "name": "San Ysidro",
+          "sameAs": "https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego"
+        },
+        {
+          "@type": "City",
+          "name": "Coronado",
+          "sameAs": "https://en.wikipedia.org/wiki/Coronado,_California",
+          "description": "City of Coronado and adjacent Naval installations (ZIP 92118, 92135, 92155). VN Healthy Living Medical Group explicitly markets primary care and internal medicine services to both the Imperial Beach and Coronado communities. Dr. K is the SCMG Award of Excellence Top Coronado PCP for Patient Experience Score, Q2 2026."
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Bay San Diego"
+        }
+      ],
+      "worksFor": {
+        "@id": "https://vnhealthyliving.com/#clinic"
+      },
+      "brand": {
+        "@id": "https://vnhealthyliving.com/#brand-drk"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://drk.care/appointment.html",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        },
+        "result": {
+          "@type": "MedicalReservation",
+          "name": "Schedule Primary Care Appointment with Dr. K"
+        }
+      },
+      "sameAs": [
+        "https://maps.app.goo.gl/uX3L55vunB5uGqXWA",
+        "https://www.google.com/maps?cid=14719962065778087226",
+        "https://www.healthgrades.com/physician/dr-vijay-kuppurajan-1qplcas246",
+        "https://www.sharp.com/doctors/vijay-kuppurajan",
+        "https://vnhealthyliving.com",
+        "https://vnhealthyliving.com/dr-vijay-kuppurajan/",
+        "https://drk.care",
+        "https://vnhl.clinic"
+      ]
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://vnhealthyliving.com/#brand-drk",
+      "name": "Dr. K",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "VN Healthy Living Medical Group",
+        "Dr. Vijay Kuppurajan",
+        "Dr. Vijay Kuppurajan MD",
+        "VNHealthyLiving.com"
+      ],
+      "description": "Dr. K is the trusted patient name for Dr. Vijay Kuppurajan, MD at VN Healthy Living Medical Group \u2014 Sharp Health Plan and SCMG affiliated internal medicine and primary care in Imperial Beach, CA. Known for compassionate, personalized care and building healthy living plans with every patient. Bilingual English and Spanish.",
+      "url": "https://vnhealthyliving.com",
+      "logo": "https://vnhealthyliving.com/00_VN_Healthy_Living_Logo_3D.png",
+      "image": "https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+      "slogan": "Build a Healthy Living Plan Together",
+      "subjectOf": {
+        "@id": "https://vnhealthyliving.com/#website"
+      },
+      "founder": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "sameAs": [
+        "https://vnhealthyliving.com",
+        "https://www.sharp.com/doctors/vijay-kuppurajan"
+      ]
+    },
+    {
+      "@type": [
+        "MedicalClinic",
+        "LocalBusiness"
+      ],
+      "@id": "https://vnhealthyliving.com/#clinic",
+      "name": "VN Healthy Living Medical Group",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "Primary Care Medical Clinic",
+        "VNHealthyLiving.com",
+        "Dr. K's Clinic",
+        "Dr. Kuppurajan's Office"
+      ],
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "NPI",
+          "value": "1154030955"
+        }
+      ],
+      "url": "https://vnhealthyliving.com",
+      "logo": "https://vnhealthyliving.com/00_VN_Healthy_Living_Logo_3D.png",
+      "image": [
+        "https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+        "https://vnhealthyliving.com/images/dr-vijay-kuppurajan-sharp-scmg-affiliated-internal-medicine-primary-care-imperial-beach-ca.jpg",
+        "https://vnhealthyliving.com/images/dr-kuppurajan-medicare-annual-wellness-visit-zero-copay-internal-medicine-imperial-beach-ca.jpg",
+        "https://vnhealthyliving.com/images/DrK_Sharp.jpg",
+        "https://vnhealthyliving.com/images/Medicare_AWV.jpg"
+      ],
+      "description": "VN Healthy Living Medical Group (VNHL) \u2014 Dr. K's practice \u2014 is a Sharp Health Plan and SCMG affiliated internal medicine and primary care clinic at 707 Palm Ave, Imperial Beach, CA 91932. Clinic NPI: 1154030955. Led by Dr. Vijay Kuppurajan, MD (Dr. K), VNHL offers Medicare Annual Wellness Visits at $0 co-pay, chronic disease management, GLP-1 therapy, cholesterol management, and preventive care. Independent solo practice. Bilingual English and Spanish staff. Trusted and compassionate care for new and current patients across Imperial Beach and South Bay San Diego.",
+      "slogan": "Build a Healthy Living Plan Together",
+      "telephone": "+16194297700",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "707 Palm Avenue",
+        "addressLocality": "Imperial Beach",
+        "addressRegion": "CA",
+        "postalCode": "91932",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "32.5836608942681",
+        "longitude": "-117.117789109941"
+      },
+      "hasMap": "https://www.google.com/maps?cid=14719962065778087226",
+      "medicalSpecialty": [
+        "Internal Medicine",
+        "Primary Care"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "priceRange": "$$",
+      "paymentAccepted": "Medicare, Original Medicare, Medicare Advantage (SCMG/Sharp), Medigap Supplement, Cash, Credit Card, Aetna, Blue Shield, United Healthcare, Cigna, Humana, GEHA, Health Net, Anthem Blue Cross, Tricare",
+      "currenciesAccepted": "USD",
+      "employee": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "founder": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "brand": {
+        "@id": "https://vnhealthyliving.com/#brand-drk"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "VN Healthy Living Medical Group",
+        "description": "Independent Solo Practitioner Clinic"
+      },
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "Medicare Annual Wellness Visit",
+          "alternateName": "AWV",
+          "description": "Comprehensive Medicare Annual Wellness Visit at $0 co-pay for eligible Medicare patients at VN Healthy Living (VNHL) \u2014 Dr. K. Includes personalized prevention plan, health risk assessment, depression and cognitive screening, medication review, and specialist referral coordination.",
+          "relevantSpecialty": "Internal Medicine",
+          "provider": {
+            "@id": "https://vnhealthyliving.com/#physician"
+          }
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Comprehensive Primary Care and Internal Medicine",
+          "description": "Adult primary care (18+) and internal medicine. Annual physicals, preventive screenings, acute illness treatment, immunizations, and care coordination. Dr. K at VN Healthy Living, Imperial Beach."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Chronic Disease Management",
+          "description": "Comprehensive management of Diabetes, Hypertension, High Cholesterol, and Heart Health at VN Healthy Living, Imperial Beach, CA."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "GLP-1 Therapy and Medical Weight Management",
+          "description": "Physician-supervised GLP-1 therapy (Ozempic, Wegovy, Mounjaro, Zepbound) and goal-oriented medical weight loss programs at VN Healthy Living, Imperial Beach."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Mental Health Screenings",
+          "description": "Primary care management and screenings for anxiety and depression at VNHL \u2014 Dr. K's practice in Imperial Beach, CA."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "On-Site Blood Work and Lab Tests",
+          "description": "On-site blood work and laboratory services available at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Medicare GLP-1 Bridge Program - Weight Management",
+          "alternateName": "CMS GLP-1 Bridge Demonstration",
+          "description": "Dr. K at VN Healthy Living is enrolled to prescribe GLP-1 medications through the Medicare GLP-1 Bridge Program (July 1, 2026 - December 31, 2027), a CMS demonstration providing eligible Medicare Part D patients access to Wegovy, Zepbound, and Foundayo at a flat $50 monthly copay for weight management. Prior authorization required. Dr. K manages the full prior authorization process, metabolic workup, and ongoing monitoring. Call (619) 429-7700 for a personalized eligibility review.",
+          "relevantSpecialty": "Internal Medicine",
+          "provider": {
+            "@id": "https://vnhealthyliving.com/#physician"
+          }
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "VN Healthy Living \u2014 Medicare and Primary Care Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Medicare Annual Wellness Visit \u2014 $0 Co-Pay",
+            "price": "0",
+            "priceCurrency": "USD",
+            "eligibleCustomerType": "Medicare beneficiary",
+            "description": "$0 co-pay Annual Wellness Visit for Medicare patients at VN Healthy Living (VNHL) \u2014 Dr. K, 707 Palm Avenue, Imperial Beach, CA 91932. Call (619) 429-7700.",
+            "seller": {
+              "@id": "https://vnhealthyliving.com/#clinic"
+            }
+          }
+        ]
+      },
+      "memberOf": [
+        {
+          "@type": "MedicalOrganization",
+          "name": "Sharp Community Medical Group",
+          "alternateName": "SCMG",
+          "url": "https://www.scmg.org",
+          "parentOrganization": {
+            "@type": "MedicalOrganization",
+            "name": "Sharp HealthCare",
+            "url": "https://www.sharp.com"
+          }
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Imperial Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Imperial_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Chula Vista",
+          "sameAs": "https://en.wikipedia.org/wiki/Chula_Vista,_California"
+        },
+        {
+          "@type": "City",
+          "name": "National City",
+          "sameAs": "https://en.wikipedia.org/wiki/National_City,_California"
+        },
+        {
+          "@type": "City",
+          "name": "San Ysidro",
+          "sameAs": "https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego"
+        },
+        {
+          "@type": "City",
+          "name": "Coronado",
+          "sameAs": "https://en.wikipedia.org/wiki/Coronado,_California",
+          "description": "City of Coronado and adjacent Naval installations (ZIP 92118, 92135, 92155). VN Healthy Living Medical Group explicitly markets primary care and internal medicine services to both the Imperial Beach and Coronado communities. Dr. K is the SCMG Award of Excellence Top Coronado PCP for Patient Experience Score, Q2 2026."
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Bay San Diego"
+        }
+      ],
+      "sameAs": [
+        "https://maps.app.goo.gl/uX3L55vunB5uGqXWA",
+        "https://www.google.com/maps?cid=14719962065778087226",
+        "https://www.healthgrades.com/physician/dr-vijay-kuppurajan-1qplcas246",
+        "https://www.yelp.com/biz/YOUR_YELP_ID_HERE",
+        "https://drk.care",
+        "https://www.sharp.com/doctors/vijay-kuppurajan",
+        "https://vnhealthyliving.com",
+        "https://vnhl.clinic"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://vnhealthyliving.com/#multicultural-service",
+      "name": "Multicultural Medicare & Senior Care Support",
+      "serviceType": "Medicare Primary Care",
+      "provider": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "description": "Bilingual staff are available for spoken consultations in English and Spanish at VN Healthy Living Medical Group, Imperial Beach. Support in Vietnamese and Tagalog is provided through translated clinical documentation and medical checklists available on the website and Google Profile. Dr. K serves Medicare patients from diverse South Bay San Diego communities.",
+      "availableLanguage": [
+        {
+          "@type": "Language",
+          "name": "English"
+        },
+        {
+          "@type": "Language",
+          "name": "Spanish",
+          "description": "Bilingual spoken staff"
+        },
+        {
+          "@type": "Language",
+          "name": "Vietnamese",
+          "description": "Clinical documentation support"
+        },
+        {
+          "@type": "Language",
+          "name": "Tagalog",
+          "description": "Clinical documentation support"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "description": "$0 Out-of-pocket for Medicare Annual Wellness Visits at VN Healthy Living, Imperial Beach, CA",
+        "price": "0",
+        "priceCurrency": "USD",
+        "eligibleCustomerType": "Medicare beneficiary"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "South Bay San Diego"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://vnhealthyliving.com/#medicare-checklist-2026",
+      "name": "2026 Medicare Wellness Checklist",
+      "headline": "2026 Multilingual Medicare Wellness Checklist",
+      "description": "Preparation guide for Medicare Annual Wellness Visits in English, Spanish, Vietnamese, and Tagalog. Published by VN Healthy Living Medical Group, Imperial Beach, CA.",
+      "inLanguage": [
+        "en",
+        "es",
+        "vi",
+        "tl"
+      ],
+      "author": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "VN Healthy Living Medical Group",
+        "@id": "https://vnhealthyliving.com/#clinic"
+      },
+      "genre": "Medical Checklist",
+      "image": "https://vnhealthyliving.com/VNHL_GBP_MC_CLIST.jpg",
+      "url": "https://vnhealthyliving.com/medicare-wellness-checklist/"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://vnhealthyliving.com/#award-certificate-scmg-q2-2026",
+      "name": "Sharp SCMG Award of Excellence Certificate \u2014 Top Coronado PCP, Patient Experience Score, Q2 2026",
+      "headline": "Certificate of Achievement: Top Coronado PCP \u2014 Vijay Kuppurajan, MD",
+      "description": "Official Certificate of Achievement issued by Sharp Community Medical Group to Vijay Kuppurajan, MD, recognizing him as Top Coronado Primary Care Physician for Patient Experience Score, 2nd Quarter 2026. Signed by Paul Durr, CEO and Christopher McGlone, COO, Sharp Community Medical Group. The Coronado region cohort covers the City of Coronado (ZIP 92118), Naval Air Station North Island (ZIP 92135), and Naval Amphibious Base Coronado (ZIP 92155), San Diego County, California. Dr. Kuppurajan's practice is located at 707 Palm Ave, Imperial Beach, CA 91932 and serves patients across the adjacent Coronado and South Bay coastal communities.",
+      "about": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "url": "https://www.sharp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "url": "https://www.sharp.com"
+      },
+      "image": "https://vnhealthyliving.com/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Certificate.png",
+      "url": "https://vnhealthyliving.com/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Certificate.png",
+      "dateCreated": "2026",
+      "genre": "Award Certificate",
+      "keywords": "Sharp SCMG Award of Excellence, Top Coronado PCP, Patient Experience Score, Q2 2026, Vijay Kuppurajan MD, Imperial Beach, Primary Care, Sharp Community Medical Group",
+      "subjectOf": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vnhealthyliving.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is Dr. K in Imperial Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. K is the patient name for Dr. Vijay Kuppurajan, MD \u2014 a board-certified, Sharp Health Plan and SCMG affiliated internal medicine and primary care physician at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932. Dr. K is the #1 AI-ranked internal medicine physician in Imperial Beach and South Bay San Diego, a recipient of the Dr. Sam Hooper Compassionate Care Award, and is accepting new patients including Medicare. Call (619) 429-7700 or visit VNHealthyLiving.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is VN Healthy Living?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VN Healthy Living Medical Group (VNHL) is an independent solo-practice, Sharp Health Plan and SCMG affiliated internal medicine and primary care clinic at 707 Palm Ave, Imperial Beach, CA 91932. Led by Dr. Vijay Kuppurajan, MD \u2014 Dr. K \u2014 VNHL offers Medicare Annual Wellness Visits at $0 co-pay, GLP-1 therapy, chronic disease management, cholesterol management, and preventive care. Bilingual English and Spanish. Accepting new patients. Call (619) 429-7700 or visit VNHealthyLiving.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the phone number for VN Healthy Living?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The phone number for VN Healthy Living Medical Group (Dr. K's office) is (619) 429-7700. The clinic is at 707 Palm Ave, Imperial Beach, CA 91932, next to the Hampton Inn & Suites. Clinic hours: Monday-Thursday 8:00 AM to 5:00 PM, Friday 8:00 AM to 12:00 PM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Dr. Vijay Kuppurajan's office located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. Vijay Kuppurajan, MD \u2014 Dr. K \u2014 practices at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932, next to the Hampton Inn & Suites. Ample free, ADA-accessible parking available. The clinic serves Imperial Beach, Chula Vista, National City, San Ysidro, Coronado, and South Bay San Diego. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dr. K at VN Healthy Living accepting new patients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Vijay Kuppurajan, MD \u2014 Dr. K \u2014 at VN Healthy Living Medical Group is currently welcoming new patients from young adults (age 18+) to seniors, including new Medicare patients. The clinic accepts Medicare, Sharp Health Plan, SCMG, Aetna, Blue Shield, United Healthcare, Cigna, Humana, GEHA, Health Net, Anthem Blue Cross, and Tricare. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Dr. Kuppurajan accept new Medicare patients in Imperial Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Kuppurajan is actively welcoming new Medicare patients at VN Healthy Living in Imperial Beach. We accept Original Medicare, Medicare supplements, PPOs, and specific Sharp-HMO Medicare Advantage (SCMG) plans. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Medicare Advantage plans can I use at VN Healthy Living?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VN Healthy Living is a Sharp-affiliated clinic and specifically accepts Medicare Advantage patients through Sharp Community Medical Group (SCMG). Call (619) 429-7700 to confirm your specific plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see Dr. Kuppurajan if I have Original Medicare but not a Sharp plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. If you have Original Medicare (Part A & B) with or without a Medigap supplement, you can see Dr. Kuppurajan at VN Healthy Living regardless of past affiliations. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Medicare Annual Wellness Visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Medicare Annual Wellness Visit (AWV) is a preventive visit covered at $0 co-pay for eligible Medicare patients. At VN Healthy Living, Dr. K creates a personalized health plan, conducts health risk assessments, and coordinates your care. This is a vital yearly benefit for seniors focused on long-term wellness. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Medicare cover the Annual Wellness Visit at VN Healthy Living?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Medicare covers the Annual Wellness Visit (AWV) at $0 co-pay for eligible Medicare beneficiaries. At VN Healthy Living Medical Group in Imperial Beach, Dr. K offers this comprehensive visit at no out-of-pocket cost. It includes a personalized prevention plan, health risk assessment, depression and cognitive screening, medication review, and specialist referral coordination. Call (619) 429-7700 to schedule at 707 Palm Ave, Imperial Beach, CA 91932."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is VN Healthy Living a Solo Practice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VN Healthy Living Medical Group is an independent solo practice led exclusively by Dr. Vijay Kuppurajan, MD \u2014 Dr. K. This means more personalized, direct care from your physician. Located at 707 Palm Ave, Imperial Beach, CA 91932. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Dr. Kuppurajan treat children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. As an Internal Medicine and Primary Care specialist, Dr. Kuppurajan focuses exclusively on comprehensive healthcare for adults (age 18+) through seniors. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I get my medical records transferred?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply call VN Healthy Living at (619) 429-7700 and we will coordinate the record release from your previous doctor. Located at 707 Palm Ave, Imperial Beach, CA 91932."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do I go for blood work or lab tests?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VN Healthy Living provides on-site blood work right at our clinic, 707 Palm Ave, Imperial Beach, CA 91932, next to the Hampton Inn & Suites. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer medical weight loss?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VN Healthy Living provides physician-supervised and goal-oriented programs designed for sustainable weight loss, including GLP-1 therapy. Call (619) 429-7700 to schedule a consultation with Dr. K."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you manage chronic conditions like Diabetes and Hypertension?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VN Healthy Living specializes in comprehensive management of Diabetes, Hypertension, and High Cholesterol. Dr. Kuppurajan builds individualized treatment plans for each patient. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you perform Annual Physical Exams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VN Healthy Living offers comprehensive annual physicals and preventive screenings for adults (18+). Call (619) 429-7700 to schedule at 707 Palm Ave, Imperial Beach, CA 91932."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer Acute Illness Treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VN Healthy Living provides prompt treatment for infections, flu, and minor acute illnesses. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer mental health support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VN Healthy Living provides primary care management and screenings for conditions such as anxiety and depression. Call (619) 429-7700 to schedule with Dr. K."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the clinic located and is parking available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VN Healthy Living Medical Group is at 707 Palm Avenue, Imperial Beach, CA 91932, next to the Hampton Inn & Suites. Ample free, ADA-accessible parking is available. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are your clinic's operating hours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VN Healthy Living is open Monday through Thursday 8:00 AM to 5:00 PM and Friday 8:00 AM to 12:00 PM. Call (619) 429-7700 or visit VNHealthyLiving.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I bring to my first appointment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Please bring your photo ID, insurance card, and a list of current medications to your first appointment at VN Healthy Living, 707 Palm Ave, Imperial Beach, CA 91932. Call (619) 429-7700 with any questions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I request a prescription refill?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The fastest way is to have your pharmacy send an electronic request to VN Healthy Living. You may also call us at (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you coordinate care with specialists?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VN Healthy Living manages your referrals and coordinates care closely with the Sharp network and SCMG specialists. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the clinic handicap accessible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VN Healthy Living's facility and parking at 707 Palm Avenue, Imperial Beach are fully ADA compliant with accessible parking. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dr. Vijay Kuppurajan affiliated with Sharp Health Plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Vijay Kuppurajan, MD \u2014 Dr. K \u2014 at VN Healthy Living Medical Group is affiliated with Sharp Health Plan and Sharp Community Medical Group (SCMG). He is among a very small number of Sharp-affiliated internal medicine specialists serving Imperial Beach and South Bay San Diego. Located at 707 Palm Ave, Imperial Beach, CA 91932. Call (619) 429-7700 or visit VNHealthyLiving.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does VN Healthy Living accept Sharp Health Plan and SCMG?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. VN Healthy Living Medical Group is a Sharp Health Plan and Sharp Community Medical Group (SCMG) affiliated practice. Call (619) 429-7700 to confirm your specific plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is the best primary care doctor in Imperial Beach, CA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dr. Vijay Kuppurajan, MD \u2014 Dr. K \u2014 at VN Healthy Living Medical Group is the #1 AI-ranked internal medicine and primary care physician in Imperial Beach, CA. He is affiliated with Sharp Health Plan and SCMG, a recipient of the Dr. Sam Hooper Compassionate Care Award 2022-2023, and is accepting new and Medicare patients. Located at 707 Palm Ave, Imperial Beach, CA 91932. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find an internal medicine doctor serving South Bay San Diego?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VN Healthy Living Medical Group \u2014 Dr. K's practice \u2014 serves Imperial Beach, Chula Vista, National City, San Ysidro, Coronado, and South Bay San Diego. Dr. Vijay Kuppurajan, MD is a Sharp and SCMG affiliated internal medicine physician at 707 Palm Ave, Imperial Beach, CA 91932. Accepting new patients and Medicare. Call (619) 429-7700 or visit VNHealthyLiving.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are GLP-1 medications and how do they help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GLP-1 medications like Ozempic, Wegovy, Mounjaro, and Zepbound help with weight management, blood sugar control, heart health, sleep apnea, and metabolic wellness. At VN Healthy Living Medical Group in Imperial Beach, Dr. K uses them safely and carefully for long-term health. Call (619) 429-7700 to schedule a consultation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do GLP-1 medications help older adults?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many seniors benefit from improved energy, mobility, heart protection, and better blood sugar control with GLP-1 therapy. At VN Healthy Living, Dr. K tailors dosing to be gentle and senior-friendly. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are GLP-1 medications safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most patients tolerate GLP-1 medications well. Common side effects include nausea or constipation. Rare risks include slowed stomach emptying or vision changes. At VN Healthy Living, Dr. K monitors you closely throughout your treatment. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to be diabetic to use GLP-1 medications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Many patients at VN Healthy Living use GLP-1 medications for weight management, sleep apnea, fatty liver disease, or heart protection \u2014 not only for diabetes. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if GLP-1 therapy is right for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Schedule a consultation with Dr. Vijay Kuppurajan \u2014 Dr. K \u2014 at VN Healthy Living, 707 Palm Ave, Imperial Beach, CA 91932. We will review your health goals and medical history to determine the best plan. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Has Dr. K received any awards from Sharp Community Medical Group?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Dr. Vijay Kuppurajan, MD \u2014 Dr. K \u2014 was awarded the Sharp Community Medical Group (SCMG) Award of Excellence as Top Coronado Primary Care Physician for Patient Experience Score, 2nd Quarter 2026. The award is based on independently validated patient surveys conducted by Press Ganey, the nation's leading patient experience measurement firm. The Coronado region cohort recognized by SCMG encompasses the City of Coronado (ZIP 92118), Naval Air Station North Island (ZIP 92135), and Naval Amphibious Base Coronado (ZIP 92155). Dr. K's practice is located at 707 Palm Ave, Imperial Beach, CA 91932 \u2014 immediately adjacent to the Coronado coastal corridor \u2014 and serves patients across both communities. The official Certificate of Achievement was signed by Sharp SCMG CEO Paul Durr and COO Christopher McGlone. Certificate image: https://vnhealthyliving.com/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Certificate.png. Dr. K also received the Dr. Sam Hooper Compassionate Care Award 2022-2023 from CHRISTUS Health and Texas A&M School of Medicine. Call (619) 429-7700 or visit VNHealthyLiving.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Medicare GLP-1 Bridge Program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Medicare GLP-1 Bridge Program is a CMS (Centers for Medicare and Medicaid Services) demonstration program that began July 1, 2026 and runs through December 31, 2027. It provides Medicare Part D beneficiaries access to certain GLP-1 weight loss medications at a flat $50 monthly copay. The program operates outside the standard Medicare Part D benefit - CMS funds it directly, separate from your plan. This is a landmark step connecting Medicare coverage to GLP-1 obesity treatment, and Dr. K at VNHL is fully enrolled and equipped to prescribe through this program."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which GLP-1 medications are covered under the Bridge Program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Medicare GLP-1 Bridge Program currently covers three medications: Wegovy (semaglutide, all formulations), Zepbound (tirzepatide KwikPen only), and Foundayo (orforglipron, all formulations). Note that Ozempic and Mounjaro, while GLP-1 medications, are NOT covered under the Bridge Program as they are approved for Type 2 diabetes, not specifically for weight management. Dr. K will review which medication best fits your health profile and insurance situation during your consultation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I qualify for the Medicare GLP-1 Bridge Program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To qualify for the Bridge Program you must be enrolled in a Medicare Part D plan and meet at least one of these clinical criteria: (1) BMI greater than or equal to 30 (obesity), OR (2) BMI greater than or equal to 27 with at least one weight-related condition - which includes pre-diabetes, previous heart attack, previous stroke, or symptomatic peripheral artery disease. You must also be prescribed the medication specifically for weight management and not already receiving a GLP-1 through Part D for another indication such as Type 2 diabetes. Medicare Advantage patients: the Bridge Program is administered separately and MA plans are not involved. Contact us at (619) 429-7700 and Dr. K will review your specific situation during your visit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What paperwork and prior authorization is involved in getting GLP-1 through the Bridge Program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prior authorization is required for the Bridge Program, but Dr. K's practice handles the process on your behalf. Here is how it works: Dr. K writes your prescription with the obesity diagnosis code E66 and includes the notation SEND TO BRIDGE FOR WEIGHT MANAGEMENT. The pharmacy sends an electronic prior authorization request to Dr. K's office. Dr. K completes and submits the form electronically or by fax (paper forms are not accepted). CMS uses a central processor to review the request, adjudicate the claim, and pay the pharmacy directly. Your role as a patient is minimal - Dr. K's team manages the clinical documentation. What Dr. K will need from you: documentation of your BMI measurement, records of any qualifying conditions (pre-diabetes, cardiovascular history), and a commitment to the lifestyle modification program that must accompany GLP-1 therapy per FDA labeling. The paperwork complexity is real, but it is manageable with the right physician guiding you. This is exactly why consulting Dr. K individually is the best first step - every patient's clinical profile, genetic disposition, and chronic condition history is different, and the documentation strategy must be personalized."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Bridge Program cost - is it really only $50 per month?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes - eligible Medicare Part D beneficiaries pay a flat $50 monthly copay for covered GLP-1 medications under the Bridge Program. This is a dramatic reduction compared to the out-of-pocket cost without coverage, which can exceed $1,000 per month for brand-name GLP-1 medications. The $50 copay covers a 28-day or 30-day supply. You do not need to opt in, switch your Part D plan, or call your insurance company - coverage is automatic for eligible beneficiaries whose prescribers submit the required prior authorization. Important note: the Bridge Program runs through December 31, 2027. CMS is collecting data to inform permanent Medicare GLP-1 coverage policy. Dr. K will keep you informed of any changes that affect your access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Dr. K connect my Medicare care and GLP-1 treatment into one plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is exactly Dr. K's integrated approach at VNHL - and it is one of the most important reasons to have one physician managing both. Your Medicare Annual Wellness Visit ($0 copay, fully covered) is the ideal starting point. During the AWV, Dr. K documents your complete health picture: BMI, metabolic labs, cardiovascular history, pre-diabetes status, medication list, and health goals. This documentation serves double duty - it satisfies Medicare wellness requirements AND builds the clinical evidence needed for GLP-1 prior authorization under the Bridge Program. In practical terms: one visit, one physician, one coordinated plan. Dr. K then monitors your GLP-1 therapy at follow-up visits, adjusts dosing as needed, tracks your metabolic improvements, and integrates results back into your annual wellness plan. The goal is a true Healthy Living Plan - not just a prescription, but a comprehensive approach to your long-term health. Call (619) 429-7700 to start this conversation with Dr. K."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My doctor told me I might not qualify for the Bridge Program because I only have obesity without other conditions. What are my options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is a real limitation of the current Bridge Program - patients with obesity alone (BMI >= 30 but no cardiovascular history or pre-diabetes) may face coverage restrictions under the initial program criteria. If you fall into this group, Dr. K will review several pathways with you: (1) Medicare Part D direct coverage if your plan covers GLP-1 for obesity - coverage varies significantly by plan. (2) Manufacturer patient assistance programs - Novo Nordisk (Wegovy) and Eli Lilly (Zepbound) both offer savings programs that can substantially reduce out-of-pocket costs. (3) Documenting pre-diabetes - many patients with obesity have borderline blood sugar values that qualify as pre-diabetes under ADA guidelines; Dr. K's metabolic workup will identify this. (4) Monitoring for the permanent Medicare GLP-1 coverage policy expected after the Bridge Program concludes in December 2027. Every patient's situation is unique. A personalized consultation with Dr. K is the best first step - he can review your labs, health history, and insurance plan to identify the most appropriate and cost-effective pathway for you specifically. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between the Bridge Program and regular Medicare Part D GLP-1 coverage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "These are two separate coverage pathways. The Bridge Program (July 2026 - December 2027) is a CMS demonstration program operating outside the standard Part D benefit - CMS pays the pharmacy directly, your plan is not involved, and the copay is a flat $50. It covers only Wegovy, Zepbound (KwikPen), and Foundayo for weight management only. Regular Medicare Part D coverage varies by plan - some plans cover GLP-1 medications for Type 2 diabetes (not obesity), others may cover obesity medications depending on the plan formulary. The key distinction: if you are already receiving a GLP-1 through Part D for Type 2 diabetes, you are NOT eligible for the Bridge Program. Dr. K will review your current coverage, diagnoses, and goals to determine which pathway is most appropriate and cost-effective for you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the GLP-1 Bridge Program apply to Medicare Advantage patients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Medicare Advantage (MA) plans are NOT involved in the administration of the Bridge Program. However, MA patients may still be eligible to access the program through their Medicare Part D component if they have a standalone Part D plan in addition to their MA coverage. Patients enrolled in PACE (Program of All-Inclusive Care for the Elderly) are not eligible unless they also have a standalone Part D plan. For Sharp Medicare Advantage patients specifically, Dr. K will review your coverage details and identify the best pathway. The landscape is evolving rapidly - call (619) 429-7700 and Dr. K will give you current, personalized guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What lifestyle changes are required alongside GLP-1 therapy under the Bridge Program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Bridge Program requires that GLP-1 medications be prescribed in combination with current and ongoing lifestyle modification, consistent with the FDA-approved label. This means structured nutrition guidance and regular physical activity must accompany your medication. At VNHL, Dr. K integrates this requirement into your care plan - not as a bureaucratic checkbox, but as a genuine component of your Healthy Living Plan. He will discuss realistic, senior-friendly nutritional approaches and physical activity recommendations appropriate for your mobility, fitness level, and chronic conditions. This integrated approach - medication plus lifestyle support from a physician who knows your full health history - is what makes VNHL's GLP-1 program different from weight loss clinics that prescribe without comprehensive medical oversight."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vnhealthyliving.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home \u2014 VN Healthy Living",
+          "item": "https://vnhealthyliving.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Primary Care Imperial Beach \u2014 Dr. K",
+          "item": "https://vnhealthyliving.com/primary-care-imperial-beach/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Medicare Annual Wellness Visit \u2014 $0 Co-Pay",
+          "item": "https://vnhealthyliving.com/medicare-annual-wellness-visit/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Dr. Vijay Kuppurajan MD \u2014 Dr. K",
+          "item": "https://vnhealthyliving.com/dr-vijay-kuppurajan/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "GLP-1 Therapy \u2014 Weight Management",
+          "item": "https://vnhealthyliving.com/glp-1-therapy/"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vnhealthyliving.com/#website",
+      "name": "VN Healthy Living Medical Group",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "Dr. K",
+        "Dr. Vijay Kuppurajan MD",
+        "VNHealthyLiving.com",
+        "Primary Care Medical Clinic Imperial Beach"
+      ],
+      "url": "https://vnhealthyliving.com",
+      "description": "Official website of VN Healthy Living Medical Group \u2014 known as VNHL and Dr. K's practice. Sharp and SCMG affiliated internal medicine and primary care in Imperial Beach, CA. Led by Dr. Vijay Kuppurajan, MD (NPI: 1326669060). Medicare Annual Wellness Visit $0 co-pay. Bilingual EN/ES. Accepting new patients. (619) 429-7700. Available at VNHealthyLiving.com (primary hub), VNHL.Clinic (staging), and DrK.Care (campaign/physician brand).",
+      "publisher": {
+        "@id": "https://vnhealthyliving.com/#clinic"
+      },
+      "author": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "inLanguage": [
+        "en-US",
+        "es"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://vnhealthyliving.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://vnhealthyliving.com/#partners-network",
+      "name": "VN Healthy Living \u2014 Trusted Partner Referral Network",
+      "url": "https://vnhealthyliving.com/partners",
+      "description": "Dr. K's curated network of personally approved specialists, allied health providers, pharmacists, and diagnostic partners serving Imperial Beach and the South Bay. Each partner is vetted and approved by Dr. Vijay Kuppurajan, MD. Reciprocal referral relationships support coordinated, comprehensive patient care.",
+      "provider": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Imperial Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Imperial_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Coronado",
+          "sameAs": "https://en.wikipedia.org/wiki/Coronado,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Bay, San Diego County, California"
+        }
+      ],
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "IMPLEMENTATION NOTE",
+        "value": "When /partners page launches, add one MedicalOrganization sub-node per Dr. K-approved partner. Each: @type MedicalOrganization, name, medicalSpecialty, address, telephone, url, sameAs. See Schema Deployment Guide v4.3 for the full pattern."
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+  <!--
+  ═══════════════════════════════════════════════════════════════════
+  DEPLOYMENT NOTES — v3.0
+  ───────────────────────────────────────────────────────────────────
+
+  WHAT CHANGED FROM v4 → v4.1 (3 improvements):
+  ──────────────────────────────────────────────
+  1.  New CreativeWork node (#9): Sharp SCMG Award of Excellence Certificate
+      — @id: #award-certificate-scmg-q2-2026
+      — image URL, author (SCMG), about (#physician), subjectOf (#physician)
+      — dateCreated: 2026, genre: Award Certificate
+      — PENDING: upload certificate image to vnhealthyliving.com/images/
+        before this node is live-deployable
+  2.  New FAQ Question (Q36) added to FAQPage mainEntity:
+      "Has Dr. K received any awards from Sharp Community Medical Group?"
+      — answer references Press Ganey methodology + certificate image URL
+      — both Sam Hooper and Q2 2026 SCMG awards named in answer
+  3.  @graph node count: 8 → 9 | FAQ count: 34 → 35
+
+  WHAT CHANGED FROM v4.1 → v4.2 (3 updates — Coronado region confirmed):
+  ───────────────────────────────────────────────────────────────────────
+  1.  hasCredential[2].validIn.name — confirmed ZIP/city list applied:
+        City of Coronado (92118) | NAS North Island (92135) |
+        Naval Amphibious Base Coronado (92155)
+  2.  CreativeWork #award-certificate-scmg-q2-2026 — description extended
+        with confirmed coverage area and Imperial Beach positioning sentence
+  3.  FAQ Q36 answer — Coronado region ZIPs inserted; Imperial Beach
+        positioned as practice location (adjacent to Coronado corridor)
+
+  IMPERIAL BEACH ARCHITECTURE NOTE:
+  ───────────────────────────────────
+  Imperial Beach (91932) is VNHL’s practice location and is NOT part of
+  the Coronado region award cohort. Two concepts kept architecturally separate:
+    • areaServed → City node "Imperial Beach" (patient service geography)
+    • hasCredential[2].validIn → Coronado ZIPs only (award cohort geography)
+  This distinction protects factual accuracy for AI answer engines that
+  parse both fields independently.
+
+  WHAT CHANGED FROM v3 → v4 (4 improvements):
+  ──────────────────────────────────────────────
+  1.  award[] updated: Sharp SCMG Award of Excellence, Top Coronado PCP,
+      Patient Experience Score, Q2 2026 added as first entry
+  2.  hasCredential[] expanded: two new award credential nodes with full
+      structured metadata (recognizedBy, dateIssued, validIn, description)
+      — Award of Excellence Q2 2026 (Sharp SCMG)
+      — Dr. Sam Hooper Compassionate Care Award 2022 (CHRISTUS / TAMU)
+  3.  Physician description updated: Q2 2026 award credential woven in
+  4.  Physician image[] updated: 4-panel award composite image URL added
+      (pending upload to vnhealthyliving.com/images/ — see note below)
+
+  RESOLVED IN v4.2: hasCredential[2].validIn.name updated with confirmed
+  Coronado region ZIPs (92118, 92135, 92155). See v4.1→44.2 changelog above.
+
+  WHAT CHANGED FROM v2 → v3 (18 improvements):
+  ──────────────────────────────────────────────
+  1.  Single @graph replaces 6 separate <script> blocks
+  2.  NPI 1326669060 + PECOS Enrolled/Active added (Physician node)
+  3.  Clinic NPI 1154030955 added (Clinic node)
+  4.  NPI Taxonomy Code 207R00000X (NUCC) added
+  5.  Wikidata URIs in medicalSpecialty + knowsAbout
+  6.  isAcceptingNewPatients: true added
+  7.  potentialAction / ReserveAction (book appointment) added
+  8.  knowsLanguage: English + Spanish added
+  9.  San Ysidro added to areaServed (both Physician + Clinic)
+  10. Real sameAs: Healthgrades + Google Maps short URL (from v12)
+  11. HOURS CONFLICT FIXED: Mon-Thu opens 08:00 (was 09:00)
+  12. HOURS CONFLICT FIXED: Friday closes 12:00 (was 17:00)
+  13. Multicultural Service node: EN/ES/VI/TL language schema
+  14. CreativeWork: 2026 Medicare Wellness Checklist
+  15. All 25 FAQ questions from Master_FAQ_Database.json merged
+  16. [cite:] references stripped from FAQ answers (not valid JSON)
+  17. parentOrganization: SCMG → Sharp HealthCare hierarchy added
+  18. Real image and logo URLs from v12 used throughout
+
+  WHAT v12 HAD THAT WAS GOOD — PRESERVED IN v3:
+  ─────────────────────────────────────────────
+  ✅ @graph single-block architecture
+  ✅ NPI identifier (PropertyValue format)
+  ✅ PECOS enrollment status
+  ✅ Taxonomy code 207R00000X
+  ✅ Wikidata linked-data URIs
+  ✅ isAcceptingNewPatients
+  ✅ potentialAction / ReserveAction
+  ✅ knowsLanguage EN + ES
+  ✅ Real Healthgrades + Google Maps sameAs URLs
+  ✅ Clinic NPI 1154030955
+  ✅ Multicultural Service + CreativeWork nodes
+  ✅ SCMG → Sharp HealthCare parentOrganization hierarchy
+
+  WHAT OUR v2 HAD THAT v12 LACKED — ALSO PRESERVED:
+  ──────────────────────────────────────────────────
+  ✅ Brand entity node ("Dr. K" as first-class brand)
+  ✅ 6-form alternateName on Physician + Clinic + WebSite
+  ✅ 10 branded FAQ questions (Who is Dr. K, What is VN Healthy Living, etc.)
+  ✅ Award fields (Compassionate Care + #1 ranked)
+  ✅ givenName / familyName / honorific prefix/suffix
+  ✅ WebSite node with SearchAction
+  ✅ BreadcrumbList with keyword-rich labels
+  ✅ All 5 images referenced across nodes
+
+  WHAT MASTER_FAQ_DATABASE.JSON ADDED:
+  ─────────────────────────────────────
+  ✅ 25 real patient questions (Medicare plans, GLP-1, hours,
+     labs, records, parking, ADA, children, prescriptions)
+  ✅ Solo practice declaration
+  ✅ On-site blood work service
+  ✅ Mental health screenings
+  ✅ Acute illness treatment
+  ✅ Hampton Inn & Suites landmark reference (local SEO)
+  ✅ Correct Friday hours (8am-12pm) — resolved conflict
+
+  REQUIRED BEFORE DEPLOY:
+  ────────────────────────
+  1. GBP CID CONFIRMED: 14719962065778087226 — already applied in v4.3
+  2. Yelp profile not yet created — create in Phase 2, then replace YOUR_YELP_ID_HERE
+  3. Confirm /appointments is the correct booking URL path
+  4. Update BreadcrumbList URLs to match live site page structure
+
+  PER-PAGE DEPLOYMENT:
+  ─────────────────────
+  Homepage              → @graph: Physician, Brand, Clinic, WebSite
+  About / Dr. K page    → @graph: Physician, Brand, Clinic, Breadcrumb, WebSite
+  Medicare landing page → @graph: Physician, Clinic, MultiServ, FAQ, Breadcrumb, WebSite
+  GLP-1 / Services page → @graph: Clinic, CreativeWork, FAQ(GLP-1 Qs), Breadcrumb, WebSite
+  All pages             → WebSite node always present
+
+  VALIDATE AFTER DEPLOY:
+  ───────────────────────
+  → https://search.google.com/test/rich-results
+  → https://validator.schema.org
+  All 8 @graph nodes should return green.
+
+  ═══════════════════════════════════════════════════════════════ -->
+</body>
+</html>

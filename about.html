@@ -1,199 +1,1222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Dr. Vijay Kuppurajan | DrK.Care</title>
-    <style>
-        :root { --primary: #1e3a8a; --accent: #0d9488; --bg: #f8fafc; --text: #334155; --red: #dc2626; }
-        body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
-        
-        /* Compact & Centered Header Container */
-        header { 
-            background: var(--primary); 
-            color: white; 
-            padding: 1rem 1.5rem; 
-        }
-        .header-container {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .header-brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .header-logo {
-            height: 38px;
-            width: auto;
-            display: block;
-        }
-        .header-title-group {
-            display: flex;
-            flex-direction: column;
-        }
-        header h1 { 
-            margin: 0; 
-            font-size: 1.15rem; 
-            font-weight: 600; 
-            letter-spacing: -0.01em; 
-            line-height: 1.2; 
-        }
-        .header-tagline { 
-            margin: 0; 
-            font-size: 0.88rem; 
-            font-weight: 600; 
-            letter-spacing: 0.015em; 
-            color: #5eead4; /* Contrasting, matching light teal */
-            white-space: nowrap;
-            line-height: 1.3;
-        }
-        nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
-        nav a { color: white; text-decoration: none; font-size: 0.9rem; }
-        nav a:hover { text-decoration: underline; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>About Dr. Vijay Kuppurajan · VN Healthy Living Medical Group | Imperial Beach, CA</title>
+<style>
+  /* Google Fonts loaded via <link> in <head>  -  see preconnect tags */
 
-        /* Crisp Hero Section */
-        .hero { background: white; padding: 2rem 1.5rem 1.5rem 1.5rem; text-align: center; border-bottom: 1px solid #e2e8f0; }
-        .hero h2 { 
-            color: var(--primary); 
-            font-size: 1.85rem; 
-            font-weight: 800; 
-            letter-spacing: -0.03em; 
-            margin: 0 auto 0.5rem auto; 
-            line-height: 1.2; 
-        }
-        .hero p { 
-            margin: 0 auto; 
-            font-size: 1rem; 
-            font-weight: 600; 
-            max-width: 750px; 
-            color: var(--accent); 
-            letter-spacing: -0.01em;
-            line-height: 1.5;
-        }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .container { max-width: 900px; margin: 1.5rem auto; padding: 0 1.5rem; background: white; padding: 2.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .container h3 { margin-top: 0; margin-bottom: 0.5rem; color: #0f172a; }
-        .container p { margin: 0 0 1rem 0; }
-        
-        ul { margin: 0 0 1.5rem 1.25rem; color: var(--text); }
-        li { margin-bottom: 0.5rem; }
+  :root {
+    --brand:   #1e3a8a;   
+    --brand-d: #172554;   
+    --brand-l: #f8fafc;   
+    --dark:    #334155;   
+    --mid:     #475569;   
+    --muted:   #94A3B8;
+    --border:  #334155;
+    --white:   #FFFFFF;
+    --gold:    #D97706;
+    --accent:  #0d9488;
+    --red:     #dc2626;
+    --card-bg: #1e3a8a; /* Standardized to light blue */
+  }
 
-        /* Award Showcase Styles */
-        .award-section { margin-bottom: 2rem; text-align: center; background: #fffbeb; padding: 1.5rem; border-radius: 0.5rem; border: 1px solid #fde68a; }
-        .award-image-container { width: 100%; max-width: 750px; margin: 0 auto; overflow: hidden; border-radius: 0.375rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
-        .award-image-container img { width: 100%; height: auto; display: block; }
+  html { scroll-behavior: smooth; }
 
-        /* Contact & Community Row */
-        .contact-row {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1.25rem;
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
-        .icon-red {
-            color: var(--red);
-            font-size: 1.1rem;
-            line-height: 1;
-        }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--dark);
+    background: var(--brand-l);
+    overflow-x: hidden;
+  }
 
-        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 1.5rem; margin-top: 3rem; font-size: 0.85rem; }
+  a { color: inherit; text-decoration: none; }
 
-        /* Mobile responsiveness adjustments */
-        @media (max-width: 768px) {
-            .container { padding: 1.25rem; }
-            .hero h2 { font-size: 1.5rem; }
+  /* ── HEADER (Centered Layout matching index.html) ── */
+  .site-header {
+    background: var(--brand);
+    color: white;
+    padding: 1rem 1.5rem;
+  }
+
+  .header-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .header-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-logo {
+    height: 38px;
+    width: auto;
+    display: block;
+  }
+
+  .header-title-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-block h1, .header-title-group h1 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  .header-tagline { 
+    margin: 0; 
+    font-size: 0.58rem; 
+    font-weight: 600; 
+    letter-spacing: 0.015em; 
+    color: #5eead4; 
+    white-space: nowrap;
+    line-height: 1.3;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .header-nav a:hover, .header-nav a.active {
+    text-decoration: underline;
+  }
+
+  /* ── HERO ── */
+  .hero { background: white; padding: 2.5rem 1rem 2rem 1rem; text-align: center; border-bottom: 1px solid #e2e8f0; }
+  .hero p { 
+    margin: 0 auto 0.5rem auto; 
+    font-size: 11px; 
+    font-weight: 700; 
+    max-width: 900px; 
+    color: var(--accent); 
+    letter-spacing: 0.1em; 
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap; 
+  }
+  .hero h2 { 
+    color: var(--primary, #1e3a8a); 
+    font-size: clamp(1.5rem, 4vw, 1.85rem); 
+    font-weight: 800; 
+    letter-spacing: -0.03em; 
+    margin: 0 auto; 
+    line-height: 1.2; 
+    word-break: break-word;
+  }
+
+  @media (max-width: 768px) {
+    .hero p { white-space: normal; } 
+  }
+
+  /* ── SECTION BASE ── */
+  section { padding: 40px 16px; }
+
+  .container { max-width: 650px; margin: 0 auto; }
+  .container-wide { max-width: 1000px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--dark);
+    margin-bottom: 14px;
+    line-height: 1.25;
+  }
+
+  /* ── AWARD SHOWCASE SECTION (White Background) ── */
+  .award-section-wrapper {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 30px 16px;
+  }
+  .award-section { margin: 0 auto; max-width: 750px; text-align: center; background: #fffbeb; padding: 1.25rem; border-radius: 0.5rem; border: 1px solid #fde68a; }
+  .award-image-container { width: 100%; max-width: 750px; margin: 0 auto; overflow: hidden; border-radius: 0.375rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+  .award-image-container img { width: 100%; height: auto; display: block; }
+
+  /* ── MESSAGE CARD LAYOUT ── */
+  .section-white { background: #ffffff; }
+  .section-dark { background: #0b1120; color: var(--white); }
+  .section-dark h2 { color: var(--white); }
+  .section-dark .eyebrow { color: #7DD3FC; }
+
+  .unpacked-container {
+    max-width: 650px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* All message cards standardized to light blue (#1e3a8a background) */
+  .content-card {
+    width: 100%;
+    box-sizing: border-box;
+    background: #1e3a8a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 24px 20px;
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.2);
+  }
+  .section-white h2 {
+    color: #0f172a;
+  }
+  .card-title {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card-body-text {
+    font-size: 15px;
+    color: #f8fafc;
+    line-height: 1.65;
+    font-weight: 400;
+  }
+  .card-subtext {
+    font-size: 12px;
+    color: #93c5fd;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+
+  /* ── CTA IMAGE SECTION (Medicare Style) ── */
+  .cta-image-section {
+    background: #0F172A;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .cta-image-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-display-img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 2px solid rgba(255,255,255,0.1);
+    display: block;
+    margin: 0 auto 16px auto;
+  }
+
+  .loc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 700px) {
+    .loc-grid { grid-template-columns: 1fr; }
+  }
+
+  .loc-block h3 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .loc-block p, .loc-block li {
+    font-size: 14px;
+    color: var(--dark);
+    line-height: 1.7;
+    list-style: none;
+  }
+
+  .contact-row-consistent {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+
+  .icon-red {
+    color: var(--red);
+    font-size: 1.1rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .map-container {
+    margin-top: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    background: #ffffff;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 260px;
+    border: 0;
+    display: block;
+  }
+
+  .map-caption {
+    padding: 10px 14px;
+    font-size: 12px;
+    color: var(--mid);
+    background: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #0F172A;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px 16px;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  footer a { color: var(--accent); }
+
+  @media (max-width: 480px) {
+    .hero { padding: 2rem 1rem; }
+    section { padding: 32px 12px; }
+  }
+
+  /* Mobile-first safe area insets */
+  :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  img { max-width: 100%; height: auto; }
+  @media (max-width: 480px) {
+    nav { gap: 0.6rem; }
+    nav a { font-size: 0.8rem; }
+    h2 { font-size: clamp(1.25rem, 5vw, 1.75rem) !important; }
+  }
+</style>
+
+    <!-- GA4 + Google Ads Global Site Tag  -  REPLACE G-XXXXXXXXXX and AW-XXXXXXXXX with real IDs -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'AW-XXXXXXXXX');
+    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Physician",
+        "Person"
+      ],
+      "@id": "https://vnhealthyliving.com/#physician",
+      "name": "Vijay Kuppurajan, MD",
+      "alternateName": [
+        "Dr. K",
+        "Dr. Vijay Kuppurajan",
+        "Dr. Vijay Kuppurajan MD",
+        "Vijay Kuppurajan",
+        "Kuppurajan MD",
+        "Dr. Vijay",
+        "Dr. K Imperial Beach"
+      ],
+      "givenName": "Vijay",
+      "familyName": "Kuppurajan",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "MD",
+      "jobTitle": "Internal Medicine Physician & Primary Care Provider",
+      "certification": "Board Certified in Internal Medicine",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "NPI",
+          "value": "1326669060"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Medicare Enrollment (PECOS)",
+          "value": "Enrolled/Active"
         }
-    </style>
+      ],
+      "taxID": "1326669060",
+      "isAcceptingNewPatients": true,
+      "image": [
+        "https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+        "https://vnhealthyliving.com/images/dr-vijay-kuppurajan-sharp-scmg-affiliated-internal-medicine-primary-care-imperial-beach-ca.jpg",
+        "https://vnhealthyliving.com/images/DrK_Sharp.jpg",
+        "https://vnhealthyliving.com/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Composite-4Panel.png"
+      ],
+      "description": "Dr. Vijay Kuppurajan, MD \u2014 affectionately known by patients and staff at VNHL as "Dr. K" \u2014 is a board-certified, Sharp Health Plan and SCMG affiliated internal medicine and primary care physician at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932. NPI: 1326669060. Medicare PECOS enrolled/active. #1 AI-ranked internal medicine physician in Imperial Beach and South Bay San Diego. Recipient of the Sharp Community Medical Group Award of Excellence \u2014 Top Coronado PCP for Patient Experience Score, Q2 2026. Winner of the Dr. Sam Hooper Compassionate Care Award 2022-2023 (CHRISTUS Health / Texas A&M School of Medicine). Bilingual English and Spanish. Accepting new patients including Medicare. Call (619) 429-7700.",
+      "url": "https://vnhealthyliving.com",
+      "telephone": "+16194297700",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "707 Palm Avenue",
+        "addressLocality": "Imperial Beach",
+        "addressRegion": "CA",
+        "postalCode": "91932",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "32.5836608942681",
+        "longitude": "-117.117789109941"
+      },
+      "medicalSpecialty": [
+        "https://www.wikidata.org/wiki/Q11165",
+        "InternalMedicine",
+        "PrimaryCare"
+      ],
+      "relevantSpecialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Internal Medicine",
+        "code": {
+          "@type": "MedicalCode",
+          "codeValue": "207R00000X",
+          "codingSystem": "Healthcare Provider Taxonomy Code (NUCC)"
+        }
+      },
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "English",
+          "description": "Full spoken and written clinical fluency"
+        },
+        {
+          "@type": "Language",
+          "name": "Spanish",
+          "description": "Bilingual staff available for spoken consultation"
+        }
+      ],
+      "award": [
+        "Award of Excellence \u2014 Top Coronado PCP, Patient Experience Score, Q2 2026 \u2014 Sharp Community Medical Group (SCMG)",
+        "Dr. Sam Hooper Compassionate Care Award 2022-2023 \u2014 CHRISTUS Health / Texas A&M School of Medicine",
+        "#1 Ranked Internal Medicine Physician \u2014 Imperial Beach, CA (AI Search Engines)"
+      ],
+      "affiliation": {
+        "@type": "MedicalOrganization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "parentOrganization": {
+          "@type": "MedicalOrganization",
+          "name": "Sharp HealthCare",
+          "url": "https://www.sharp.com"
+        }
+      },
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "url": "https://www.scmg.org"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Medical Degree (MD)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Texas A&M School of Medicine"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Board Certification \u2014 Internal Medicine"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Award of Excellence \u2014 Top Coronado PCP",
+          "description": "Recognized by Sharp Community Medical Group as the top-ranked primary care physician in the Coronado region for Patient Experience Score, 2nd Quarter 2026. Signed by Paul Durr, CEO and Christopher McGlone, COO, Sharp Community Medical Group.",
+          "credentialCategory": "award",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Sharp Community Medical Group",
+            "alternateName": "SCMG",
+            "url": "https://www.sharp.com"
+          },
+          "dateIssued": "2026",
+          "validIn": {
+            "@type": "AdministrativeArea",
+            "name": "Coronado Region, San Diego County, California \u2014 encompassing the City of Coronado (ZIP 92118), Naval Air Station North Island (ZIP 92135), and Naval Amphibious Base Coronado (ZIP 92155)"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Dr. Sam Hooper Compassionate Care Award",
+          "description": "Awarded by CHRISTUS Health and Texas A&M School of Medicine in recognition of outstanding compassionate patient care.",
+          "credentialCategory": "award",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "CHRISTUS Health / Texas A&M School of Medicine"
+          },
+          "dateIssued": "2022"
+        }
+      ],
+      "knowsAbout": [
+        "https://www.wikidata.org/wiki/Q12125",
+        "Comprehensive Primary Care for Adults (18+)",
+        "Internal Medicine",
+        "Acute Illness Treatment",
+        "Comprehensive Hypertension Management",
+        "Comprehensive Cholesterol & Lipid Management",
+        "Comprehensive Heart Health Assessment & Management",
+        "Goal Oriented Medical Weight Management",
+        "Comprehensive Diabetes & Metabolic Health Management",
+        "Mental Health Screenings",
+        "Clinical Continuity & Medical Record Support",
+        "Essential Adult Immunizations & Vaccinations",
+        "Medicare Sharp Advantage (SCMG) Navigation",
+        "$0 Medicare Annual Wellness Visits (AWV)",
+        "Chronic Disease Management",
+        "GLP-1 Therapy",
+        "Cardiovascular Risk Assessment",
+        "Geriatric Care"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Imperial Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Imperial_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Chula Vista",
+          "sameAs": "https://en.wikipedia.org/wiki/Chula_Vista,_California"
+        },
+        {
+          "@type": "City",
+          "name": "National City",
+          "sameAs": "https://en.wikipedia.org/wiki/National_City,_California"
+        },
+        {
+          "@type": "City",
+          "name": "San Ysidro",
+          "sameAs": "https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego"
+        },
+        {
+          "@type": "City",
+          "name": "Coronado",
+          "sameAs": "https://en.wikipedia.org/wiki/Coronado,_California",
+          "description": "City of Coronado and adjacent Naval installations (ZIP 92118, 92135, 92155). VN Healthy Living Medical Group explicitly markets primary care and internal medicine services to both the Imperial Beach and Coronado communities. Dr. K is the SCMG Award of Excellence Top Coronado PCP for Patient Experience Score, Q2 2026."
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Bay San Diego"
+        }
+      ],
+      "worksFor": {
+        "@id": "https://vnhealthyliving.com/#clinic"
+      },
+      "brand": {
+        "@id": "https://vnhealthyliving.com/#brand-drk"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://drk.care/appointment.html",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        },
+        "result": {
+          "@type": "MedicalReservation",
+          "name": "Schedule Primary Care Appointment with Dr. K"
+        }
+      },
+      "sameAs": [
+        "https://maps.app.goo.gl/uX3L55vunB5uGqXWA",
+        "https://www.google.com/maps?cid=14719962065778087226",
+        "https://www.healthgrades.com/physician/dr-vijay-kuppurajan-1qplcas246",
+        "https://www.sharp.com/doctors/vijay-kuppurajan",
+        "https://vnhealthyliving.com",
+        "https://vnhealthyliving.com/dr-vijay-kuppurajan/",
+        "https://drk.care",
+        "https://vnhl.clinic",
+        "https://vnhealthyliving.com"
+      ]
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://vnhealthyliving.com/#brand-drk",
+      "name": "Dr. K",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "VN Healthy Living Medical Group",
+        "Dr. Vijay Kuppurajan",
+        "Dr. Vijay Kuppurajan MD",
+        "VNHealthyLiving.com"
+      ],
+      "description": "Dr. K is the trusted patient name for Dr. Vijay Kuppurajan, MD at VN Healthy Living Medical Group \u2014 Sharp Health Plan and SCMG affiliated internal medicine and primary care in Imperial Beach, CA. Known for compassionate, personalized care and building healthy living plans with every patient. Bilingual English and Spanish.",
+      "url": "https://vnhealthyliving.com",
+      "logo": "https://vnhealthyliving.com/00_VN_Healthy_Living_Logo_3D.png",
+      "image": "https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+      "slogan": "Build a Healthy Living Plan Together",
+      "subjectOf": {
+        "@id": "https://vnhealthyliving.com/#website"
+      },
+      "founder": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "sameAs": [
+        "https://vnhealthyliving.com",
+        "https://www.sharp.com/doctors/vijay-kuppurajan"
+      ]
+    },
+    {
+      "@type": [
+        "MedicalClinic",
+        "LocalBusiness"
+      ],
+      "@id": "https://vnhealthyliving.com/#clinic",
+      "name": "VN Healthy Living Medical Group",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "Primary Care Medical Clinic",
+        "VNHealthyLiving.com",
+        "Dr. K's Clinic",
+        "Dr. Kuppurajan's Office"
+      ],
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "NPI",
+          "value": "1154030955"
+        }
+      ],
+      "url": "https://vnhealthyliving.com",
+      "logo": "https://vnhealthyliving.com/00_VN_Healthy_Living_Logo_3D.png",
+      "image": [
+        "https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+        "https://vnhealthyliving.com/images/dr-vijay-kuppurajan-sharp-scmg-affiliated-internal-medicine-primary-care-imperial-beach-ca.jpg",
+        "https://vnhealthyliving.com/images/dr-kuppurajan-medicare-annual-wellness-visit-zero-copay-internal-medicine-imperial-beach-ca.jpg",
+        "https://vnhealthyliving.com/images/DrK_Sharp.jpg",
+        "https://vnhealthyliving.com/images/Medicare_AWV.jpg"
+      ],
+      "description": "VN Healthy Living Medical Group (VNHL) \u2014 Dr. K's practice \u2014 is a Sharp Health Plan and SCMG affiliated internal medicine and primary care clinic at 707 Palm Ave, Imperial Beach, CA 91932. Clinic NPI: 1154030955. Led by Dr. Vijay Kuppurajan, MD (Dr. K), VNHL offers Medicare Annual Wellness Visits at $0 co-pay, chronic disease management, GLP-1 therapy, cholesterol management, and preventive care. Independent solo practice. Bilingual English and Spanish staff. Trusted and compassionate care for new and current patients across Imperial Beach and South Bay San Diego.",
+      "slogan": "Build a Healthy Living Plan Together",
+      "telephone": "+16194297700",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "707 Palm Avenue",
+        "addressLocality": "Imperial Beach",
+        "addressRegion": "CA",
+        "postalCode": "91932",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "32.5836608942681",
+        "longitude": "-117.117789109941"
+      },
+      "hasMap": "https://www.google.com/maps?cid=14719962065778087226",
+      "medicalSpecialty": [
+        "Internal Medicine",
+        "Primary Care"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "priceRange": "$$",
+      "paymentAccepted": "Medicare, Original Medicare, Medicare Advantage (SCMG/Sharp), Medigap Supplement, Cash, Credit Card, Aetna, Blue Shield, United Healthcare, Cigna, Humana, GEHA, Health Net, Anthem Blue Cross, Tricare",
+      "currenciesAccepted": "USD",
+      "employee": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "founder": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "brand": {
+        "@id": "https://vnhealthyliving.com/#brand-drk"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "VN Healthy Living Medical Group",
+        "description": "Independent Solo Practitioner Clinic"
+      },
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "Medicare Annual Wellness Visit",
+          "alternateName": "AWV",
+          "description": "Comprehensive Medicare Annual Wellness Visit at $0 co-pay for eligible Medicare patients at VN Healthy Living (VNHL) \u2014 Dr. K. Includes personalized prevention plan, health risk assessment, depression and cognitive screening, medication review, and specialist referral coordination.",
+          "relevantSpecialty": "Internal Medicine",
+          "provider": {
+            "@id": "https://vnhealthyliving.com/#physician"
+          }
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Comprehensive Primary Care and Internal Medicine",
+          "description": "Adult primary care (18+) and internal medicine. Annual physicals, preventive screenings, acute illness treatment, immunizations, and care coordination. Dr. K at VN Healthy Living, Imperial Beach."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Chronic Disease Management",
+          "description": "Comprehensive management of Diabetes, Hypertension, High Cholesterol, and Heart Health at VN Healthy Living, Imperial Beach, CA."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "GLP-1 Therapy and Medical Weight Management",
+          "description": "Physician-supervised GLP-1 therapy (Ozempic, Wegovy, Mounjaro, Zepbound) and goal-oriented medical weight loss programs at VN Healthy Living, Imperial Beach."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Mental Health Screenings",
+          "description": "Primary care management and screenings for anxiety and depression at VNHL \u2014 Dr. K's practice in Imperial Beach, CA."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "On-Site Blood Work and Lab Tests",
+          "description": "On-site blood work and laboratory services available at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932."
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "VN Healthy Living \u2014 Medicare and Primary Care Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Medicare Annual Wellness Visit \u2014 $0 Co-Pay",
+            "price": "0",
+            "priceCurrency": "USD",
+            "eligibleCustomerType": "Medicare beneficiary",
+            "description": "$0 co-pay Annual Wellness Visit for Medicare patients at VN Healthy Living (VNHL) \u2014 Dr. K, 707 Palm Avenue, Imperial Beach, CA 91932. Call (619) 429-7700.",
+            "seller": {
+              "@id": "https://vnhealthyliving.com/#clinic"
+            }
+          }
+        ]
+      },
+      "memberOf": [
+        {
+          "@type": "MedicalOrganization",
+          "name": "Sharp Community Medical Group",
+          "alternateName": "SCMG",
+          "url": "https://www.scmg.org",
+          "parentOrganization": {
+            "@type": "MedicalOrganization",
+            "name": "Sharp HealthCare",
+            "url": "https://www.sharp.com"
+          }
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Imperial Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Imperial_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Chula Vista",
+          "sameAs": "https://en.wikipedia.org/wiki/Chula_Vista,_California"
+        },
+        {
+          "@type": "City",
+          "name": "National City",
+          "sameAs": "https://en.wikipedia.org/wiki/National_City,_California"
+        },
+        {
+          "@type": "City",
+          "name": "San Ysidro",
+          "sameAs": "https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego"
+        },
+        {
+          "@type": "City",
+          "name": "Coronado",
+          "sameAs": "https://en.wikipedia.org/wiki/Coronado,_California",
+          "description": "City of Coronado and adjacent Naval installations (ZIP 92118, 92135, 92155). VN Healthy Living Medical Group explicitly markets primary care and internal medicine services to both the Imperial Beach and Coronado communities. Dr. K is the SCMG Award of Excellence Top Coronado PCP for Patient Experience Score, Q2 2026."
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Bay San Diego"
+        }
+      ],
+      "sameAs": [
+        "https://maps.app.goo.gl/uX3L55vunB5uGqXWA",
+        "https://www.google.com/maps?cid=14719962065778087226",
+        "https://www.healthgrades.com/physician/dr-vijay-kuppurajan-1qplcas246",
+        "https://www.yelp.com/biz/YOUR_YELP_ID_HERE",
+        "https://drk.care",
+        "https://www.sharp.com/doctors/vijay-kuppurajan",
+        "https://vnhealthyliving.com"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://vnhealthyliving.com/#award-certificate-scmg-q2-2026",
+      "name": "Sharp SCMG Award of Excellence Certificate \u2014 Top Coronado PCP, Patient Experience Score, Q2 2026",
+      "headline": "Certificate of Achievement: Top Coronado PCP \u2014 Vijay Kuppurajan, MD",
+      "description": "Official Certificate of Achievement issued by Sharp Community Medical Group to Vijay Kuppurajan, MD, recognizing him as Top Coronado Primary Care Physician for Patient Experience Score, 2nd Quarter 2026. Signed by Paul Durr, CEO and Christopher McGlone, COO, Sharp Community Medical Group. The Coronado region cohort covers the City of Coronado (ZIP 92118), Naval Air Station North Island (ZIP 92135), and Naval Amphibious Base Coronado (ZIP 92155), San Diego County, California. Dr. Kuppurajan's practice is located at 707 Palm Ave, Imperial Beach, CA 91932 and serves patients across the adjacent Coronado and South Bay coastal communities.",
+      "about": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "url": "https://www.sharp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "url": "https://www.sharp.com"
+      },
+      "image": "https://vnhealthyliving.com/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Certificate.png",
+      "url": "https://vnhealthyliving.com/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Certificate.png",
+      "dateCreated": "2026",
+      "genre": "Award Certificate",
+      "keywords": "Sharp SCMG Award of Excellence, Top Coronado PCP, Patient Experience Score, Q2 2026, Vijay Kuppurajan MD, Imperial Beach, Primary Care, Sharp Community Medical Group",
+      "subjectOf": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://vnhealthyliving.com/#multicultural-service",
+      "name": "Multicultural Medicare & Senior Care Support",
+      "serviceType": "Medicare Primary Care",
+      "provider": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "description": "Bilingual staff are available for spoken consultations in English and Spanish at VN Healthy Living Medical Group, Imperial Beach. Support in Vietnamese and Tagalog is provided through translated clinical documentation and medical checklists available on the website and Google Profile. Dr. K serves Medicare patients from diverse South Bay San Diego communities.",
+      "availableLanguage": [
+        {
+          "@type": "Language",
+          "name": "English"
+        },
+        {
+          "@type": "Language",
+          "name": "Spanish",
+          "description": "Bilingual spoken staff"
+        },
+        {
+          "@type": "Language",
+          "name": "Vietnamese",
+          "description": "Clinical documentation support"
+        },
+        {
+          "@type": "Language",
+          "name": "Tagalog",
+          "description": "Clinical documentation support"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "description": "$0 Out-of-pocket for Medicare Annual Wellness Visits at VN Healthy Living, Imperial Beach, CA",
+        "price": "0",
+        "priceCurrency": "USD",
+        "eligibleCustomerType": "Medicare beneficiary"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "South Bay San Diego"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vnhealthyliving.com/#breadcrumb-about",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://vnhealthyliving.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Dr. K",
+          "item": "https://vnhealthyliving.com/about"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vnhealthyliving.com/#website",
+      "name": "VN Healthy Living Medical Group",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "Dr. K",
+        "Dr. Vijay Kuppurajan MD",
+        "VNHealthyLiving.com",
+        "Primary Care Medical Clinic Imperial Beach"
+      ],
+      "url": "https://vnhealthyliving.com",
+      "description": "Official website of VN Healthy Living Medical Group \u2014 known as VNHL and Dr. K's practice. Sharp and SCMG affiliated internal medicine and primary care in Imperial Beach, CA. Led by Dr. Vijay Kuppurajan, MD (NPI: 1326669060). Medicare Annual Wellness Visit $0 co-pay. Bilingual EN/ES. Accepting new patients. (619) 429-7700.",
+      "publisher": {
+        "@id": "https://vnhealthyliving.com/#clinic"
+      },
+      "author": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "inLanguage": [
+        "en-US",
+        "es"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://vnhealthyliving.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="header-brand">
-                <img src="00_VN_Healthy_Living_Logo_3D.png" alt="VN Healthy Living Logo" class="header-logo">
-                <div class="header-title-group">
-                    <h1>VN Healthy Living Medical Group</h1>
-                    <span class="header-tagline">Your Health is in the Palm of Your Hands</span>
-                </div>
-            </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Dr. K</a>
-                <a href="medicare.html">Medicare</a>
-                <a href="weight-loss.html">GLP-1 Weight Loss</a>
-                <a href="appointment.html">Request Appt</a>
-            </nav>
-        </div>
-    </header>
 
-    <div class="hero">
-        <h2>Meet Dr. K, Who Puts <span style="color: #047857;">YOU FIRST</span> in Imperial Beach</h2>
-        <p>Board-certified Internal Medicine Specialist dedicated to patient-centered, evidence-based care.</p>
+<!-- HEADER (Centered Layout matching index.html) -->
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-brand">
+      <img src="00_VN_Healthy_Living_Logo_3D.png" alt="VN Healthy Living Logo" class="header-logo">
+      <div class="header-title-group">
+        <h1>VN Healthy Living</h1>
+        <span class="header-tagline">Your Health is in the Palm of Your Hands</span>
+            <span class="header-tagline" style="color:#fde68a; font-size:0.6rem; margin-top:2px;">Hablamos Español · Atención bilingüe disponible</span>
+      </div>
     </div>
-
-    <div class="container">
-        <!-- Featured Award / Composite Image -->
-        <div class="award-section">
-            <div class="award-image-container">
-                <img src="VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Composite.png" alt="Dr. K SCMG Award of Excellence Composite">
-            </div>
-        </div>
-
-        <h3>Background</h3>
-        <p>Dr. Vijay Kuppurajan has a uniquely diverse global background. He trained under Dr. Mohan at the Madras Diabetes Research Foundation in India, studied abroad in Australia, completed medical school in Antigua and Miami, and finished his residency at Texas A&M, where he received the Dr. Sam Hooper Compassionate Care Award voted on by peers and patients. He was also recently honored with the Top PCP Award by Sharp-SCMG. Dr. K specializes in Preventive Care, Annual Wellness Visits, Chronic Disease Management, Senior Services, and Medical Weight Management.</p>
-        <p>During residency, Dr. K volunteered as a Big Brother for CASA (Court Appointed Special Advocacy) to support the best interests of vulnerable children in foster care. He also volunteered for the Sankara Eye Foundation, helping provide free eye care to the rural poor. Currently, he visits National City Skilled Nursing Home facilities weekly to support local seniors.</p>
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Dr. K</a>
+      <a href="medicare-glp1.html">Medicare &amp; GLP-1</a>
+      <a href="weight-loss.html">GLP-1 Weight Loss</a>
+      <a href="appointment.html">Request Appt</a>
+      <a href="faq.html">FAQ</a>
     
-        <h3>Care Philosophy</h3>
-        <p>At VN Healthy Living, Dr. K believes every patient deserves unhurried, concierge-level care. He takes time to listen, explain options clearly, and make decisions with you rather than for you. Whether managing a chronic condition or focusing on prevention, your voice guides your care. Compassion is the language we all share.</p>
-        <p>"My goal is to ensure every patient feels heard and empowered," says Dr. K. By partnering with Sharp, we offer the network resources of a major medical system paired with the personal warmth of a dedicated community clinic.</p>
-      
-        <h3>Credentials</h3>
-        <ul>
-            <li>Residency and Internship: Texas A&M University</li>
-            <li>Board-Certified Internal Medicine Specialist</li>
-            <li>Dr. Sam Hooper Compassionate Care Award, Texas A&M University, TX, 2023</li>
-            <li>Top Coronado PCP Award, Sharp-SCMG, CA, 2026</li>
-        </ul>
+            <a href="tel:6194297700" style="color:#5eead4; font-weight:700; font-size:0.9rem; white-space:nowrap;">📞 (619) 429-7700</a>
+            </nav>
+  </div>
+</header>
 
-        <div style="margin-top: 2rem;">
-            <h3>Serving Our Local Community</h3>
-            <p>Serving Imperial Beach, Coronado, and South San Diego communities. We proudly accept Original Medicare, most major PPOs, and Sharp-affiliated Medicare Advantage plans.</p>
-            
-            <div class="contact-row">
-                <div class="contact-item">
-                    <span class="icon-red">📍</span>
-                    <span>707 Palm Ave, Imperial Beach, CA 91932 (Next to Hampton Inn & Suites) & MTS Bus Routes 933 / 934</span>
+<!-- HERO SECTION -->
+<div class="hero">
+    <p>BOARD-CERTIFIED INTERNAL MEDICINE SPECIALIST DEDICATED TO PATIENT-CENTERED, EVIDENCE-BASED CARE.</p>
+    <h2>Meet Dr. K, Who Puts <span style="color: #047857;">YOU FIRST</span> in Imperial Beach</h2>
+    <div style="text-align:center; margin-top:1rem;">
+      <a href="tel:6194297700" style="display:inline-block; background:#0d9488; color:#fff; padding:12px 28px; border-radius:7px; font-weight:700; font-size:1rem; text-decoration:none;">📞 Call (619) 429-7700</a>
+    </div>
+</div>
+
+<!-- AWARD SECTION (White Background) -->
+<section class="award-section-wrapper">
+    <div class="award-section">
+        <div class="award-image-container">
+            <img src="VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Composite.png" alt="Dr. K SCMG Award of Excellence Composite">
+        </div>
+    </div>
+</section>
+
+<!-- QUICK NAV JUMP BUTTONS -->
+<section style="background:#f1f5f9; padding:20px 16px; border-bottom:1px solid #e2e8f0;">
+  <div style="max-width:650px; margin:0 auto;">
+    <p style="font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#64748b; margin-bottom:12px; text-align:center;">Explore Dr. K's Care</p>
+    <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+      <a href="#background" style="background:#1e3a8a; color:#fff; padding:10px 18px; border-radius:25px; font-size:14px; font-weight:600; text-decoration:none; white-space:nowrap;">🎓 Background</a>
+      <a href="#specialties" style="background:#1e3a8a; color:#fff; padding:10px 18px; border-radius:25px; font-size:14px; font-weight:600; text-decoration:none; white-space:nowrap;">🩺 Specialties</a>
+      <a href="#philosophy" style="background:#1e3a8a; color:#fff; padding:10px 18px; border-radius:25px; font-size:14px; font-weight:600; text-decoration:none; white-space:nowrap;">💙 Philosophy</a>
+      <a href="#vnhl-approach" style="background:#0d9488; color:#fff; padding:10px 18px; border-radius:25px; font-size:14px; font-weight:600; text-decoration:none; white-space:nowrap;">⭐ VNHL Approach</a>
+      <a href="medicare-glp1.html" style="background:#047857; color:#fff; padding:10px 18px; border-radius:25px; font-size:14px; font-weight:600; text-decoration:none; white-space:nowrap;">🛡️ Medicare</a>
+      <a href="weight-loss.html" style="background:#7c3aed; color:#fff; padding:10px 18px; border-radius:25px; font-size:14px; font-weight:600; text-decoration:none; white-space:nowrap;">⚖️ GLP-1</a>
+    </div>
+  </div>
+</section>
+
+<!-- BACKGROUND & GLOBAL EXPERIENCE SECTION (Dark Background) -->
+<section id="background" class="section-dark">
+    <div class="container">
+        <p class="eyebrow">Professional Background</p>
+        <h2>Background &amp; Global Experience</h2>
+        
+        <div class="unpacked-container">
+            <div class="content-card">
+                <div>
+                    <div class="card-title">🌐 International Training</div>
+                    <div class="card-body-text">Studied abroad in Australia, completed medical school across Antigua and Miami, and finished residency at Texas A&amp;M University.</div>
                 </div>
-                <div class="contact-item">
-                    <span class="icon-red">📞</span>
-                    <span>(619) 429-7700</span>
+                <div class="card-subtext">Global Education · Residency Excellence</div>
+            </div>
+            <div class="content-card">
+                <div>
+                    <div class="card-title">🔬 Specialized Research</div>
+                    <div class="card-body-text">Trained under Dr. Mohan at the Madras Diabetes Research Foundation in India.</div>
                 </div>
+                <div class="card-subtext">Clinical Research · Diabetes Care</div>
+            </div>
+            <div class="content-card">
+                <div>
+                    <div class="card-title">📜 Credentials</div>
+                    <div class="card-body-text">Board-Certified Internal Medicine Specialist.</div>
+                </div>
+                <div class="card-subtext">Board Certification · Internal Medicine</div>
             </div>
         </div>
     </div>
+</section>
+
+<!-- CLINICAL SPECIALTIES SECTION (White Background) -->
+<section id="specialties" class="section-white">
+    <div class="container">
+        <p class="eyebrow">Core Expertise</p>
+        <h2>Clinical Specialties</h2>
+        
+        <div class="unpacked-container">
+            <div class="content-card">
+                <div>
+                    <div class="card-title">🩺 Preventive Care &amp; Annual Wellness Visits</div>
+                    <div class="card-body-text">Comprehensive evaluations focused on proactive health and long-term wellness.</div>
+                </div>
+                <div class="card-subtext">Proactive Health · Annual Wellness</div>
+            </div>
+            <div class="content-card">
+                <div>
+                    <div class="card-title">📋 Chronic Disease Management</div>
+                    <div class="card-body-text">Expert ongoing management for complex health conditions and sustained stability.</div>
+                </div>
+                <div class="card-subtext">Ongoing Support · Disease Management</div>
+            </div>
+            <div class="content-card">
+                <div>
+                    <div class="card-title">👴 Senior Services</div>
+                    <div class="card-body-text">Specialized medical attention tailored to the unique health needs of older adults.</div>
+                </div>
+                <div class="card-subtext">Senior Care · Specialized Services</div>
+            </div>
+            <div class="content-card">
+                <div>
+                    <div class="card-title">⚖️ Medical Weight Management</div>
+                    <div class="card-body-text">Physician-supervised programs supporting sustainable lifestyle and weight goals.</div>
+                </div>
+                <div class="card-subtext">Physician Supervised · Weight Loss</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CARE PHILOSOPHY SECTION (Dark Background) -->
+<section id="philosophy" class="section-dark">
+    <div class="container">
+        <p class="eyebrow">Patient Commitment</p>
+        <h2>Care Philosophy</h2>
+        
+        <div class="unpacked-container">
+            <div class="content-card">
+                <div>
+                    <div class="card-title">⏳ Unhurried Consultations</div>
+                    <div class="card-body-text">Focuses on thorough, concierge-level care that emphasizes long-term wellness over rushed visits.</div>
+                </div>
+                <div class="card-subtext">Concierge-Level Care · Thorough Visits</div>
+            </div>
+            <div class="content-card">
+                <div>
+                    <div class="card-title">🤝 Patient Partnership</div>
+                    <div class="card-body-text">Ensures every patient feels heard, encourages questions, welcomes second opinions, and provides clear written care plans.</div>
+                </div>
+                <div class="card-subtext">Collaborative Decision Making · Written Plans</div>
+            </div>
+            <div class="content-card">
+                <div>
+                    <div class="card-title">🏥 Network &amp; Community</div>
+                    <div class="card-body-text">Combines the resources of a major network via Sharp with the heart of a local community clinic.</div>
+                </div>
+                <div class="card-subtext">Sharp Affiliated · Community Clinic Heart</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VNHL 3-IN-1 APPROACH SECTION (White background  -  alternates with dark) -->
+<section id="vnhl-approach" class="section-white" style="background:#ffffff;">
+  <div class="container" style="text-align:center;">
+    <p class="eyebrow">TRUSTED &amp; COMPASSIONATE CULTURE AT VNHL</p>
+    <h2 style="color:#1e3a8a;">It all starts with <span style="color:#0d9488;">LISTENING</span></h2>
+
+    <!-- 3-in-1 image -->
+    <div style="margin:24px auto; max-width:420px;">
+      <img src="3-1-Compassion.png"
+           alt="VNHL 3-in-1: Comprehensive, Competent, Collaborative, Compassionate"
+           style="width:100%; height:auto; display:block; filter:drop-shadow(0 8px 24px rgba(30,58,138,0.18));">
+    </div>
+
+    <!-- 4 C's cards -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:20px; text-align:left;">
+      <div style="background:#eff6ff; border-radius:10px; padding:18px 16px; border-left:4px solid #1e3a8a;">
+        <div style="font-size:13px; font-weight:800; color:#1e3a8a; letter-spacing:0.05em; margin-bottom:6px;">🔬 COMPREHENSIVE</div>
+        <p style="font-size:14px; color:#334155; line-height:1.6; margin:0;">Full-spectrum primary care  -  from preventive screenings to chronic disease management under one roof.</p>
+      </div>
+      <div style="background:#eff6ff; border-radius:10px; padding:18px 16px; border-left:4px solid #1e3a8a;">
+        <div style="font-size:13px; font-weight:800; color:#1e3a8a; letter-spacing:0.05em; margin-bottom:6px;">⭐ COMPETENT</div>
+        <p style="font-size:14px; color:#334155; line-height:1.6; margin:0;">Board-certified, globally trained, Sharp &amp; SCMG affiliated  -  evidence-based care you can trust.</p>
+      </div>
+      <div style="background:#eff6ff; border-radius:10px; padding:18px 16px; border-left:4px solid #1e3a8a;">
+        <div style="font-size:13px; font-weight:800; color:#1e3a8a; letter-spacing:0.05em; margin-bottom:6px;">🤝 COLLABORATIVE</div>
+        <p style="font-size:14px; color:#334155; line-height:1.6; margin:0;">Dr. K partners with you on every decision  -  your goals, your questions, your care plan, together.</p>
+      </div>
+      <div style="background:#fff7ed; border-radius:10px; padding:18px 16px; border-left:4px solid #dc2626;">
+        <div style="font-size:13px; font-weight:800; color:#dc2626; letter-spacing:0.05em; margin-bottom:6px;">❤️ COMPASSIONATE</div>
+        <p style="font-size:14px; color:#334155; line-height:1.6; margin:0;">Winner of the Dr. Sam Hooper Compassionate Care Award  -  because how you feel matters as much as what you hear.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVING OUR LOCAL COMMUNITY SECTION (Dark Background, alternating) -->
+<section class="section-dark">
+    <div class="container">
+        <p class="eyebrow">Community &amp; Insurance</p>
+        <h2>Serving Our Local Community</h2>
+        
+        <div class="unpacked-container">
+            <div class="content-card">
+                <div>
+                    <div class="card-title">📍 Communities Served &amp; Insurance</div>
+                    <div class="card-body-text">
+                        <ul style="margin: 0 0 0 1rem; padding: 0;">
+                            <li style="margin-bottom: 6px;"><strong>Communities Served:</strong> Proudly serving Imperial Beach, Coronado, and South San Diego communities.</li>
+                            <li><strong>Insurance Accepted:</strong> Original Medicare, most major PPOs, and Sharp-affiliated Medicare Advantage plans.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-subtext" style="color:#93c5fd;">Local Access · Insurance Accepted</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA IMAGE SECTION (Medicare Style using Plaque) -->
+<section class="cta-image-section">
+  <div class="cta-image-container">
+    <p class="eyebrow" style="color:#38bdf8; margin-bottom: 6px;">Take the next step</p>
+    <h2 style="color:var(--white); margin-bottom: 20px;">Connect with Dr. K</h2>
+    
+    <img src="Dr-Vijay-Kuppurajan-Sharp-SCMG-2026-Award-of-Excellence-Plaque.png" alt="Dr. Vijay Kuppurajan Award of Excellence Plaque" class="cta-display-img">
+    
+    <p style="font-size: 14px; color: #94A3B8; margin-bottom: 24px;">
+      Recognized as Sharp's Top PCP, Dr. Kuppurajan is ready to welcome you into our medical home and establish your personalized wellness plan.
+    </p>
+    
+    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+      <a href="appointment.html" class="btn btn-blue" style="background: var(--accent); color: var(--white); padding: 12px 24px; border-radius: 7px; font-weight: 600; font-size: 15px;">📅 Request Appt</a>
+      <a href="tel:+16194297700" class="btn btn-blue" style="background: var(--accent); color: var(--white); padding: 12px 24px; border-radius: 7px; font-weight: 600; font-size: 15px;">📞 Call (619) 429-7700 Today</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION & MAP -->
+<section class="section-white" style="background: #F8FAFC;">
+  <div class="container">
+    <p class="eyebrow">Find us</p>
+    <h2>Located in Imperial Beach</h2>
+    
+    <div class="loc-grid">
+      <div class="loc-block">
+        <h3>Address &amp; Parking</h3>
+        <div class="contact-row-consistent">
+          <span class="icon-red">📍</span>
+          <span>707 Palm Ave, Imperial Beach, CA 91932</span>
+        </div>
+        <p style="font-size:12px; color:#64748B; margin-left: 24px;">Next to Hampton Inn &amp; Suites · <strong>Free On-Site Parking</strong></p>
+      </div>
+      
+      <div class="loc-block">
+        <h3>Phone, Hours &amp; Transit</h3>
+        <div class="contact-row-consistent">
+          <span class="icon-red">📞</span>
+          <a href="tel:+16194297700" style="color:var(--accent);">619-429-7700</a>
+        </div>
+        <p style="font-size:12px; color:#64748B; margin-left: 24px;">Mon-Thu: 8am-5pm  |  Fri: 8am-12pm (Noon)<br>🚌 <strong>MTS Bus Routes 933 / 934</strong></p>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <!-- Dual-pin map: VNHL (destination, red pin) + Hampton Inn visible as landmark -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d600!2d-117.11800!3d32.58360!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x80d93574c8b6a3b7%3A0xcbd3ae5990a46b0!2sVN%20Healthy%20Living%20Medical%20Group%2C%20707%20Palm%20Ave%2C%20Imperial%20Beach%2C%20CA%2091932!3m2!1d32.583661!2d-117.117789!5e0!3m2!1sen!2sus!4v1725000000000!5m2!1sen!2sus"
+        width="100%" height="300" style="border:0;display:block;border-radius:8px;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="VN Healthy Living Medical Group - 707 Palm Ave Imperial Beach CA next to Hampton Inn and Suites">
+      </iframe>
+      <div class="map-caption"><strong style="color:#1e3a8a;">VN Healthy Living Medical Group</strong> &nbsp;·&nbsp; 707 Palm Ave, Imperial Beach &nbsp;·&nbsp; <span style="color:#64748b;">Next to Hampton Inn &amp; Suites</span> &nbsp;·&nbsp; Free Parking &nbsp;·&nbsp; <a href="https://www.google.com/maps/dir/?api=1&destination=VN+Healthy+Living+Medical+Group" target="_blank" rel="noopener" style="color:#0d9488;font-weight:700;">Get Directions &#8599;</a></div>
+    </div>
+  </div>
+</section>
 
 <!-- FOOTER -->
+<!-- FOOTER -->
 <footer>
-  <div style="margin-bottom: 6px;">
-    <span class="icon-red" style="display:inline-block; vertical-align:middle; margin-right:4px;">📍</span>
-    <span style="color:#cbd5e1;">(Right next to Hampton Inn &amp; Suites) | Free On-Site Parking | Bus Routes 933/934</span>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <span class="icon-red" style="display:inline-block; vertical-align:middle; margin-right:4px;">📞</span>
-    <span style="color:#cbd5e1;">619-429-7700</span>
-  </div>
   <p>VN Healthy Living Medical Group &nbsp;·&nbsp; Dr. Vijay Kuppurajan, MD &nbsp;·&nbsp; Board-Certified Internal Medicine &nbsp;·&nbsp; <a href="https://vnhealthyliving.com">vnhealthyliving.com</a></p>
 </footer>
 

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>GLP-1 Weight Loss Program · VN Healthy Living Medical Group | Imperial Beach, CA</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  /* Google Fonts loaded via <link> in <head>  -  see preconnect tags */
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -21,7 +21,7 @@
     --gold:    #D97706;
     --accent:  #0d9488;
     --red:     #dc2626;
-    --card-bg: #0F172A;
+    --card-bg: #1e3a8a; /* Standardized to light blue */
   }
 
   html { scroll-behavior: smooth; }
@@ -44,7 +44,7 @@
   }
 
   .header-container {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -56,36 +56,41 @@
   .header-brand {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+    min-width: 0;
+    flex-shrink: 1;
   }
 
   .header-logo {
-    height: 38px;
+    height: 36px;
     width: auto;
     display: block;
+    flex-shrink: 0;
   }
 
   .header-title-group {
     display: flex;
     flex-direction: column;
+    min-width: 0;
   }
 
   .logo-block h1, .header-title-group h1 {
     margin: 0;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     font-weight: 600; 
     letter-spacing: -0.01em; 
     line-height: 1.2; 
+    white-space: nowrap;
   }
 
   .header-tagline { 
     margin: 0; 
-    font-size: 0.88rem; 
+    font-size: 0.5rem; 
     font-weight: 600; 
-    letter-spacing: 0.015em; 
+    letter-spacing: 0.01em; 
     color: #5eead4; 
     white-space: nowrap;
-    line-height: 1.3;
+    line-height: 1.25;
   }
 
   .header-nav {
@@ -373,7 +378,7 @@
     font-weight: 400;
   }
 
-  /* ── UNPACKED CARDS LAYOUT ── */
+  /* ── UNPACKED CARDS LAYOUT (All Light Blue #1e3a8a) ── */
   .unpacked-container {
     max-width: 650px;
     margin: 20px auto 0 auto;
@@ -386,14 +391,14 @@
     width: 100%;
     box-sizing: border-box;
     background: var(--card-bg);
-    border: 1px solid var(--border);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 28px 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 160px;
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.2);
   }
 
   .card-title {
@@ -408,14 +413,14 @@
 
   .card-body-text {
     font-size: 15px;
-    color: #cbd5e1;
+    color: #f8fafc;
     line-height: 1.65;
     font-weight: 400;
   }
 
   .card-subtext {
     font-size: 12px;
-    color: #7DD3FC;
+    color: #93c5fd;
     margin-top: 10px;
     font-weight: 500;
   }
@@ -444,7 +449,7 @@
   .review-meta {
     font-size: 13px;
     font-weight: 600;
-    color: #7DD3FC;
+    color: #93c5fd;
   }
 
   .review-source {
@@ -584,7 +589,353 @@
   }
 
   .rating-stars { color: var(--gold); font-size: 14px; }
+
+  /* Mobile-first safe area insets */
+  :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  img { max-width: 100%; height: auto; }
+  @media (max-width: 480px) {
+    nav { gap: 0.6rem; }
+    nav a { font-size: 0.8rem; }
+    h2 { font-size: clamp(1.25rem, 5vw, 1.75rem) !important; }
+  }
 </style>
+
+    <!-- GA4 + Google Ads Global Site Tag  -  REPLACE G-XXXXXXXXXX and AW-XXXXXXXXX with real IDs -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'AW-XXXXXXXXX');
+    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "MedicalClinic",
+        "LocalBusiness"
+      ],
+      "@id": "https://vnhealthyliving.com/#clinic",
+      "name": "VN Healthy Living Medical Group",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "Primary Care Medical Clinic",
+        "VNHealthyLiving.com",
+        "Dr. K's Clinic",
+        "Dr. Kuppurajan's Office"
+      ],
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "NPI",
+          "value": "1154030955"
+        }
+      ],
+      "url": "https://vnhealthyliving.com",
+      "logo": "https://vnhealthyliving.com/00_VN_Healthy_Living_Logo_3D.png",
+      "image": [
+        "https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+        "https://vnhealthyliving.com/images/dr-vijay-kuppurajan-sharp-scmg-affiliated-internal-medicine-primary-care-imperial-beach-ca.jpg",
+        "https://vnhealthyliving.com/images/dr-kuppurajan-medicare-annual-wellness-visit-zero-copay-internal-medicine-imperial-beach-ca.jpg",
+        "https://vnhealthyliving.com/images/DrK_Sharp.jpg",
+        "https://vnhealthyliving.com/images/Medicare_AWV.jpg"
+      ],
+      "description": "VN Healthy Living Medical Group (VNHL) \u2014 Dr. K's practice \u2014 is a Sharp Health Plan and SCMG affiliated internal medicine and primary care clinic at 707 Palm Ave, Imperial Beach, CA 91932. Clinic NPI: 1154030955. Led by Dr. Vijay Kuppurajan, MD (Dr. K), VNHL offers Medicare Annual Wellness Visits at $0 co-pay, chronic disease management, GLP-1 therapy, cholesterol management, and preventive care. Independent solo practice. Bilingual English and Spanish staff. Trusted and compassionate care for new and current patients across Imperial Beach and South Bay San Diego.",
+      "slogan": "Build a Healthy Living Plan Together",
+      "telephone": "+16194297700",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "707 Palm Avenue",
+        "addressLocality": "Imperial Beach",
+        "addressRegion": "CA",
+        "postalCode": "91932",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "32.5836608942681",
+        "longitude": "-117.117789109941"
+      },
+      "hasMap": "https://www.google.com/maps?cid=14719962065778087226",
+      "medicalSpecialty": [
+        "Internal Medicine",
+        "Primary Care"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "priceRange": "$$",
+      "paymentAccepted": "Medicare, Original Medicare, Medicare Advantage (SCMG/Sharp), Medigap Supplement, Cash, Credit Card, Aetna, Blue Shield, United Healthcare, Cigna, Humana, GEHA, Health Net, Anthem Blue Cross, Tricare",
+      "currenciesAccepted": "USD",
+      "employee": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "founder": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "brand": {
+        "@id": "https://vnhealthyliving.com/#brand-drk"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "VN Healthy Living Medical Group",
+        "description": "Independent Solo Practitioner Clinic"
+      },
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "Medicare Annual Wellness Visit",
+          "alternateName": "AWV",
+          "description": "Comprehensive Medicare Annual Wellness Visit at $0 co-pay for eligible Medicare patients at VN Healthy Living (VNHL) \u2014 Dr. K. Includes personalized prevention plan, health risk assessment, depression and cognitive screening, medication review, and specialist referral coordination.",
+          "relevantSpecialty": "Internal Medicine",
+          "provider": {
+            "@id": "https://vnhealthyliving.com/#physician"
+          }
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Comprehensive Primary Care and Internal Medicine",
+          "description": "Adult primary care (18+) and internal medicine. Annual physicals, preventive screenings, acute illness treatment, immunizations, and care coordination. Dr. K at VN Healthy Living, Imperial Beach."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Chronic Disease Management",
+          "description": "Comprehensive management of Diabetes, Hypertension, High Cholesterol, and Heart Health at VN Healthy Living, Imperial Beach, CA."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "GLP-1 Therapy and Medical Weight Management",
+          "description": "Physician-supervised GLP-1 therapy (Ozempic, Wegovy, Mounjaro, Zepbound) and goal-oriented medical weight loss programs at VN Healthy Living, Imperial Beach."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Mental Health Screenings",
+          "description": "Primary care management and screenings for anxiety and depression at VNHL \u2014 Dr. K's practice in Imperial Beach, CA."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "On-Site Blood Work and Lab Tests",
+          "description": "On-site blood work and laboratory services available at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932."
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "VN Healthy Living \u2014 Medicare and Primary Care Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Medicare Annual Wellness Visit \u2014 $0 Co-Pay",
+            "price": "0",
+            "priceCurrency": "USD",
+            "eligibleCustomerType": "Medicare beneficiary",
+            "description": "$0 co-pay Annual Wellness Visit for Medicare patients at VN Healthy Living (VNHL) \u2014 Dr. K, 707 Palm Avenue, Imperial Beach, CA 91932. Call (619) 429-7700.",
+            "seller": {
+              "@id": "https://vnhealthyliving.com/#clinic"
+            }
+          }
+        ]
+      },
+      "memberOf": [
+        {
+          "@type": "MedicalOrganization",
+          "name": "Sharp Community Medical Group",
+          "alternateName": "SCMG",
+          "url": "https://www.scmg.org",
+          "parentOrganization": {
+            "@type": "MedicalOrganization",
+            "name": "Sharp HealthCare",
+            "url": "https://www.sharp.com"
+          }
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Imperial Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Imperial_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Chula Vista",
+          "sameAs": "https://en.wikipedia.org/wiki/Chula_Vista,_California"
+        },
+        {
+          "@type": "City",
+          "name": "National City",
+          "sameAs": "https://en.wikipedia.org/wiki/National_City,_California"
+        },
+        {
+          "@type": "City",
+          "name": "San Ysidro",
+          "sameAs": "https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego"
+        },
+        {
+          "@type": "City",
+          "name": "Coronado",
+          "sameAs": "https://en.wikipedia.org/wiki/Coronado,_California",
+          "description": "City of Coronado and adjacent Naval installations (ZIP 92118, 92135, 92155). VN Healthy Living Medical Group explicitly markets primary care and internal medicine services to both the Imperial Beach and Coronado communities. Dr. K is the SCMG Award of Excellence Top Coronado PCP for Patient Experience Score, Q2 2026."
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Bay San Diego"
+        }
+      ],
+      "sameAs": [
+        "https://maps.app.goo.gl/uX3L55vunB5uGqXWA",
+        "https://www.google.com/maps?cid=14719962065778087226",
+        "https://www.healthgrades.com/physician/dr-vijay-kuppurajan-1qplcas246",
+        "https://www.yelp.com/biz/YOUR_YELP_ID_HERE",
+        "https://drk.care",
+        "https://www.sharp.com/doctors/vijay-kuppurajan",
+        "https://vnhealthyliving.com"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://vnhealthyliving.com/#medicare-checklist-2026",
+      "name": "2026 Medicare Wellness Checklist",
+      "headline": "2026 Multilingual Medicare Wellness Checklist",
+      "description": "Preparation guide for Medicare Annual Wellness Visits in English, Spanish, Vietnamese, and Tagalog. Published by VN Healthy Living Medical Group, Imperial Beach, CA.",
+      "inLanguage": [
+        "en",
+        "es",
+        "vi",
+        "tl"
+      ],
+      "author": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "VN Healthy Living Medical Group",
+        "@id": "https://vnhealthyliving.com/#clinic"
+      },
+      "genre": "Medical Checklist",
+      "image": "https://vnhealthyliving.com/VNHL_GBP_MC_CLIST.jpg",
+      "url": "https://vnhealthyliving.com/medicare-wellness-checklist/"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vnhealthyliving.com/services#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are GLP-1 medications and how do they help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GLP-1 medications like Ozempic, Wegovy, Mounjaro, and Zepbound help with weight management, blood sugar control, heart health, sleep apnea, and metabolic wellness. At VN Healthy Living Medical Group in Imperial Beach, Dr. K uses them safely and carefully for long-term health. Call (619) 429-7700 to schedule a consultation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do GLP-1 medications help older adults?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many seniors benefit from improved energy, mobility, heart protection, and better blood sugar control with GLP-1 therapy. At VN Healthy Living, Dr. K tailors dosing to be gentle and senior-friendly. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are GLP-1 medications safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most patients tolerate GLP-1 medications well. Common side effects include nausea or constipation. Rare risks include slowed stomach emptying or vision changes. At VN Healthy Living, Dr. K monitors you closely throughout your treatment. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to be diabetic to use GLP-1 medications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Many patients at VN Healthy Living use GLP-1 medications for weight management, sleep apnea, fatty liver disease, or heart protection \u2014 not only for diabetes. Call (619) 429-7700."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if GLP-1 therapy is right for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Schedule a consultation with Dr. Vijay Kuppurajan \u2014 Dr. K \u2014 at VN Healthy Living, 707 Palm Ave, Imperial Beach, CA 91932. We will review your health goals and medical history to determine the best plan. Call (619) 429-7700."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vnhealthyliving.com/#breadcrumb-services",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://vnhealthyliving.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "GLP-1 Weight Loss",
+          "item": "https://vnhealthyliving.com/services"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vnhealthyliving.com/#website",
+      "name": "VN Healthy Living Medical Group",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "Dr. K",
+        "Dr. Vijay Kuppurajan MD",
+        "VNHealthyLiving.com",
+        "Primary Care Medical Clinic Imperial Beach"
+      ],
+      "url": "https://vnhealthyliving.com",
+      "description": "Official website of VN Healthy Living Medical Group \u2014 known as VNHL and Dr. K's practice. Sharp and SCMG affiliated internal medicine and primary care in Imperial Beach, CA. Led by Dr. Vijay Kuppurajan, MD (NPI: 1326669060). Medicare Annual Wellness Visit $0 co-pay. Bilingual EN/ES. Accepting new patients. (619) 429-7700.",
+      "publisher": {
+        "@id": "https://vnhealthyliving.com/#clinic"
+      },
+      "author": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "inLanguage": [
+        "en-US",
+        "es"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://vnhealthyliving.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -594,8 +945,9 @@
     <div class="header-brand">
       <img src="00_VN_Healthy_Living_Logo_3D.png" alt="VN Healthy Living Logo" class="header-logo">
       <div class="header-title-group">
-        <h1>VN Healthy Living Medical Group</h1>
+        <h1>VN Healthy Living</h1>
         <span class="header-tagline">Your Health is in the Palm of Your Hands</span>
+            <span class="header-tagline" style="color:#fde68a; font-size:0.6rem; margin-top:2px;">Hablamos Español · Atención bilingüe disponible</span>
       </div>
     </div>
     <nav class="header-nav">
@@ -604,7 +956,10 @@
       <a href="medicare.html">Medicare</a>
       <a href="weight-loss.html" class="active">GLP-1 Weight Loss</a>
       <a href="appointment.html">Request Appt</a>
-    </nav>
+      <a href="medicare.html#faq">FAQ</a>
+    
+            <a href="tel:6194297700" style="color:#5eead4; font-weight:700; font-size:0.9rem; white-space:nowrap;">📞 (619) 429-7700</a>
+            </nav>
   </div>
 </header>
 
@@ -625,6 +980,7 @@
 
     <div class="hero-center">
       <div class="hero-badges-row">
+        <div class="hero-badge">✅ Medicare Now Covers GLP-1 for Obesity  -  Ask Dr. K</div>
         <div class="hero-badge">✅ Physician-Supervised GLP-1 Program · Imperial Beach, CA</div>
         <div class="hero-badge">★ 4.9 out of 5.0 Rating</div>
       </div>
@@ -654,6 +1010,18 @@
   </div>
 </section>
 
+<!-- GLP-1 POINTER CALLOUT -->
+<div style="background:#f0fdf4;border:2px solid #0d9488;border-radius:10px;margin:24px auto;max-width:700px;padding:24px 28px;display:flex;align-items:flex-start;gap:16px;">
+  <div style="font-size:2rem;flex-shrink:0;">💊</div>
+  <div>
+    <p style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">Medical Weight Management with GLP-1</p>
+    <p style="font-size:16px;font-weight:700;color:#1e3a8a;margin-bottom:8px;line-height:1.3;">Our full GLP-1 program has moved to our combined Medicare &amp; GLP-1 page</p>
+    <p style="font-size:14px;color:#334155;line-height:1.6;margin-bottom:14px;">Our complete physician-supervised GLP-1 weight management program - including Medicare coverage details, program protocols, and patient FAQ - is now consolidated on our Medicare &amp; GLP-1 page. To keep our site streamlined within our 4-page asset limit, all GLP-1 and weight management content is available there in one place.</p>
+    <a href="medicare.html#glp1" style="display:inline-block;background:#0d9488;color:#fff;padding:10px 20px;border-radius:7px;font-size:13px;font-weight:700;text-decoration:none;margin-right:10px;">View Medicare &amp; GLP-1 Page &rarr;</a>
+    <a href="medicare.html#faq-medicare-glp1" style="display:inline-block;background:transparent;color:#0d9488;border:1.5px solid #0d9488;padding:10px 20px;border-radius:7px;font-size:13px;font-weight:700;text-decoration:none;">GLP-1 FAQ &rarr;</a>
+  </div>
+</div>
+
 <!-- DUAL IMAGE FRAME SECTION (EVOLUTION STORY) -->
 <section class="banner-section">
   <div class="container-wide">
@@ -671,7 +1039,7 @@
       </div>
 
       <p class="banner-description">
-        GLP-1 therapy started as a breakthrough management drug for Type 2 diabetes, quickly became a sensation for sustainable weight loss, and is now rapidly developing into a miracle medication delivering profound total body benefits—including heart and kidney protection, metabolic renewal, and promising early glimpses of enhanced brain health.
+        GLP-1 therapy started as a breakthrough management drug for Type 2 diabetes, quickly became a sensation for sustainable weight loss, and is now rapidly developing into a miracle medication delivering profound total body benefits - including heart and kidney protection, metabolic renewal, and promising early glimpses of enhanced brain health.
       </p>
     </div>
   </div>
@@ -738,15 +1106,15 @@
   </div>
 </section>
 
-<!-- BENEFITS SECTION (Why Choose Dr. K?) -->
+<!-- BENEFITS SECTION -->
 <section class="section-benefits" id="why-choose-dr-k">
   <div class="container">
     <p class="eyebrow">Why choose Dr. Kuppurajan</p>
     <h2>Why Choose Dr. K?</h2>
     
-    <div class="unpacked-container" style="background: transparent; border: none; padding: 0;">
+    <div class="unpacked-container">
       
-      <div class="content-card" style="background: var(--brand); border-color: rgba(255,255,255,0.15);">
+      <div class="content-card">
         <div>
           <div class="card-title">🤝 Genuine Doctor-Patient Partnership</div>
           <div class="card-body-text">Your weight loss journey is guided directly by Dr. K with unhurried appointments, active listening, and customized clinical adjustments.</div>
@@ -754,7 +1122,7 @@
         <div class="card-subtext">Internal medicine the way it should be · Personal Attention</div>
       </div>
 
-      <div class="content-card" style="background: var(--brand); border-color: rgba(255,255,255,0.15);">
+      <div class="content-card">
         <div>
           <div class="card-title">📈 Continuity Across Years</div>
           <div class="card-body-text">He tracks your complete medical background, ensuring safe integration of weight loss therapies with your current prescription regimen.</div>
@@ -762,7 +1130,7 @@
         <div class="card-subtext">Long-Term Relationship · Holistic Safety</div>
       </div>
 
-      <div class="content-card" style="background: var(--brand); border-color: rgba(255,255,255,0.15);">
+      <div class="content-card">
         <div>
           <div class="card-title">🏆 Sharp Community Recognition &amp; Affiliation</div>
           <div class="card-body-text">Recognized for clinical excellence by Sharp Community Medical Group, guaranteeing trusted medical standards and coordinated local resources.</div>
@@ -770,7 +1138,7 @@
         <div class="card-subtext">Sharp Affiliated &amp; Recognized · Clinical Excellence</div>
       </div>
 
-      <div class="content-card" style="background: var(--brand); border-color: rgba(255,255,255,0.15);">
+      <div class="content-card">
         <div>
           <div class="card-title">📍 Convenient Imperial Beach Location</div>
           <div class="card-body-text">Conveniently located at 707 Palm Ave with free on-site parking and direct MTS bus access (Rte 933/934).</div>
@@ -796,7 +1164,6 @@
 
     <div class="unpacked-container">
       
-      <!-- Review 1 -->
       <div class="content-card">
         <div>
           <div class="review-stars">★★★★★</div>
@@ -808,7 +1175,6 @@
         </div>
       </div>
 
-      <!-- Review 2 -->
       <div class="content-card">
         <div>
           <div class="review-stars">★★★★★</div>
@@ -820,7 +1186,6 @@
         </div>
       </div>
 
-      <!-- Review 3 -->
       <div class="content-card">
         <div>
           <div class="review-stars">★★★★★</div>
@@ -878,33 +1243,34 @@
           <span class="icon-red">📞</span>
           <a href="tel:+16194297700" style="color:var(--accent);">619-429-7700</a>
         </div>
-        <p style="font-size:12px; color:#64748B; margin-left: 24px;">Tue–Fri: 8am–5pm | Sat: 8am–12pm<br>🚌 <strong>MTS Bus Routes 933 / 934</strong></p>
+        <p style="font-size:12px; color:#64748B; margin-left: 24px;">Mon-Thu: 8am-5pm  |  Fri: 8am-12pm (Noon)<br>🚌 <strong>MTS Bus Routes 933 / 934</strong></p>
       </div>
     </div>
 
     <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1679.1268420658!2d-117.1241!3d32.5841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d93574c8b6a3b7%3A0x6b6c4e07a3f4e1f0!2s707%20Palm%20Ave%2C%20Imperial%20Beach%2C%20CA%2091932!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus&q=707+Palm+Ave+Imperial+Beach+CA+(VN+Healthy+Living)+|+Hampton+Inn+Imperial+Beach" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
+      <!-- Dual-pin map: VNHL Clinic (destination/red pin) + Hampton Inn (origin/landmark pin) -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d600!2d-117.11800!3d32.58360!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x80d93574c8b6a3b7%3A0xcbd3ae5990a46b0!2sVN%20Healthy%20Living%20Medical%20Group%2C%20707%20Palm%20Ave%2C%20Imperial%20Beach%2C%20CA%2091932!3m2!1d32.583661!2d-117.117789!5e0!3m2!1sen!2sus!4v1725000000000!5m2!1sen!2sus"
+        width="100%" height="300" style="border:0;display:block;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="VN Healthy Living Medical Group - 707 Palm Ave, Imperial Beach CA (next to Hampton Inn and Suites)">
       </iframe>
-      <div class="map-caption">📍 VN Healthy Living Medical Group · 707 Palm Ave (Right next to Hampton Inn &amp; Suites | Free Parking)</div>
+      <div class="map-caption">
+        <span style="font-weight:700;color:#1e3a8a;">VN Healthy Living Medical Group</span>
+        &nbsp;·&nbsp;707 Palm Ave, Imperial Beach
+        &nbsp;·&nbsp;<span style="color:#64748b;">Next to Hampton Inn &amp; Suites</span>
+        &nbsp;·&nbsp;Free Parking
+        &nbsp;·&nbsp;<a href="https://www.google.com/maps/dir/?api=1&destination=VN+Healthy+Living+Medical+Group&destination_place_id=ChIJt6O2yHQ1248RbkBLqVm+0ws%3D" target="_blank" rel="noopener" style="color:#0d9488;font-weight:700;">Get Directions to VNHL &#8599;</a>
+      </div>
     </div>
 
   </div>
 </section>
 
 <!-- FOOTER -->
+<!-- FOOTER -->
 <footer>
-  <div style="margin-bottom: 6px;">
-    <span class="icon-red" style="display:inline-block; vertical-align:middle; margin-right:4px;">📍</span>
-    <span style="color:#cbd5e1;">(Right next to Hampton Inn &amp; Suites) | Free On-Site Parking | Bus Routes 933/934</span>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <span class="icon-red" style="display:inline-block; vertical-align:middle; margin-right:4px;">📞</span>
-    <span style="color:#cbd5e1;">619-429-7700</span>
-  </div>
-  <p>VN Healthy Living Medical Group · Dr. Vijay Kuppurajan, MD · Board-Certified Internal Medicine · <a href="https://vnhealthyliving.com">vnhealthyliving.com</a></p>
+  <p>VN Healthy Living Medical Group &nbsp;·&nbsp; Dr. Vijay Kuppurajan, MD &nbsp;·&nbsp; Board-Certified Internal Medicine &nbsp;·&nbsp; <a href="https://vnhealthyliving.com">vnhealthyliving.com</a></p>
 </footer>
 
 </body>
