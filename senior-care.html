@@ -688,12 +688,20 @@
       /* Oct 2026: accessibility, header refinement */
       :root { --accent-on-dark: #14b8a6; }
       .hero h1 .accent-block, footer a { color: var(--accent-on-dark); }
+      /* Header: three lines fit the logo height (38px); the two tagline lines are sized to the width of the title line */
       .header-title-sub { font-weight: 300; letter-spacing: 0.01em; }
-      .header-title-group h1, header h1 { white-space: nowrap; }
+      .header-title-group { display: inline-flex; flex-direction: column; justify-content: center; width: max-content; max-width: 100%; height: 38px; font-size: clamp(0.86rem, 3.5vw, 0.98rem); }
+      .header-title-group h1 { font-size: 1em; line-height: 0.95; margin: 0; white-space: nowrap; }
+      .header-title-group .header-tagline { display: block; width: 0; min-width: 100%; white-space: nowrap; text-align: justify; text-align-last: justify; letter-spacing: 0 !important; line-height: 1; margin: 0.04em 0 0 0 !important; }
+      .header-title-group .header-tagline:nth-of-type(1) { font-size: 0.77em !important; }
+      .header-title-group .header-tagline:nth-of-type(2) { font-size: 0.63em !important; }
       .skip-link { position: absolute; left: -9999px; top: 0; background: #1e3a8a; color: #fff; padding: 8px 14px; z-index: 1000; }
       .skip-link:focus { left: 8px; top: 8px; }
       .emoji-ph { display: inline-block; filter: drop-shadow(0 0 3px rgba(255,255,255,0.9)); }
-      @media (max-width: 480px) { .header-tagline { font-size: 0.52rem !important; letter-spacing: 0 !important; white-space: nowrap; } }
+      .ico { width: 1.05em; height: 1.05em; vertical-align: -0.17em; fill: currentColor; display: inline-block; flex-shrink: 0; }
+      .loc-block h3 { color: #115e59; }
+      p a:not([class*="btn"]):not([style*="inline-block"]), li a:not([class*="btn"]), .map-caption a, footer a { text-decoration: underline; text-underline-offset: 2px; }
+      a:focus-visible, button:focus-visible, summary:focus-visible, .loc-block:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; box-shadow: 0 0 0 6px #ffffff; }
     </style>
 
 <script type="application/ld+json">
@@ -1265,6 +1273,7 @@
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
+    <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><defs><symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></symbol><symbol id="i-bus" viewBox="0 0 24 24"><path d="M4 16c0 .88.39 1.67 1 2.22V20a1 1 0 001 1h1a1 1 0 001-1v-1h8v1a1 1 0 001 1h1a1 1 0 001-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm9 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM6 11V6h12v5H6z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></symbol></defs></svg>
 
 <!-- HEADER -->
 <header class="site-header">
@@ -1284,7 +1293,7 @@
       <a href="medical-weight-mgt.html">Weight Management</a>
       <a href="faq-senior-care.html">FAQ</a>
     
-            <a href="tel:6194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#facc15; font-weight:700; font-size:0.9rem; white-space:nowrap;"><span class="emoji-ph" aria-hidden="true">📞</span> (619) 429-7700</a>
+            <a href="tel:6194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#facc15; font-weight:700; font-size:0.9rem; white-space:nowrap;"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg> (619) 429-7700</a>
             </nav>
   </div>
 </header>
@@ -1303,9 +1312,9 @@
 
     <div class="hero-center">
       <div class="hero-badges-row">
-        <div class="hero-badge">✅ Accepting Senior Patients</div>
+        <div class="hero-badge"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Accepting Senior Patients</div>
         <div class="hero-badge">🛡️ $0 Annual Wellness Visit  -  for Most Senior Insurance</div>
-        <div class="hero-badge">✅ Primary Care &amp; Preventive Medicine · Imperial Beach, CA</div>
+        <div class="hero-badge"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Primary Care &amp; Preventive Medicine · Imperial Beach, CA</div>
         <div class="hero-badge">💊 Physician-Supervised Weight & Metabolic Management</div>
         <div class="hero-badge">★ 4.9 out of 5.0 Rating</div>
       </div>
@@ -1320,7 +1329,7 @@
 
       <div class="hero-cta">
         <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;width:100%;">
-          <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" class="btn btn-blue"><span class="emoji-ph" aria-hidden="true">📞</span> Call: 619-429-7700</a>
+          <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" class="btn btn-blue"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg> Call: 619-429-7700</a>
                 </div>
         <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;width:100%;margin-top:2px;">
           <a href="#why-choose-dr-k" class="btn btn-outline">Why Choose Dr. K?</a>
@@ -1364,7 +1373,7 @@
 <!-- Senior Wellness AWV CALLOUT BAR -->
 <div style="background:linear-gradient(90deg,#0f766e,#115e59,#0f766e);color:#fff;padding:11px 16px;text-align:center;font-size:13.5px;font-weight:600;letter-spacing:0.01em;">
   <span style="background:rgba(255,255,255,0.15);padding:2px 8px;border-radius:4px;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;margin-right:8px;">Medicare</span>
-  New &amp; Current Medicare Patients Welcome &nbsp;·&nbsp; Annual Wellness Visit <strong style="color:#ccfbf1;">typically $0 co-pay</strong> &nbsp;|&nbsp; <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#fff;text-decoration:underline;"><span class="emoji-ph" aria-hidden="true">📞</span> Call Dr. K &raquo;</a>
+  New &amp; Current Medicare Patients Welcome &nbsp;·&nbsp; Annual Wellness Visit <strong style="color:#ccfbf1;">typically $0 co-pay</strong> &nbsp;|&nbsp; <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#fff;text-decoration:underline;"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg> Call Dr. K &raquo;</a>
 </div>
 
 <!-- SERVICES SECTION -->
@@ -1462,7 +1471,7 @@
 
       <div class="content-card">
         <div>
-          <div class="card-title">📍 Convenient Imperial Beach Location</div>
+          <div class="card-title"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg> Convenient Imperial Beach Location</div>
           <div class="card-body-text">Conveniently located at 707 Palm Ave with free parking and direct MTS bus access (Rte 933/934). A local physician who deeply understands and serves our community.</div>
         </div>
         <div class="card-subtext">Right Here in Imperial Beach · Accessibility</div>
@@ -1604,7 +1613,7 @@
     </p>
     
     <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-      <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" class="btn btn-blue" style="font-size: 15px; padding: 12px 24px;"><span class="emoji-ph" aria-hidden="true">📞</span> Call (619) 429-7700 Today</a>
+      <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" class="btn btn-blue" style="font-size: 15px; padding: 12px 24px;"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg> Call (619) 429-7700 Today</a>
     </div>
   </div>
 </section>
@@ -1621,20 +1630,20 @@
           <div class="loc-block addr-block" id="loc-1-btn" onclick="switchLocation(1)" style="border: 2px solid #2563eb;">
             <h3>Address &amp; Parking</h3>
             <div class="contact-row-consistent">
-              <span class="icon-red">📍</span>
+              <span class="icon-red"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg></span>
               <a href="#map-section-anchor" onclick="event.stopPropagation(); switchLocation(1);" style="font-size: 13px; white-space: nowrap; color: var(--dark); text-decoration: none;">707 Palm Ave, Imperial Beach, CA 91932</a>
             </div>
-            <p style="font-size:12px; color:#1e40af; margin-left:24px; line-height:1.6;">Next to Hampton Inn &amp; Suites (Corner of Palm Ave &amp; 7th)<br><strong>✅ ADA Compliant · Free On-Site Parking</strong></p>
+            <p style="font-size:12px; color:#1e40af; margin-left:24px; line-height:1.6;">Next to Hampton Inn &amp; Suites (Corner of Palm Ave &amp; 7th)<br><strong><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> ADA Compliant · Free On-Site Parking</strong></p>
           </div>
           
           <!-- Location 2: Hours, Phone & Transit -->
           <div class="loc-block hours-block" id="loc-2-btn" onclick="switchLocation(2)" style="border: 2px solid transparent;">
             <h3>Phone, Hours &amp; Transit</h3>
             <div class="contact-row-consistent">
-              <span class="icon-red"><span class="emoji-ph" aria-hidden="true">📞</span></span>
+              <span class="icon-red"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg></span>
               <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#0f766e;">619-429-7700</a>
             </div>
-            <p style="font-size:12px; color:#64748B; margin-left:24px;">Mon-Thu: 8am-5pm  |  Fri: 8am-12pm (Noon)<br>🚌 <strong>MTS Bus Routes 933 / 934</strong></p>
+            <p style="font-size:12px; color:#475569; margin-left:24px;">Mon-Thu: 8am-5pm  |  Fri: 8am-12pm (Noon)<br><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-bus"></use></svg> <strong>MTS Bus Routes 933 / 934</strong></p>
           </div>
         </div>
 
@@ -1650,10 +1659,10 @@
             <div style="margin-bottom:4px;">
               <strong style="color:#1e3a8a;">VN Healthy Living <span style="font-size:0.78em;letter-spacing:0.04em;">MEDICAL GROUP</span></strong>
               &nbsp;·&nbsp; 707 Palm Ave, Imperial Beach
-              &nbsp;·&nbsp; <span style="color:#64748b;">Corner of Palm Ave &amp; 7th St (Next to Hampton Inn)</span>
+              &nbsp;·&nbsp; <span style="color:#475569;">Corner of Palm Ave &amp; 7th St (Next to Hampton Inn)</span>
             </div>
             <div>
-              &nbsp;·&nbsp; <span style="color:#16a34a;font-weight:600;">✅ ADA Compliant &amp; Free Parking</span>
+              &nbsp;·&nbsp; <span style="color:#166534;font-weight:600;"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> ADA Compliant &amp; Free Parking</span>
               &nbsp;·&nbsp; <a href="https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932" target="_blank" rel="noopener" style="color:#0f766e;font-weight:700;" id="directions-link">Get Directions to VNHL &#8599;</a>
             </div>
           </div>
@@ -1674,10 +1683,10 @@
             <div style="margin-bottom:4px;">
               <strong style="color:#1e3a8a;">VN Healthy Living <span style="font-size:0.78em;letter-spacing:0.04em;">MEDICAL GROUP</span></strong>
               &nbsp;·&nbsp; 707 Palm Ave, Imperial Beach
-              &nbsp;·&nbsp; <span style="color:#64748b;">Corner of Palm Ave &amp; 7th St (Next to Hampton Inn)</span>
+              &nbsp;·&nbsp; <span style="color:#475569;">Corner of Palm Ave &amp; 7th St (Next to Hampton Inn)</span>
             </div>
             <div>
-              &nbsp;·&nbsp; <span style="color:#16a34a;font-weight:600;">✅ ADA Compliant &amp; Free Parking</span>
+              &nbsp;·&nbsp; <span style="color:#166534;font-weight:600;">✅ ADA Compliant &amp; Free Parking</span>
               &nbsp;·&nbsp; <a href="https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932" target="_blank" rel="noopener" style="color:#0f766e;font-weight:700;">Get Directions to VNHL &#8599;</a>
             </div>
           `;
@@ -1689,10 +1698,10 @@
             <div style="margin-bottom:4px;">
               <strong style="color:#1e3a8a;">VN Healthy Living <span style="font-size:0.78em;letter-spacing:0.04em;">MEDICAL GROUP</span></strong>
               &nbsp;·&nbsp; 707 Palm Ave, Imperial Beach
-              &nbsp;·&nbsp; <span style="color:#64748b;">Corner of Palm Ave &amp; 7th St (Next to Hampton Inn)</span>
+              &nbsp;·&nbsp; <span style="color:#475569;">Corner of Palm Ave &amp; 7th St (Next to Hampton Inn)</span>
             </div>
             <div>
-              &nbsp;·&nbsp; <span style="color:#16a34a;font-weight:600;">✅ ADA Compliant &amp; Free Parking</span>
+              &nbsp;·&nbsp; <span style="color:#166534;font-weight:600;">✅ ADA Compliant &amp; Free Parking</span>
               &nbsp;·&nbsp; <a href="https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932" target="_blank" rel="noopener" style="color:#0f766e;font-weight:700;">Get Directions to VNHL &#8599;</a>
             </div>
           `;
@@ -1713,6 +1722,9 @@
 function load(){var u=f.getAttribute('data-src');if(u){f.src=u;f.removeAttribute('data-src');}}
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){load();io.disconnect();}},{rootMargin:'120px'});io.observe(f);}else{load();}
 window.addEventListener('load',function(){f.addEventListener('focus',load);});})();
+</script>
+<script>
+document.querySelectorAll('.loc-block[onclick]').forEach(function(e){e.setAttribute('role','button');e.setAttribute('tabindex','0');e.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();e.click();}});});
 </script>
     <script src="vnhl-webmcp.js" defer></script>
 </body>

@@ -26,7 +26,7 @@
   var tools = [
     {
       name: 'check_insurance_acceptance',
-      description: 'Answer whether VN Healthy Living (Dr. K) accepts a type of insurance: private insurance, Original Medicare, or Medicare Advantage.' Always tells the patient to call the office to confirm their specific plan.',
+      description: 'Answer whether VN Healthy Living (Dr. K) accepts a type of insurance: private insurance, Original Medicare, or Medicare Advantage. Always tells the patient to call the office to confirm their specific plan.',
       inputSchema: {
         type: 'object',
         properties: {
