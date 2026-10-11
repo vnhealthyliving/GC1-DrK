@@ -1,0 +1,17 @@
+# Netlify redirects: old or guessed addresses go to the right page (301 = permanent).
+# Unknown addresses show 404.html.
+/weight-loss                      /medical-weight-mgt     301
+/weight-management                /medical-weight-mgt     301
+/weight-loss.html                 /medical-weight-mgt     301
+/senior-wellness                  /senior-care            301
+/faq                              /faq-senior-care        301
+/faqs                             /faq-senior-care        301
+/faq.html                         /faq-senior-care        301
+/appointment                      /                       301
+/appointments                     /                       301
+/appointment.html                 /                       301
+/request                          /                       301
+/contact                          /                       301
+/about-us                         /about                  301
+/dr-k                             /about                  301
+/home                             /                       301
