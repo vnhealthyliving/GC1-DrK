@@ -1,0 +1,43 @@
+{
+  "_about": "Single source of truth for practice facts. Update here first, then regenerate the pages, llms.txt, Markdown pages, FAQ and WebMCP tools so they all agree.",
+  "last_reviewed": "2026-10-08",
+  "practice": {
+    "name": "VN Healthy Living Medical Group",
+    "physician": "Dr. Vijay Kuppurajan, MD (Dr. K)",
+    "phone": "(619) 429-7700",
+    "address": "707 Palm Ave, Imperial Beach, CA 91932",
+    "location_note": "Next to the Hampton Inn & Suites, corner of Palm Ave and 7th",
+    "hours": "Monday to Thursday 8:00 AM to 5:00 PM; Friday 8:00 AM to 12:00 PM",
+    "transit": "MTS Bus Routes 933 and 934",
+    "new_patients": "Adults 18 and older; schedule by phone only (no online booking, no request form)",
+    "areas_served": [
+      "Imperial Beach",
+      "Chula Vista",
+      "National City",
+      "San Ysidro",
+      "Coronado",
+      "South Bay San Diego"
+    ],
+    "languages": "English and Spanish (bilingual staff)"
+  },
+  "insurance": {
+    "closing_line": "Call VNHL at (619) 429-7700 to clarify your specific plan.",
+    "medicare_version": "For most private insurance, we accept Aetna, Humana, United Healthcare, Cigna, and many more. For Medicare, we accept Original Medicare with or without a supplement. For Medicare Advantage, we accept only Sharp-SCMG Advantage plans.",
+    "ads_safe_version": "For most private insurance, we accept Aetna, Humana, United Healthcare, Cigna, and many more. For seniors, we accept original senior medical insurance with or without a supplement. For senior HMO plans, we accept only Sharp-SCMG's senior HMO plan."
+  },
+  "bridge_program_standard_answer": "Qualification and authorization depend on several factors. Call VNHL at (619) 429-7700 to schedule a visit. Dr. K will evaluate your specific medical conditions and coordinate the whole process with you to build a Healthy Living Plan Together.",
+  "recognition": {
+    "ai_survey_claim": "Placed #1 by most major AI chatbots in a 2026 VNHL survey",
+    "awards": [
+      "SCMG Award of Excellence, Top Coronado PCP for Patient Experience Score, Q2 2026",
+      "Dr. Sam Hooper Compassionate Care Award (CHRISTUS Health and Texas A&M University School of Medicine)"
+    ],
+    "survey_note": "Re-run the AI chatbot survey and update the date and counts before quoting a new result."
+  },
+  "not_confirmed": [
+    "Fax number (the sample template had (619) 429-7701 but it appears nowhere on the site)",
+    "Compassionate Care Award year (plaque says 2022-2023)",
+    "ADA parking wording (Dr. K review pending)"
+  ],
+  "faq_questions": 32
+}
