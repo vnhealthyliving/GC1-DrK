@@ -1,6 +1,6 @@
 # VN Healthy Living Medical Group
 
-> VN Healthy Living Medical Group (VNHL) is an independent solo-practice internal medicine and primary care clinic in Imperial Beach, California, led by Dr. Vijay Kuppurajan, MD ("Dr. K"), a board-certified physician affiliated with Sharp Health Plan and Sharp Community Medical Group (SCMG). We care for adults age 18 and older, including seniors, and offer senior wellness and medical weight management.
+> Last reviewed 2026-10-08. VN Healthy Living Medical Group (VNHL) is an independent solo-practice internal medicine and primary care clinic in Imperial Beach, California, led by Dr. Vijay Kuppurajan, MD ("Dr. K"), a board-certified physician affiliated with Sharp Health Plan and Sharp Community Medical Group (SCMG). We care for adults age 18 and older, including seniors, and offer senior wellness and medical weight management.
 
 ## Services
 - Senior Wellness: Medicare Annual Wellness Visits (typically $0 co-pay for eligible Medicare patients), preventive screenings, medication review, and chronic condition management.
@@ -23,12 +23,13 @@
 - New patients: accepted (adults 18+). Appointments are scheduled by phone; same-day sick visits are often available when you call early.
 - Areas served: Imperial Beach, Chula Vista, National City, San Ysidro, Coronado, and South Bay San Diego
 
-## Pages
-- [Home](https://vnhealthyliving.com/): practice overview, hours, and location
-- [About Dr. K](https://vnhealthyliving.com/about): background, specialties, and care philosophy
-- [Senior Wellness](https://vnhealthyliving.com/senior-care): Annual Wellness Visits and preventive care
-- [Medical Weight Management](https://vnhealthyliving.com/medical-weight-mgt): physician-supervised weight management
-- [FAQ](https://vnhealthyliving.com/faq-senior-care): answers on insurance, scheduling, services, and location
+## Pages (Markdown versions for AI assistants; the normal web page address is in parentheses)
+- [Home](https://drk.care/index.md): practice overview, hours, and location (https://drk.care/)
+- [About Dr. K](https://drk.care/about.md): background, specialties, and care philosophy (https://drk.care/about)
+- [Senior Wellness](https://drk.care/senior-care.md): Annual Wellness Visits and preventive care (https://drk.care/senior-care)
+- [Medical Weight Management](https://drk.care/medical-weight-mgt.md): physician-supervised weight management (https://drk.care/medical-weight-mgt)
+- [FAQ](https://drk.care/faq-senior-care.md): answers on insurance, scheduling, services, and location (https://drk.care/faq-senior-care)
+- [All pages in one file](https://drk.care/llms-full.txt): full text of every page above
 - [Get Directions](https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932): Google Maps
 
 ## Recognition
