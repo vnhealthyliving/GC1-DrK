@@ -421,7 +421,14 @@
       .loc-block h3 { color: #115e59; }
       p a:not([class*="btn"]):not([style*="inline-block"]), li a:not([class*="btn"]), .map-caption a, footer a { text-decoration: underline; text-underline-offset: 2px; }
       a:focus-visible, button:focus-visible, summary:focus-visible, .loc-block:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; box-shadow: 0 0 0 6px #ffffff; }
-    </style>
+      /* Find Us: keep pin icon and address text on one line on small phones */
+  .contact-row-consistent { flex-wrap: nowrap; }
+  .contact-row-consistent .icon-red { flex-shrink: 0; }
+  @media (max-width: 480px) {
+    .loc-block { padding: 14px 12px; }
+    .contact-row-consistent { gap: 6px; }
+  }
+</style>
 
     <!-- JSON-LD · source: 01d Schema Master v4.5 (home-page nodes, Phase 1 campaign wording) · @id namespace: vnhealthyliving.com · page URLs: drk.care -->
     <script type="application/ld+json">
@@ -1079,7 +1086,7 @@
             <h3>Address &amp; Parking</h3>
             <div class="contact-row-consistent">
               <span class="icon-red"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg></span>
-              <a href="#map-section-anchor" onclick="event.stopPropagation(); switchLocation(1);" style="font-size: 13px; white-space: nowrap; color: var(--dark); text-decoration: none;">707 Palm Ave, Imperial Beach, CA 91932</a>
+              <a href="#map-section-anchor" onclick="event.stopPropagation(); switchLocation(1);" style="font-size: clamp(12px, 3.6vw, 13px); color: var(--dark); text-decoration: none; min-width: 0;">707 Palm Ave, Imperial Beach, CA 91932</a>
             </div>
             <p style="font-size:12px; color:#1e40af; margin-left:24px; line-height:1.6;">Next to Hampton Inn &amp; Suites (Corner of Palm Ave &amp; 7th)<br><strong><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> ADA Compliant · Free On-Site Parking</strong></p>
           </div>

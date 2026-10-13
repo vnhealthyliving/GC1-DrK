@@ -599,7 +599,7 @@
           "name": "What insurance do you accept?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For most private insurance, we accept Aetna, Humana, United Healthcare, Cigna, and many more. For Medicare, we accept Original Medicare with or without a supplement. For Medicare Advantage, we accept only Sharp-SCMG Advantage plans. Call VNHL at (619) 429-7700 to clarify your specific plan."
+            "text": "For most private insurance, we accept Aetna, Humana, United Healthcare, Cigna, and many more. For Medicare, we accept Original Medicare with or without a supplement. For Medicare Advantage, we accept only Sharp-SCMG's Medicare Advantage plan. Call VNHL at (619) 429-7700 to clarify your specific plan."
           }
         },
         {
@@ -615,7 +615,7 @@
           "name": "What should I bring to my first appointment?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Please bring your photo ID, insurance card, and a list of your current medications."
+            "text": "Please bring a valid photo ID, your insurance cards (including any supplemental plan cards), and your medication bottles or a complete list of medications, dosages, and supplements. If you are transferring care, also bring summary notes, recent lab results, or immunization records from your previous physician, plus a written list of symptoms or health goals to discuss with Dr. K."
           }
         },
         {
@@ -631,7 +631,7 @@
           "name": "Do I need a referral to see Dr. K?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No referral is needed for most visits. If you need a specialist, Dr. K coordinates referrals through the Sharp and SCMG network."
+            "text": "No referral is needed for most visits. If you need a specialist, Dr. K coordinates streamlined referrals to Sharp specialists, diagnostic imaging centers, and advanced testing facilities through the Sharp and SCMG network."
           }
         },
         {
@@ -687,7 +687,7 @@
           "name": "How long are appointments, and will I get a written care plan?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Appointments are structured to give you adequate time, not a rushed visit. Dr. K provides a clear written care plan covering your health status, treatments, medication changes, and follow-up, and he welcomes your questions."
+            "text": "Your time with Dr. K is your time: unhurried, personal appointments with no rushing and no hand-offs, and dedicated attention to every concern you bring up. Dr. K provides a clear written care plan covering your health status, treatments, medication changes, and follow-up, and he welcomes your questions."
           }
         },
         {
@@ -703,7 +703,7 @@
           "name": "What services does VNHL offer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Dr. K provides annual physicals and preventive screenings, management of diabetes, hypertension, and high cholesterol, treatment of acute illnesses, on-site blood work, and primary care screening for anxiety and depression. Services are for adults age 18 and older."
+            "text": "Dr. K provides Annual Wellness Visits, annual physicals, preventive screenings and vaccines (including flu and pneumonia immunizations), management of diabetes, hypertension, heart disease, and high cholesterol, medication management with safe prescription refills, treatment of acute illnesses, on-site blood work, primary care screening for anxiety and depression, care coordination with Sharp specialists, and physician-supervised medical weight management. Services are for adults age 18 and older."
           }
         },
         {
@@ -711,7 +711,7 @@
           "name": "What is the Annual Wellness Visit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Medicare Annual Wellness Visit is a preventive visit, typically $0 co-pay for eligible Medicare patients. Dr. K reviews your health risks, medications, and screenings and builds a personalized prevention plan. Call VNHL at (619) 429-7700 to clarify your specific plan."
+            "text": "The Medicare Annual Wellness Visit is a comprehensive yearly preventive evaluation, typically $0 co-pay for eligible Medicare patients. Dr. K reviews your health risks, medications, and screenings and builds a personalized prevention plan. Call VNHL at (619) 429-7700 to clarify your specific plan."
           }
         },
         {
@@ -735,7 +735,7 @@
           "name": "What is medical weight management at VNHL?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Physician-supervised medical weight management with Dr. K combines personalized goals, nutrition and activity guidance, and, when appropriate, prescription therapy including GLP-1 medications."
+            "text": "Physician-supervised medical weight management with Dr. K combines personalized goals, nutrition and activity guidance, body composition monitoring, and, when appropriate, prescription therapy including GLP-1 medications."
           }
         },
         {
@@ -751,7 +751,7 @@
           "name": "Are weight management medications safe?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most patients tolerate GLP-1 medications well. Common side effects include nausea or constipation, and rare risks include slowed stomach emptying or vision changes. Dr. K monitors you closely throughout treatment."
+            "text": "Most patients tolerate GLP-1 medications well. Common side effects include nausea or constipation, and rare risks include slowed stomach emptying or vision changes. Dr. K monitors you closely, manages side effects proactively, adjusts dosages as needed, and supports you with protein-forward nutritional guidance and long-term weight maintenance planning."
           }
         },
         {
@@ -783,7 +783,7 @@
           "name": "Which Medicare Advantage plan do you accept?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For Medicare Advantage, Dr. K accepts only Sharp-SCMG Advantage plans. Call VNHL at (619) 429-7700 to clarify your specific plan."
+            "text": "For Medicare Advantage, Dr. K accepts only Sharp-SCMG's Medicare Advantage plan. Call VNHL at (619) 429-7700 to clarify your specific plan."
           }
         },
         {
@@ -815,7 +815,7 @@
           "name": "Where is the clinic and is parking available?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "VNHL is at 707 Palm Avenue, Imperial Beach, CA 91932, next to the Hampton Inn & Suites at the corner of Palm Ave and 7th. Ample free, ADA-accessible parking is available."
+            "text": "VNHL is at 707 Palm Avenue, Imperial Beach, CA 91932, next to the Hampton Inn & Suites at the corner of Palm Ave and 7th. Free on-site, ADA-accessible parking is available, and MTS Bus Routes 933 and 934 provide direct access."
           }
         },
         {
@@ -1067,7 +1067,14 @@
       .loc-block h3 { color: #115e59; }
       p a:not([class*="btn"]):not([style*="inline-block"]), li a:not([class*="btn"]), .map-caption a, footer a { text-decoration: underline; text-underline-offset: 2px; }
       a:focus-visible, button:focus-visible, summary:focus-visible, .loc-block:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; box-shadow: 0 0 0 6px #ffffff; }
-    </style>
+      /* Find Us: keep pin icon and address text on one line on small phones */
+  .contact-row-consistent { flex-wrap: nowrap; }
+  .contact-row-consistent .icon-red { flex-shrink: 0; }
+  @media (max-width: 480px) {
+    .loc-block { padding: 14px 12px; }
+    .contact-row-consistent { gap: 6px; }
+  }
+</style>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -1157,7 +1164,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            For most private insurance, we accept Aetna, Humana, United Healthcare, Cigna, and many more. For Medicare, we accept Original Medicare with or without a supplement. For Medicare Advantage, we accept only Sharp-SCMG Advantage plans. Call VNHL at <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#0f766e;font-weight:600;">(619) 429-7700</a> to clarify your specific plan.
+            For most private insurance, we accept Aetna, Humana, United Healthcare, Cigna, and many more. For Medicare, we accept Original Medicare with or without a supplement. For Medicare Advantage, we accept only Sharp-SCMG's Medicare Advantage plan. Call VNHL at <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#0f766e;font-weight:600;">(619) 429-7700</a> to clarify your specific plan.
           </div>
         </details>
         <details data-aud="medicare private" style="border:1px solid #e2e8f0; border-radius:8px; margin-bottom:10px; background:#fff; overflow:hidden;">
@@ -1175,7 +1182,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            Please bring your photo ID, insurance card, and a list of your current medications.
+            Please bring a valid photo ID, your insurance cards (including any supplemental plan cards), and your medication bottles or a complete list of medications, dosages, and supplements. If you are transferring care, also bring summary notes, recent lab results, or immunization records from your previous physician, plus a written list of symptoms or health goals to discuss with Dr. K.
           </div>
         </details>
         <details data-aud="all" style="border:1px solid #e2e8f0; border-radius:8px; margin-bottom:10px; background:#fff; overflow:hidden;">
@@ -1193,7 +1200,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            No referral is needed for most visits. If you need a specialist, Dr. K coordinates referrals through the Sharp and SCMG network.
+            No referral is needed for most visits. If you need a specialist, Dr. K coordinates streamlined referrals to Sharp specialists, diagnostic imaging centers, and advanced testing facilities through the Sharp and SCMG network.
           </div>
         </details>
   </div>
@@ -1266,7 +1273,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            Appointments are structured to give you adequate time, not a rushed visit. Dr. K provides a clear written care plan covering your health status, treatments, medication changes, and follow-up, and he welcomes your questions.
+            Your time with Dr. K is your time: unhurried, personal appointments with no rushing and no hand-offs, and dedicated attention to every concern you bring up. Dr. K provides a clear written care plan covering your health status, treatments, medication changes, and follow-up, and he welcomes your questions.
           </div>
         </details>
         <details data-aud="all" style="border:1px solid #e2e8f0; border-radius:8px; margin-bottom:10px; background:#fff; overflow:hidden;">
@@ -1289,7 +1296,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            Dr. K provides annual physicals and preventive screenings, management of diabetes, hypertension, and high cholesterol, treatment of acute illnesses, on-site blood work, and primary care screening for anxiety and depression. Services are for adults age 18 and older.
+            Dr. K provides Annual Wellness Visits, annual physicals, preventive screenings and vaccines (including flu and pneumonia immunizations), management of diabetes, hypertension, heart disease, and high cholesterol, medication management with safe prescription refills, treatment of acute illnesses, on-site blood work, primary care screening for anxiety and depression, care coordination with Sharp specialists, and physician-supervised medical weight management. Services are for adults age 18 and older.
           </div>
         </details>
         <details data-aud="medicare" style="border:1px solid #e2e8f0; border-radius:8px; margin-bottom:10px; background:#fff; overflow:hidden;">
@@ -1298,7 +1305,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            The Medicare Annual Wellness Visit is a preventive visit, typically $0 co-pay for eligible Medicare patients. Dr. K reviews your health risks, medications, and screenings and builds a personalized prevention plan. Call VNHL at <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#0f766e;font-weight:600;">(619) 429-7700</a> to clarify your specific plan.
+            The Medicare Annual Wellness Visit is a comprehensive yearly preventive evaluation, typically $0 co-pay for eligible Medicare patients. Dr. K reviews your health risks, medications, and screenings and builds a personalized prevention plan. Call VNHL at <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#0f766e;font-weight:600;">(619) 429-7700</a> to clarify your specific plan.
           </div>
         </details>
         <details data-aud="all" style="border:1px solid #e2e8f0; border-radius:8px; margin-bottom:10px; background:#fff; overflow:hidden;">
@@ -1330,7 +1337,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            Physician-supervised medical weight management with Dr. K combines personalized goals, nutrition and activity guidance, and, when appropriate, prescription therapy including GLP-1 medications.
+            Physician-supervised medical weight management with Dr. K combines personalized goals, nutrition and activity guidance, body composition monitoring, and, when appropriate, prescription therapy including GLP-1 medications.
           </div>
         </details>
         <details data-aud="all" style="border:1px solid #e2e8f0; border-radius:8px; margin-bottom:10px; background:#fff; overflow:hidden;">
@@ -1348,7 +1355,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            Most patients tolerate GLP-1 medications well. Common side effects include nausea or constipation, and rare risks include slowed stomach emptying or vision changes. Dr. K monitors you closely throughout treatment.
+            Most patients tolerate GLP-1 medications well. Common side effects include nausea or constipation, and rare risks include slowed stomach emptying or vision changes. Dr. K monitors you closely, manages side effects proactively, adjusts dosages as needed, and supports you with protein-forward nutritional guidance and long-term weight maintenance planning.
           </div>
         </details>
         <details data-aud="all" style="border:1px solid #e2e8f0; border-radius:8px; margin-bottom:10px; background:#fff; overflow:hidden;">
@@ -1389,7 +1396,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            For Medicare Advantage, Dr. K accepts only Sharp-SCMG Advantage plans. Call VNHL at <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#0f766e;font-weight:600;">(619) 429-7700</a> to clarify your specific plan.
+            For Medicare Advantage, Dr. K accepts only Sharp-SCMG's Medicare Advantage plan. Call VNHL at <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#0f766e;font-weight:600;">(619) 429-7700</a> to clarify your specific plan.
           </div>
         </details>
   </div>
@@ -1435,7 +1442,7 @@
             <span class="tog"></span>
           </summary>
           <div style="padding:0 18px 16px 18px; font-size:14px; color:#334155; line-height:1.7; border-top:1px solid #f1f5f9; padding-top:14px;">
-            VNHL is at 707 Palm Avenue, Imperial Beach, CA 91932, next to the Hampton Inn &amp; Suites at the corner of Palm Ave and 7th. Ample free, ADA-accessible parking is available.
+            VNHL is at 707 Palm Avenue, Imperial Beach, CA 91932, next to the Hampton Inn &amp; Suites at the corner of Palm Ave and 7th. Free on-site, ADA-accessible parking is available, and MTS Bus Routes 933 and 934 provide direct access.
           </div>
         </details>
         <details data-aud="all" style="border:1px solid #e2e8f0; border-radius:8px; margin-bottom:10px; background:#fff; overflow:hidden;">
@@ -1485,7 +1492,7 @@
             <h3>Address &amp; Parking</h3>
             <div class="contact-row-consistent">
               <span class="icon-red"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg></span>
-              <a href="#map-section-anchor" onclick="event.stopPropagation(); switchLocation(1);" style="font-size: 13px; white-space: nowrap; color: var(--dark); text-decoration: none;">707 Palm Ave, Imperial Beach, CA 91932</a>
+              <a href="#map-section-anchor" onclick="event.stopPropagation(); switchLocation(1);" style="font-size: clamp(12px, 3.6vw, 13px); color: var(--dark); text-decoration: none; min-width: 0;">707 Palm Ave, Imperial Beach, CA 91932</a>
             </div>
             <p style="font-size:12px; color:#1e40af; margin-left:24px; line-height:1.6;">Next to Hampton Inn &amp; Suites (Corner of Palm Ave &amp; 7th)<br><strong><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> ADA Compliant · Free On-Site Parking</strong></p>
           </div>
