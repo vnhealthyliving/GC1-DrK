@@ -2,7 +2,7 @@
 
 > Senior wellness in Imperial Beach: Medicare Annual Wellness Visits, preventive care, and chronic condition management with Dr. Vijay Kuppurajan, MD. New Medicare patients welcome. (619) 429-7700.
 
-- Web page: https://vnhealthyliving.com/senior-care
+- Web page: https://drk.care/senior-care
 - Last reviewed: 2026-10-08
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 

@@ -2,7 +2,7 @@
 
 > Dr. Vijay Kuppurajan, MD: Sharp-SCMG affiliated internal medicine in Imperial Beach, CA. Medicare, senior wellness, weight management. (619) 429-7700.
 
-- Web page: https://vnhealthyliving.com/
+- Web page: https://drk.care/
 - Last reviewed: 2026-10-08
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 

@@ -2,7 +2,7 @@
 
 > Meet Dr. Vijay Kuppurajan, MD: board-certified internal medicine, Sharp-SCMG affiliated, serving Imperial Beach and South Bay San Diego. Medicare and private insurance accepted. (619) 429-7700.
 
-- Web page: https://vnhealthyliving.com/about
+- Web page: https://drk.care/about
 - Last reviewed: 2026-10-08
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 

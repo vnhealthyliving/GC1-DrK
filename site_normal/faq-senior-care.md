@@ -2,7 +2,7 @@
 
 > Answers about Dr. K, senior wellness, Medicare and private insurance, medical weight management, hours, and more at VN Healthy Living, Imperial Beach.
 
-- Web page: https://vnhealthyliving.com/faq-senior-care
+- Web page: https://drk.care/faq-senior-care
 - Last reviewed: 2026-10-08
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 

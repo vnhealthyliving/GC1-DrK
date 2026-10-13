@@ -2,7 +2,7 @@
 
 > Physician-supervised medical weight management in Imperial Beach, including GLP-1 therapy. Medicare GLP-1 Bridge Program eligibility reviewed by Dr. K. (619) 429-7700.
 
-- Web page: https://vnhealthyliving.com/medical-weight-mgt
+- Web page: https://drk.care/medical-weight-mgt
 - Last reviewed: 2026-10-08
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
