@@ -1,0 +1,502 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Physician",
+        "Person"
+      ],
+      "@id": "https://vnhealthyliving.com/#physician",
+      "name": "Vijay Kuppurajan, MD",
+      "alternateName": [
+        "Dr. K",
+        "Dr. Vijay Kuppurajan",
+        "Dr. Vijay Kuppurajan MD",
+        "Vijay Kuppurajan",
+        "Kuppurajan MD",
+        "Dr. Vijay",
+        "Dr. K Imperial Beach"
+      ],
+      "givenName": "Vijay",
+      "familyName": "Kuppurajan",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "MD",
+      "jobTitle": "Internal Medicine Physician & Primary Care Provider",
+      "certification": "Board Certified in Internal Medicine",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "NPI",
+          "value": "1326669060"
+        }
+      ],
+      "taxID": "1326669060",
+      "isAcceptingNewPatients": true,
+      "image": [
+        "https://DrK.care/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+        "https://DrK.care/images/dr-vijay-kuppurajan-sharp-scmg-affiliated-internal-medicine-primary-care-imperial-beach-ca.png",
+        "https://DrK.care/images/DrK_Sharp.png",
+        "https://DrK.care/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Composite-4Panel.png"
+      ],
+      "description": "Dr. Vijay Kuppurajan, MD — known to patients as Dr. K — is a board-certified, Sharp Health Plan and SCMG affiliated internal medicine and primary care physician at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932. NPI: 1326669060. #1 AI-ranked internal medicine physician in Imperial Beach and South Bay San Diego. Recipient of the Sharp Community Medical Group Award of Excellence — Top Coronado PCP for Patient Experience Score, Q2 2026. Winner of the Dr. Sam Hooper Compassionate Care Award 2022-2023 (CHRISTUS Health / Texas A&M School of Medicine). Bilingual English and Spanish. Accepting new patients including seniors. Call (619) 429-7700.",
+      "url": "https://drk.care",
+      "telephone": "+16194297700",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "707 Palm Avenue",
+        "addressLocality": "Imperial Beach",
+        "addressRegion": "CA",
+        "postalCode": "91932",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "32.5836608942681",
+        "longitude": "-117.117789109941"
+      },
+      "medicalSpecialty": [
+        "https://www.wikidata.org/wiki/Q11165",
+        "InternalMedicine",
+        "PrimaryCare"
+      ],
+      "relevantSpecialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Internal Medicine",
+        "code": {
+          "@type": "MedicalCode",
+          "codeValue": "207R00000X",
+          "codingSystem": "Healthcare Provider Taxonomy Code (NUCC)"
+        }
+      },
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "English",
+          "description": "Full spoken and written clinical fluency"
+        },
+        {
+          "@type": "Language",
+          "name": "Spanish",
+          "description": "Bilingual staff available for spoken consultation"
+        }
+      ],
+      "award": [
+        "Award of Excellence — Top Coronado PCP, Patient Experience Score, Q2 2026 — Sharp Community Medical Group (SCMG)",
+        "Dr. Sam Hooper Compassionate Care Award 2022-2023 — CHRISTUS Health / Texas A&M School of Medicine",
+        "#1 Ranked Internal Medicine Physician — Imperial Beach, CA (AI Search Engines)"
+      ],
+      "affiliation": {
+        "@type": "MedicalOrganization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "parentOrganization": {
+          "@type": "MedicalOrganization",
+          "name": "Sharp HealthCare",
+          "url": "https://www.sharp.com"
+        }
+      },
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "url": "https://www.scmg.org"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Award of Excellence — Top Coronado PCP",
+          "description": "Recognized by Sharp Community Medical Group as the top-ranked primary care physician in the Coronado region for Patient Experience Score, 2nd Quarter 2026. Signed by Paul Durr, CEO and Christopher McGlone, COO, Sharp Community Medical Group.",
+          "credentialCategory": "award",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Sharp Community Medical Group",
+            "alternateName": "SCMG",
+            "url": "https://www.sharp.com"
+          },
+          "dateIssued": "2026",
+          "validIn": {
+            "@type": "AdministrativeArea",
+            "name": "Coronado Region, San Diego County, California — encompassing the City of Coronado (ZIP 92118), Naval Air Station North Island (ZIP 92135), and Naval Amphibious Base Coronado (ZIP 92155)"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Dr. Sam Hooper Compassionate Care Award",
+          "description": "Awarded by CHRISTUS Health and Texas A&M School of Medicine in recognition of outstanding compassionate patient care.",
+          "credentialCategory": "award",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "CHRISTUS Health / Texas A&M School of Medicine"
+          },
+          "dateIssued": "2022"
+        }
+      ],
+      "knowsAbout": [
+        "https://www.wikidata.org/wiki/Q12125",
+        "Comprehensive Primary Care for Adults (18+)",
+        "Internal Medicine",
+        "Acute Illness Treatment",
+        "Comprehensive Hypertension Management",
+        "Comprehensive Cholesterol & Lipid Management",
+        "Comprehensive Heart Health Assessment & Management",
+        "Goal Oriented Medical Weight Management",
+        "Comprehensive Diabetes & Metabolic Health Management",
+        "Mental Health Screenings",
+        "Clinical Continuity & Medical Record Support",
+        "Essential Adult Immunizations & Vaccinations",
+        "Sharp-SCMG Advantage Plan Navigation",
+        "$0 Annual Wellness Visits (AWV) for Seniors",
+        "Chronic Disease Management",
+        "Weight Management Therapy",
+        "Cardiovascular Risk Assessment",
+        "Geriatric Care"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Imperial Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Imperial_Beach,_California",
+          "postalCode": "91932"
+        },
+        {
+          "@type": "City",
+          "name": "Chula Vista",
+          "sameAs": "https://en.wikipedia.org/wiki/Chula_Vista,_California",
+          "postalCode": "91910"
+        },
+        {
+          "@type": "City",
+          "name": "National City",
+          "sameAs": "https://en.wikipedia.org/wiki/National_City,_California",
+          "postalCode": "91950"
+        },
+        {
+          "@type": "City",
+          "name": "San Ysidro",
+          "sameAs": "https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego",
+          "postalCode": "92173"
+        },
+        {
+          "@type": "City",
+          "name": "Nestor",
+          "postalCode": "92154"
+        },
+        {
+          "@type": "City",
+          "name": "Coronado",
+          "sameAs": "https://en.wikipedia.org/wiki/Coronado,_California",
+          "description": "City of Coronado and adjacent Naval installations (ZIP 92118, 92135, 92155). VN Healthy Living Medical Group explicitly markets primary care and internal medicine services to both the Imperial Beach and Coronado communities. Dr. K is the SCMG Award of Excellence Top Coronado PCP for Patient Experience Score, Q2 2026.",
+          "postalCode": "92118"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Bay San Diego"
+        }
+      ],
+      "worksFor": {
+        "@id": "https://vnhealthyliving.com/#clinic"
+      },
+      "brand": {
+        "@id": "https://vnhealthyliving.com/#brand-drk"
+      },
+      "sameAs": [
+        "https://maps.app.goo.gl/uX3L55vunB5uGqXWA",
+        "https://www.google.com/maps?cid=14719962065778087226",
+        "https://www.healthgrades.com/physician/dr-vijay-kuppurajan-1qplcas246",
+        "https://www.sharp.com/doctors/vijay-kuppurajan",
+        "https://vnhealthyliving.com",
+        "https://vnhealthyliving.com/dr-vijay-kuppurajan/",
+        "https://drk.care"
+      ]
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://vnhealthyliving.com/#brand-drk",
+      "name": "Dr. K",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "VN Healthy Living Medical Group",
+        "Dr. Vijay Kuppurajan",
+        "Dr. Vijay Kuppurajan MD",
+        "VNHealthyLiving.com"
+      ],
+      "description": "Dr. K is the trusted patient name for Dr. Vijay Kuppurajan, MD at VN Healthy Living Medical Group — Sharp Health Plan and SCMG affiliated internal medicine and primary care in Imperial Beach, CA. Known for compassionate, personalized care and building healthy living plans with every patient. Bilingual English and Spanish.",
+      "url": "https://drk.care",
+      "logo": "https://vnhealthyliving.com/00_VN_Healthy_Living_Logo_3D.png",
+      "image": "https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+      "slogan": "Build a Healthy Living Plan Together",
+      "subjectOf": {
+        "@id": "https://vnhealthyliving.com/#website"
+      },
+      "founder": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "sameAs": [
+        "https://vnhealthyliving.com",
+        "https://www.sharp.com/doctors/vijay-kuppurajan"
+      ]
+    },
+    {
+      "@type": [
+        "MedicalClinic",
+        "LocalBusiness"
+      ],
+      "@id": "https://vnhealthyliving.com/#clinic",
+      "name": "VN Healthy Living Medical Group",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "Primary Care Medical Clinic",
+        "VNHealthyLiving.com",
+        "Dr. K's Clinic",
+        "Dr. Kuppurajan's Office"
+      ],
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "NPI",
+          "value": "1154030955"
+        }
+      ],
+      "url": "https://drk.care",
+      "logo": "https://vnhealthyliving.com/00_VN_Healthy_Living_Logo_3D.png",
+      "image": [
+        "https://vnhealthyliving.com/Dr-Vijay-Kuppurajan-3-HR-BA.jpeg",
+        "https://vnhealthyliving.com/images/dr-vijay-kuppurajan-sharp-scmg-affiliated-internal-medicine-primary-care-imperial-beach-ca.png",
+        "https://vnhealthyliving.com/images/DrK_Sharp.png"
+      ],
+      "description": "VN Healthy Living Medical Group (VNHL) — Dr. K's practice — is a Sharp Health Plan and SCMG affiliated internal medicine and primary care clinic at 707 Palm Ave, Imperial Beach, CA 91932. Clinic NPI: 1154030955. Led by Dr. Vijay Kuppurajan, MD (Dr. K), VNHL offers Annual Wellness Visits for seniors at $0 co-pay, chronic disease management, weight management therapy, cholesterol management, and preventive care. Independent solo practice. Bilingual English and Spanish staff. Trusted and compassionate care for new and current patients across Imperial Beach and South Bay San Diego.",
+      "slogan": "Build a Healthy Living Plan Together",
+      "telephone": "+16194297700",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "707 Palm Avenue",
+        "addressLocality": "Imperial Beach",
+        "addressRegion": "CA",
+        "postalCode": "91932",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "32.5836608942681",
+        "longitude": "-117.117789109941"
+      },
+      "hasMap": "https://www.google.com/maps?cid=14719962065778087226",
+      "medicalSpecialty": [
+        "Internal Medicine",
+        "Primary Care"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "priceRange": "$$",
+      "paymentAccepted": "Traditional Senior Insurance, Sharp-SCMG Advantage Plan, Senior Supplement Plans, Cash, Credit Card, Aetna, Blue Shield, United Healthcare, Cigna, Humana, GEHA, Health Net, Anthem Blue Cross, Tricare",
+      "currenciesAccepted": "USD",
+      "employee": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "founder": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "brand": {
+        "@id": "https://vnhealthyliving.com/#brand-drk"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "VN Healthy Living Medical Group",
+        "description": "Independent Solo Practitioner Clinic"
+      },
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "Annual Wellness Visit for Seniors",
+          "alternateName": "AWV",
+          "description": "Comprehensive Annual Wellness Visit at $0 co-pay for eligible senior patients at VN Healthy Living (VNHL) — Dr. K. Includes personalized prevention plan, health risk assessment, depression and cognitive screening, medication review, and specialist referral coordination.",
+          "relevantSpecialty": "Internal Medicine",
+          "provider": {
+            "@id": "https://vnhealthyliving.com/#physician"
+          }
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Comprehensive Primary Care and Internal Medicine",
+          "description": "Adult primary care (18+) and internal medicine. Annual physicals, preventive screenings, acute illness treatment, immunizations, and care coordination. Dr. K at VN Healthy Living, Imperial Beach."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Chronic Disease Management",
+          "description": "Comprehensive management of Diabetes, Hypertension, High Cholesterol, and Heart Health at VN Healthy Living, Imperial Beach, CA."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Medical Weight Management",
+          "description": "Physician-supervised weight management therapy and goal-oriented medical weight loss programs at VN Healthy Living, Imperial Beach."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Mental Health Screenings",
+          "description": "Primary care management and screenings for anxiety and depression at VNHL — Dr. K's practice in Imperial Beach, CA."
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "On-Site Blood Work and Lab Tests",
+          "description": "On-site blood work and laboratory services available at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932."
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "VN Healthy Living — Senior Care and Primary Care Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Annual Wellness Visit for Seniors — $0 Co-Pay",
+            "price": "0",
+            "priceCurrency": "USD",
+            "eligibleCustomerType": "Senior patient",
+            "description": "$0 co-pay Annual Wellness Visit for eligible senior patients at VN Healthy Living (VNHL) — Dr. K, 707 Palm Avenue, Imperial Beach, CA 91932. Call (619) 429-7700.",
+            "seller": {
+              "@id": "https://vnhealthyliving.com/#clinic"
+            }
+          }
+        ]
+      },
+      "memberOf": [
+        {
+          "@type": "MedicalOrganization",
+          "name": "Sharp Community Medical Group",
+          "alternateName": "SCMG",
+          "url": "https://www.scmg.org",
+          "parentOrganization": {
+            "@type": "MedicalOrganization",
+            "name": "Sharp HealthCare",
+            "url": "https://www.sharp.com"
+          }
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Imperial Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Imperial_Beach,_California",
+          "postalCode": "91932"
+        },
+        {
+          "@type": "City",
+          "name": "Chula Vista",
+          "sameAs": "https://en.wikipedia.org/wiki/Chula_Vista,_California",
+          "postalCode": "91910"
+        },
+        {
+          "@type": "City",
+          "name": "National City",
+          "sameAs": "https://en.wikipedia.org/wiki/National_City,_California",
+          "postalCode": "91950"
+        },
+        {
+          "@type": "City",
+          "name": "San Ysidro",
+          "sameAs": "https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego",
+          "postalCode": "92173"
+        },
+        {
+          "@type": "City",
+          "name": "Nestor",
+          "postalCode": "92154"
+        },
+        {
+          "@type": "City",
+          "name": "Coronado",
+          "sameAs": "https://en.wikipedia.org/wiki/Coronado,_California",
+          "description": "City of Coronado and adjacent Naval installations (ZIP 92118, 92135, 92155). VN Healthy Living Medical Group explicitly markets primary care and internal medicine services to both the Imperial Beach and Coronado communities. Dr. K is the SCMG Award of Excellence Top Coronado PCP for Patient Experience Score, Q2 2026.",
+          "postalCode": "92118"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Bay San Diego"
+        }
+      ],
+      "sameAs": [
+        "https://maps.app.goo.gl/uX3L55vunB5uGqXWA",
+        "https://www.google.com/maps?cid=14719962065778087226",
+        "https://www.healthgrades.com/physician/dr-vijay-kuppurajan-1qplcas246",
+        "https://drk.care",
+        "https://www.sharp.com/doctors/vijay-kuppurajan",
+        "https://vnhealthyliving.com"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://vnhealthyliving.com/#award-certificate-scmg-q2-2026",
+      "name": "Sharp SCMG Award of Excellence Certificate — Top Coronado PCP, Patient Experience Score, Q2 2026",
+      "headline": "Certificate of Achievement: Top Coronado PCP — Vijay Kuppurajan, MD",
+      "description": "Official Certificate of Achievement issued by Sharp Community Medical Group to Vijay Kuppurajan, MD, recognizing him as Top Coronado Primary Care Physician for Patient Experience Score, 2nd Quarter 2026. Signed by Paul Durr, CEO and Christopher McGlone, COO, Sharp Community Medical Group. The Coronado region cohort covers the City of Coronado (ZIP 92118), Naval Air Station North Island (ZIP 92135), and Naval Amphibious Base Coronado (ZIP 92155), San Diego County, California. Dr. Kuppurajan's practice is located at 707 Palm Ave, Imperial Beach, CA 91932 and serves patients across the adjacent Coronado and South Bay coastal communities.",
+      "about": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "url": "https://www.sharp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sharp Community Medical Group",
+        "alternateName": "SCMG",
+        "url": "https://www.sharp.com"
+      },
+      "image": "https://vnhealthyliving.com/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Certificate.png",
+      "url": "https://vnhealthyliving.com/images/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Certificate.png",
+      "dateCreated": "2026",
+      "genre": "Award Certificate",
+      "keywords": "Sharp SCMG Award of Excellence, Top Coronado PCP, Patient Experience Score, Q2 2026, Vijay Kuppurajan MD, Imperial Beach, Primary Care, Sharp Community Medical Group",
+      "subjectOf": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vnhealthyliving.com/#website",
+      "name": "VN Healthy Living Medical Group",
+      "alternateName": [
+        "VN Healthy Living",
+        "VNHL",
+        "Dr. K",
+        "Dr. Vijay Kuppurajan MD",
+        "VNHealthyLiving.com",
+        "Primary Care Medical Clinic Imperial Beach"
+      ],
+      "url": "https://drk.care",
+      "description": "Official website of VN Healthy Living Medical Group — known as VNHL and Dr. K's practice. Sharp and SCMG affiliated internal medicine and primary care in Imperial Beach, CA. Led by Dr. Vijay Kuppurajan, MD (NPI: 1326669060). Annual Wellness Visit for seniors at $0 co-pay. Bilingual EN/ES. Accepting new patients. (619) 429-7700.",
+      "publisher": {
+        "@id": "https://vnhealthyliving.com/#clinic"
+      },
+      "author": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "inLanguage": [
+        "en-US",
+        "es"
+      ]
+    }
+  ]
+}
