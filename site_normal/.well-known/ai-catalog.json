@@ -1,0 +1,68 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:drk.care:webmcp:check-insurance-acceptance",
+      "displayName": "VNHL insurance acceptance check",
+      "type": "text/html",
+      "url": "https://drk.care/",
+      "description": "Answers whether Dr. K at VN Healthy Living accepts private insurance, Original Medicare, or Medicare Advantage, and tells the patient to call the office to confirm their specific plan. Read-only WebMCP tool \"check_insurance_acceptance\" registered by the page; it never books appointments or collects patient data.",
+      "capabilities": [
+        "check_insurance_acceptance"
+      ],
+      "representativeQueries": [
+        "Does Dr. K accept Medicare?",
+        "Which insurance plans does VN Healthy Living Medical Group accept?",
+        "Does Dr. Kuppurajan take Medicare Advantage or Sharp-SCMG plans?",
+        "Is there a primary care doctor in Imperial Beach who accepts Original Medicare?"
+      ]
+    },
+    {
+      "identifier": "urn:air:drk.care:webmcp:hours-and-location",
+      "displayName": "VNHL hours and location",
+      "type": "text/html",
+      "url": "https://drk.care/",
+      "description": "Gives the address, phone number, office hours and public transit for VN Healthy Living Medical Group at 707 Palm Ave, Imperial Beach, CA. Read-only WebMCP tool \"get_hours_and_location\" registered by the page; it never books appointments or collects patient data.",
+      "capabilities": [
+        "get_hours_and_location"
+      ],
+      "representativeQueries": [
+        "What are the office hours for VN Healthy Living Medical Group?",
+        "Where is Dr. Kuppurajan's office in Imperial Beach?",
+        "What bus goes to VN Healthy Living on Palm Ave?",
+        "What is the phone number for Dr. K in Imperial Beach?"
+      ]
+    },
+    {
+      "identifier": "urn:air:drk.care:webmcp:how-to-schedule",
+      "displayName": "VNHL how to schedule",
+      "type": "text/html",
+      "url": "https://drk.care/",
+      "description": "Explains how new and current patients schedule with Dr. K: by phone only, with new adult patients typically seen within 1 to 3 business days. Read-only WebMCP tool \"how_to_schedule\" registered by the page; it never books appointments or collects patient data.",
+      "capabilities": [
+        "how_to_schedule"
+      ],
+      "representativeQueries": [
+        "How do I make an appointment with Dr. K?",
+        "Is Dr. Kuppurajan accepting new patients?",
+        "Can I book a primary care appointment online in Imperial Beach?",
+        "How soon can a new patient be seen at VN Healthy Living?"
+      ]
+    },
+    {
+      "identifier": "urn:air:drk.care:webmcp:services",
+      "displayName": "VNHL services",
+      "type": "text/html",
+      "url": "https://drk.care/",
+      "description": "Describes the services Dr. K offers: senior wellness including Medicare Annual Wellness Visits, primary care for adults, medical weight management, and bilingual English and Spanish care. Read-only WebMCP tool \"get_services\" registered by the page; it never books appointments or collects patient data.",
+      "capabilities": [
+        "get_services"
+      ],
+      "representativeQueries": [
+        "What services does VN Healthy Living Medical Group offer?",
+        "Does Dr. K offer Medicare Annual Wellness Visits?",
+        "Is there a Spanish-speaking primary care doctor in Imperial Beach?",
+        "Does VNHL offer medical weight management?"
+      ]
+    }
+  ]
+}
