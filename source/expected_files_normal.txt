@@ -1,11 +1,19 @@
-# Exact files that belong in the site_normal/ folder of the repo (33 files). Anything else in that folder is an orphan.
+# Exact files that belong in the site_normal/ folder of the repo (41 files). Anything else in that folder is an orphan.
+.well-known/ai-catalog.json
+.well-known/ard.json
 3-1-Compassion.webp
 404.html
+CoronadoTimes-680w-680x510.webp
+CoronadoTimes-mobile-1200x900.webp
+CoronadoTimes-small-960x720.webp
 Dr-Vijay-Kuppurajan-3-HR-BA.webp
 Dr-Vijay-Kuppurajan-Compassionate-Care-Award-Imperial-Beach-hero-455w.webp
 Dr-Vijay-Kuppurajan-Sharp-SCMG-2026-Award-of-Excellence-Certificate.webp
 Dr-Vijay-Kuppurajan-Sharp-SCMG-2026-Award-of-Excellence-Plaque-837W.webp
 Dr-Vijay-Kuppurajan-Sharp-SCMG-2026-Award-of-Excellence-Plaque-hero-432w.webp
+EagleTimes-680w-680x911.webp
+EagleTimes-mobile-896x1200.webp
+EagleTimes-small-720x964.webp
 GLP1_S3E1_Title.webp
 Medicare-AWV.webp
 VNHL-DrK-Medical-Home-614w.webp

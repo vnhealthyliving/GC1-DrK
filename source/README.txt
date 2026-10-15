@@ -6,7 +6,8 @@ faq_master.json        The FAQ questions and answers (Medicare and ads-safe word
 wording_map.md         Approved wording rules (Medicare version versus ads-safe version).
 expected_files_*.txt   Exact file lists for each site folder; anything else in a site folder is an orphan.
 images_list/           The 01h image list (old name to .webp name).
-docs/                  Plan, PageSpeed and Rich Results baseline (8 Oct 2026), AI survey log.
+docs/                  Plan, PageSpeed and Rich Results baselines (8 Oct and 14 Oct 2026), AI survey log.
+CHANGELOG.md           What changed in each delivery.
 archive/               Full-wording schema saved before sanitizing (reference).
 build/                 The generator scripts and the original base pages.
 

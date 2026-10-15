@@ -32,7 +32,28 @@
       "SCMG Award of Excellence, Top Coronado PCP for Patient Experience Score, Q2 2026",
       "Dr. Sam Hooper Compassionate Care Award (CHRISTUS Health and Texas A&M University School of Medicine)"
     ],
-    "survey_note": "Re-run the AI chatbot survey and update the date and counts before quoting a new result."
+    "survey_note": "Re-run the AI chatbot survey and update the date and counts before quoting a new result.",
+    "local_news": [
+      {
+        "paper": "The Coronado Times",
+        "date": "2026-09-23",
+        "headline": "Dr. Kuppurajan recognized as top primary care physician in SCMG Coronado region",
+        "images": [
+          "CoronadoTimes-small-960x720.webp",
+          "CoronadoTimes-mobile-1200x900.webp"
+        ]
+      },
+      {
+        "paper": "Eagle & Times",
+        "date": "2026-09-17",
+        "note": "VOL. 40, NO. 38 issue dated Sept. 17, 2026; clipping also shows Sep 18, 2026. Confirm which date to use.",
+        "headline": "Dr. Vijay Kuppurajan of VN Healthy Living Medical Group named Top Coronado Region Physician",
+        "images": [
+          "EagleTimes-small-720x964.webp",
+          "EagleTimes-mobile-896x1200.webp"
+        ]
+      }
+    ]
   },
   "not_confirmed": [
     "Fax number (the sample template had (619) 429-7701 but it appears nowhere on the site)",
