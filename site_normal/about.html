@@ -452,7 +452,19 @@
     .loc-block { padding: 14px 12px; }
     .contact-row-consistent { gap: 6px; }
   }
-</style>
+
+      /* Oct 14 2026: touch targets in Find Us blocks (Lighthouse target-size) */
+      .contact-row-consistent { align-items: center; }
+      .contact-row-consistent a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; }
+
+      /* Oct 14 2026: In the News (clippings shown in full) */
+      .news-section { background: #ffffff; border-bottom: 1px solid #e2e8f0; }
+      .news-section .news-intro { max-width: 750px; margin: 8px auto 0 auto; text-align: center; color: #334155; }
+      .news-item { margin: 26px auto 0 auto; text-align: center; }
+      .news-item img { width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto; }
+      .news-item h3 { font-size: 1rem; color: #1e3a8a; margin: 12px 0 4px 0; }
+      .news-item p { font-size: 0.9rem; color: #334155; max-width: 750px; margin: 0 auto; }
+    </style>
 
 <script type="application/ld+json">
 {
@@ -664,7 +676,15 @@
         "https://vnhealthyliving.com/dr-vijay-kuppurajan/",
         "https://drk.care"
       ],
-      "priceRange": "$$"
+      "priceRange": "$$",
+      "subjectOf": [
+        {
+          "@id": "https://vnhealthyliving.com/#news-coronado-times-2026-09-23"
+        },
+        {
+          "@id": "https://vnhealthyliving.com/#news-eagle-and-times-2026-09-17"
+        }
+      ]
     },
     {
       "@type": "Brand",
@@ -931,6 +951,62 @@
       }
     },
     {
+      "@type": "NewsArticle",
+      "@id": "https://vnhealthyliving.com/#news-coronado-times-2026-09-23",
+      "headline": "Dr. Kuppurajan recognized as top primary care physician in SCMG Coronado region",
+      "datePublished": "2026-09-23",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Coronado Times"
+      },
+      "description": "Dr. Vijay Kuppurajan of VN Healthy Living Medical Group is recognized as the top primary care physician in the Sharp Community Medical Group (SCMG) Coronado region, based on Q2 2026 Patient Experience scores.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://drk.care/CoronadoTimes-mobile-1200x900.webp",
+        "width": 1200,
+        "height": 900,
+        "caption": "The Coronado Times, September 23, 2026: Dr. Kuppurajan recognized as top primary care physician in the SCMG Coronado region, with photos of Dr. K and the Sharp award"
+      },
+      "about": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "mentions": [
+        {
+          "@id": "https://vnhealthyliving.com/#clinic"
+        }
+      ],
+      "keywords": "Dr. Vijay Kuppurajan, VN Healthy Living Medical Group, SCMG Coronado region, Top PCP, Patient Experience Score, Q2 2026, Imperial Beach, Coronado"
+    },
+    {
+      "@type": "NewsArticle",
+      "@id": "https://vnhealthyliving.com/#news-eagle-and-times-2026-09-17",
+      "headline": "Dr. Vijay Kuppurajan of VN Healthy Living Medical Group named Top Coronado Region Physician",
+      "datePublished": "2026-09-17",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Eagle & Times"
+      },
+      "description": "Local coverage of Dr. K's Award of Excellence as Top Primary Care Physician in the SCMG Coronado region, which includes Imperial Beach and Coronado, based on independently validated Press Ganey patient experience surveys.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://drk.care/EagleTimes-mobile-896x1200.webp",
+        "width": 896,
+        "height": 1200,
+        "caption": "Eagle & Times, September 17, 2026: Dr. Vijay Kuppurajan of VN Healthy Living Medical Group named Top Coronado Region Physician, with photos of Dr. K and the Sharp award"
+      },
+      "about": {
+        "@id": "https://vnhealthyliving.com/#physician"
+      },
+      "mentions": [
+        {
+          "@id": "https://vnhealthyliving.com/#clinic"
+        }
+      ],
+      "keywords": "Dr. Vijay Kuppurajan, VN Healthy Living Medical Group, SCMG Coronado region, Top PCP, Patient Experience Score, Q2 2026, Imperial Beach, Coronado"
+    },
+    {
       "@type": "Service",
       "@id": "https://vnhealthyliving.com/#multicultural-service",
       "name": "Multicultural Care & Senior Wellness Support",
@@ -1073,6 +1149,25 @@
         </div>
     </div>
 </section>
+
+    <!-- IN THE NEWS (two local news clippings, shown in full) -->
+    <section class="section-white news-section" id="in-the-news">
+        <div class="container">
+            <p class="eyebrow">In the News</p>
+            <h2>Local News: Dr. K Named Top Primary Care Physician in the SCMG Coronado Region</h2>
+            <p class="news-intro">Two local newspapers covered Dr. K's Sharp Community Medical Group Award of Excellence, serving the Imperial Beach and Coronado communities.</p>
+            <div class="news-item" style="max-width:750px;">
+                <img class="content-img" src="CoronadoTimes-small-960x720.webp" srcset="CoronadoTimes-small-960x720.webp 960w, CoronadoTimes-mobile-1200x900.webp 1200w" sizes="(max-width: 780px) 94vw, 750px" width="960" height="720" loading="lazy" decoding="async" alt="The Coronado Times, September 23, 2026: Dr. Kuppurajan recognized as top primary care physician in the SCMG Coronado region, with photos of Dr. K and the Sharp award">
+                <h3>The Coronado Times · September 23, 2026</h3>
+                <p>Dr. Vijay Kuppurajan of VN Healthy Living Medical Group is recognized as the top primary care physician in the Sharp Community Medical Group (SCMG) Coronado region, based on Q2 2026 Patient Experience scores.</p>
+            </div>
+            <div class="news-item" style="max-width:560px;">
+                <img class="content-img" src="EagleTimes-small-720x964.webp" srcset="EagleTimes-small-720x964.webp 720w, EagleTimes-mobile-896x1200.webp 896w" sizes="(max-width: 600px) 94vw, 560px" width="720" height="964" loading="lazy" decoding="async" alt="Eagle &amp; Times, September 17, 2026: Dr. Vijay Kuppurajan of VN Healthy Living Medical Group named Top Coronado Region Physician, with photos of Dr. K and the Sharp award">
+                <h3>Eagle &amp; Times · September 17, 2026 issue</h3>
+                <p>Local coverage of Dr. K's Award of Excellence as Top Primary Care Physician in the SCMG Coronado region, which includes Imperial Beach and Coronado, based on independently validated Press Ganey patient experience surveys.</p>
+            </div>
+        </div>
+    </section>
 
 <!-- QUICK NAV JUMP BUTTONS -->
 <section style="background:#f1f5f9; padding:20px 16px; border-bottom:1px solid #e2e8f0;">

@@ -3,7 +3,7 @@
 > Meet Dr. Vijay Kuppurajan, MD: board-certified internal medicine, Sharp-SCMG affiliated, serving Imperial Beach and South Bay San Diego. Medicare and private insurance accepted. (619) 429-7700.
 
 - Web page: https://drk.care/about
-- Last reviewed: 2026-10-08
+- Last reviewed: 2026-10-14
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 BOARD-CERTIFIED INTERNAL MEDICINE SPECIALIST DEDICATED TO PATIENT-CENTERED, EVIDENCE-BASED CARE.
@@ -11,6 +11,20 @@ BOARD-CERTIFIED INTERNAL MEDICINE SPECIALIST DEDICATED TO PATIENT-CENTERED, EVID
 ### Meet Dr. K, Who Puts YOU FIRST in Imperial Beach
 
 [Call (619) 429-7700](tel:+16194297700)
+
+In the News
+
+### Local News: Dr. K Named Top Primary Care Physician in the SCMG Coronado Region
+
+Two local newspapers covered Dr. K's Sharp Community Medical Group Award of Excellence, serving the Imperial Beach and Coronado communities.
+
+#### The Coronado Times · September 23, 2026
+
+Dr. Vijay Kuppurajan of VN Healthy Living Medical Group is recognized as the top primary care physician in the Sharp Community Medical Group (SCMG) Coronado region, based on Q2 2026 Patient Experience scores.
+
+#### Eagle & Times · September 17, 2026 issue
+
+Local coverage of Dr. K's Award of Excellence as Top Primary Care Physician in the SCMG Coronado region, which includes Imperial Beach and Coronado, based on independently validated Press Ganey patient experience surveys.
 
 Explore Dr. K's Care
 
