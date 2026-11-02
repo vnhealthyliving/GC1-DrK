@@ -767,7 +767,23 @@
     .loc-block { padding: 14px 12px; }
     .contact-row-consistent { gap: 6px; }
   }
-</style>
+
+      /* QR codes (Phase 2): all show on desktop and tablet; phones keep only the vCard and share codes */
+      .qr-row { display:flex; align-items:center; gap:12px; margin:10px 0 0 24px; }
+      .qr-row img { width:96px; height:96px; flex:0 0 96px; background:#fff; padding:4px; border-radius:6px; box-shadow:0 0 0 1px #cbd5e1; }
+      .qr-row span { font-size:12px; line-height:1.4; color:#334155; font-weight:600; }
+      .qr-strip { margin-top:22px; text-align:center; }
+      .qr-strip-title { font-size:13px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#115e59; margin:0 0 10px; }
+      .qr-strip-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
+      .qr-strip figure { margin:0; width:170px; background:#fff; border:1px solid #cbd5e1; border-radius:10px; padding:10px 8px; }
+      .qr-strip figure.qr-wide { width:220px; }
+      .qr-strip img { display:block; width:100%; height:auto; aspect-ratio:1 / 1; margin:0 auto; }
+      .qr-strip figcaption { font-size:13px; line-height:1.4; color:#334155; margin-top:6px; }
+      @media (max-width:640px) {
+        .qr-desk { display:none !important; }
+        .qr-strip figure, .qr-strip figure.qr-wide { width:min(100%, 240px); }
+      }
+    </style>
 
 <script type="application/ld+json">
 {
@@ -1598,6 +1614,7 @@
               <a href="#map-section-anchor" onclick="event.stopPropagation(); switchLocation(1);" style="font-size: clamp(12px, 3.6vw, 13px); color: var(--dark); text-decoration: none; min-width: 0;">707 Palm Ave, Imperial Beach, CA 91932</a>
             </div>
             <p style="font-size:12px; color:#1e40af; margin-left:24px; line-height:1.6;">Next to Hampton Inn &amp; Suites (Corner of Palm Ave &amp; 7th)<br><strong><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> ADA Compliant · Free On-Site Parking</strong></p>
+          <div class="qr-row qr-desk"><img src="QR-LOC-VNHL-short-alternative.webp" width="96" height="96" loading="lazy" decoding="async" alt="QR code. Scan with your phone camera to open VN Healthy Living, 707 Palm Ave, on the map."><span>Scan with your phone for directions</span></div>
           </div>
           
           <!-- Location 2: Hours, Phone & Transit -->
@@ -1608,6 +1625,7 @@
               <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#0f766e;">619-429-7700</a>
             </div>
             <p style="font-size:12px; color:#475569; margin-left:24px;">Mon-Thu: 8am-5pm  |  Fri: 8am-12pm (Noon)<br><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-bus"></use></svg> <strong>MTS Bus Routes 933 / 934</strong></p>
+          <div class="qr-row qr-desk"><img src="QR-CALL-VNHL.webp" width="96" height="96" loading="lazy" decoding="async" alt="QR code. Scan with your phone camera to call VN Healthy Living at 619-429-7700."><span>Scan with your phone to call</span></div>
           </div>
         </div>
 
@@ -1629,6 +1647,15 @@
               &nbsp;·&nbsp; <span style="color:#166534;font-weight:600;"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> ADA Compliant &amp; Free Parking</span>
               &nbsp;·&nbsp; <a href="https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932" target="_blank" rel="noopener" style="color:#0f766e;font-weight:700;" id="directions-link">Get Directions to VNHL &#8599;</a>
             </div>
+          </div>
+        </div>
+
+        <div class="qr-strip">
+          <p class="qr-strip-title">Scan with your phone camera</p>
+          <div class="qr-strip-grid">
+            <figure class="qr-wide"><img src="QR-VCARD-VNHL.webp" width="640" height="640" loading="lazy" decoding="async" alt="QR code. Scan to save the VN Healthy Living and Dr. K contact card to your phone."><figcaption>Save Dr. K&#8217;s contact card</figcaption></figure>
+            <figure><img src="QR-URL-DRKC.webp" width="320" height="320" loading="lazy" decoding="async" alt="QR code. Scan to open this website, drk.care, on another phone."><figcaption>Share this page: <a href="https://drk.care" style="color:#0f766e;font-weight:700;">drk.care</a></figcaption></figure>
+            <figure class="qr-desk"><img src="QR-URL-VNHLP.webp" width="320" height="320" loading="lazy" decoding="async" alt="QR code. Scan to open the VN Healthy Living main website."><figcaption>Main website: <a href="https://vnhealthyliving.com" style="color:#0f766e;font-weight:700;">vnhealthyliving.com</a></figcaption></figure>
           </div>
         </div>
       </div>
