@@ -63,6 +63,70 @@
         "Is there a Spanish-speaking primary care doctor in Imperial Beach?",
         "Does VNHL offer medical weight management?"
       ]
+    },
+    {
+      "identifier": "urn:air:drk.care:es:webmcp:check-insurance-acceptance",
+      "displayName": "Verificación de seguros aceptados en VNHL",
+      "type": "text/html",
+      "url": "https://drk.care/es/",
+      "description": "Indica si el Dr. K de VN Healthy Living acepta seguros privados, Medicare Original o Medicare Advantage, y le dice al paciente que llame al consultorio para confirmar su plan específico. Herramienta WebMCP de solo lectura \"check_insurance_acceptance\" registrada por la página; nunca programa citas ni recopila datos de pacientes.",
+      "capabilities": [
+        "check_insurance_acceptance"
+      ],
+      "representativeQueries": [
+        "¿El Dr. K acepta Medicare?",
+        "¿Qué seguros acepta VN Healthy Living Medical Group?",
+        "¿El Dr. Kuppurajan acepta Medicare Advantage o los planes de Sharp-SCMG?",
+        "¿Hay un médico de atención primaria en Imperial Beach que acepte Medicare Original?"
+      ]
+    },
+    {
+      "identifier": "urn:air:drk.care:es:webmcp:hours-and-location",
+      "displayName": "Horario y ubicación de VNHL",
+      "type": "text/html",
+      "url": "https://drk.care/es/",
+      "description": "Da la dirección, el teléfono, el horario y el transporte público de VN Healthy Living Medical Group en 707 Palm Ave, Imperial Beach, CA. Herramienta WebMCP de solo lectura \"get_hours_and_location\" registrada por la página; nunca programa citas ni recopila datos de pacientes.",
+      "capabilities": [
+        "get_hours_and_location"
+      ],
+      "representativeQueries": [
+        "¿Cuál es el horario de VN Healthy Living Medical Group?",
+        "¿Dónde está el consultorio del Dr. Kuppurajan en Imperial Beach?",
+        "¿Qué autobús llega a VN Healthy Living en Palm Ave?",
+        "¿Cuál es el teléfono del Dr. K en Imperial Beach?"
+      ]
+    },
+    {
+      "identifier": "urn:air:drk.care:es:webmcp:how-to-schedule",
+      "displayName": "Cómo programar una cita en VNHL",
+      "type": "text/html",
+      "url": "https://drk.care/es/",
+      "description": "Explica cómo los pacientes nuevos y actuales programan una cita con el Dr. K: solo por teléfono, y los pacientes adultos nuevos suelen ser atendidos en un plazo de 1 a 3 días hábiles. Herramienta WebMCP de solo lectura \"how_to_schedule\" registrada por la página; nunca programa citas ni recopila datos de pacientes.",
+      "capabilities": [
+        "how_to_schedule"
+      ],
+      "representativeQueries": [
+        "¿Cómo hago una cita con el Dr. K?",
+        "¿El Dr. Kuppurajan está aceptando pacientes nuevos?",
+        "¿Puedo programar en línea una cita de atención primaria en Imperial Beach?",
+        "¿Qué tan pronto atienden a un paciente nuevo en VN Healthy Living?"
+      ]
+    },
+    {
+      "identifier": "urn:air:drk.care:es:webmcp:services",
+      "displayName": "Servicios de VNHL",
+      "type": "text/html",
+      "url": "https://drk.care/es/",
+      "description": "Describe los servicios que ofrece el Dr. K: bienestar para adultos mayores, incluidas las Visitas Anuales de Bienestar de Medicare, atención primaria para adultos, control médico del peso y atención bilingüe en inglés y español. Herramienta WebMCP de solo lectura \"get_services\" registrada por la página; nunca programa citas ni recopila datos de pacientes.",
+      "capabilities": [
+        "get_services"
+      ],
+      "representativeQueries": [
+        "¿Qué servicios ofrece VN Healthy Living Medical Group?",
+        "¿El Dr. K ofrece Visitas Anuales de Bienestar de Medicare?",
+        "¿Hay un médico de atención primaria que hable español en Imperial Beach?",
+        "¿VNHL ofrece control médico del peso?"
+      ]
     }
   ]
 }
