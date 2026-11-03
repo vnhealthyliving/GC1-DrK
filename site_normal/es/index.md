@@ -1,120 +1,117 @@
-# Dr. Vijay Kuppurajan, MD | Bienestar para adultos mayores y control médico del peso | Imperial Beach
+# VN Healthy Living Medical Group, Imperial Beach, CA
 
-> Dr. Vijay Kuppurajan, MD: medicina interna afiliada a Sharp-SCMG en Imperial Beach, CA. Medicare, bienestar para adultos mayores y control del peso. (619) 429-7700.
+> Dr. Vijay Kuppurajan, MD: Sharp-SCMG affiliated internal medicine in Imperial Beach, CA. Medicare, senior wellness, weight management. (619) 429-7700.
 
-- Página web: https://drk.care/es/
-- Versión en inglés: https://drk.care
-- Última revisión: 2026-11-02
-- Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
+- Web page: https://drk.care/
+- Last reviewed: 2026-10-14
+- Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
-Aceptamos nuevos pacientes de Medicare · Inscripción anual de Medicare del 15 de octubre al 7 de diciembre
+Accepting New Medicare Patients · Medicare Annual Enrollment Oct 15 – Dec 7
 
-ESPECIALISTA EN MEDICINA INTERNA CERTIFICADO POR LA JUNTA, DEDICADO A UNA ATENCIÓN CENTRADA EN EL PACIENTE Y BASADA EN LA EVIDENCIA.
+BOARD-CERTIFIED INTERNAL MEDICINE SPECIALIST DEDICATED TO PATIENT-CENTERED, EVIDENCE-BASED CARE.
 
-## Atención confiable y compasiva en Imperial Beach
+### Trusted & Compassionate Care in Imperial Beach
 
-[Llame al (619) 429-7700](tel:+16194297700)
+[Call (619) 429-7700](tel:+16194297700)
 
-En las noticias
+In the News
 
-## Noticias locales: nombran al Dr. K el mejor médico de atención primaria de la región de Coronado de SCMG
+### Local News: Dr. K Named Top Primary Care Physician in the SCMG Coronado Region
 
-Dos periódicos locales informaron sobre el Premio a la Excelencia de Sharp Community Medical Group que recibió el Dr. K, quien atiende a las comunidades de Imperial Beach y Coronado.
+Two local newspapers covered Dr. K's Sharp Community Medical Group Award of Excellence, serving the Imperial Beach and Coronado communities.
 
-### The Coronado Times · 23 de septiembre de 2026
+#### The Coronado Times · September 23, 2026
 
-El Dr. Vijay Kuppurajan, de VN Healthy Living Medical Group, es reconocido como el mejor médico de atención primaria de la región de Coronado de Sharp Community Medical Group (SCMG), según las calificaciones de experiencia del paciente del segundo trimestre de 2026.
+Dr. Vijay Kuppurajan of VN Healthy Living Medical Group is recognized as the top primary care physician in the Sharp Community Medical Group (SCMG) Coronado region, based on Q2 2026 Patient Experience scores.
 
-### Eagle & Times · edición del 17 de septiembre de 2026
+#### Eagle & Times · September 17, 2026 issue
 
-Cobertura local del Premio a la Excelencia del Dr. K como mejor médico de atención primaria de la región de Coronado de SCMG, que incluye Imperial Beach y Coronado, con base en encuestas de experiencia del paciente de Press Ganey validadas de forma independiente.
+Local coverage of Dr. K's Award of Excellence as Top Primary Care Physician in the SCMG Coronado region, which includes Imperial Beach and Coronado, based on independently validated Press Ganey patient experience surveys.
 
-Nuestro propósito
+Our Guiding Purpose
 
-## Declaración de visión y misión
+### Vision & Mission Statements
 
-🔭 La visión
+The Vision
 
-“Impulsar vidas más sanas mediante atención clínica de confianza y educación práctica sobre el estilo de vida.”
+"Empowering healthier lives through trusted clinical care and practical lifestyle education."
 
-Salud a largo plazo · Orientación confiable
+Long-Term Health · Trusted Guidance
 
-🎯 La misión
+The Mission
 
-“Guiar su camino hacia el bienestar, combinando el conocimiento médico experto con orientación práctica para la vida diaria, y brindar una atención compasiva, basada en la evidencia y en la que usted pueda confiar.”
+"To guide your wellness journey by combining expert medical insight with everyday lifestyle guidance, delivering compassionate, evidence-based care you can trust."
 
-Atención basada en la evidencia · Apoyo compasivo
+Evidence-Based Care · Compassionate Support
 
-Fundamentos
+Core Foundations
 
-## Principios fundamentales
+### Core Principles
 
-Equilibrio justo
+Equal Balance
 
-Combinamos una práctica clínica rigurosa con educación sencilla sobre el estilo de vida.
+Integrating rigorous clinical practice with approachable lifestyle education.
 
-Rigor y accesibilidad
+Rigor & Accessibility
 
-Confianza total
+Radical Trust
 
-Le ofrecemos orientación transparente, honesta y confiable en cada paso.
+Providing transparent, honest, and reliable guidance at every step.
 
-Transparencia y confiabilidad
+Transparency & Reliability
 
-💙 Compasión profunda
+Deep Compassion
 
-Lo recibimos tal como usted es, con cariño genuino y sin juzgar.
+Meeting you where you are with genuine care and zero judgment.
 
-Sin juzgar · Cariño genuino
+Zero Judgment · Genuine Care
 
-💡 Sabiduría que se puede aplicar
+Actionable Wisdom
 
-Convertimos la ciencia compleja de la salud en hábitos sencillos para todos los días.
+Turning complex health science into simple, everyday habits.
 
-Hábitos sencillos · Respaldados por la ciencia
+Simple Habits · Science-Backed
 
-Nuestra filosofía unificada
+Our Unified Ethos
 
-## Cultura y práctica
+### Culture & Practice
 
-🌟 Filosofía de colaboración unificada
+Unified Partnership Ethos
 
-“Cultivamos una cultura de colaboración sin ego, donde la experiencia clínica cercana se une a una orientación sencilla y accesible para la vida diaria. Caminamos junto a cada persona con humildad y profundo respeto, y tratamos la atención médica y el bienestar diario como un solo camino, continuo y compasivo, hacia una salud para toda la vida.”
+"We cultivate a culture of ego-free partnership—where high-touch clinical expertise meets low-barrier, everyday lifestyle guidance. We walk alongside every individual with radical humility and deep respect, treating medical care and daily wellness as one seamless, compassionate journey toward lifelong health."
 
-Colaboración sin ego · Salud para toda la vida
+Ego-Free Partnership · Lifelong Health
 
-Experiencia cercana
+Approachable Expertise
 
-Dejamos atrás la distancia de la medicina tradicional para que nuestro conocimiento clínico sea siempre accesible, cálido y libre de juicios.
+We discard the distance of traditional medicine, ensuring our clinical knowledge is always accessible, warm, and free of judgment.
 
-Atención accesible · Cálida y abierta
+Accessible Care · Warm & Open
 
-Sanación unificada
+Unified Healing
 
-La receta y la prevención, la clínica y la comunidad tienen el mismo peso y trabajan juntas para acompañar a cada persona donde se encuentra.
+Prescription and prevention, clinic and community, carry equal weight—working together to meet people exactly where they are.
 
-Receta y prevención · Enfoque comunitario
+Prescription & Prevention · Community Focus
 
-Encuéntrenos
+Find Us
 
-## Bienvenidos a nuestro consultorio
+### Welcome to Our Practice
 
-Atendemos a las comunidades de Imperial Beach, Coronado y el sur de San Diego. Aceptamos con gusto la mayoría de los seguros privados, Medicare Original (con o sin plan suplementario) y el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
+Serving Imperial Beach, Coronado, and South San Diego communities. We proudly accept most private insurance, Original Medicare (with or without a supplement), and Sharp-SCMG's Medicare Advantage plan. Call VNHL at (619) 429-7700 to clarify your specific plan.
 
-### Dirección y estacionamiento
+#### Address & Parking
 
-[707 Palm Ave, Imperial Beach, CA 91932](#map-section-anchor)
+707 Palm Ave, Imperial Beach, CA 91932
 
-Junto al Hampton Inn & Suites (esquina de Palm Ave y 7th)  
-**Accesible según la ADA · Estacionamiento gratuito en el lugar**
+Next to Hampton Inn & Suites (Corner of Palm Ave & 7th) **ADA Compliant · Free On-Site Parking**
 
-### Teléfono, horario y transporte
+#### Phone, Hours & Transit
 
 [619-429-7700](tel:+16194297700)
 
-Lun-Jue: 8 a. m.-5 p. m. \| Vie: 8 a. m.-12 p. m. (mediodía)  
-**Rutas de autobús MTS 933 / 934**
+Mon-Thu: 8am-5pm | Fri: 8am-12pm (Noon) **MTS Bus Routes 933 / 934**
 
-**VN Healthy Living MEDICAL GROUP**  ·  707 Palm Ave, Imperial Beach  ·  Esquina de Palm Ave y 7th St (junto al Hampton Inn)
+**VN Healthy Living MEDICAL GROUP** · 707 Palm Ave, Imperial Beach · Corner of Palm Ave & 7th St (Next to Hampton Inn)
 
- ·  Accesible (ADA) y estacionamiento gratuito  ·  [Cómo llegar a VNHL ↗](https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932)
+· ADA Compliant & Free Parking · [Get Directions to VNHL ↗](https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932)

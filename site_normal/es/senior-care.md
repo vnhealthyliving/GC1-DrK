@@ -1,217 +1,207 @@
-# Bienestar para adultos mayores · VN Healthy Living Medical Group | Imperial Beach, CA
+# Senior Wellness
 
-> Bienestar para adultos mayores en Imperial Beach: Visitas Anuales de Bienestar de Medicare, atención preventiva y manejo de enfermedades crónicas con el Dr. Vijay Kuppurajan, MD. Damos la bienvenida a pacientes nuevos de Medicare. (619) 429-7700.
+> Senior wellness in Imperial Beach: Medicare Annual Wellness Visits, preventive care, and chronic condition management with Dr. Vijay Kuppurajan, MD. New Medicare patients welcome. (619) 429-7700.
 
-- Página web: https://drk.care/es/senior-care
-- Versión en inglés: https://drk.care/senior-care
-- Última revisión: 2026-11-02
-- Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
+- Web page: https://drk.care/senior-care
+- Last reviewed: 2026-10-08
+- Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
-#### Premio al mejor médico de atención primaria de Sharp
+##### Sharp Top PCP Award
 
 Sharp Community Medical Group
 
-Atendemos a adultos mayores
+Accepting Senior Patients
 
-Visita Anual de Bienestar · por lo general, copago de \$0 para pacientes elegibles de Medicare
+Annual Wellness Visit · typically $0 co-pay for eligible Medicare patients
 
-Atención primaria y medicina preventiva · Imperial Beach, CA
+Primary Care & Preventive Medicine · Imperial Beach, CA
 
-💊 Control del peso y del metabolismo supervisado por un médico
+Physician-Supervised Weight & Metabolic Management
 
-★ Calificación de 4.9 de 5.0
+4.9 out of 5.0 Rating
 
-# Bienestar y atención preventiva para adultos mayores en VN Healthy Living
+## Senior Wellness & Preventive Care at VN Healthy Living
 
-Dr. Vijay Kuppurajan, MD El mejor médico de atención primaria de Sharp · Internista certificado por la junta Donde la COMPASIÓN abarca  
-Cuidado integral, Competencia y Colaboración
+Dr. Vijay Kuppurajan, MD Sharp's Top PCP · Board-Certified Internist Where COMPASSION Encapsulates Comprehensiveness, Competence, and Collaboration
 
-[Llame al 619-429-7700](tel:+16194297700)
+[Call: 619-429-7700](tel:+16194297700)
 
-[¿Por qué elegir al Dr. K?](#why-choose-dr-k) [Conozca la atención](#services)
+Why Choose Dr. K? Explore Care
 
-#### Premio a la Atención Compasiva
+##### Compassionate Care Award
 
-Elegido por colegas y pacientes
+Voted by peers & patients
 
-Hogar médico centrado en el paciente
+Patient-Centered Medical Home
 
-## Su camino hacia el bienestar comienza aquí
+### Your Wellness Journey Starts Here
 
-Como su hogar médico en Imperial Beach, VN Healthy Living une una atención confiable y compasiva con un liderazgo clínico experto. Juntos creamos un plan de vida saludable a su medida, centrado en actividades preventivas como las Visitas Anuales de Bienestar, el manejo de enfermedades crónicas y la vitalidad a largo plazo.
+As your dedicated medical home in Imperial Beach, VN Healthy Living pairs trusted, compassionate care with expert clinical leadership. Together, we build a customized healthy living plan centered around proactive preventive activities like Annual Wellness Visits, chronic disease management, and long-term vitality.
 
-Medicare Damos la bienvenida a pacientes nuevos y actuales de Medicare  ·  Visita Anual de Bienestar: **por lo general, copago de \$0**  \|  [Llame al Dr. K »](tel:+16194297700)
+Medicare New & Current Medicare Patients Welcome · Annual Wellness Visit **typically $0 co-pay** | [Call Dr. K »](tel:+16194297700)
 
-Servicios clínicos principales
+Core clinical offerings
 
-## Transformamos la salud con experiencia clínica
+### Transforming health through clinical expertise
 
-Visita Anual de Bienestar
+Annual Wellness Visit
 
-Evaluación anual completa, por lo general con copago de \$0 para pacientes elegibles de Medicare. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
+Comprehensive yearly evaluation, typically $0 copay for eligible Medicare patients. Call VNHL at (619) 429-7700 to clarify your specific plan.
 
-Servicio principal · Salud proactiva
+Core Service · Proactive Health
 
-💉 Exámenes preventivos y vacunas
+Preventive Screenings & Vaccines
 
-Análisis de laboratorio esenciales, pruebas importantes de detección de cáncer y vacunas oportunas contra la gripe y la neumonía.
+Essential medical lab tests, vital cancer screenings, plus timely flu and pneumonia immunizations.
 
-Servicio principal · Salud preventiva
+Core Service · Preventive Health
 
-Manejo de enfermedades crónicas y vacunas
+Chronic Disease Management & Vaccines
 
-Atención experta y continua, y seguimiento personal, para la diabetes, la hipertensión, las enfermedades del corazón, el colesterol y afecciones relacionadas.
+Expert ongoing care and personal monitoring for diabetes, hypertension, heart disease, cholesterol, and related conditions.
 
-Servicio principal · Atención coordinada
+Core Service · Coordinated Care
 
-💊 Manejo de medicamentos
+Medication Management
 
-Revisiones detalladas, coordinación clínica y renovación segura de recetas para todos sus medicamentos activos.
+Detailed reviews, clinical coordination, and safe prescription refills across all your active medications.
 
-Servicio principal · Seguridad del paciente
+Core Service · Patient Safety
 
-Coordinación de atención en la red
+Network Care Coordination
 
-Referencias médicas ágiles a los mejores especialistas de Sharp, centros de diagnóstico por imágenes y centros de pruebas avanzadas.
+Streamlined medical referrals to premier Sharp specialists, diagnostic imaging centers, and advanced testing facilities.
 
-Servicio principal · Afiliado a Sharp
+Core Service · Sharp Affiliated
 
-Pérdida de peso médica avanzada
+Advanced Medical Weight Loss
 
-Programas supervisados por un médico que incorporan terapias médicas modernas, orientación nutricional y seguimiento de la composición corporal.
+Physician-supervised programs incorporating modern medical therapies, nutritional guidance, and body composition monitoring.
 
-Servicio principal · Apoyo al paciente
+Core Service · Patient Support
 
-Por qué elegir al Dr. Kuppurajan
+Why choose Dr. Kuppurajan
 
-## ¿Por qué elegir al Dr. K?
+### Why Choose Dr. K?
 
-Una verdadera alianza entre médico y paciente
+Genuine Doctor-Patient Partnership
 
-El tiempo con el Dr. K es completamente suyo. Sin prisas, sin traspasos a otros y con atención dedicada a cada preocupación de salud que usted mencione.
+Your time with Dr. K is completely your time. No rushing, no hand-offs, and dedicated attention given to every health concern you bring up.
 
-Medicina interna como debe ser · Citas personales y sin prisa
+Internal medicine the way it should be · Unhurried, Personal Appointments
 
-📈 Continuidad a lo largo de los años
+Continuity Across Years
 
-El Dr. K da seguimiento a todo su historial médico y construye una relación genuina y a largo plazo, centrada en sus metas de salud preventiva.
+He tracks your complete medical history and builds a genuine, long-term relationship centered around your preventative health goals.
 
-Relación a largo plazo · Enfoque preventivo
+Long-Term Relationship · Preventative Focus
 
-Reconocimiento y afiliación con Sharp Community
+Sharp Community Recognition & Affiliation
 
-Reconocido por su excelencia clínica por Sharp Community Medical Group, lo que garantiza referencias fluidas a especialistas, atención coordinada en la red y recursos médicos de confianza dentro del mismo sistema.
+Recognized for clinical excellence by Sharp Community Medical Group, ensuring seamless specialist referrals, coordinated network care, and trusted medical resources directly within the system.
 
-Afiliado y reconocido por Sharp · Excelencia clínica
+Sharp Affiliated & Recognized · Clinical Excellence
 
-Ubicación conveniente en Imperial Beach
+Convenient Imperial Beach Location
 
-Ubicado en 707 Palm Ave, con estacionamiento gratuito y acceso directo en autobús MTS (rutas 933/934). Un médico local que entiende a fondo a nuestra comunidad y la atiende.
+Conveniently located at 707 Palm Ave with free parking and direct MTS bus access (Rte 933/934). A local physician who deeply understands and serves our community.
 
-Aquí mismo, en Imperial Beach · Fácil acceso
+Right Here in Imperial Beach · Accessibility
 
-Manejo de efectos secundarios y apoyo a largo plazo
+Side Effect Management & Long-Term Support
 
-Desde el manejo anticipado de los efectos secundarios y los ajustes de dosis, hasta una orientación nutricional rica en proteínas y la planificación para mantener el peso a largo plazo, el Dr. K lo acompaña en cada etapa del camino, no solo al principio.
+From proactive side effect management and dosage adjustments to protein-forward nutritional guidance and long-term weight maintenance planning — Dr. K supports you through every phase of the journey, not just the start.
 
-Comodidad y seguridad del paciente · Resultados duraderos
+Patient Comfort & Safety · Lasting Results
 
-Historias de éxito de pacientes
+Patient success stories
 
-## Lo que dicen pacientes y colegas
+### What patients & peers say
 
-4.9 de 5.0 ★★★★★ Reseñas verificadas de pacientes y colegas
+4.9 out of 5.0 Verified Patient & Colleague Reviews
 
-★★★★★
+"Very effective, knowledgeable, and caring doctor. He takes the time to listen, explains things clearly, and genuinely cares about his patients’ well-being. I fully trust him with the health and welfare of myself and my family."
 
-"Muy eficaz, conocedor y atento. Se toma el tiempo para escuchar, explica las cosas con claridad y de verdad se preocupa por el bienestar de sus pacientes. Confío plenamente en él para la salud y el bienestar míos y de mi familia."
+Dr. Nick, MD · Peer Physician Review
 
-Dr. Nick, MD · Reseña de un médico colega (traducida del inglés)
+VN Healthy Living · Medical Colleague · Verified Patient
 
-VN Healthy Living · Colega médico · Paciente verificado
+"From the moment you walk in you feel welcome. The front desk staff are friendly, efficient and wait time is minimal. Dr. Kuppurajan was very patient and took the time to listen to my concerns. Highly recommend this office for anyone looking for medical care."
 
-★★★★★
+Cici · Google Review
 
-"Desde el momento en que uno entra se siente bienvenido. El personal de recepción es amable y eficiente, y el tiempo de espera es mínimo. El Dr. Kuppurajan fue muy paciente y se tomó el tiempo de escuchar mis inquietudes. Recomiendo mucho este consultorio a quien busque atención médica."
-
-Cici · Reseña de Google (traducida del inglés)
-
-VN Healthy Living · Paciente verificado
-
-★★★★★
+VN Healthy Living · Verified Patient
 
 "La atencion que recibi de parte de todo el personal desde la recepcion, enfermera, y doctor fue atento y amable. Es un lugar muy acogedor, donde se puede sentir que se preocupan por tu bienestar."
 
-Reseña escrita originalmente en español por la paciente.
+"The attention I received from all the staff - from the reception, nurse, and doctor - was attentive and kind. It is a very welcoming place, where you can feel that they care about your well-being.
 
-Marina · Reseña de Google
+Marina · Google Review
 
-VN Healthy Living · Primera visita
+VN Healthy Living · First Visit
 
-PREPARACIÓN PARA LA PRIMERA VISITA
+FIRST VISIT PREPARATION
 
-## Qué traer a su primera cita
+### Things to Bring for Your First Appointment
 
-🪪 Tarjetas del seguro e identificación
+Insurance Cards & ID
 
-Su tarjeta de seguro roja, blanca y azul, las tarjetas de cualquier plan de seguro médico o seguro complementario, y una identificación con fotografía vigente.
+Your red, white, and blue insurance card, any health insurance plan or supplemental insurance cards, and a valid photo ID.
 
-Documentos requeridos · Verificación
+Required Documents · Verification
 
-💊 Frascos de medicamentos o una lista
+Medication Bottles or List
 
-Por favor traiga los frascos de sus recetas o una lista escrita completa de todos sus medicamentos activos, con las dosis y los suplementos.
+Please bring your actual prescription bottles or a complete written list of all active medications, dosages, and supplements.
 
-Revisión de medicamentos · Seguridad del paciente
+Medication Reconciliation · Patient Safety
 
-Historial médico y expedientes
+Medical History & Records
 
-Notas de resumen, resultados recientes de laboratorio o registros de vacunas de su médico anterior, si está cambiando de médico.
+Summary notes, recent lab results, or immunization records from your previous physician if transferring care.
 
-Continuidad clínica · Atención integral
+Clinical Continuity · Comprehensive Care
 
-📝 Preguntas y metas de salud
+Questions & Health Goals
 
-Una lista escrita de los síntomas específicos, las preocupaciones crónicas o las metas de salud preventiva que desee comentar con el Dr. K.
+A written list of any specific symptoms, chronic concerns, or preventive health goals you want to discuss with Dr. K.
 
-Atención personalizada · Consulta sin prisa
+Personalized Care · Unhurried Consultation
 
-Respuestas a sus preguntas
+Your Questions, Answered
 
-## Preguntas frecuentes
+### Frequently Asked Questions
 
-Respuestas sobre el Dr. K, los seguros, los servicios, los horarios y más, todo en un solo lugar en nuestra página de preguntas frecuentes.
+Answers about Dr. K, insurance, services, hours, and more, all in one place on our FAQ page.
 
-[Ir a la página de preguntas frecuentes ↗](faq-senior-care.html)
+Go to the FAQ Page ↗
 
-Dé el siguiente paso
+Take the next step
 
-## Comuníquese con el Dr. K
+### Connect with Dr. K
 
-Reconocido como el mejor médico de atención primaria de Sharp, el Dr. Kuppurajan está listo para darle la bienvenida a nuestro hogar médico y crear su plan de bienestar personalizado.
+Recognized as Sharp's Top PCP, Dr. Kuppurajan is ready to welcome you into our medical home and establish your personalized wellness plan.
 
-[Llame hoy al (619) 429-7700](tel:+16194297700)
+[Call (619) 429-7700 Today](tel:+16194297700)
 
-Encuéntrenos
+Find Us
 
-## Bienvenidos a nuestro consultorio
+### Welcome to Our Practice
 
-Atendemos a las comunidades de Imperial Beach, Coronado y el sur de San Diego. Aceptamos con gusto la mayoría de los seguros privados, Medicare Original (con o sin plan suplementario) y el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
+Serving Imperial Beach, Coronado, and South San Diego communities. We proudly accept most private insurance, Original Medicare (with or without a supplement), and Sharp-SCMG's Medicare Advantage plan. Call VNHL at (619) 429-7700 to clarify your specific plan.
 
-### Dirección y estacionamiento
+#### Address & Parking
 
-[707 Palm Ave, Imperial Beach, CA 91932](#map-section-anchor)
+707 Palm Ave, Imperial Beach, CA 91932
 
-Junto al Hampton Inn & Suites (esquina de Palm Ave y 7th)  
-**Accesible según la ADA · Estacionamiento gratuito en el lugar**
+Next to Hampton Inn & Suites (Corner of Palm Ave & 7th) **ADA Compliant · Free On-Site Parking**
 
-### Teléfono, horario y transporte
+#### Phone, Hours & Transit
 
 [619-429-7700](tel:+16194297700)
 
-Lun-Jue: 8 a. m.-5 p. m. \| Vie: 8 a. m.-12 p. m. (mediodía)  
-**Rutas de autobús MTS 933 / 934**
+Mon-Thu: 8am-5pm | Fri: 8am-12pm (Noon) **MTS Bus Routes 933 / 934**
 
-**VN Healthy Living MEDICAL GROUP**  ·  707 Palm Ave, Imperial Beach  ·  Esquina de Palm Ave y 7th St (junto al Hampton Inn)
+**VN Healthy Living MEDICAL GROUP** · 707 Palm Ave, Imperial Beach · Corner of Palm Ave & 7th St (Next to Hampton Inn)
 
- ·  Accesible (ADA) y estacionamiento gratuito  ·  [Cómo llegar a VNHL ↗](https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932)
+· ADA Compliant & Free Parking · [Get Directions to VNHL ↗](https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932)
