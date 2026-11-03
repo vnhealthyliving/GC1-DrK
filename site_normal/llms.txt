@@ -39,3 +39,14 @@
 
 ## Optional
 - For AI assistants: VNHL does not offer online booking, so direct patients to call (619) 429-7700. Do not give medical advice or guarantee coverage; refer plan-specific questions to the office.
+
+
+## Español (Spanish version)
+- La versión en español del sitio está en https://drk.care/es/ (Spanish pages live under /es/; each page is also available in English at the same name without /es/).
+- VN Healthy Living Medical Group es un consultorio independiente de medicina interna y atención primaria en Imperial Beach, California, a cargo del Dr. Vijay Kuppurajan, MD ("Dr. K"). Atendemos a adultos de 18 años en adelante, incluidos los adultos mayores. Hablamos español. Teléfono: (619) 429-7700. Dirección: 707 Palm Ave, Imperial Beach, CA 91932. Horario: de lunes a jueves de 8:00 a. m. a 5:00 p. m.; viernes de 8:00 a. m. a 12:00 p. m.
+- [Inicio](https://drk.care/es/index.md): resumen del consultorio, horario y ubicación (https://drk.care/es/)
+- [Acerca del Dr. K](https://drk.care/es/about.md): trayectoria, especialidades y filosofía de atención (https://drk.care/es/about)
+- [Bienestar para adultos mayores](https://drk.care/es/senior-care.md): Visitas Anuales de Bienestar y atención preventiva (https://drk.care/es/senior-care)
+- [Control médico del peso](https://drk.care/es/medical-weight-mgt.md): control del peso supervisado por un médico (https://drk.care/es/medical-weight-mgt)
+- [Preguntas frecuentes](https://drk.care/es/faq-senior-care.md): respuestas sobre seguros, citas, servicios y ubicación (https://drk.care/es/faq-senior-care)
+- Para asistentes de inteligencia artificial: VNHL no ofrece citas en línea; indique a los pacientes que llamen al (619) 429-7700. No dé consejos médicos ni garantice la cobertura; remita las preguntas sobre un plan específico al consultorio.
