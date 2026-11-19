@@ -474,6 +474,11 @@
       .lang-menu a, .lang-menu span { display: flex; align-items: center; min-height: 44px; padding: 8px 12px; border-radius: 8px; color: #0f172a; text-decoration: none; font-size: 0.95rem; }
       .lang-menu a:hover { background: #e0f2fe; }
       .lang-menu span { font-weight: 700; background: #f1f5f9; }
+    
+      /* Nov 2026: seasonal holiday greeting (below the hero, lazy-loaded image, no JavaScript) */
+      .holiday-section { background: #ffffff; border-bottom: 1px solid #e2e8f0; text-align: center; }
+      .holiday-section .holiday-text { max-width: 560px; margin: 8px auto 0 auto; color: #334155; }
+      .holiday-img { display: block; width: 100%; max-width: 420px; height: auto; margin: 20px auto 0 auto; border: 2px solid rgba(30, 58, 138, 0.25); border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.06); }
     </style>
 
     <!-- JSON-LD · source: 01d Schema Master v4.5 (home-page nodes, Phase 1 campaign wording) · @id namespace: vnhealthyliving.com · page URLs: drk.care -->
@@ -1090,6 +1095,16 @@
     <div class="banner-container">
         <img srcset="VNHL-DrK-Medical-Home-614w.webp 614w, VNHL-DrK-Medical-Home.webp 691w" sizes="(max-width: 650px) 100vw, 614px" src="VNHL-DrK-Medical-Home.webp" alt="Welcome to VNHL, your medical home: Dr. Vijay Kuppurajan, Sharp Top PCP Award, 707 Palm Ave, Imperial Beach" class="banner-image" width="691" height="486" fetchpriority="high">
     </div>
+
+    <!-- HOLIDAY GREETING (seasonal: remove this whole section after the holidays) -->
+    <section class="holiday-section" id="happy-holidays" aria-labelledby="holiday-heading">
+        <div class="container">
+            <p class="eyebrow">Happy Holidays</p>
+            <h2 id="holiday-heading">Happy Holidays from Dr. K and the VNHL Team</h2>
+            <p class="holiday-text">Wishing our patients and neighbors in Imperial Beach, Coronado, Chula Vista and the South Bay a healthy, happy holiday season. We are welcoming new patients, including new and current Medicare patients.</p>
+            <img class="holiday-img" src="DrK-Santa-Holidays-720x894.webp" srcset="DrK-Santa-Holidays-480x596.webp 480w, DrK-Santa-Holidays-720x894.webp 720w" sizes="(max-width: 600px) 92vw, 420px" width="720" height="894" loading="lazy" decoding="async" alt="Dr. K in a Santa hat and coat over his white coat with a stethoscope, in the VNHL exam room, with the greeting Happy Holidays from Dr. K and VNHL">
+        </div>
+    </section>
 
     <!-- IN THE NEWS (two local news clippings, shown in full) -->
     <section class="section-white news-section" id="in-the-news">
