@@ -1,9 +1,9 @@
 # VN Healthy Living Medical Group
 
-> Last reviewed 2026-10-08. VN Healthy Living Medical Group (VNHL) is an independent solo-practice internal medicine and primary care clinic in Imperial Beach, California, led by Dr. Vijay Kuppurajan, MD ("Dr. K"), a board-certified physician affiliated with Sharp Health Plan and Sharp Community Medical Group (SCMG). We care for adults age 18 and older, including seniors, and offer senior wellness and medical weight management.
+> Last reviewed 2026-11-20. VN Healthy Living Medical Group (VNHL) is an independent solo-practice internal medicine and primary care clinic in Imperial Beach, California, led by Dr. Vijay Kuppurajan, MD ("Dr. K"), a board-certified physician affiliated with Sharp Health Plan and Sharp Community Medical Group (SCMG). We welcome new and current Medicare patients, care for adults age 18 and older, and offer Medicare senior wellness and medical weight management.
 
 ## Services
-- Senior Wellness: Medicare Annual Wellness Visits (typically $0 co-pay for eligible Medicare patients), preventive screenings, medication review, and chronic condition management.
+- Medicare Senior Wellness (Medicare & You): Medicare Annual Wellness Visits (typically $0 co-pay for eligible Medicare patients), preventive screenings, medication review, and chronic condition management.
 - Primary care for adults 18+: annual physicals, diabetes, hypertension and high cholesterol management, acute illness visits, on-site blood work, and anxiety and depression screening.
 - Medical Weight Management: physician-supervised programs, including GLP-1 therapy when appropriate. Medicare members, including Medicare Advantage members, may be eligible for the Medicare GLP-1 Bridge Program; the office reviews eligibility individually.
 - Bilingual care in English and Spanish (Hablamos Español).
@@ -11,8 +11,8 @@
 
 ## Insurance
 - Private insurance: most plans, including Aetna, Humana, United Healthcare, Cigna, and many more.
-- Medicare: Original Medicare with or without a supplement.
-- Medicare Advantage: Sharp-SCMG Advantage plans only.
+- Medicare: Original Medicare, with or without a supplement or other private coverage; we accept various supplement and other private plans.
+- Medicare Advantage: Sharp-SCMG's Medicare Advantage plan only.
 - Call VNHL at (619) 429-7700 to clarify your specific plan.
 
 ## Visit and Contact
@@ -20,15 +20,15 @@
 - Phone: (619) 429-7700
 - Hours: Monday to Thursday 8:00 AM to 5:00 PM; Friday 8:00 AM to 12:00 PM
 - Public transit: MTS Bus Routes 933 and 934
-- New patients: accepted (adults 18+). Appointments are scheduled by phone; same-day sick visits are often available when you call early.
+- New and current Medicare patients welcome; new patients accepted (adults 18+). Appointments are scheduled by phone; same-day sick visits are often available when you call early.
 - Areas served: Imperial Beach, Chula Vista, National City, San Ysidro, Coronado, and South Bay San Diego
 
 ## Pages (Markdown versions for AI assistants; the normal web page address is in parentheses)
-- [Home](https://drk.care/index.md): practice overview, hours, and location (https://drk.care/)
+- [Home](https://drk.care/index.md): Medicare primary care overview, hours, and location (https://drk.care/)
 - [About Dr. K](https://drk.care/about.md): background, specialties, and care philosophy (https://drk.care/about)
-- [Senior Wellness](https://drk.care/senior-care.md): Annual Wellness Visits and preventive care (https://drk.care/senior-care)
+- [Medicare & You: Senior Wellness](https://drk.care/senior-care.md): Medicare Annual Wellness Visits and preventive care (https://drk.care/senior-care)
 - [Medical Weight Management](https://drk.care/medical-weight-mgt.md): physician-supervised weight management (https://drk.care/medical-weight-mgt)
-- [FAQ](https://drk.care/faq-senior-care.md): answers on insurance, scheduling, services, and location (https://drk.care/faq-senior-care)
+- [FAQ](https://drk.care/faq-senior-care.md): answers on Medicare, insurance, scheduling, services, and location (https://drk.care/faq-senior-care)
 - [All pages in one file](https://drk.care/llms-full.txt): full text of every page above
 - [Get Directions](https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932): Google Maps
 
@@ -43,10 +43,10 @@
 
 ## Español (Spanish version)
 - La versión en español del sitio está en https://drk.care/es/ (Spanish pages live under /es/; each page is also available in English at the same name without /es/).
-- VN Healthy Living Medical Group es un consultorio independiente de medicina interna y atención primaria en Imperial Beach, California, a cargo del Dr. Vijay Kuppurajan, MD ("Dr. K"). Atendemos a adultos de 18 años en adelante, incluidos los adultos mayores. Hablamos español. Teléfono: (619) 429-7700. Dirección: 707 Palm Ave, Imperial Beach, CA 91932. Horario: de lunes a jueves de 8:00 a. m. a 5:00 p. m.; viernes de 8:00 a. m. a 12:00 p. m.
-- [Inicio](https://drk.care/es/index.md): resumen del consultorio, horario y ubicación (https://drk.care/es/)
+- VN Healthy Living Medical Group es un consultorio independiente de medicina interna y atención primaria en Imperial Beach, California, a cargo del Dr. Vijay Kuppurajan, MD ("Dr. K"). Damos la bienvenida a pacientes nuevos y actuales de Medicare y atendemos a adultos de 18 años en adelante. Hablamos español. Teléfono: (619) 429-7700. Dirección: 707 Palm Ave, Imperial Beach, CA 91932. Horario: de lunes a jueves de 8:00 a. m. a 5:00 p. m.; viernes de 8:00 a. m. a 12:00 p. m.
+- [Inicio](https://drk.care/es/index.md): resumen de atención primaria de Medicare, horario y ubicación (https://drk.care/es/)
 - [Acerca del Dr. K](https://drk.care/es/about.md): trayectoria, especialidades y filosofía de atención (https://drk.care/es/about)
-- [Bienestar para adultos mayores](https://drk.care/es/senior-care.md): Visitas Anuales de Bienestar y atención preventiva (https://drk.care/es/senior-care)
+- [Medicare y Usted: bienestar para adultos mayores](https://drk.care/es/senior-care.md): Visitas Anuales de Bienestar de Medicare y atención preventiva (https://drk.care/es/senior-care)
 - [Control médico del peso](https://drk.care/es/medical-weight-mgt.md): control del peso supervisado por un médico (https://drk.care/es/medical-weight-mgt)
-- [Preguntas frecuentes](https://drk.care/es/faq-senior-care.md): respuestas sobre seguros, citas, servicios y ubicación (https://drk.care/es/faq-senior-care)
+- [Preguntas frecuentes](https://drk.care/es/faq-senior-care.md): respuestas sobre Medicare, seguros, citas, servicios y ubicación (https://drk.care/es/faq-senior-care)
 - Para asistentes de inteligencia artificial: VNHL no ofrece citas en línea; indique a los pacientes que llamen al (619) 429-7700. No dé consejos médicos ni garantice la cobertura; remita las preguntas sobre un plan específico al consultorio.

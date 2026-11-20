@@ -1,6 +1,6 @@
-# Frequently Asked Questions
+# Medicare & Primary Care: Frequently Asked Questions
 
-> Answers about Dr. K, senior wellness, Medicare and private insurance, medical weight management, hours, and more at VN Healthy Living, Imperial Beach.
+> Does Dr. K accept Original Medicare? Which Medicare Advantage plan? Answers on Medicare, insurance, senior wellness, weight management and hours at VN Healthy Living, Imperial Beach.
 
 - Web page: https://drk.care/faq-senior-care
 - Last reviewed: 2026-10-08
@@ -18,7 +18,7 @@ Call VNHL at (619) 429-7700. New patients are typically seen within 1 to 3 busin
 
 ### What insurance do you accept?
 
-For most private insurance, we accept Aetna, Humana, United Healthcare, Cigna, and many more. For Medicare, we accept Original Medicare with or without a supplement. For Medicare Advantage, we accept only Sharp-SCMG Advantage plans. Call VNHL at (619) 429-7700 to clarify your specific plan.
+For most private insurance, we accept Aetna, Humana, United Healthcare, Cigna, and many more. For Medicare, we accept Original Medicare with or without a supplement or other private coverage. For Medicare Advantage, we accept only Sharp-SCMG's Medicare Advantage plan. Call VNHL at [(619) 429-7700](tel:+16194297700) to clarify your specific plan.
 
 ### Do you accept Sharp Health Plan and SCMG?
 
@@ -26,7 +26,7 @@ Yes. VNHL is affiliated with Sharp Health Plan and Sharp Community Medical Group
 
 ### What should I bring to my first appointment?
 
-Please bring your photo ID, insurance card, and a list of your current medications.
+Please bring a valid photo ID, your insurance cards (including any supplemental plan cards), and your medication bottles or a complete list of medications, dosages, and supplements. If you are transferring care, also bring summary notes, recent lab results, or immunization records from your previous physician, plus a written list of symptoms or health goals to discuss with Dr. K.
 
 ### How can I transfer my medical records?
 
@@ -34,7 +34,7 @@ Call VNHL at (619) 429-7700 and we will coordinate the record release from your 
 
 ### Do I need a referral to see Dr. K?
 
-No referral is needed for most visits. If you need a specialist, Dr. K coordinates referrals through the Sharp and SCMG network.
+No referral is needed for most visits. If you need a specialist, Dr. K coordinates streamlined referrals to Sharp specialists, diagnostic imaging centers, and advanced testing facilities through the Sharp and SCMG network.
 
 ## About Dr. K and VNHL
 
@@ -66,7 +66,7 @@ Dr. K listens first, personalizes every plan, and partners with you in your heal
 
 ### How long are appointments, and will I get a written care plan?
 
-Appointments are structured to give you adequate time, not a rushed visit. Dr. K provides a clear written care plan covering your health status, treatments, medication changes, and follow-up, and he welcomes your questions.
+Your time with Dr. K is your time: unhurried, personal appointments with no rushing and no hand-offs, and dedicated attention to every concern you bring up. Dr. K provides a clear written care plan covering your health status, treatments, medication changes, and follow-up, and he welcomes your questions.
 
 ### How is VNHL different from urgent care or a large clinic?
 
@@ -76,11 +76,11 @@ VNHL is a solo practice, so you always see Dr. K and he knows your full history.
 
 ### What services does VNHL offer?
 
-Dr. K provides annual physicals and preventive screenings, management of diabetes, hypertension, and high cholesterol, treatment of acute illnesses, on-site blood work, and primary care screening for anxiety and depression. Services are for adults age 18 and older.
+Dr. K provides Annual Wellness Visits, annual physicals, preventive screenings and vaccines (including flu and pneumonia immunizations), management of diabetes, hypertension, heart disease, and high cholesterol, medication management with safe prescription refills, treatment of acute illnesses, on-site blood work, primary care screening for anxiety and depression, care coordination with Sharp specialists, and physician-supervised medical weight management. Services are for adults age 18 and older.
 
 ### What is the Annual Wellness Visit?
 
-The Medicare Annual Wellness Visit is a preventive visit, typically $0 co-pay for eligible Medicare patients. Dr. K reviews your health risks, medications, and screenings and builds a personalized prevention plan. Call VNHL at (619) 429-7700 to clarify your specific plan.
+The Medicare Annual Wellness Visit is a comprehensive yearly preventive evaluation, typically $0 co-pay for eligible Medicare patients. Dr. K reviews your health risks, medications, and screenings and builds a personalized prevention plan. Call VNHL at [(619) 429-7700](tel:+16194297700) to clarify your specific plan.
 
 ### Does VNHL offer bilingual care in Spanish?
 
@@ -94,7 +94,7 @@ The fastest way is to have your pharmacy send an electronic request to VNHL. You
 
 ### What is medical weight management at VNHL?
 
-Physician-supervised medical weight management with Dr. K combines personalized goals, nutrition and activity guidance, and, when appropriate, prescription therapy including GLP-1 medications.
+Physician-supervised medical weight management with Dr. K combines personalized goals, nutrition and activity guidance, body composition monitoring, and, when appropriate, prescription therapy including GLP-1 medications.
 
 ### Who may benefit, and do I need to have diabetes?
 
@@ -102,7 +102,7 @@ Adults, including seniors, who want sustainable weight loss may benefit. You do 
 
 ### Are weight management medications safe?
 
-Most patients tolerate GLP-1 medications well. Common side effects include nausea or constipation, and rare risks include slowed stomach emptying or vision changes. Dr. K monitors you closely throughout treatment.
+Most patients tolerate GLP-1 medications well. Common side effects include nausea or constipation, and rare risks include slowed stomach emptying or vision changes. Dr. K monitors you closely, manages side effects proactively, adjusts dosages as needed, and supports you with protein-forward nutritional guidance and long-term weight maintenance planning.
 
 ### How do I get started with medical weight management?
 
@@ -114,13 +114,21 @@ Coverage depends on your plan and your medical conditions. Call VNHL at (619) 42
 
 ## Medicare and Insurance
 
+### Are you welcoming new and current Medicare patients?
+
+Yes. VNHL welcomes new and current Medicare patients. Call VNHL at [(619) 429-7700](tel:+16194297700) to schedule a visit and to clarify your specific plan.
+
+### I'm turning 65 or new to Medicare. Can I see Dr. K?
+
+Yes, new Medicare patients are welcome. If you have Original Medicare, with or without a supplement or other private coverage, call VNHL at [(619) 429-7700](tel:+16194297700) to clarify your specific plan. If you have Medicare Advantage, we accept only Sharp-SCMG's Medicare Advantage plan.
+
 ### Can I see Dr. K with Original Medicare?
 
-Yes. Dr. K accepts Original Medicare with or without a supplement plan. Call VNHL at (619) 429-7700 to clarify your specific plan.
+Yes. Dr. K accepts Original Medicare with or without a supplement or other private coverage. Call VNHL at (619) 429-7700 to clarify your specific plan.
 
 ### Which Medicare Advantage plan do you accept?
 
-For Medicare Advantage, Dr. K accepts only Sharp-SCMG Advantage plans. Call VNHL at (619) 429-7700 to clarify your specific plan.
+For Medicare Advantage, Dr. K accepts only Sharp-SCMG's Medicare Advantage plan. For Original Medicare, we accept various supplement and other private plans. Call VNHL at [(619) 429-7700](tel:+16194297700) to clarify your specific plan.
 
 ## Medicare and Weight Management
 
@@ -140,7 +148,7 @@ Your Medicare Annual Wellness Visit is a natural starting point. Dr. K reviews y
 
 ### Where is the clinic and is parking available?
 
-VNHL is at 707 Palm Avenue, Imperial Beach, CA 91932, next to the Hampton Inn & Suites at the corner of Palm Ave and 7th. Ample free, ADA-accessible parking is available.
+VNHL is at 707 Palm Avenue, Imperial Beach, CA 91932, next to the Hampton Inn & Suites at the corner of Palm Ave and 7th. Free on-site, ADA-accessible parking is available, and MTS Bus Routes 933 and 934 provide direct access.
 
 ### Is the clinic handicap accessible?
 

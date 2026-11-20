@@ -26,6 +26,11 @@
 /medicare-glp1.html               /medical-weight-mgt     301
 /glp1                             /medical-weight-mgt     301
 /glp-1                            /medical-weight-mgt     301
+/medicare-and-you                 /senior-care            301
+/medicare-senior-wellness         /senior-care            301
+/medicare-advantage               /faq-senior-care        301
+/original-medicare                /faq-senior-care        301
+/insurance                        /faq-senior-care        301
 
 # Spanish pages (/es/): common Spanish and guessed addresses go to the right page; unknown /es/ addresses show es/404.html
 /spanish                          /es/                    301
@@ -45,4 +50,7 @@
 /es/glp1                          /es/medical-weight-mgt  301
 /es/preguntas-frecuentes          /es/faq-senior-care     301
 /es/preguntas                     /es/faq-senior-care     301
+/es/medicare-y-usted              /es/senior-care         301
+/es/medicare-advantage            /es/faq-senior-care     301
+/es/seguros                       /es/faq-senior-care     301
 /es/*                             /es/404.html            404

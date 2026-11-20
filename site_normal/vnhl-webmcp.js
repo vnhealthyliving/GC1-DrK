@@ -11,11 +11,11 @@
   var CLOSING = 'Call VNHL at ' + PHONE + ' to clarify your specific plan.';
   var INSURANCE = {
     'private': 'For most private insurance, we accept Aetna, Humana, United Healthcare, Cigna, and many more.',
-    'original_medicare': 'For Medicare, we accept Original Medicare with or without a supplement.',
-    'medicare_advantage': 'For Medicare Advantage, we accept only Sharp-SCMG Advantage plans.'
+    'original_medicare': 'For Medicare, we accept Original Medicare with or without a supplement or other private coverage.',
+    'medicare_advantage': 'For Medicare Advantage, we accept only Sharp-SCMG\'s Medicare Advantage plan.'
   };
   var SERVICES = {
-    senior_wellness: 'Senior Wellness: Medicare Annual Wellness Visits (typically $0 co-pay for eligible Medicare patients), preventive screenings, medication review, and chronic condition management.',
+    senior_wellness: 'Medicare Senior Wellness (Medicare & You), with new and current Medicare patients welcome: Medicare Annual Wellness Visits (typically $0 co-pay for eligible Medicare patients), preventive screenings, medication review, and chronic condition management.',
     primary_care: 'Primary care for adults 18+: annual physicals, diabetes, hypertension and high cholesterol management, acute illness visits, on-site blood work, and anxiety and depression screening.',
     weight_management: 'Medical Weight Management: physician-supervised programs, including GLP-1 therapy when appropriate. Medicare members, including Medicare Advantage members, may be eligible for the Medicare GLP-1 Bridge Program; call to review eligibility.',
     languages: 'Bilingual care in English and Spanish (Hablamos Espanol).'
@@ -65,7 +65,7 @@
     },
     {
       name: 'get_services',
-      description: 'Describe the services offered by Dr. K at VN Healthy Living: senior wellness, primary care, medical weight management, and languages spoken.',
+      description: 'Describe the services offered by Dr. K at VN Healthy Living: Medicare senior wellness, primary care, medical weight management, and languages spoken.',
       inputSchema: {
         type: 'object',
         properties: { category: { type: 'string', enum: ['all', 'senior_wellness', 'primary_care', 'weight_management', 'languages'], description: 'Service category, or "all".' } },

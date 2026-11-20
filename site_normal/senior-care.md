@@ -1,6 +1,6 @@
-# Senior Wellness
+# Medicare Senior Wellness
 
-> Senior wellness in Imperial Beach: Medicare Annual Wellness Visits, preventive care, and chronic condition management with Dr. Vijay Kuppurajan, MD. New Medicare patients welcome. (619) 429-7700.
+> Medicare senior wellness in Imperial Beach: Annual Wellness Visits, preventive care, and chronic condition management with Dr. Vijay Kuppurajan, MD. New & current Medicare patients welcome. (619) 429-7700.
 
 - Web page: https://drk.care/senior-care
 - Last reviewed: 2026-10-08
@@ -10,7 +10,7 @@
 
 Sharp Community Medical Group
 
-Accepting Senior Patients
+Welcoming New & Current Medicare Patients
 
 Annual Wellness Visit · typically $0 co-pay for eligible Medicare patients
 
@@ -20,7 +20,7 @@ Physician-Supervised Weight & Metabolic Management
 
 4.9 out of 5.0 Rating
 
-## Senior Wellness & Preventive Care at VN Healthy Living
+## Medicare Senior Wellness & Preventive Care at VN Healthy Living
 
 Dr. Vijay Kuppurajan, MD Sharp's Top PCP · Board-Certified Internist Where COMPASSION Encapsulates Comprehensiveness, Competence, and Collaboration
 
@@ -46,7 +46,7 @@ Core clinical offerings
 
 Annual Wellness Visit
 
-Comprehensive yearly evaluation, typically $0 copay for eligible Medicare patients. Call VNHL at (619) 429-7700 to clarify your specific plan.
+Comprehensive yearly evaluation, typically $0 co-pay for eligible Medicare patients. Call VNHL at (619) 429-7700 to clarify your specific plan.
 
 Core Service · Proactive Health
 
@@ -188,7 +188,7 @@ Find Us
 
 ### Welcome to Our Practice
 
-Serving Imperial Beach, Coronado, and South San Diego communities. We proudly accept most private insurance, Original Medicare (with or without a supplement), and Sharp-SCMG's Medicare Advantage plan. Call VNHL at (619) 429-7700 to clarify your specific plan.
+Serving Imperial Beach, Coronado, and South San Diego communities. We proudly accept most private insurance, Original Medicare (with or without a supplement or other private coverage), and Sharp-SCMG's Medicare Advantage plan. Call VNHL at (619) 429-7700 to clarify your specific plan.
 
 #### Address & Parking
 
