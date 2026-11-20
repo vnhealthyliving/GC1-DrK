@@ -154,7 +154,7 @@ Encuéntrenos
 
 ## Bienvenidos a nuestro consultorio
 
-Atendemos a las comunidades de Imperial Beach, Coronado y el sur de San Diego. Aceptamos con gusto la mayoría de los seguros privados, Medicare Original (con o sin plan suplementario) y el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
+Atendemos a las comunidades de Imperial Beach, Coronado y el sur de San Diego. Aceptamos con gusto la mayoría de los seguros privados, Medicare Original (con o sin plan suplementario u otra cobertura privada) y el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
 
 ### Dirección y estacionamiento
 

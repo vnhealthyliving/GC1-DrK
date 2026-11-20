@@ -1,6 +1,6 @@
-# Bienestar para adultos mayores · VN Healthy Living Medical Group | Imperial Beach, CA
+# Medicare y bienestar para adultos mayores | Imperial Beach, CA
 
-> Bienestar para adultos mayores en Imperial Beach: Visitas Anuales de Bienestar de Medicare, atención preventiva y manejo de enfermedades crónicas con el Dr. Vijay Kuppurajan, MD. Damos la bienvenida a pacientes nuevos de Medicare. (619) 429-7700.
+> Bienestar para adultos mayores con Medicare en Imperial Beach: Visitas Anuales de Bienestar, atención preventiva y manejo de enfermedades crónicas con el Dr. Vijay Kuppurajan, MD. Damos la bienvenida a pacientes nuevos y actuales de Medicare. (619) 429-7700.
 
 - Página web: https://drk.care/es/senior-care
 - Versión en inglés: https://drk.care/senior-care
@@ -11,7 +11,7 @@
 
 Sharp Community Medical Group
 
-Atendemos a adultos mayores
+Pacientes nuevos y actuales de Medicare bienvenidos
 
 Visita Anual de Bienestar · por lo general, copago de \$0 para pacientes elegibles de Medicare
 
@@ -21,7 +21,7 @@ Atención primaria y medicina preventiva · Imperial Beach, CA
 
 ★ Calificación de 4.9 de 5.0
 
-# Bienestar y atención preventiva para adultos mayores en VN Healthy Living
+# Medicare: bienestar y atención preventiva para adultos mayores en VN Healthy Living
 
 Dr. Vijay Kuppurajan, MD El mejor médico de atención primaria de Sharp · Internista certificado por la junta Donde la COMPASIÓN abarca  
 Cuidado integral, Competencia y Colaboración
@@ -196,7 +196,7 @@ Encuéntrenos
 
 ## Bienvenidos a nuestro consultorio
 
-Atendemos a las comunidades de Imperial Beach, Coronado y el sur de San Diego. Aceptamos con gusto la mayoría de los seguros privados, Medicare Original (con o sin plan suplementario) y el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
+Atendemos a las comunidades de Imperial Beach, Coronado y el sur de San Diego. Aceptamos con gusto la mayoría de los seguros privados, Medicare Original (con o sin plan suplementario u otra cobertura privada) y el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
 
 ### Dirección y estacionamiento
 

@@ -1,6 +1,6 @@
-# Preguntas frecuentes · VN Healthy Living Medical Group | Imperial Beach, CA
+# Preguntas sobre Medicare y seguros | Dr. K, Imperial Beach, CA
 
-> Respuestas sobre el Dr. K, el bienestar para adultos mayores, Medicare y los seguros privados, el control médico del peso, los horarios y más en VN Healthy Living, Imperial Beach.
+> ¿Acepta el Dr. K Medicare Original? ¿Qué plan Medicare Advantage? Respuestas sobre Medicare, seguros, bienestar para adultos mayores, control del peso y horarios en VN Healthy Living, Imperial Beach.
 
 - Página web: https://drk.care/es/faq-senior-care
 - Versión en inglés: https://drk.care/faq-senior-care
@@ -25,7 +25,7 @@ Llame a VNHL al [(619) 429-7700](tel:+16194297700). Por lo general, los paciente
 
 ¿Qué seguros aceptan?
 
-Con la mayoría de los seguros privados, aceptamos Aetna, Humana, United Healthcare, Cigna y muchos más. En el caso de Medicare, aceptamos Medicare Original, con o sin plan suplementario. En el caso de Medicare Advantage, aceptamos únicamente el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
+Con la mayoría de los seguros privados, aceptamos Aetna, Humana, United Healthcare, Cigna y muchos más. En el caso de Medicare, aceptamos Medicare Original, con o sin plan suplementario u otra cobertura privada. En el caso de Medicare Advantage, aceptamos únicamente el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
 
 ¿Aceptan Sharp Health Plan y SCMG?
 
@@ -121,13 +121,21 @@ La cobertura depende de su plan y de sus afecciones médicas. Llame a VNHL al [(
 
 ### Medicare y seguros
 
+¿Dan la bienvenida a pacientes nuevos y actuales de Medicare?
+
+Sí. VNHL da la bienvenida a pacientes nuevos y actuales de Medicare. Llame a VNHL al [(619) 429-7700](tel:+16194297700) para programar una visita y aclarar los detalles de su plan.
+
+Estoy por cumplir 65 años o soy nuevo en Medicare. ¿Puedo ver al Dr. K?
+
+Sí, los pacientes nuevos de Medicare son bienvenidos. Si tiene Medicare Original, con o sin plan suplementario u otra cobertura privada, llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan. Si tiene Medicare Advantage, aceptamos únicamente el plan Medicare Advantage de Sharp-SCMG.
+
 ¿Puedo ver al Dr. K con Medicare Original?
 
-Sí. El Dr. K acepta Medicare Original, con o sin plan suplementario. Llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
+Sí. El Dr. K acepta Medicare Original, con o sin plan suplementario u otra cobertura privada. Llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
 
 ¿Qué plan Medicare Advantage aceptan?
 
-En el caso de Medicare Advantage, el Dr. K acepta únicamente el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
+En el caso de Medicare Advantage, el Dr. K acepta únicamente el plan Medicare Advantage de Sharp-SCMG. Para Medicare Original, aceptamos diversos planes suplementarios y otros planes privados. Llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
 
 ### Medicare y control del peso
 

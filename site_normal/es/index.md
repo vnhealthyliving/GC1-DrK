@@ -1,19 +1,45 @@
-# Dr. Vijay Kuppurajan, MD | Bienestar para adultos mayores y control médico del peso | Imperial Beach
+# Médico de Medicare en Imperial Beach, CA | Dr. Vijay Kuppurajan
 
-> Dr. Vijay Kuppurajan, MD: medicina interna afiliada a Sharp-SCMG en Imperial Beach, CA. Medicare, bienestar para adultos mayores y control del peso. (619) 429-7700.
+> Pacientes nuevos y actuales de Medicare bienvenidos en Imperial Beach: Medicare Original y el plan Medicare Advantage de Sharp-SCMG. Visitas Anuales de Bienestar. (619) 429-7700.
 
 - Página web: https://drk.care/es/
 - Versión en inglés: https://drk.care
 - Última revisión: 2026-11-02
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
-Aceptamos nuevos pacientes de Medicare · Inscripción anual de Medicare del 15 de octubre al 7 de diciembre
+Damos la bienvenida a pacientes nuevos y actuales de Medicare · Inscripción anual de Medicare del 15 de octubre al 7 de diciembre
 
-ESPECIALISTA EN MEDICINA INTERNA CERTIFICADO POR LA JUNTA, DEDICADO A UNA ATENCIÓN CENTRADA EN EL PACIENTE Y BASADA EN LA EVIDENCIA.
+MEDICINA INTERNA CERTIFICADA POR LA JUNTA · ATENCIÓN CONFIABLE Y COMPASIVA PARA ADULTOS MAYORES CON MEDICARE
 
-## Atención confiable y compasiva en Imperial Beach
+## Atención primaria de Medicare en Imperial Beach, CA
 
 [Llame al (619) 429-7700](tel:+16194297700)
+
+Medicare y Usted
+
+## Bienestar para adultos mayores con Medicare en Imperial Beach
+
+Damos la bienvenida a pacientes nuevos y actuales de Medicare. El Dr. K ofrece atención primaria, atención preventiva y manejo de enfermedades crónicas para adultos mayores con Medicare en Imperial Beach, Coronado, Chula Vista y el área de South Bay.
+
+Visita Anual de Bienestar de Medicare
+
+Una visita preventiva anual, por lo general con copago de \$0 para pacientes elegibles de Medicare. El Dr. K revisa su historial, sus medicamentos y sus metas, y crea con usted su Plan de Vida Saludable.
+
+Llame al (619) 429-7700 para aclarar los detalles de su plan
+
+Medicare Original
+
+Aceptamos Medicare Original, con o sin plan suplementario u otra cobertura privada.
+
+Llame al (619) 429-7700 para aclarar los detalles de su plan
+
+Medicare Advantage con Sharp-SCMG
+
+En el caso de Medicare Advantage, aceptamos únicamente el plan Medicare Advantage de Sharp-SCMG.
+
+Llame al (619) 429-7700 para aclarar los detalles de su plan
+
+[Medicare y Usted: bienestar para adultos mayores](senior-care.html) [Preguntas sobre Medicare](faq-senior-care.html)
 
 En las noticias
 
@@ -99,7 +125,7 @@ Encuéntrenos
 
 ## Bienvenidos a nuestro consultorio
 
-Atendemos a las comunidades de Imperial Beach, Coronado y el sur de San Diego. Aceptamos con gusto la mayoría de los seguros privados, Medicare Original (con o sin plan suplementario) y el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
+Atendemos a las comunidades de Imperial Beach, Coronado y el sur de San Diego. Aceptamos con gusto la mayoría de los seguros privados, Medicare Original (con o sin plan suplementario u otra cobertura privada) y el plan Medicare Advantage de Sharp-SCMG. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
 
 ### Dirección y estacionamiento
 
