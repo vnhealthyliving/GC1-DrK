@@ -53,7 +53,7 @@
       "displayName": "VNHL services",
       "type": "text/html",
       "url": "https://drk.care/",
-      "description": "Describes the services Dr. K offers: senior wellness including Medicare Annual Wellness Visits, primary care for adults, medical weight management, and bilingual English and Spanish care. Read-only WebMCP tool \"get_services\" registered by the page; it never books appointments or collects patient data.",
+      "description": "Describes the services Dr. K offers: Medicare senior wellness including Medicare Annual Wellness Visits, primary care for adults, medical weight management, and bilingual English and Spanish care. Read-only WebMCP tool \"get_services\" registered by the page; it never books appointments or collects patient data.",
       "capabilities": [
         "get_services"
       ],
@@ -117,7 +117,7 @@
       "displayName": "Servicios de VNHL",
       "type": "text/html",
       "url": "https://drk.care/es/",
-      "description": "Describe los servicios que ofrece el Dr. K: bienestar para adultos mayores, incluidas las Visitas Anuales de Bienestar de Medicare, atención primaria para adultos, control médico del peso y atención bilingüe en inglés y español. Herramienta WebMCP de solo lectura \"get_services\" registrada por la página; nunca programa citas ni recopila datos de pacientes.",
+      "description": "Describe los servicios que ofrece el Dr. K: bienestar para adultos mayores con Medicare, incluidas las Visitas Anuales de Bienestar de Medicare, atención primaria para adultos, control médico del peso y atención bilingüe en inglés y español. Herramienta WebMCP de solo lectura \"get_services\" registrada por la página; nunca programa citas ni recopila datos de pacientes.",
       "capabilities": [
         "get_services"
       ],
