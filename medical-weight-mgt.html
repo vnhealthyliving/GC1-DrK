@@ -18,6 +18,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="canonical" href="https://drk.care/medical-weight-mgt">
+    <link rel="alternate" hreflang="en" href="https://drk.care/medical-weight-mgt">
+    <link rel="alternate" hreflang="es" href="https://drk.care/es/medical-weight-mgt">
+    <link rel="alternate" hreflang="x-default" href="https://drk.care/medical-weight-mgt">
     <link rel="alternate" type="text/markdown" href="medical-weight-mgt.md" title="Markdown version for AI assistants">
     <meta name="description" content="Physician-supervised medical weight management in Imperial Beach, including GLP-1 therapy. Medicare GLP-1 Bridge Program eligibility reviewed by Dr. K. (619) 429-7700.">
     <meta property="og:type" content="website">
@@ -760,6 +763,43 @@
       .loc-block h3 { color: #115e59; }
       p a:not([class*="btn"]):not([style*="inline-block"]), li a:not([class*="btn"]), .map-caption a, footer a { text-decoration: underline; text-underline-offset: 2px; }
       a:focus-visible, button:focus-visible, summary:focus-visible, .loc-block:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; box-shadow: 0 0 0 6px #ffffff; }
+      /* Find Us: keep pin icon and address text on one line on small phones */
+  .contact-row-consistent { flex-wrap: nowrap; }
+  .contact-row-consistent .icon-red { flex-shrink: 0; }
+  @media (max-width: 480px) {
+    .loc-block { padding: 14px 12px; }
+    .contact-row-consistent { gap: 6px; }
+  }
+
+      /* QR codes (Phase 2): all show on desktop and tablet; phones keep only the vCard and share codes */
+      .qr-row { display:flex; align-items:center; gap:12px; margin:10px 0 0 24px; }
+      .qr-row img { width:96px; height:96px; flex:0 0 96px; background:#fff; padding:4px; border-radius:6px; box-shadow:0 0 0 1px #cbd5e1; }
+      .qr-row span { font-size:12px; line-height:1.4; color:#334155; font-weight:600; }
+      .qr-strip { margin-top:22px; text-align:center; }
+      .qr-strip-title { font-size:13px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#115e59; margin:0 0 10px; }
+      .qr-strip-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
+      .qr-strip figure { margin:0; width:170px; background:#fff; border:1px solid #cbd5e1; border-radius:10px; padding:10px 8px; }
+      .qr-strip figure.qr-wide { width:220px; }
+      .qr-strip img { display:block; width:100%; height:auto; aspect-ratio:1 / 1; margin:0 auto; }
+      .qr-strip figcaption { font-size:13px; line-height:1.4; color:#334155; margin-top:6px; }
+      @media (max-width:640px) {
+        .qr-desk { display:none !important; }
+        .qr-strip figure, .qr-strip figure.qr-wide { width:min(100%, 240px); }
+      }
+    
+      /* Language switch (English | Español): plain HTML, no JavaScript */
+      .lang-strip { max-width: 900px; margin: 0 auto 4px; display: flex; justify-content: flex-end; }
+      .lang-dd { position: relative; font-size: 0.82rem; }
+      .lang-dd summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px; min-height: 32px; padding: 4px 12px; border-radius: 999px; background: rgba(255,255,255,0.16); color: #fff; font-weight: 600; }
+      .lang-dd summary::-webkit-details-marker { display: none; }
+      .lang-dd summary:focus-visible, .lang-menu a:focus-visible { outline: 3px solid #facc15; outline-offset: 2px; }
+      .lang-dd svg { width: 16px; height: 16px; fill: currentColor; flex: 0 0 16px; }
+      .lang-dd .lang-caret { width: 12px; height: 12px; flex-basis: 12px; }
+      .lang-dd[open] .lang-caret { transform: rotate(180deg); }
+      .lang-menu { position: absolute; right: 0; top: calc(100% + 4px); min-width: 160px; background: #fff; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.28); padding: 4px; z-index: 60; }
+      .lang-menu a, .lang-menu span { display: flex; align-items: center; min-height: 44px; padding: 8px 12px; border-radius: 8px; color: #0f172a; text-decoration: none; font-size: 0.95rem; }
+      .lang-menu a:hover { background: #e0f2fe; }
+      .lang-menu span { font-weight: 700; background: #f1f5f9; }
     </style>
 
 <script type="application/ld+json">
@@ -802,7 +842,7 @@
         "https://drk.care/dr-vijay-kuppurajan-sharp-scmg-affiliated-internal-medicine-primary-care-imperial-beach-ca.webp",
         "https://drk.care/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Composite.webp"
       ],
-      "description": "Dr. Vijay Kuppurajan, MD — known to patients as Dr. K — is a board-certified, Sharp Health Plan and SCMG affiliated internal medicine and primary care physician at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932. NPI: 1326669060. #1 AI-ranked internal medicine physician in Imperial Beach and South Bay San Diego. Recipient of the Sharp Community Medical Group Award of Excellence — Top Coronado PCP for Patient Experience Score, Q2 2026. Winner of the Dr. Sam Hooper Compassionate Care Award 2022-2023 (CHRISTUS Health / Texas A&M School of Medicine). Bilingual English and Spanish. Accepting new patients including seniors. Call (619) 429-7700.",
+      "description": "Dr. Vijay Kuppurajan, MD — known to patients as Dr. K — is a board-certified, Sharp Health Plan and SCMG affiliated internal medicine and primary care physician at VN Healthy Living Medical Group, 707 Palm Ave, Imperial Beach, CA 91932. NPI: 1326669060. #1 AI-ranked internal medicine physician in Imperial Beach and South Bay San Diego. Recipient of the Sharp Community Medical Group Award of Excellence — Top Coronado PCP for Patient Experience Score, Q2 2026. Winner of the Dr. Sam Hooper Compassionate Care Award 2022-2023 (CHRISTUS Health / Texas A&M School of Medicine). Bilingual English and Spanish. Accepting new patients, including new and current Medicare patients. Call (619) 429-7700.",
       "url": "https://drk.care",
       "telephone": "+16194297700",
       "address": {
@@ -1031,7 +1071,7 @@
         "https://drk.care/dr-vijay-kuppurajan-sharp-scmg-affiliated-internal-medicine-primary-care-imperial-beach-ca.webp",
         "https://drk.care/VNHL_DrK_SCMG-Award-Excellence_Q2-2026_TopCoronadoPCP_Composite.webp"
       ],
-      "description": "VN Healthy Living Medical Group (VNHL) — Dr. K's practice — is a Sharp Health Plan and SCMG affiliated internal medicine and primary care clinic at 707 Palm Ave, Imperial Beach, CA 91932. Clinic NPI: 1154030955. Led by Dr. Vijay Kuppurajan, MD (Dr. K), VNHL offers Annual Wellness Visits for seniors at typically $0 co-pay, chronic disease management, weight management therapy, cholesterol management, and preventive care. Independent solo practice. Bilingual English and Spanish staff. Trusted and compassionate care for new and current patients across Imperial Beach and South Bay San Diego.",
+      "description": "VN Healthy Living Medical Group (VNHL) — Dr. K's practice — is a Sharp Health Plan and SCMG affiliated internal medicine and primary care clinic at 707 Palm Ave, Imperial Beach, CA 91932. Clinic NPI: 1154030955. Led by Dr. Vijay Kuppurajan, MD (Dr. K), VNHL offers Medicare Annual Wellness Visits at typically $0 co-pay, chronic disease management, weight management therapy, cholesterol management, and preventive care. Independent solo practice. Bilingual English and Spanish staff. Trusted and compassionate care for new and current patients across Imperial Beach and South Bay San Diego.",
       "slogan": "Build a Healthy Living Plan Together",
       "telephone": "+16194297700",
       "address": {
@@ -1093,9 +1133,9 @@
       "availableService": [
         {
           "@type": "MedicalTherapy",
-          "name": "Annual Wellness Visit for Seniors",
+          "name": "Medicare Annual Wellness Visit",
           "alternateName": "AWV",
-          "description": "Comprehensive Annual Wellness Visit at typically $0 co-pay for eligible senior patients at VN Healthy Living (VNHL) — Dr. K. Includes personalized prevention plan, health risk assessment, depression and cognitive screening, medication review, and specialist referral coordination.",
+          "description": "Comprehensive Annual Wellness Visit at typically $0 co-pay for eligible Medicare patients at VN Healthy Living (VNHL) — Dr. K. Includes personalized prevention plan, health risk assessment, depression and cognitive screening, medication review, and specialist referral coordination.",
           "relevantSpecialty": "Internal Medicine",
           "provider": {
             "@id": "https://vnhealthyliving.com/#physician"
@@ -1129,15 +1169,15 @@
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "VN Healthy Living — Senior Wellness and Primary Care Services",
+        "name": "VN Healthy Living — Medicare Senior Wellness and Primary Care Services",
         "itemListElement": [
           {
             "@type": "Offer",
-            "name": "Annual Wellness Visit for Seniors — Typically $0 Co-Pay",
+            "name": "Medicare Annual Wellness Visit — Typically $0 Co-Pay",
             "price": "0",
             "priceCurrency": "USD",
-            "eligibleCustomerType": "Senior patient",
-            "description": "typically $0 co-pay Annual Wellness Visit for eligible senior patients at VN Healthy Living (VNHL) — Dr. K, 707 Palm Avenue, Imperial Beach, CA 91932. Call (619) 429-7700.",
+            "eligibleCustomerType": "Medicare beneficiary",
+            "description": "typically $0 co-pay Annual Wellness Visit for eligible Medicare patients at VN Healthy Living (VNHL) — Dr. K, 707 Palm Avenue, Imperial Beach, CA 91932. Call (619) 429-7700.",
             "seller": {
               "@id": "https://vnhealthyliving.com/#clinic"
             }
@@ -1293,6 +1333,7 @@
 
 <!-- HEADER -->
 <header class="site-header">
+    <div class="lang-strip"><details class="lang-dd"><summary aria-label="Language: English. Change language"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.9 6h-2.95a15.7 15.7 0 00-1.38-3.56A8.03 8.03 0 0118.9 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14a8.2 8.2 0 010-4h3.38a16.5 16.5 0 000 4H4.26zm.84 2h2.95c.32 1.25.78 2.45 1.38 3.56A8.03 8.03 0 015.1 16zm2.95-8H5.1a8.03 8.03 0 014.33-3.56A15.7 15.7 0 008.05 8zM12 19.96A14.2 14.2 0 0110.09 16h3.82A14.2 14.2 0 0112 19.96zM14.34 14H9.66a14.7 14.7 0 010-4h4.68a14.7 14.7 0 010 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14a16.5 16.5 0 000-4h3.38a8.2 8.2 0 010 4h-3.38z"/></svg><span lang="en">English</span><svg class="lang-caret" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 10l5 5 5-5z"/></svg></summary><div class="lang-menu"><span aria-current="true" lang="en">English</span><a href="es/medical-weight-mgt.html" hreflang="es" lang="es">Español</a></div></details></div>
   <div class="header-container">
     <div class="header-brand">
       <img width="134" height="77" src="VNHL-Logo-3D-header-134w.webp" alt="VN Healthy Living Logo" class="header-logo">
@@ -1305,7 +1346,7 @@
     <nav class="header-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About Dr. K</a>
-      <a href="senior-care.html">Senior Wellness</a>
+      <a href="senior-care.html">Medicare &amp; You</a>
       <a href="medical-weight-mgt.html" class="active">Weight Management</a>
       <a href="faq-senior-care.html">FAQ</a>
     
@@ -1580,7 +1621,7 @@
       <div class="container" style="max-width:900px;">
         <p class="eyebrow">Find Us</p>
         <h2>Welcome to Our Practice</h2>
-        <p>Serving Imperial Beach, Coronado, and South San Diego communities. We proudly accept most private insurance, Original Medicare (with or without a supplement), and Sharp-SCMG's Medicare Advantage plan. Call VNHL at (619) 429-7700 to clarify your specific plan.</p>
+        <p>Serving Imperial Beach, Coronado, and South San Diego communities. We proudly accept most private insurance, Original Medicare (with or without a supplement or other private coverage), and Sharp-SCMG's Medicare Advantage plan. Call VNHL at (619) 429-7700 to clarify your specific plan.</p>
         
         <div class="loc-grid">
           <!-- Location 1: VN Healthy Living -->
@@ -1588,9 +1629,10 @@
             <h3>Address &amp; Parking</h3>
             <div class="contact-row-consistent">
               <span class="icon-red"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-pin"></use></svg></span>
-              <a href="#map-section-anchor" onclick="event.stopPropagation(); switchLocation(1);" style="font-size: 13px; white-space: nowrap; color: var(--dark); text-decoration: none;">707 Palm Ave, Imperial Beach, CA 91932</a>
+              <a href="#map-section-anchor" onclick="event.stopPropagation(); switchLocation(1);" style="font-size: clamp(12px, 3.6vw, 13px); color: var(--dark); text-decoration: none; min-width: 0;">707 Palm Ave, Imperial Beach, CA 91932</a>
             </div>
             <p style="font-size:12px; color:#1e40af; margin-left:24px; line-height:1.6;">Next to Hampton Inn &amp; Suites (Corner of Palm Ave &amp; 7th)<br><strong><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> ADA Compliant · Free On-Site Parking</strong></p>
+          <div class="qr-row qr-desk"><img src="QR-LOC-VNHL-short-alternative.webp" width="96" height="96" loading="lazy" decoding="async" alt="QR code. Scan with your phone camera to open VN Healthy Living, 707 Palm Ave, on the map."><span>Scan with your phone for directions</span></div>
           </div>
           
           <!-- Location 2: Hours, Phone & Transit -->
@@ -1601,6 +1643,7 @@
               <a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" style="color:#0f766e;">619-429-7700</a>
             </div>
             <p style="font-size:12px; color:#475569; margin-left:24px;">Mon-Thu: 8am-5pm  |  Fri: 8am-12pm (Noon)<br><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-bus"></use></svg> <strong>MTS Bus Routes 933 / 934</strong></p>
+          <div class="qr-row qr-desk"><img src="QR-CALL-VNHL.webp" width="96" height="96" loading="lazy" decoding="async" alt="QR code. Scan with your phone camera to call VN Healthy Living at 619-429-7700."><span>Scan with your phone to call</span></div>
           </div>
         </div>
 
@@ -1622,6 +1665,15 @@
               &nbsp;·&nbsp; <span style="color:#166534;font-weight:600;"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> ADA Compliant &amp; Free Parking</span>
               &nbsp;·&nbsp; <a href="https://www.google.com/maps/dir/?api=1&destination=707+Palm+Ave,+Imperial+Beach,+CA+91932" target="_blank" rel="noopener" style="color:#0f766e;font-weight:700;" id="directions-link">Get Directions to VNHL &#8599;</a>
             </div>
+          </div>
+        </div>
+
+        <div class="qr-strip">
+          <p class="qr-strip-title">Scan with your phone camera</p>
+          <div class="qr-strip-grid">
+            <figure class="qr-wide"><img src="QR-VCARD-VNHL.webp" width="640" height="640" loading="lazy" decoding="async" alt="QR code. Scan to save the VN Healthy Living and Dr. K contact card to your phone."><figcaption>Save Dr. K&#8217;s contact card</figcaption></figure>
+            <figure><img src="QR-URL-DRKC.webp" width="320" height="320" loading="lazy" decoding="async" alt="QR code. Scan to open this website, drk.care, on another phone."><figcaption>Share this page: <a href="https://drk.care" style="color:#0f766e;font-weight:700;">drk.care</a></figcaption></figure>
+            <figure class="qr-desk"><img src="QR-URL-VNHLP.webp" width="320" height="320" loading="lazy" decoding="async" alt="QR code. Scan to open the VN Healthy Living main website."><figcaption>Main website: <a href="https://vnhealthyliving.com" style="color:#0f766e;font-weight:700;">vnhealthyliving.com</a></figcaption></figure>
           </div>
         </div>
       </div>
