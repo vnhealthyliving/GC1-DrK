@@ -3,7 +3,7 @@
 > Does Dr. K accept Original Medicare? Which Medicare Advantage plan? Answers on Medicare, insurance, senior wellness, weight management and hours at VN Healthy Living, Imperial Beach.
 
 - Web page: https://drk.care/faq-senior-care
-- Last reviewed: 2026-10-08
+- Last reviewed: 2026-11-22
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 ## Getting Started
@@ -82,6 +82,10 @@ Dr. K provides Annual Wellness Visits, annual physicals, preventive screenings a
 
 The Medicare Annual Wellness Visit is a comprehensive yearly preventive evaluation, typically $0 co-pay for eligible Medicare patients. Dr. K reviews your health risks, medications, and screenings and builds a personalized prevention plan. Call VNHL at [(619) 429-7700](tel:+16194297700) to clarify your specific plan.
 
+### What should I ask about at my Annual Wellness Visit?
+
+Ask Dr. K which checks make sense for you. Depending on your health, these can include your weight and waist measurement, blood pressure, blood sugar and cholesterol, and kidney tests (a blood test and a urine test). Coverage for individual tests can differ from the visit itself, so call VNHL at [(619) 429-7700](tel:+16194297700) to clarify your specific plan.
+
 ### Does VNHL offer bilingual care in Spanish?
 
 Yes. Our bilingual staff assist Spanish-speaking patients with scheduling, consultation, and care planning. Hablamos Español.
@@ -95,6 +99,14 @@ The fastest way is to have your pharmacy send an electronic request to VNHL. You
 ### What is medical weight management at VNHL?
 
 Physician-supervised medical weight management with Dr. K combines personalized goals, nutrition and activity guidance, body composition monitoring, and, when appropriate, prescription therapy including GLP-1 medications.
+
+### How is weight connected to heart, kidney, and diabetes risk?
+
+The American Heart Association describes a connected system called cardiovascular-kidney-metabolic (CKM) syndrome. Excess body fat, especially around the waist, can lead to high blood sugar, high blood pressure, and high triglycerides. Over time these can strain the kidneys and the heart. That is why Dr. K looks at weight and these related risks together. Learn more on the [Medical Weight Management](medical-weight-mgt.md#heart-kidney-metabolic) page.
+
+### Can losing weight lower my risk?
+
+For many people, yes. The AHA advises aiming for at least 5% weight loss, with more benefit from greater loss, and notes that weight loss and lifestyle change may improve blood pressure, blood sugar, and kidney health in some people. Results vary, so ask Dr. K what goal and approach fit you. Call VNHL at [(619) 429-7700](tel:+16194297700).
 
 ### Who may benefit, and do I need to have diabetes?
 

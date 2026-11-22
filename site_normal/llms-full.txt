@@ -1,13 +1,13 @@
 # VN Healthy Living Medical Group: full site text
 
-> All pages in one file for AI assistants. Last reviewed 2026-11-20. Source: https://drk.care
+> All pages in one file for AI assistants. Last reviewed 2026-11-22. Source: https://drk.care
 
 # Medicare Doctor in Imperial Beach, CA | Dr. Vijay Kuppurajan
 
 > New & current Medicare patients welcome in Imperial Beach: Original Medicare and Sharp-SCMG Medicare Advantage. Annual Wellness Visits. (619) 429-7700.
 
 - Web page: https://drk.care/
-- Last reviewed: 2026-10-14
+- Last reviewed: 2026-11-22
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 Welcoming New & Current Medicare Patients · Medicare Annual Enrollment Oct 15 – Dec 7
@@ -41,6 +41,12 @@ Medicare Advantage through Sharp-SCMG
 For Medicare Advantage, we accept only Sharp-SCMG's Medicare Advantage plan.
 
 Call (619) 429-7700 to clarify your specific plan
+
+Heart, Kidney & Metabolic Health
+
+Extra weight is a major driver of heart, kidney, and blood sugar problems. Ask Dr. K about weight and risk checks at your Annual Wellness Visit.
+
+[Learn why weight matters](medical-weight-mgt.md#heart-kidney-metabolic)
 
 [Medicare & You: Senior Wellness](senior-care.md) [Medicare FAQs](faq-senior-care.md)
 
@@ -154,7 +160,7 @@ Mon-Thu: 8am-5pm | Fri: 8am-12pm (Noon) **MTS Bus Routes 933 / 934**
 > Meet Dr. Vijay Kuppurajan, MD: board-certified internal medicine, Sharp-SCMG affiliated, serving Imperial Beach and South Bay San Diego. Original Medicare and Sharp-SCMG Medicare Advantage accepted. (619) 429-7700.
 
 - Web page: https://drk.care/about
-- Last reviewed: 2026-10-14
+- Last reviewed: 2026-11-21
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 BOARD-CERTIFIED INTERNAL MEDICINE SPECIALIST DEDICATED TO PATIENT-CENTERED, EVIDENCE-BASED CARE.
@@ -255,6 +261,29 @@ Sharp Affiliated · Community Clinic Heart
 
 [Read our Care Philosophy FAQs ↗](faq-senior-care.md#philosophy)
 
+A Modern Model of the Physician
+
+### The 8-Star Doctor
+
+The World Health Organization described the five-star doctor, and medical education later widened it into the 7-Star Doctor framework by adding the researcher and the lifelong learner. [1] A 2025 expert-consensus study proposes an eighth star: the teacher. [2] Related role-based frameworks, such as CanMEDS and RIME, also give teaching a place among a physician's roles. [3] We find this model a helpful way to describe what you can expect from a modern doctor: care that is compassionate, evidence-based, clearly explained, and shared through patient education.
+
+1. Care Provider: Delivers whole-person, high-quality, compassionate care.
+2. Decision-Maker: Makes evidence-based, ethical, and cost-conscious clinical choices.
+3. Communicator: Explains health information clearly and encourages healthy lifestyles.
+4. Community Leader: Responds to public health and community needs.
+5. Manager: Coordinates resources, care teams, and health services.
+6. Researcher: Investigates medical questions and contributes to scientific knowledge.
+7. Lifelong Learner: Keeps medical skills and knowledge up to date.
+8. Teacher (the 8th star): Shares knowledge with patients, families, and colleagues, and helps train the next generation of health professionals.
+
+The 8-Star Doctor is an educational framework from medical-education research. It is not an accreditation, rating, or guarantee of outcomes.
+
+References
+
+1. 7-Star Doctor framework: the WHO core roles of care provider, decision-maker, communicator, community leader, and manager, plus researcher and lifelong learner. VNHL reference summary, "8-Star Doctor Frameworks," 2026.
+2. Khan SJ, Yasmeen R, Imran S. Building the 8-star doctor: a modified Delphi study to define, teach, and assess health professions education for undergraduate medical students. BMC Medical Education. 2025;25:1158. https://doi.org/10.1186/s12909-025-07694-7
+3. Pangaro L, ten Cate O. Frameworks for learner assessment in medicine: AMEE Guide No. 78. Medical Teacher. 2013;35(6):e1197-e1210 (reviews role-based frameworks such as CanMEDS and RIME). https://doi.org/10.3109/0142159X.2013.788789
+
 TRUSTED & COMPASSIONATE CULTURE AT VNHL
 
 ### It all starts with LISTENING
@@ -323,7 +352,7 @@ Mon-Thu: 8am-5pm | Fri: 8am-12pm (Noon) **MTS Bus Routes 933 / 934**
 > Medicare senior wellness in Imperial Beach: Annual Wellness Visits, preventive care, and chronic condition management with Dr. Vijay Kuppurajan, MD. New & current Medicare patients welcome. (619) 429-7700.
 
 - Web page: https://drk.care/senior-care
-- Last reviewed: 2026-10-08
+- Last reviewed: 2026-11-22
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 ##### Sharp Top PCP Award
@@ -359,6 +388,29 @@ Patient-Centered Medical Home
 As your dedicated medical home in Imperial Beach, VN Healthy Living pairs trusted, compassionate care with expert clinical leadership. Together, we build a customized healthy living plan centered around proactive preventive activities like Annual Wellness Visits, chronic disease management, and long-term vitality.
 
 Medicare New & Current Medicare Patients Welcome · Annual Wellness Visit **typically $0 co-pay** | [Call Dr. K »](tel:+16194297700)
+
+Heart, Kidney & Metabolic Health
+
+### Your Annual Wellness Visit: Look at the Whole Picture
+
+Your heart, kidneys, and metabolism are connected, and extra weight is a major driver of problems in all three. [1] A yearly visit is a good time to see where you stand, often before any symptoms appear.
+
+Ask Dr. K which checks are right for you
+
+- Your weight and waist measurement
+- Blood pressure
+- Blood sugar and cholesterol
+- Kidney health (a blood test and a urine test)
+- Your overall heart risk and a realistic weight goal
+Coverage for individual tests can differ from the visit itself. Call VNHL at (619) 429-7700 to clarify your specific plan.
+
+[Schedule Your Annual Wellness Visit](tel:+16194297700) [How Weight Affects Heart, Kidney & Blood Sugar](medical-weight-mgt.md#heart-kidney-metabolic)
+
+This is educational information, not personal medical advice. Please talk with Dr. K about your own health.
+
+References
+
+1. Ndumele CE, Rangaswami J, Chow SL, et al; American Heart Association. Cardiovascular-kidney-metabolic health: a presidential advisory from the American Heart Association. Circulation. 2023;148:1606&ndash;1635. https://doi.org/10.1161/CIR.0000000000001184
 
 Core clinical offerings
 
@@ -534,7 +586,7 @@ Mon-Thu: 8am-5pm | Fri: 8am-12pm (Noon) **MTS Bus Routes 933 / 934**
 > Physician-supervised medical weight management in Imperial Beach, including GLP-1 therapy. Medicare GLP-1 Bridge Program eligibility reviewed by Dr. K. (619) 429-7700.
 
 - Web page: https://drk.care/medical-weight-mgt
-- Last reviewed: 2026-10-08
+- Last reviewed: 2026-11-22
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 Flash News Medicare members, including Medicare Advantage, may be eligible for the Medicare GLP-1 Bridge Program | [Call our office to check your eligibility »](tel:+16194297700)
@@ -564,6 +616,33 @@ GLP-1 therapy: THE EVOLUTION OF MODERN MEDICINE
 ### Physician-Supervised Medical Weight Management
 
 GLP-1 therapy started as a breakthrough medication for Type 2 diabetes, quickly became a sensation for sustainable weight loss, and is now showing broader total body benefits, including heart and kidney protection, metabolic renewal, and promising early research on brain health.
+
+Heart, Kidney & Metabolic Health
+
+### Why Weight Matters for Your Heart, Kidneys, and Blood Sugar
+
+Doctors now see the heart, the kidneys, and the body's metabolism as one connected system. When they decline together, it is called cardiovascular-kidney-metabolic (CKM) syndrome. The American Heart Association's 2023 advisory names excess body fat, especially around the waist, as a major driver of this chain. [1]
+
+1. Excess or unhealthy body fat: Extra weight, especially around the waist, can cause inflammation and make the body less responsive to insulin.
+2. Metabolic risk factors: High blood sugar, high blood pressure, and high triglycerides often follow.
+3. Kidney strain: These conditions can damage the kidneys, and weakened kidneys in turn raise heart risk.
+4. Heart and circulation: Over time, the risk grows for heart failure, coronary heart disease, stroke, and atrial fibrillation (an irregular heartbeat).
+
+The encouraging news
+
+- **It often starts quietly.** Many people have no symptoms in the early stages, so regular checks of weight, waist size, blood pressure, blood sugar, cholesterol, and kidney health matter. The AHA suggests measuring both BMI and waist circumference every year.
+- **Weight loss helps.** The AHA advises aiming for at least a 5% weight loss (about 10 pounds for a 200-pound person), with more benefit from greater loss. Weight loss and lifestyle change may improve blood pressure, blood sugar, and kidney health in some people. [1]
+- **You do not have to do it alone.** Dr. K offers physician-supervised medical weight management built around your health history, with lifestyle support and, when appropriate, medical options.
+
+**Start with a Wellness Visit.** Call (619) 429-7700 to schedule. Medicare patients can ask about their Annual Wellness Visit (typically $0 co-pay for eligible patients). Call VNHL to clarify your specific plan.
+
+[Call (619) 429-7700](tel:+16194297700) [Medicare & You: Annual Wellness Visit](senior-care.md)
+
+This is educational information, not personal medical advice. Please talk with Dr. K about your own health.
+
+References
+
+1. Ndumele CE, Rangaswami J, Chow SL, et al; American Heart Association. Cardiovascular-kidney-metabolic health: a presidential advisory from the American Heart Association. Circulation. 2023;148:1606-1635. https://doi.org/10.1161/CIR.0000000000001184
 
 Core clinical offerings
 
@@ -703,7 +782,7 @@ Mon-Thu: 8am-5pm | Fri: 8am-12pm (Noon) **MTS Bus Routes 933 / 934**
 > Does Dr. K accept Original Medicare? Which Medicare Advantage plan? Answers on Medicare, insurance, senior wellness, weight management and hours at VN Healthy Living, Imperial Beach.
 
 - Web page: https://drk.care/faq-senior-care
-- Last reviewed: 2026-10-08
+- Last reviewed: 2026-11-22
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 ## Getting Started
@@ -782,6 +861,10 @@ Dr. K provides Annual Wellness Visits, annual physicals, preventive screenings a
 
 The Medicare Annual Wellness Visit is a comprehensive yearly preventive evaluation, typically $0 co-pay for eligible Medicare patients. Dr. K reviews your health risks, medications, and screenings and builds a personalized prevention plan. Call VNHL at [(619) 429-7700](tel:+16194297700) to clarify your specific plan.
 
+### What should I ask about at my Annual Wellness Visit?
+
+Ask Dr. K which checks make sense for you. Depending on your health, these can include your weight and waist measurement, blood pressure, blood sugar and cholesterol, and kidney tests (a blood test and a urine test). Coverage for individual tests can differ from the visit itself, so call VNHL at [(619) 429-7700](tel:+16194297700) to clarify your specific plan.
+
 ### Does VNHL offer bilingual care in Spanish?
 
 Yes. Our bilingual staff assist Spanish-speaking patients with scheduling, consultation, and care planning. Hablamos Español.
@@ -795,6 +878,14 @@ The fastest way is to have your pharmacy send an electronic request to VNHL. You
 ### What is medical weight management at VNHL?
 
 Physician-supervised medical weight management with Dr. K combines personalized goals, nutrition and activity guidance, body composition monitoring, and, when appropriate, prescription therapy including GLP-1 medications.
+
+### How is weight connected to heart, kidney, and diabetes risk?
+
+The American Heart Association describes a connected system called cardiovascular-kidney-metabolic (CKM) syndrome. Excess body fat, especially around the waist, can lead to high blood sugar, high blood pressure, and high triglycerides. Over time these can strain the kidneys and the heart. That is why Dr. K looks at weight and these related risks together. Learn more on the [Medical Weight Management](medical-weight-mgt.md#heart-kidney-metabolic) page.
+
+### Can losing weight lower my risk?
+
+For many people, yes. The AHA advises aiming for at least 5% weight loss, with more benefit from greater loss, and notes that weight loss and lifestyle change may improve blood pressure, blood sugar, and kidney health in some people. Results vary, so ask Dr. K what goal and approach fit you. Call VNHL at [(619) 429-7700](tel:+16194297700).
 
 ### Who may benefit, and do I need to have diabetes?
 
@@ -871,7 +962,7 @@ VNHL is open Monday through Thursday 8:00 AM to 5:00 PM and Friday 8:00 AM to 12
 
 - Página web: https://drk.care/es/
 - Versión en inglés: https://drk.care
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-22
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 Damos la bienvenida a pacientes nuevos y actuales de Medicare · Inscripción anual de Medicare del 15 de octubre al 7 de diciembre
@@ -905,6 +996,12 @@ Medicare Advantage con Sharp-SCMG
 En el caso de Medicare Advantage, aceptamos únicamente el plan Medicare Advantage de Sharp-SCMG.
 
 Llame al (619) 429-7700 para aclarar los detalles de su plan
+
+Salud del corazón, los riñones y el metabolismo
+
+El exceso de peso es un factor importante de los problemas del corazón, los riñones y el azúcar en la sangre. Pregunte al Dr. K por las revisiones de peso y de riesgo en su Visita Anual de Bienestar.
+
+[Por qué importa el peso](medical-weight-mgt.html#heart-kidney-metabolic)
 
 [Medicare y Usted: bienestar para adultos mayores](senior-care.html) [Preguntas sobre Medicare](faq-senior-care.html)
 
@@ -1021,7 +1118,7 @@ Lun-Jue: 8 a. m.-5 p. m. \| Vie: 8 a. m.-12 p. m. (mediodía)
 
 - Página web: https://drk.care/es/about
 - Versión en inglés: https://drk.care/about
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-21
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 ESPECIALISTA EN MEDICINA INTERNA CERTIFICADO POR LA JUNTA, DEDICADO A UNA ATENCIÓN CENTRADA EN EL PACIENTE Y BASADA EN LA EVIDENCIA.
@@ -1122,6 +1219,29 @@ Afiliado a Sharp · Corazón de clínica comunitaria
 
 [Lea nuestras preguntas frecuentes sobre la filosofía de atención ↗](faq-senior-care.html#philosophy)
 
+Un modelo moderno del médico
+
+## El médico de 8 estrellas
+
+La Organización Mundial de la Salud describió al médico de cinco estrellas, y la educación médica lo amplió después al marco del médico de 7 estrellas al añadir al investigador y al aprendiz permanente. [1] Un estudio de consenso de expertos de 2025 propone una octava estrella: el docente. [2] Marcos relacionados basados en funciones, como CanMEDS y RIME, también dan un lugar a la enseñanza entre las funciones del médico. [3] Nos parece una forma útil de describir lo que usted puede esperar de un médico moderno: atención compasiva, basada en la evidencia, explicada con claridad y compartida mediante la educación del paciente.
+
+1. Proveedor de atención: Brinda atención integral, de calidad y compasiva.
+2. Tomador de decisiones: Toma decisiones clínicas basadas en la evidencia, éticas y económicamente sensatas.
+3. Comunicador: Explica la información de salud con claridad y fomenta estilos de vida saludables.
+4. Líder comunitario: Atiende las necesidades de salud pública y de la comunidad.
+5. Gestor: Coordina recursos, equipos de atención y servicios de salud.
+6. Investigador: Investiga problemas médicos y contribuye al conocimiento científico.
+7. Aprendiz permanente: Mantiene actualizados sus conocimientos y habilidades médicas.
+8. Docente (la octava estrella): Comparte su conocimiento con pacientes, familias y colegas, y contribuye a formar a los futuros profesionales de la salud.
+
+El médico de 8 estrellas es un marco educativo basado en investigación en educación médica. No es una acreditación, una calificación ni una garantía de resultados.
+
+Referencias
+
+1. Marco del médico de 7 estrellas: funciones básicas de la OMS (proveedor de atención, tomador de decisiones, comunicador, líder comunitario y gestor), más investigador y aprendiz permanente. Documento de referencia de VNHL, "8-Star Doctor Frameworks", 2026.
+2. Khan SJ, Yasmeen R, Imran S. Building the 8-star doctor: a modified Delphi study to define, teach, and assess health professions education for undergraduate medical students. BMC Medical Education. 2025;25:1158 (en inglés). https://doi.org/10.1186/s12909-025-07694-7
+3. Pangaro L, ten Cate O. Frameworks for learner assessment in medicine: AMEE Guide No. 78. Medical Teacher. 2013;35(6):e1197-e1210 (en inglés; describe marcos basados en funciones como CanMEDS y RIME). https://doi.org/10.3109/0142159X.2013.788789
+
 UNA CULTURA CONFIABLE Y COMPASIVA EN VNHL
 
 ## Todo comienza por ESCUCHAR
@@ -1194,7 +1314,7 @@ Lun-Jue: 8 a. m.-5 p. m. \| Vie: 8 a. m.-12 p. m. (mediodía)
 
 - Página web: https://drk.care/es/senior-care
 - Versión en inglés: https://drk.care/senior-care
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-22
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 #### Premio al mejor médico de atención primaria de Sharp
@@ -1231,6 +1351,29 @@ Hogar médico centrado en el paciente
 Como su hogar médico en Imperial Beach, VN Healthy Living une una atención confiable y compasiva con un liderazgo clínico experto. Juntos creamos un plan de vida saludable a su medida, centrado en actividades preventivas como las Visitas Anuales de Bienestar, el manejo de enfermedades crónicas y la vitalidad a largo plazo.
 
 Medicare Damos la bienvenida a pacientes nuevos y actuales de Medicare  ·  Visita Anual de Bienestar: **por lo general, copago de \$0**  \|  [Llame al Dr. K »](tel:+16194297700)
+
+Salud del corazón, los riñones y el metabolismo
+
+## Su Visita Anual de Bienestar: una mirada al panorama completo
+
+Su corazón, sus riñones y su metabolismo están conectados, y el exceso de peso es un factor importante de problemas en los tres. [1] Una visita anual es un buen momento para saber cómo está, muchas veces antes de que aparezcan síntomas.
+
+Pregunte al Dr. K qué revisiones son adecuadas para usted
+
+- Su peso y la medida de su cintura
+- La presión arterial
+- El azúcar en la sangre y el colesterol
+- La salud de los riñones (un análisis de sangre y uno de orina)
+- Su riesgo general para el corazón y una meta de peso realista
+La cobertura de cada prueba puede ser distinta a la de la visita. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
+
+[Programe su Visita Anual de Bienestar](tel:+16194297700) [Cómo afecta el peso al corazón, los riñones y el azúcar](medical-weight-mgt.html#heart-kidney-metabolic)
+
+Esta es información educativa, no asesoramiento médico personal. Hable con el Dr. K sobre su propia salud.
+
+Referencias
+
+1. Ndumele CE, Rangaswami J, Chow SL, et al; American Heart Association. Cardiovascular-kidney-metabolic health: a presidential advisory from the American Heart Association. Circulation. 2023;148:1606&ndash;1635 (en inglés). https://doi.org/10.1161/CIR.0000000000001184
 
 Servicios clínicos principales
 
@@ -1415,7 +1558,7 @@ Lun-Jue: 8 a. m.-5 p. m. \| Vie: 8 a. m.-12 p. m. (mediodía)
 
 - Página web: https://drk.care/es/medical-weight-mgt
 - Versión en inglés: https://drk.care/medical-weight-mgt
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-22
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 Noticia de último momento Los miembros de Medicare, incluido Medicare Advantage, podrían ser elegibles para el Programa Puente de GLP-1 de Medicare  \|  [Llame a nuestra oficina para verificar si es elegible »](tel:+16194297700)
@@ -1446,6 +1589,33 @@ Terapia con GLP-1: LA EVOLUCIÓN DE LA MEDICINA MODERNA
 ## Control médico del peso supervisado por un médico
 
 La terapia con GLP-1 comenzó como un medicamento innovador para la diabetes tipo 2, pronto se volvió una sensación para bajar de peso de manera sostenible y ahora muestra beneficios más amplios para todo el cuerpo, entre ellos la protección del corazón y de los riñones, la renovación metabólica y prometedoras investigaciones iniciales sobre la salud del cerebro.
+
+Salud del corazón, los riñones y el metabolismo
+
+## Por qué el peso importa para su corazón, sus riñones y su azúcar en la sangre
+
+Hoy los médicos ven el corazón, los riñones y el metabolismo como un solo sistema conectado. Cuando se deterioran juntos, se habla de síndrome cardiovascular-renal-metabólico (CKM, por sus siglas en inglés). La declaración de 2023 de la Asociación Americana del Corazón (AHA) señala el exceso de grasa corporal, sobre todo alrededor de la cintura, como un factor importante de esta cadena. [1]
+
+1. Exceso o disfunción de la grasa corporal: El peso extra, sobre todo alrededor de la cintura, puede causar inflamación y hacer que el cuerpo responda peor a la insulina.
+2. Factores de riesgo metabólicos: Con frecuencia aparecen después el azúcar alta en la sangre, la presión arterial alta y los triglicéridos altos.
+3. Sobrecarga de los riñones: Estas afecciones pueden dañar los riñones, y unos riñones debilitados, a su vez, aumentan el riesgo para el corazón.
+4. Corazón y circulación: Con el tiempo, aumenta el riesgo de insuficiencia cardíaca, enfermedad coronaria, derrame cerebral y fibrilación auricular (un latido irregular).
+
+Las buenas noticias
+
+- **A menudo empieza en silencio.** Muchas personas no tienen síntomas en las primeras etapas, por eso es importante revisar con regularidad el peso, la medida de la cintura, la presión arterial, el azúcar en la sangre, el colesterol y la salud de los riñones. La AHA sugiere medir cada año tanto el índice de masa corporal (IMC) como la circunferencia de la cintura.
+- **Bajar de peso ayuda.** La AHA aconseja buscar una pérdida de peso de al menos el 5 % (unas 10 libras para una persona de 200 libras), con más beneficio si se pierde más. Bajar de peso y cambiar el estilo de vida puede mejorar la presión arterial, el azúcar en la sangre y la salud de los riñones en algunas personas. [1]
+- **No tiene que hacerlo solo.** El Dr. K ofrece control médico del peso supervisado por un médico, adaptado a su historial de salud, con apoyo para el estilo de vida y, cuando corresponde, opciones médicas.
+
+**Comience con una visita de bienestar.** Llame al (619) 429-7700 para programarla. Los pacientes de Medicare pueden preguntar por su Visita Anual de Bienestar (por lo general con copago de $0 para pacientes elegibles). Llame a VNHL para aclarar los detalles de su plan.
+
+[Llame al (619) 429-7700](tel:+16194297700) [Medicare y Usted: Visita Anual de Bienestar](senior-care.html)
+
+Esta es información educativa, no asesoramiento médico personal. Hable con el Dr. K sobre su propia salud.
+
+Referencias
+
+1. Ndumele CE, Rangaswami J, Chow SL, et al; American Heart Association. Cardiovascular-kidney-metabolic health: a presidential advisory from the American Heart Association. Circulation. 2023;148:1606-1635 (en inglés). https://doi.org/10.1161/CIR.0000000000001184
 
 Servicios clínicos principales
 
@@ -1594,7 +1764,7 @@ Lun-Jue: 8 a. m.-5 p. m. \| Vie: 8 a. m.-12 p. m. (mediodía)
 
 - Página web: https://drk.care/es/faq-senior-care
 - Versión en inglés: https://drk.care/faq-senior-care
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-22
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 Todas las preguntas
@@ -1679,6 +1849,10 @@ El Dr. K ofrece Visitas Anuales de Bienestar, exámenes físicos anuales, exáme
 
 La Visita Anual de Bienestar de Medicare es una evaluación preventiva anual completa, por lo general con copago de \$0 para pacientes elegibles de Medicare. El Dr. K revisa sus riesgos de salud, sus medicamentos y sus exámenes, y elabora un plan de prevención personalizado. Llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
 
+¿Qué debo preguntar en mi Visita Anual de Bienestar?
+
+Pregunte al Dr. K qué revisiones son adecuadas para usted. Según su salud, pueden incluir su peso y la medida de su cintura, la presión arterial, el azúcar en la sangre y el colesterol, y pruebas de los riñones (un análisis de sangre y uno de orina). La cobertura de cada prueba puede ser distinta a la de la visita, así que llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
+
 ¿VNHL ofrece atención bilingüe en español?
 
 Sí. Nuestro personal bilingüe ayuda a los pacientes de habla hispana con las citas, las consultas y la planificación de la atención. Hablamos español.
@@ -1692,6 +1866,14 @@ La forma más rápida es que su farmacia envíe una solicitud electrónica a VNH
 ¿Qué es el control médico del peso en VNHL?
 
 El control médico del peso supervisado por un médico con el Dr. K combina metas personalizadas, orientación sobre nutrición y actividad física, seguimiento de la composición corporal y, cuando es apropiado, terapia con receta, incluidos los medicamentos con GLP-1.
+
+¿Cómo se relaciona el peso con el riesgo de enfermedades del corazón, los riñones y la diabetes?
+
+La Asociación Americana del Corazón (AHA) describe un sistema conectado llamado síndrome cardiovascular-renal-metabólico (CKM, por sus siglas en inglés). El exceso de grasa corporal, sobre todo alrededor de la cintura, puede provocar azúcar alta en la sangre, presión arterial alta y triglicéridos altos. Con el tiempo, esto puede sobrecargar los riñones y el corazón. Por eso el Dr. K evalúa el peso y estos riesgos relacionados en conjunto. Conozca más en la página de [Control médico del peso](medical-weight-mgt.html#heart-kidney-metabolic).
+
+¿Bajar de peso puede reducir mi riesgo?
+
+En muchas personas, sí. La AHA aconseja buscar una pérdida de peso de al menos el 5 %, con más beneficio si se pierde más, y señala que bajar de peso y cambiar el estilo de vida puede mejorar la presión arterial, el azúcar en la sangre y la salud de los riñones en algunas personas. Los resultados varían, así que pregunte al Dr. K qué meta y qué enfoque le convienen. Llame a VNHL al [(619) 429-7700](tel:+16194297700).
 
 ¿Quiénes pueden beneficiarse y debo tener diabetes?
 

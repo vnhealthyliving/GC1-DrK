@@ -3,7 +3,7 @@
 > Meet Dr. Vijay Kuppurajan, MD: board-certified internal medicine, Sharp-SCMG affiliated, serving Imperial Beach and South Bay San Diego. Original Medicare and Sharp-SCMG Medicare Advantage accepted. (619) 429-7700.
 
 - Web page: https://drk.care/about
-- Last reviewed: 2026-10-14
+- Last reviewed: 2026-11-21
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 BOARD-CERTIFIED INTERNAL MEDICINE SPECIALIST DEDICATED TO PATIENT-CENTERED, EVIDENCE-BASED CARE.
@@ -103,6 +103,29 @@ Combines the resources of a major network via Sharp with the heart of a local co
 Sharp Affiliated · Community Clinic Heart
 
 [Read our Care Philosophy FAQs ↗](faq-senior-care.md#philosophy)
+
+A Modern Model of the Physician
+
+### The 8-Star Doctor
+
+The World Health Organization described the five-star doctor, and medical education later widened it into the 7-Star Doctor framework by adding the researcher and the lifelong learner. [1] A 2025 expert-consensus study proposes an eighth star: the teacher. [2] Related role-based frameworks, such as CanMEDS and RIME, also give teaching a place among a physician's roles. [3] We find this model a helpful way to describe what you can expect from a modern doctor: care that is compassionate, evidence-based, clearly explained, and shared through patient education.
+
+1. Care Provider: Delivers whole-person, high-quality, compassionate care.
+2. Decision-Maker: Makes evidence-based, ethical, and cost-conscious clinical choices.
+3. Communicator: Explains health information clearly and encourages healthy lifestyles.
+4. Community Leader: Responds to public health and community needs.
+5. Manager: Coordinates resources, care teams, and health services.
+6. Researcher: Investigates medical questions and contributes to scientific knowledge.
+7. Lifelong Learner: Keeps medical skills and knowledge up to date.
+8. Teacher (the 8th star): Shares knowledge with patients, families, and colleagues, and helps train the next generation of health professionals.
+
+The 8-Star Doctor is an educational framework from medical-education research. It is not an accreditation, rating, or guarantee of outcomes.
+
+References
+
+1. 7-Star Doctor framework: the WHO core roles of care provider, decision-maker, communicator, community leader, and manager, plus researcher and lifelong learner. VNHL reference summary, "8-Star Doctor Frameworks," 2026.
+2. Khan SJ, Yasmeen R, Imran S. Building the 8-star doctor: a modified Delphi study to define, teach, and assess health professions education for undergraduate medical students. BMC Medical Education. 2025;25:1158. https://doi.org/10.1186/s12909-025-07694-7
+3. Pangaro L, ten Cate O. Frameworks for learner assessment in medicine: AMEE Guide No. 78. Medical Teacher. 2013;35(6):e1197-e1210 (reviews role-based frameworks such as CanMEDS and RIME). https://doi.org/10.3109/0142159X.2013.788789
 
 TRUSTED & COMPASSIONATE CULTURE AT VNHL
 

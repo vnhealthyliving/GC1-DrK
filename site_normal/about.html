@@ -497,7 +497,24 @@
       .lang-menu a, .lang-menu span { display: flex; align-items: center; min-height: 44px; padding: 8px 12px; border-radius: 8px; color: #0f172a; text-decoration: none; font-size: 0.95rem; }
       .lang-menu a:hover { background: #e0f2fe; }
       .lang-menu span { font-weight: 700; background: #f1f5f9; }
-    </style>
+    
+  /* Nov 2026: 8-Star Doctor section */
+  .star-lead { max-width: 650px; margin: 8px auto 0 auto; color: #334155; font-size: 15px; line-height: 1.7; }
+  .star-list { max-width: 650px; margin: 20px auto 0 auto; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .star-item { display: flex; gap: 12px; align-items: flex-start; background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #1e3a8a; border-radius: 8px; padding: 12px 14px; }
+  .star-badge { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: #facc15; color: #1e293b; font-weight: 800; font-size: 14px; display: inline-flex; align-items: center; justify-content: center; }
+  .star-item h3 { font-size: 15px; font-weight: 700; color: #1e3a8a; margin: 0 0 2px 0; line-height: 1.3; }
+  .star-item p { font-size: 14px; color: #334155; line-height: 1.55; margin: 0; }
+  .star-item.star-new { border-left-color: #0f766e; background: #f0fdfa; }
+  .star-item.star-new h3 { color: #0f766e; }
+  .star-flag { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 10px; background: #0f766e; color: #ffffff; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; vertical-align: 1px; }
+  .star-note { max-width: 650px; margin: 14px auto 0 auto; font-size: 12px; color: #475569; line-height: 1.6; }
+  .star-ref { max-width: 650px; margin: 18px auto 0 auto; padding-top: 12px; border-top: 1px solid #cbd5e1; font-size: 12px; color: #475569; line-height: 1.6; }
+  .star-ref strong { color: #0f172a; }
+  .star-ref ol { margin: 6px 0 0 0; padding-left: 20px; }
+  .star-ref li { margin-bottom: 6px; }
+  .star-ref a { color: #1e3a8a; text-decoration: underline; overflow-wrap: anywhere; }
+</style>
 
 <script type="application/ld+json">
 {
@@ -1321,6 +1338,82 @@
         </div>
     </div>
 <p style="text-align:center;margin:20px 0 0;"><a href="faq-senior-care.html#philosophy" class="btn btn-blue" style="padding:10px 20px;border-radius:7px;">Read our Care Philosophy FAQs &#8599;</a></p>
+</section>
+
+<!-- 8-STAR DOCTOR SECTION (Nov 2026) -->
+<section id="eight-star-doctor" class="section-white" style="background:#f8fafc;" aria-labelledby="eight-star-heading">
+    <div class="container">
+        <p class="eyebrow">A Modern Model of the Physician</p>
+        <h2 id="eight-star-heading">The 8-Star Doctor</h2>
+        <p class="star-lead">The World Health Organization described the <em>five-star doctor</em>, and medical education later widened it into the 7-Star Doctor framework by adding the researcher and the lifelong learner.<sup>[1]</sup> A 2025 expert-consensus study proposes an eighth star: <strong>the teacher</strong>.<sup>[2]</sup> Related role-based frameworks, such as CanMEDS and RIME, also give teaching a place among a physician&#39;s roles.<sup>[3]</sup> We find this model a helpful way to describe what you can expect from a modern doctor: care that is compassionate, evidence-based, clearly explained, and shared through patient education.</p>
+        <ol class="star-list">
+            <li class="star-item">
+                <span class="star-badge" aria-hidden="true">1</span>
+                <div>
+                    <h3>Care Provider</h3>
+                    <p>Delivers whole-person, high-quality, compassionate care.</p>
+                </div>
+            </li>
+            <li class="star-item">
+                <span class="star-badge" aria-hidden="true">2</span>
+                <div>
+                    <h3>Decision-Maker</h3>
+                    <p>Makes evidence-based, ethical, and cost-conscious clinical choices.</p>
+                </div>
+            </li>
+            <li class="star-item">
+                <span class="star-badge" aria-hidden="true">3</span>
+                <div>
+                    <h3>Communicator</h3>
+                    <p>Explains health information clearly and encourages healthy lifestyles.</p>
+                </div>
+            </li>
+            <li class="star-item">
+                <span class="star-badge" aria-hidden="true">4</span>
+                <div>
+                    <h3>Community Leader</h3>
+                    <p>Responds to public health and community needs.</p>
+                </div>
+            </li>
+            <li class="star-item">
+                <span class="star-badge" aria-hidden="true">5</span>
+                <div>
+                    <h3>Manager</h3>
+                    <p>Coordinates resources, care teams, and health services.</p>
+                </div>
+            </li>
+            <li class="star-item">
+                <span class="star-badge" aria-hidden="true">6</span>
+                <div>
+                    <h3>Researcher</h3>
+                    <p>Investigates medical questions and contributes to scientific knowledge.</p>
+                </div>
+            </li>
+            <li class="star-item">
+                <span class="star-badge" aria-hidden="true">7</span>
+                <div>
+                    <h3>Lifelong Learner</h3>
+                    <p>Keeps medical skills and knowledge up to date.</p>
+                </div>
+            </li>
+            <li class="star-item star-new">
+                <span class="star-badge" aria-hidden="true">8</span>
+                <div>
+                    <h3>Teacher <span class="star-flag">The 8th star</span></h3>
+                    <p>Shares knowledge with patients, families, and colleagues, and helps train the next generation of health professionals.</p>
+                </div>
+            </li>
+        </ol>
+        <p class="star-note">The 8-Star Doctor is an educational framework from medical-education research. It is not an accreditation, rating, or guarantee of outcomes.</p>
+        <div class="star-ref">
+            <strong>References</strong>
+            <ol>
+            <li>7-Star Doctor framework: the WHO core roles of care provider, decision-maker, communicator, community leader, and manager, plus researcher and lifelong learner. VNHL reference summary, &ldquo;8-Star Doctor Frameworks,&rdquo; 2026.</li>
+            <li>Khan SJ, Yasmeen R, Imran S. Building the 8-star doctor: a modified Delphi study to define, teach, and assess health professions education for undergraduate medical students. <i>BMC Medical Education</i>. 2025;25:1158. <a href="https://doi.org/10.1186/s12909-025-07694-7" target="_blank" rel="noopener noreferrer">https://doi.org/10.1186/s12909-025-07694-7</a></li>
+            <li>Pangaro L, ten Cate O. Frameworks for learner assessment in medicine: AMEE Guide No. 78. <i>Medical Teacher</i>. 2013;35(6):e1197&ndash;e1210 (reviews role-based frameworks such as CanMEDS and RIME). <a href="https://doi.org/10.3109/0142159X.2013.788789" target="_blank" rel="noopener noreferrer">https://doi.org/10.3109/0142159X.2013.788789</a></li>
+            </ol>
+        </div>
+    </div>
 </section>
 
 <!-- VNHL 3-IN-1 APPROACH SECTION (White background  -  alternates with dark) -->

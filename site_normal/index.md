@@ -3,7 +3,7 @@
 > New & current Medicare patients welcome in Imperial Beach: Original Medicare and Sharp-SCMG Medicare Advantage. Annual Wellness Visits. (619) 429-7700.
 
 - Web page: https://drk.care/
-- Last reviewed: 2026-10-14
+- Last reviewed: 2026-11-22
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 Welcoming New & Current Medicare Patients · Medicare Annual Enrollment Oct 15 – Dec 7
@@ -37,6 +37,12 @@ Medicare Advantage through Sharp-SCMG
 For Medicare Advantage, we accept only Sharp-SCMG's Medicare Advantage plan.
 
 Call (619) 429-7700 to clarify your specific plan
+
+Heart, Kidney & Metabolic Health
+
+Extra weight is a major driver of heart, kidney, and blood sugar problems. Ask Dr. K about weight and risk checks at your Annual Wellness Visit.
+
+[Learn why weight matters](medical-weight-mgt.md#heart-kidney-metabolic)
 
 [Medicare & You: Senior Wellness](senior-care.md) [Medicare FAQs](faq-senior-care.md)
 

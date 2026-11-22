@@ -17,7 +17,7 @@
   var SERVICES = {
     senior_wellness: 'Medicare Senior Wellness (Medicare & You), with new and current Medicare patients welcome: Medicare Annual Wellness Visits (typically $0 co-pay for eligible Medicare patients), preventive screenings, medication review, and chronic condition management.',
     primary_care: 'Primary care for adults 18+: annual physicals, diabetes, hypertension and high cholesterol management, acute illness visits, on-site blood work, and anxiety and depression screening.',
-    weight_management: 'Medical Weight Management: physician-supervised programs, including GLP-1 therapy when appropriate. Medicare members, including Medicare Advantage members, may be eligible for the Medicare GLP-1 Bridge Program; call to review eligibility.',
+    weight_management: 'Medical Weight Management: physician-supervised programs, including GLP-1 therapy when appropriate. Medicare members, including Medicare Advantage members, may be eligible for the Medicare GLP-1 Bridge Program; call to review eligibility. Includes education on how excess weight affects heart, kidney, and metabolic health.',
     languages: 'Bilingual care in English and Spanish (Hablamos Espanol).'
   };
 

@@ -3,7 +3,7 @@
 > Medicare senior wellness in Imperial Beach: Annual Wellness Visits, preventive care, and chronic condition management with Dr. Vijay Kuppurajan, MD. New & current Medicare patients welcome. (619) 429-7700.
 
 - Web page: https://drk.care/senior-care
-- Last reviewed: 2026-10-08
+- Last reviewed: 2026-11-22
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 ##### Sharp Top PCP Award
@@ -39,6 +39,29 @@ Patient-Centered Medical Home
 As your dedicated medical home in Imperial Beach, VN Healthy Living pairs trusted, compassionate care with expert clinical leadership. Together, we build a customized healthy living plan centered around proactive preventive activities like Annual Wellness Visits, chronic disease management, and long-term vitality.
 
 Medicare New & Current Medicare Patients Welcome · Annual Wellness Visit **typically $0 co-pay** | [Call Dr. K »](tel:+16194297700)
+
+Heart, Kidney & Metabolic Health
+
+### Your Annual Wellness Visit: Look at the Whole Picture
+
+Your heart, kidneys, and metabolism are connected, and extra weight is a major driver of problems in all three. [1] A yearly visit is a good time to see where you stand, often before any symptoms appear.
+
+Ask Dr. K which checks are right for you
+
+- Your weight and waist measurement
+- Blood pressure
+- Blood sugar and cholesterol
+- Kidney health (a blood test and a urine test)
+- Your overall heart risk and a realistic weight goal
+Coverage for individual tests can differ from the visit itself. Call VNHL at (619) 429-7700 to clarify your specific plan.
+
+[Schedule Your Annual Wellness Visit](tel:+16194297700) [How Weight Affects Heart, Kidney & Blood Sugar](medical-weight-mgt.md#heart-kidney-metabolic)
+
+This is educational information, not personal medical advice. Please talk with Dr. K about your own health.
+
+References
+
+1. Ndumele CE, Rangaswami J, Chow SL, et al; American Heart Association. Cardiovascular-kidney-metabolic health: a presidential advisory from the American Heart Association. Circulation. 2023;148:1606&ndash;1635. https://doi.org/10.1161/CIR.0000000000001184
 
 Core clinical offerings
 

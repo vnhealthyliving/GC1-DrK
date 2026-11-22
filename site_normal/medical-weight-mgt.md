@@ -3,7 +3,7 @@
 > Physician-supervised medical weight management in Imperial Beach, including GLP-1 therapy. Medicare GLP-1 Bridge Program eligibility reviewed by Dr. K. (619) 429-7700.
 
 - Web page: https://drk.care/medical-weight-mgt
-- Last reviewed: 2026-10-08
+- Last reviewed: 2026-11-22
 - Phone: (619) 429-7700 | Address: 707 Palm Ave, Imperial Beach, CA 91932
 
 Flash News Medicare members, including Medicare Advantage, may be eligible for the Medicare GLP-1 Bridge Program | [Call our office to check your eligibility »](tel:+16194297700)
@@ -33,6 +33,33 @@ GLP-1 therapy: THE EVOLUTION OF MODERN MEDICINE
 ### Physician-Supervised Medical Weight Management
 
 GLP-1 therapy started as a breakthrough medication for Type 2 diabetes, quickly became a sensation for sustainable weight loss, and is now showing broader total body benefits, including heart and kidney protection, metabolic renewal, and promising early research on brain health.
+
+Heart, Kidney & Metabolic Health
+
+### Why Weight Matters for Your Heart, Kidneys, and Blood Sugar
+
+Doctors now see the heart, the kidneys, and the body's metabolism as one connected system. When they decline together, it is called cardiovascular-kidney-metabolic (CKM) syndrome. The American Heart Association's 2023 advisory names excess body fat, especially around the waist, as a major driver of this chain. [1]
+
+1. Excess or unhealthy body fat: Extra weight, especially around the waist, can cause inflammation and make the body less responsive to insulin.
+2. Metabolic risk factors: High blood sugar, high blood pressure, and high triglycerides often follow.
+3. Kidney strain: These conditions can damage the kidneys, and weakened kidneys in turn raise heart risk.
+4. Heart and circulation: Over time, the risk grows for heart failure, coronary heart disease, stroke, and atrial fibrillation (an irregular heartbeat).
+
+The encouraging news
+
+- **It often starts quietly.** Many people have no symptoms in the early stages, so regular checks of weight, waist size, blood pressure, blood sugar, cholesterol, and kidney health matter. The AHA suggests measuring both BMI and waist circumference every year.
+- **Weight loss helps.** The AHA advises aiming for at least a 5% weight loss (about 10 pounds for a 200-pound person), with more benefit from greater loss. Weight loss and lifestyle change may improve blood pressure, blood sugar, and kidney health in some people. [1]
+- **You do not have to do it alone.** Dr. K offers physician-supervised medical weight management built around your health history, with lifestyle support and, when appropriate, medical options.
+
+**Start with a Wellness Visit.** Call (619) 429-7700 to schedule. Medicare patients can ask about their Annual Wellness Visit (typically $0 co-pay for eligible patients). Call VNHL to clarify your specific plan.
+
+[Call (619) 429-7700](tel:+16194297700) [Medicare & You: Annual Wellness Visit](senior-care.md)
+
+This is educational information, not personal medical advice. Please talk with Dr. K about your own health.
+
+References
+
+1. Ndumele CE, Rangaswami J, Chow SL, et al; American Heart Association. Cardiovascular-kidney-metabolic health: a presidential advisory from the American Heart Association. Circulation. 2023;148:1606-1635. https://doi.org/10.1161/CIR.0000000000001184
 
 Core clinical offerings
 

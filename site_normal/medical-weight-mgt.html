@@ -800,7 +800,27 @@
       .lang-menu a, .lang-menu span { display: flex; align-items: center; min-height: 44px; padding: 8px 12px; border-radius: 8px; color: #0f172a; text-decoration: none; font-size: 0.95rem; }
       .lang-menu a:hover { background: #e0f2fe; }
       .lang-menu span { font-weight: 700; background: #f1f5f9; }
-    </style>
+    
+  /* Nov 2026: Heart-Kidney-Metabolic (CKM) section */
+  .ckm-lead { max-width: 650px; margin: 8px auto 0 auto; color: #334155; font-size: 15px; line-height: 1.7; text-align: left; }
+  .ckm-steps { max-width: 650px; margin: 18px auto 0 auto; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .ckm-step { display: flex; gap: 12px; align-items: flex-start; background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #1e3a8a; border-radius: 8px; padding: 12px 14px; text-align: left; }
+  .ckm-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: #1e3a8a; color: #ffffff; font-weight: 800; font-size: 14px; display: inline-flex; align-items: center; justify-content: center; }
+  .ckm-step h3 { font-size: 15px; font-weight: 700; color: #1e3a8a; margin: 0 0 2px 0; line-height: 1.3; text-transform: none; letter-spacing: 0; }
+  .ckm-step p { font-size: 14px; color: #334155; line-height: 1.55; margin: 0; }
+  .ckm-sub { max-width: 650px; margin: 22px auto 0 auto; font-size: 16px; font-weight: 700; color: #0f766e; text-align: left; text-transform: none; letter-spacing: 0; }
+  .ckm-points { max-width: 650px; margin: 10px auto 0 auto; padding-left: 20px; color: #334155; font-size: 14.5px; line-height: 1.65; text-align: left; }
+  .ckm-points li { margin-bottom: 8px; }
+  .ckm-checks { max-width: 650px; margin: 10px auto 0 auto; padding: 0; list-style: none; display: grid; gap: 8px; }
+  .ckm-checks li { display: flex; gap: 10px; align-items: flex-start; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px; font-size: 14.5px; color: #334155; text-align: left; }
+  .ckm-tick { color: #0f766e; font-weight: 800; }
+  .ckm-cta { max-width: 650px; margin: 20px auto 0 auto; padding: 16px; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 10px; text-align: left; font-size: 14.5px; color: #134e4a; line-height: 1.65; }
+  .ckm-btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .ckm-note { max-width: 650px; margin: 14px auto 0 auto; font-size: 12px; color: #475569; line-height: 1.6; text-align: left; }
+  .ckm-ref { max-width: 650px; margin: 14px auto 0 auto; padding-top: 12px; border-top: 1px solid #cbd5e1; font-size: 12px; color: #475569; line-height: 1.6; text-align: left; }
+  .ckm-ref ol { margin: 6px 0 0 0; padding-left: 20px; }
+  .ckm-ref a { color: #1e3a8a; text-decoration: underline; overflow-wrap: anywhere; }
+</style>
 
 <script type="application/ld+json">
 {
@@ -1291,6 +1311,43 @@
       ]
     },
     {
+      "@type": "MedicalWebPage",
+      "@id": "https://drk.care/medical-weight-mgt#ckm-info",
+      "url": "https://drk.care/medical-weight-mgt#heart-kidney-metabolic",
+      "name": "Why Weight Matters for Your Heart, Kidneys, and Blood Sugar",
+      "description": "How excess weight drives cardiovascular-kidney-metabolic (CKM) risk, why early checks matter, and how physician-supervised weight management and an Annual Wellness Visit can help.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://vnhealthyliving.com/#website"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Obesity"
+      },
+      "audience": {
+        "@type": "PeopleAudience",
+        "audienceType": "Adults, including Medicare beneficiaries"
+      },
+      "citation": {
+        "@type": "ScholarlyArticle",
+        "headline": "Cardiovascular-Kidney-Metabolic Health: A Presidential Advisory From the American Heart Association",
+        "author": {
+          "@type": "Person",
+          "name": "Chiadi E. Ndumele"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "American Heart Association"
+        },
+        "datePublished": "2023-11-14",
+        "url": "https://doi.org/10.1161/CIR.0000000000001184",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Circulation"
+        }
+      }
+    },
+    {
       "@type": "WebSite",
       "@id": "https://vnhealthyliving.com/#website",
       "name": "VN Healthy Living Medical Group",
@@ -1424,6 +1481,62 @@
       </p>
     </div>
   </div>
+</section>
+
+<!-- HEART, KIDNEY & METABOLIC HEALTH (Nov 2026) -->
+<section class="section-white" id="heart-kidney-metabolic" aria-labelledby="ckm-heading" style="background:#f8fafc;">
+    <div class="container" style="text-align:center;">
+        <p class="eyebrow">Heart, Kidney &amp; Metabolic Health</p>
+        <h2 id="ckm-heading">Why Weight Matters for Your Heart, Kidneys, and Blood Sugar</h2>
+        <p class="ckm-lead">Doctors now see the heart, the kidneys, and the body&#39;s metabolism as one connected system. When they decline together, it is called cardiovascular-kidney-metabolic (CKM) syndrome. The American Heart Association&#39;s 2023 advisory names excess body fat, especially around the waist, as a major driver of this chain.<sup>[1]</sup></p>
+        <ol class="ckm-steps">
+            <li class="ckm-step">
+                <span class="ckm-num" aria-hidden="true">1</span>
+                <div>
+                    <h3>Excess or unhealthy body fat</h3>
+                    <p>Extra weight, especially around the waist, can cause inflammation and make the body less responsive to insulin.</p>
+                </div>
+            </li>
+            <li class="ckm-step">
+                <span class="ckm-num" aria-hidden="true">2</span>
+                <div>
+                    <h3>Metabolic risk factors</h3>
+                    <p>High blood sugar, high blood pressure, and high triglycerides often follow.</p>
+                </div>
+            </li>
+            <li class="ckm-step">
+                <span class="ckm-num" aria-hidden="true">3</span>
+                <div>
+                    <h3>Kidney strain</h3>
+                    <p>These conditions can damage the kidneys, and weakened kidneys in turn raise heart risk.</p>
+                </div>
+            </li>
+            <li class="ckm-step">
+                <span class="ckm-num" aria-hidden="true">4</span>
+                <div>
+                    <h3>Heart and circulation</h3>
+                    <p>Over time, the risk grows for heart failure, coronary heart disease, stroke, and atrial fibrillation (an irregular heartbeat).</p>
+                </div>
+            </li>
+        </ol>
+        <h3 class="ckm-sub">The encouraging news</h3>
+        <ul class="ckm-points">
+            <li><strong>It often starts quietly.</strong> Many people have no symptoms in the early stages, so regular checks of weight, waist size, blood pressure, blood sugar, cholesterol, and kidney health matter. The AHA suggests measuring both BMI and waist circumference every year.</li>
+            <li><strong>Weight loss helps.</strong> The AHA advises aiming for at least a 5% weight loss (about 10 pounds for a 200-pound person), with more benefit from greater loss. Weight loss and lifestyle change may improve blood pressure, blood sugar, and kidney health in some people.<sup>[1]</sup></li>
+            <li><strong>You do not have to do it alone.</strong> Dr. K offers physician-supervised medical weight management built around your health history, with lifestyle support and, when appropriate, medical options.</li>
+        </ul>
+        <div class="ckm-cta">
+            <p><strong>Start with a Wellness Visit.</strong> Call (619) 429-7700 to schedule. Medicare patients can ask about their Annual Wellness Visit (typically $0 co-pay for eligible patients). Call VNHL to clarify your specific plan.</p>
+            <div class="ckm-btns"><a href="tel:+16194297700" aria-label="Call VN Healthy Living at (619) 429-7700" class="btn btn-blue"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg> Call (619) 429-7700</a> <a href="senior-care.html" class="btn btn-blue" style="background:#ffffff;color:#1e3a8a;border:1.5px solid #1e3a8a;">Medicare &amp; You: Annual Wellness Visit</a></div>
+        </div>
+        <p class="ckm-note">This is educational information, not personal medical advice. Please talk with Dr. K about your own health.</p>
+        <div class="ckm-ref">
+            <strong>References</strong>
+            <ol>
+                <li>Ndumele CE, Rangaswami J, Chow SL, et al; American Heart Association. Cardiovascular-kidney-metabolic health: a presidential advisory from the American Heart Association. <i>Circulation</i>. 2023;148:1606&ndash;1635. <a href="https://doi.org/10.1161/CIR.0000000000001184" target="_blank" rel="noopener noreferrer">https://doi.org/10.1161/CIR.0000000000001184</a></li>
+            </ol>
+        </div>
+    </div>
 </section>
 
 <!-- PROGRAM DETAILS SECTION -->
