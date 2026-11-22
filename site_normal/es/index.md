@@ -4,7 +4,7 @@
 
 - Página web: https://drk.care/es/
 - Versión en inglés: https://drk.care
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-22
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 Damos la bienvenida a pacientes nuevos y actuales de Medicare · Inscripción anual de Medicare del 15 de octubre al 7 de diciembre
@@ -38,6 +38,12 @@ Medicare Advantage con Sharp-SCMG
 En el caso de Medicare Advantage, aceptamos únicamente el plan Medicare Advantage de Sharp-SCMG.
 
 Llame al (619) 429-7700 para aclarar los detalles de su plan
+
+Salud del corazón, los riñones y el metabolismo
+
+El exceso de peso es un factor importante de los problemas del corazón, los riñones y el azúcar en la sangre. Pregunte al Dr. K por las revisiones de peso y de riesgo en su Visita Anual de Bienestar.
+
+[Por qué importa el peso](medical-weight-mgt.html#heart-kidney-metabolic)
 
 [Medicare y Usted: bienestar para adultos mayores](senior-care.html) [Preguntas sobre Medicare](faq-senior-care.html)
 

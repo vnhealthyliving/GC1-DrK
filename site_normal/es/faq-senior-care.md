@@ -4,7 +4,7 @@
 
 - Página web: https://drk.care/es/faq-senior-care
 - Versión en inglés: https://drk.care/faq-senior-care
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-22
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 Todas las preguntas
@@ -89,6 +89,10 @@ El Dr. K ofrece Visitas Anuales de Bienestar, exámenes físicos anuales, exáme
 
 La Visita Anual de Bienestar de Medicare es una evaluación preventiva anual completa, por lo general con copago de \$0 para pacientes elegibles de Medicare. El Dr. K revisa sus riesgos de salud, sus medicamentos y sus exámenes, y elabora un plan de prevención personalizado. Llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
 
+¿Qué debo preguntar en mi Visita Anual de Bienestar?
+
+Pregunte al Dr. K qué revisiones son adecuadas para usted. Según su salud, pueden incluir su peso y la medida de su cintura, la presión arterial, el azúcar en la sangre y el colesterol, y pruebas de los riñones (un análisis de sangre y uno de orina). La cobertura de cada prueba puede ser distinta a la de la visita, así que llame a VNHL al [(619) 429-7700](tel:+16194297700) para aclarar los detalles de su plan.
+
 ¿VNHL ofrece atención bilingüe en español?
 
 Sí. Nuestro personal bilingüe ayuda a los pacientes de habla hispana con las citas, las consultas y la planificación de la atención. Hablamos español.
@@ -102,6 +106,14 @@ La forma más rápida es que su farmacia envíe una solicitud electrónica a VNH
 ¿Qué es el control médico del peso en VNHL?
 
 El control médico del peso supervisado por un médico con el Dr. K combina metas personalizadas, orientación sobre nutrición y actividad física, seguimiento de la composición corporal y, cuando es apropiado, terapia con receta, incluidos los medicamentos con GLP-1.
+
+¿Cómo se relaciona el peso con el riesgo de enfermedades del corazón, los riñones y la diabetes?
+
+La Asociación Americana del Corazón (AHA) describe un sistema conectado llamado síndrome cardiovascular-renal-metabólico (CKM, por sus siglas en inglés). El exceso de grasa corporal, sobre todo alrededor de la cintura, puede provocar azúcar alta en la sangre, presión arterial alta y triglicéridos altos. Con el tiempo, esto puede sobrecargar los riñones y el corazón. Por eso el Dr. K evalúa el peso y estos riesgos relacionados en conjunto. Conozca más en la página de [Control médico del peso](medical-weight-mgt.html#heart-kidney-metabolic).
+
+¿Bajar de peso puede reducir mi riesgo?
+
+En muchas personas, sí. La AHA aconseja buscar una pérdida de peso de al menos el 5 %, con más beneficio si se pierde más, y señala que bajar de peso y cambiar el estilo de vida puede mejorar la presión arterial, el azúcar en la sangre y la salud de los riñones en algunas personas. Los resultados varían, así que pregunte al Dr. K qué meta y qué enfoque le convienen. Llame a VNHL al [(619) 429-7700](tel:+16194297700).
 
 ¿Quiénes pueden beneficiarse y debo tener diabetes?
 

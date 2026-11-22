@@ -4,7 +4,7 @@
 
 - Página web: https://drk.care/es/about
 - Versión en inglés: https://drk.care/about
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-21
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 ESPECIALISTA EN MEDICINA INTERNA CERTIFICADO POR LA JUNTA, DEDICADO A UNA ATENCIÓN CENTRADA EN EL PACIENTE Y BASADA EN LA EVIDENCIA.
@@ -104,6 +104,29 @@ Combina los recursos de una gran red, a través de Sharp, con el corazón de una
 Afiliado a Sharp · Corazón de clínica comunitaria
 
 [Lea nuestras preguntas frecuentes sobre la filosofía de atención ↗](faq-senior-care.html#philosophy)
+
+Un modelo moderno del médico
+
+## El médico de 8 estrellas
+
+La Organización Mundial de la Salud describió al médico de cinco estrellas, y la educación médica lo amplió después al marco del médico de 7 estrellas al añadir al investigador y al aprendiz permanente. [1] Un estudio de consenso de expertos de 2025 propone una octava estrella: el docente. [2] Marcos relacionados basados en funciones, como CanMEDS y RIME, también dan un lugar a la enseñanza entre las funciones del médico. [3] Nos parece una forma útil de describir lo que usted puede esperar de un médico moderno: atención compasiva, basada en la evidencia, explicada con claridad y compartida mediante la educación del paciente.
+
+1. Proveedor de atención: Brinda atención integral, de calidad y compasiva.
+2. Tomador de decisiones: Toma decisiones clínicas basadas en la evidencia, éticas y económicamente sensatas.
+3. Comunicador: Explica la información de salud con claridad y fomenta estilos de vida saludables.
+4. Líder comunitario: Atiende las necesidades de salud pública y de la comunidad.
+5. Gestor: Coordina recursos, equipos de atención y servicios de salud.
+6. Investigador: Investiga problemas médicos y contribuye al conocimiento científico.
+7. Aprendiz permanente: Mantiene actualizados sus conocimientos y habilidades médicas.
+8. Docente (la octava estrella): Comparte su conocimiento con pacientes, familias y colegas, y contribuye a formar a los futuros profesionales de la salud.
+
+El médico de 8 estrellas es un marco educativo basado en investigación en educación médica. No es una acreditación, una calificación ni una garantía de resultados.
+
+Referencias
+
+1. Marco del médico de 7 estrellas: funciones básicas de la OMS (proveedor de atención, tomador de decisiones, comunicador, líder comunitario y gestor), más investigador y aprendiz permanente. Documento de referencia de VNHL, "8-Star Doctor Frameworks", 2026.
+2. Khan SJ, Yasmeen R, Imran S. Building the 8-star doctor: a modified Delphi study to define, teach, and assess health professions education for undergraduate medical students. BMC Medical Education. 2025;25:1158 (en inglés). https://doi.org/10.1186/s12909-025-07694-7
+3. Pangaro L, ten Cate O. Frameworks for learner assessment in medicine: AMEE Guide No. 78. Medical Teacher. 2013;35(6):e1197-e1210 (en inglés; describe marcos basados en funciones como CanMEDS y RIME). https://doi.org/10.3109/0142159X.2013.788789
 
 UNA CULTURA CONFIABLE Y COMPASIVA EN VNHL
 

@@ -4,7 +4,7 @@
 
 - Página web: https://drk.care/es/medical-weight-mgt
 - Versión en inglés: https://drk.care/medical-weight-mgt
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-22
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 Noticia de último momento Los miembros de Medicare, incluido Medicare Advantage, podrían ser elegibles para el Programa Puente de GLP-1 de Medicare  \|  [Llame a nuestra oficina para verificar si es elegible »](tel:+16194297700)
@@ -35,6 +35,33 @@ Terapia con GLP-1: LA EVOLUCIÓN DE LA MEDICINA MODERNA
 ## Control médico del peso supervisado por un médico
 
 La terapia con GLP-1 comenzó como un medicamento innovador para la diabetes tipo 2, pronto se volvió una sensación para bajar de peso de manera sostenible y ahora muestra beneficios más amplios para todo el cuerpo, entre ellos la protección del corazón y de los riñones, la renovación metabólica y prometedoras investigaciones iniciales sobre la salud del cerebro.
+
+Salud del corazón, los riñones y el metabolismo
+
+## Por qué el peso importa para su corazón, sus riñones y su azúcar en la sangre
+
+Hoy los médicos ven el corazón, los riñones y el metabolismo como un solo sistema conectado. Cuando se deterioran juntos, se habla de síndrome cardiovascular-renal-metabólico (CKM, por sus siglas en inglés). La declaración de 2023 de la Asociación Americana del Corazón (AHA) señala el exceso de grasa corporal, sobre todo alrededor de la cintura, como un factor importante de esta cadena. [1]
+
+1. Exceso o disfunción de la grasa corporal: El peso extra, sobre todo alrededor de la cintura, puede causar inflamación y hacer que el cuerpo responda peor a la insulina.
+2. Factores de riesgo metabólicos: Con frecuencia aparecen después el azúcar alta en la sangre, la presión arterial alta y los triglicéridos altos.
+3. Sobrecarga de los riñones: Estas afecciones pueden dañar los riñones, y unos riñones debilitados, a su vez, aumentan el riesgo para el corazón.
+4. Corazón y circulación: Con el tiempo, aumenta el riesgo de insuficiencia cardíaca, enfermedad coronaria, derrame cerebral y fibrilación auricular (un latido irregular).
+
+Las buenas noticias
+
+- **A menudo empieza en silencio.** Muchas personas no tienen síntomas en las primeras etapas, por eso es importante revisar con regularidad el peso, la medida de la cintura, la presión arterial, el azúcar en la sangre, el colesterol y la salud de los riñones. La AHA sugiere medir cada año tanto el índice de masa corporal (IMC) como la circunferencia de la cintura.
+- **Bajar de peso ayuda.** La AHA aconseja buscar una pérdida de peso de al menos el 5 % (unas 10 libras para una persona de 200 libras), con más beneficio si se pierde más. Bajar de peso y cambiar el estilo de vida puede mejorar la presión arterial, el azúcar en la sangre y la salud de los riñones en algunas personas. [1]
+- **No tiene que hacerlo solo.** El Dr. K ofrece control médico del peso supervisado por un médico, adaptado a su historial de salud, con apoyo para el estilo de vida y, cuando corresponde, opciones médicas.
+
+**Comience con una visita de bienestar.** Llame al (619) 429-7700 para programarla. Los pacientes de Medicare pueden preguntar por su Visita Anual de Bienestar (por lo general con copago de $0 para pacientes elegibles). Llame a VNHL para aclarar los detalles de su plan.
+
+[Llame al (619) 429-7700](tel:+16194297700) [Medicare y Usted: Visita Anual de Bienestar](senior-care.html)
+
+Esta es información educativa, no asesoramiento médico personal. Hable con el Dr. K sobre su propia salud.
+
+Referencias
+
+1. Ndumele CE, Rangaswami J, Chow SL, et al; American Heart Association. Cardiovascular-kidney-metabolic health: a presidential advisory from the American Heart Association. Circulation. 2023;148:1606-1635 (en inglés). https://doi.org/10.1161/CIR.0000000000001184
 
 Servicios clínicos principales
 

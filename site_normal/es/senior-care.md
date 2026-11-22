@@ -4,7 +4,7 @@
 
 - Página web: https://drk.care/es/senior-care
 - Versión en inglés: https://drk.care/senior-care
-- Última revisión: 2026-11-02
+- Última revisión: 2026-11-22
 - Teléfono: (619) 429-7700 | Dirección: 707 Palm Ave, Imperial Beach, CA 91932
 
 #### Premio al mejor médico de atención primaria de Sharp
@@ -41,6 +41,29 @@ Hogar médico centrado en el paciente
 Como su hogar médico en Imperial Beach, VN Healthy Living une una atención confiable y compasiva con un liderazgo clínico experto. Juntos creamos un plan de vida saludable a su medida, centrado en actividades preventivas como las Visitas Anuales de Bienestar, el manejo de enfermedades crónicas y la vitalidad a largo plazo.
 
 Medicare Damos la bienvenida a pacientes nuevos y actuales de Medicare  ·  Visita Anual de Bienestar: **por lo general, copago de \$0**  \|  [Llame al Dr. K »](tel:+16194297700)
+
+Salud del corazón, los riñones y el metabolismo
+
+## Su Visita Anual de Bienestar: una mirada al panorama completo
+
+Su corazón, sus riñones y su metabolismo están conectados, y el exceso de peso es un factor importante de problemas en los tres. [1] Una visita anual es un buen momento para saber cómo está, muchas veces antes de que aparezcan síntomas.
+
+Pregunte al Dr. K qué revisiones son adecuadas para usted
+
+- Su peso y la medida de su cintura
+- La presión arterial
+- El azúcar en la sangre y el colesterol
+- La salud de los riñones (un análisis de sangre y uno de orina)
+- Su riesgo general para el corazón y una meta de peso realista
+La cobertura de cada prueba puede ser distinta a la de la visita. Llame a VNHL al (619) 429-7700 para aclarar los detalles de su plan.
+
+[Programe su Visita Anual de Bienestar](tel:+16194297700) [Cómo afecta el peso al corazón, los riñones y el azúcar](medical-weight-mgt.html#heart-kidney-metabolic)
+
+Esta es información educativa, no asesoramiento médico personal. Hable con el Dr. K sobre su propia salud.
+
+Referencias
+
+1. Ndumele CE, Rangaswami J, Chow SL, et al; American Heart Association. Cardiovascular-kidney-metabolic health: a presidential advisory from the American Heart Association. Circulation. 2023;148:1606&ndash;1635 (en inglés). https://doi.org/10.1161/CIR.0000000000001184
 
 Servicios clínicos principales
 
